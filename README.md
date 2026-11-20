@@ -4,7 +4,7 @@
 
 **复现状态：** 使用随包汇总数据重建表格已经验证；完整图像推理仍需要补齐原始数据、权重、冻结划分、模型资源和历史缓存。下面给出完整实验链路及各阶段命令，但当前包不是下载后即可一键完成全部 GPU 实验的独立发行版。尤其是，日志不能替代逐图预测、特征缓存或支持／测试清单。
 
-## 目录与两种复现方式
+## 目录与实验复现流程
 
 ```text
 README.md                     本文档
@@ -25,29 +25,13 @@ PORTABILITY_AUDIT.json        本机路径／本地运行限制候选位置
 VALIDATION.json               已完成验证的范围
 ```
 
-- **方式 A：表格数值复现。** 只需 Python 3.10+ 标准库，读取已保存的汇总结果，不运行模型。
-- **方式 B：实验复现。** 下载模型和数据，恢复冻结协议及缓存，运行模型／比较方法，保存预测，再重新计算指标、区间和表格。需要 GPU 和多套环境。
+**实验复现流程：** 下载模型和数据，恢复冻结协议及缓存，运行模型／比较方法，保存预测，再重新计算指标、区间和表格。需要 GPU 和多套环境。
 
 `LOG_FILES.csv` 是原工作区的完整索引。随仓库发布的 **241 份文本日志** 位于 `logs/<原相对路径>`，逐文件路径、大小与 SHA-256 见 [PUBLISHED_LOGS.json](PUBLISHED_LOGS.json)。主控制器只归档本论文固定支持实验对应的 `phase6_*.log`；索引中的其他历史日志和结果文件不代表均已上传。`source/` 中包含原适配器及辅助程序，以 [TABLE_INDEX.csv](TABLE_INDEX.csv) 指定入口为准，不能将所有历史脚本视作当前论文实验。
 
-## 1. 先验证随包表格
+## 1. 隔离环境与包版本
 
-在本 README 所在目录运行；输出目录必须尚不存在：
-
-```bash
-python tools/rebuild_tables.py --output ./build
-python tools/verify_manual_tables.py
-```
-
-第一条在临时工作区运行 `build_supplement.py` 和 `build_classification_table.py`。9 个当前使用的自动生成文件与论文快照逐字节一致；另外生成的中文表和已隐藏表没有随包基准快照，单独记录。
-
-第二条核验正文表 2、4 及附录 C.9、D.5、D.7、D.8 的 **227 个显示数值**，包括均值和区间端点。敏感性结果使用修正后的 `sensitivity_grid_summary_corrected.csv`，不使用历史旧版 `sensitivity_parameter_summary.csv`。
-
-这些检查不重新计算图像级指标，也不证明新机器上的模型推理数值一致。
-
-## 2. 隔离环境与包版本
-
-### 2.1 历史骨干环境
+### 1.1 历史骨干环境
 
 版本来自本地实测记录和保存的依赖锁文件。CUDA 列是 **PyTorch wheel 的 CUDA 构建版本**，不是要求安装同版本系统 CUDA Toolkit。需要兼容这些 wheel 的 NVIDIA 驱动；安装命令依据 [PyTorch 历史版本说明](https://pytorch.org/get-started/previous-versions/)。
 
@@ -66,7 +50,7 @@ python tools/verify_manual_tables.py
 
 OpenCV-headless：AlphaRAD 4.8.0.76；MaCo 4.10.0.84；CARZero 4.8.1.78；其余上述骨干为 4.11.0.86。MaCo 的原 freeze 早于空间融合依赖安装，提供的安装文件补入了实测记录中的 4.10.0.84，并保留注释。
 
-### 2.2 TaskRes／SS-Text+ 与统计环境
+### 1.2 TaskRes／SS-Text+ 与统计环境
 
 两种比较方法共享单独环境，不需要再下载一种胸片骨干权重：它们消费 BiomedCLIP／AlphaRAD 的冻结特征。
 
@@ -78,7 +62,7 @@ OpenCV-headless：AlphaRAD 4.8.0.76；MaCo 4.10.0.84；CARZero 4.8.1.78；其余
 
 不要直接安装历史 `requirements-resolved.txt` 的完整系统导出：其中包含无关 Anaconda 包和本机构建路径。CPU 调度／统计也要固定环境，记录实际 Python、NumPy、SciPy、scikit-learn 版本；本文提供的 solver 环境可作为新运行的统计环境起点，但不宣称它替代了每一历史批次的环境取证。
 
-### 2.3 新机器创建工作区
+### 1.3 新机器创建工作区
 
 先按 [uv 官方安装说明](https://docs.astral.sh/uv/getting-started/installation/) 安装 `uv`，准备 `git`。环境创建使用 [uv 的独立 venv](https://docs.astral.sh/uv/pip/environments/)，不修改现有环境。
 
@@ -118,7 +102,7 @@ done
 
 模型入口使用各自 `local_setup/python_local.sh`。这些入口启用了离线模式，因此**权重、tokenizer、配置和远程模型代码必须在运行前下载完整**。避免只下载一个 `.pt` 文件。
 
-## 3. 模型源码与预训练权重
+## 2. 模型源码与预训练权重
 
 以下为本实验采用的发布来源；文件名及可用 SHA-256 见 [MODEL_ASSETS.json](resources/MODEL_ASSETS.json)，八个 baseline 的详细说明另见 `source/baselines/<模型>/local_setup/manifest.json`。权重文件不随 Git 仓库分发。
 
@@ -145,7 +129,7 @@ done
 
 链接来自本地下载记录和官方仓库；页面访问不代表已验证大文件可下载。AlphaRAD 的 Hugging Face 页面本次未能通过网页工具访问，保留官方 GitHub 指向的原链接。Google Drive／Kaggle／PhysioNet 可能需要账号和访问授权。
 
-## 4. 数据集、固定划分与预处理
+## 3. 数据集、固定划分与预处理
 
 下表中的测试数量是**本论文固定支持协议**，不是数据集总大小。逐图身份、类别顺序、支持样本、患者／重复图像分组以冻结清单为准。
 
@@ -165,7 +149,7 @@ done
 
 CheXchoNet 需按 PhysioNet 的受限访问流程获取；论文的三个标签共享一个测试队列。OpenI 只保留在历史开发／补评核验依赖中，**不计入当前 11 个报告数据集**；若运行仍认证整个历史批次的脚本，还需恢复其原资产，入口为 [OpenI](https://openi.nlm.nih.gov/)。
 
-### 4.1 不可替换的协议细节
+### 3.1 不可替换的协议细节
 
 - 固定支持 RSNA：保留原十张支持图，排除支持患者另外 30 张胸片，5,327 → **5,297**。已经隔离患者的五支持抽样／路径实验仍使用 **5,327 图／3,720 患者**。
 - 表 1 同时保留两种 SIIM 协议；表 3 每个模型只使用 1,704 图协议，避免重复计权。
@@ -175,7 +159,7 @@ CheXchoNet 需按 PhysioNet 的受限访问流程获取；论文的三个标签�
 - 支持图只用原视图。测试中心裁剪在模型原生预处理后的张量上执行，边长比例 0.8；不得擅自改成文件级裁剪、不同 DICOM 转换或新版预处理。
 - CovidKaggle 使用本地记录中的公开图像和映射；原上游未发布的 `covid_kaggle_256` 副本不能被当作已恢复。复现对象是本论文保存的实际预处理和文件哈希。
 
-### 4.2 必须恢复的实验资产
+### 3.2 必须恢复的实验资产
 
 主要路径如下；本发布草稿未包含这些完整清单／缓存：
 
@@ -205,7 +189,7 @@ python "$RELEASE_ROOT/tools/preflight_reproduction.py" --workspace "$PAPER_ROOT"
 
 非零退出表示列出的主要资产有缺失；全部存在也不等于完整依赖已闭合，具体 worker 还会检查文件哈希、类别顺序和原生数值一致性。
 
-## 5. 所有实验命令的公共约定
+## 4. 所有实验命令的公共约定
 
 以下命令在**恢复完资产的工作区**运行，不在发布包根目录运行：
 
@@ -227,11 +211,11 @@ mkdir -p "$REPRO_RUN"
 
 所有新结果使用新目录；完整与 smoke 输出分开。不使用历史 `full_*` 目录作为新运行输出，也不要并行启动争用同一 GPU 的实验。
 
-## 6. 固定支持主结果与组件消融
+## 5. 固定支持主结果与组件消融
 
 对应正文表 1、3；附录 A.1–A.11、D.1。四分支为 Original、Q、V、Q+V。
 
-### 6.1 八个 baseline
+### 5.1 八个 baseline
 
 ```bash
 bash baselines/scripts/eval_query_refinement.sh --gpus 4 5 6 7
@@ -239,7 +223,7 @@ bash baselines/scripts/eval_query_refinement.sh --gpus 4 5 6 7
 
 该入口自动创建新运行目录。BiomedCLIP／BioViL-T 使用 `baselines/protocols/alpharad_binary/` 的二元提示计分版本。只需审查一个模型时可追加 `--models BiomedCLIP`；完整论文应运行全部八个模型。这里四分支已包含 Original，不需要再额外运行一次原始模型取得配对基线。
 
-### 6.2 AlphaRAD／RadZero 原生四分支
+### 5.2 AlphaRAD／RadZero 原生四分支
 
 先检查 AlphaRAD 的调用计划，不加载模型：
 
@@ -267,7 +251,7 @@ done
 
 包装器解除原调度截止时间，但原生特征、查询、视图和计分不变。它明确以 `--cache-mode read` 使用已认证 token 缓存，**不是仅下载图像后即可执行的冷启动入口**。AlphaRAD batch size 8，RadZero 16。OpenI 不在当前报告范围；旧聚合器若认证整个历史目录，则需要保留其原结果。
 
-### 6.3 CheXpert 与六项报告范围内补评
+### 5.3 CheXpert 与六项报告范围内补评
 
 ```bash
 bash AlphaRAD/scripts/eval_chexpert_query_refinement.sh --gpus 6 7
@@ -289,7 +273,7 @@ CUDA_VISIBLE_DEVICES=7 bash RadZero_i2cl/local_setup/python_local.sh \
 
 补评脚本会回归历史分支预测，因此还需要原批次参考文件。历史 `verify_completion.py` 固定认证七项（含 OpenI），而当前报告只纳入其中六项；审计旧批次需保留历史 OpenI 记录，不能把七项硬校验改成六项而不记录协议变更。
 
-### 6.4 MedKLIP／MAVL 肺结核查询补全
+### 5.4 MedKLIP／MAVL 肺结核查询补全
 
 ```bash
 for dataset in shenzhenxray montgomery; do
@@ -305,7 +289,7 @@ CUDA_VISIBLE_DEVICES=7 bash baselines/MAVL/local_setup/python_local.sh \
 
 Original／Q／V／Q+V 必须共享扩展后的查询上下文。历史核验器还检查 OpenI 补全记录，处理方式与上一节一致。
 
-### 6.5 十模型 CheXchoNet
+### 5.5 十模型 CheXchoNet
 
 依次运行，不同时争用 GPU：
 
@@ -316,7 +300,7 @@ bash baselines/scripts/eval_chexchonet.sh --gpus 4 5 6 7
 
 第一条运行 AlphaRAD／RadZero，第二条运行八个 baseline。论文只读取 7,407 图配对范围，不能用 7,494 图原始参考代替。三个任务 CSLV／CDLV／CCOM 保留各自预测，但表 3 将其先平均为一个数据集。
 
-### 6.6 固定 RSNA 患者排除后重新计分
+### 5.6 固定 RSNA 患者排除后重新计分
 
 ```bash
 python experiments/rsna_fixed_patient_cleanup_20261110/recompute.py \
@@ -325,7 +309,7 @@ python experiments/rsna_fixed_patient_cleanup_20261110/recompute.py \
 
 该程序读取 `baselines/paper_draft_zh/verified_results.json` 指向的原始固定支持预测及患者映射，不重新推理。默认读取的是**历史注册来源**，不会自动选择第 6.1–6.5 节产生的新目录。重计新运行前，必须建立指向新预测的完整来源注册表并保留新哈希。随包的精简 `verified_results.json` 只支持表格渲染，不能用于这一步。
 
-## 7. 五支持种子主比较与 TaskRes／SS-Text+
+## 6. 五支持种子主比较与 TaskRes／SS-Text+
 
 对应正文表 2，附录 C.1–C.9；BiomedCLIP、AlphaRAD × RSNA、ChestXDet10 × seeds 42–46。
 
@@ -372,11 +356,11 @@ CUDA_VISIBLE_DEVICES='' bash experiments/fewshot_taskres_sstext_20261109/python_
   --run "$REPRO_RUN/taskres_sstext" --bootstrap-replicates 2000 --bootstrap-seed 20261024
 ```
 
-## 8. 查询路径机制实验
+## 7. 查询路径机制实验
 
 对应正文表 4、附录 B.1–B.18。B.7 是干预接口说明表，没有单独的结果生成实验。
 
-### 8.1 AlphaRAD／RSNA、ChestXDet10
+### 7.1 AlphaRAD／RSNA、ChestXDet10
 
 ```bash
 bash experiments/query_path_intervention_20261024/run.sh \
@@ -389,7 +373,7 @@ CUDA_VISIBLE_DEVICES='' python experiments/query_path_intervention_20261024/eval
 
 四个路径为 Original `(q,q)`、R `(q,q')`、A `(q',q)`、Q `(q',q')`。结果位于运行目录的 **`evaluation/`** 子目录；Q−R 只改变聚合查询。
 
-### 8.2 SIIM 新留出集
+### 7.2 SIIM 新留出集
 
 ```bash
 python experiments/query_path_intervention_20261024/run_siim.py \
@@ -401,7 +385,7 @@ CUDA_VISIBLE_DEVICES='' python experiments/query_path_intervention_20261024/eval
   --protocol experiments/query_path_intervention_20261024/protocol_siim_v1/catalog.json
 ```
 
-### 8.3 六模型心脏路径
+### 7.3 六模型心脏路径
 
 ```bash
 bash experiments/query_path_multibackbone_20261025/run.sh "$REPRO_RUN/cardiac_paths"
@@ -415,7 +399,7 @@ CUDA_VISIBLE_DEVICES='' python experiments/query_path_multibackbone_20261025/sum
 
 AlphaRAD／RadZero 比较 Q−R；CARZero／MedKLIP／MAVL／KAD 比较 Q−F。F 固定原始视觉 cross-attention 更新，不能统一解释为六模型 Q−R。全部单原图视图，保留负向和区间跨零结果。
 
-## 9. 验证集选阈值的分割实验
+## 8. 验证集选阈值的分割实验
 
 对应附录 D.5：
 
@@ -438,7 +422,7 @@ CUDA_VISIBLE_DEVICES='' bash AlphaRAD/local_setup/python_local.sh \
 
 应复现的显示值：Original／Q／V／Q+V 阈值为 0.64／0.63／0.64／0.64，Dice 为 52.34／53.81／52.59／54.51%。这是阳性图像上的 Dice；不能与附录 A 历史测试集选阈值 Dice 混合。
 
-## 10. 固定网格敏感性分析
+## 9. 固定网格敏感性分析
 
 对应附录 D.7、D.8。5 模型 × 2 数据集 × 9 个预设切片，共 90 个模型—数据集—配置组合；不是完整笛卡尔网格。
 
@@ -473,9 +457,9 @@ experiments/sensitivity_grid/campaign_20261108_v3/sensitivity_grid_summary_corre
 
 本包数值核验工具从这个修正后的 90 行网格计算均值；旧 `sensitivity_parameter_summary.csv` 部分值已过时。新运行汇总时，先把 CheXchoNet 三任务在每个模型／参数切片内平均，再跨十个模型—数据集设置平均；不能直接将三任务当作三个独立数据集。该分析不重新选择正文的 η=0.3 和 crop=0.8。
 
-## 11. 从结果到论文表格
+## 10. 从结果到论文表格
 
-### 11.1 已归档结果的原始重建链
+### 10.1 已归档结果的原始重建链
 
 下面命令只适用于**恢复完整历史资产**的工作区，并将更新该工作副本的汇总／表格文件。不要在唯一的原始档案上运行。
 
@@ -496,7 +480,7 @@ bash experiments/fewshot_neighbors_20261025/run.sh "$REPRO_RUN/fewshot_neighbors
 
 它不是当前论文新增一组活跃表格，仍需要把新目录接入汇总器才能被读取。
 
-### 11.2 接入新运行结果
+### 10.2 接入新运行结果
 
 **上述旧生成器固定读取历史路径，运行完 `$REPRO_RUN` 并不会自动更新论文。** 修改新工作副本中的以下来源配置，并生成新的审计记录：
 
@@ -515,7 +499,7 @@ bash experiments/fewshot_neighbors_20261025/run.sh "$REPRO_RUN/fewshot_neighbors
 
 逐表映射见 [TABLE_INDEX.csv](TABLE_INDEX.csv)。B.7、D.2–D.4、D.6 是接口／支持来源／提示／开发范围说明，不对应独立训练指标，需要核对源码和协议文本。
 
-### 11.3 指标与预期计数
+### 10.3 指标与预期计数
 
 - 固定支持：**138 项完成评价 = 120 分类 + 12 定位 + 6 分割**，四分支／指标共 1,032 个数值。分类 Q+V 相对 Original 的双升／双降／混合计数为 95／15／10。
 - 分类使用 AUROC 和 **PR 曲线梯形积分 AUPRC**，不能用 average precision 替换；多标签先按有效类别宏平均。
@@ -524,7 +508,7 @@ bash experiments/fewshot_neighbors_20261025/run.sh "$REPRO_RUN/fewshot_neighbors
 - 配对 bootstrap 通常为 2,000 次、seed=20261024；RSNA／CheXchoNet 按患者，ChestXDet10 按图像／精确重复组，SIIM 按其协议标识组。区间条件于已固定支持集合，未做多重比较校正。
 - 模型原生分数域、checkpoint、负查询、query 范数策略、TF32／精度配置和预处理必须保留；显示两位小数一致不等于逐图预测一致。
 
-### 11.4 编译论文
+### 10.4 编译论文
 
 需要完整 LaTeX 工程（包括模板、bibliography、图片等）。本包选取的源码不是完整可编译稿件；恢复原 `latex_ours/` 后：
 
@@ -537,7 +521,7 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 
 优先编译合并稿以生成完整表号，再编译独立附录和正文。表号由交叉引用管理，不手工更改。
 
-## 12. 日志、来源和发布范围
+## 11. 日志、来源和发布范围
 
 每次保留：命令／环境、运行状态、协议与源码哈希、支持种子、查询拟合、逐图预测、每类／每种子指标、bootstrap 配对结果，以及 `RESULTS.json`／CSV。不同批次日志位置见 [TABLE_LOG_INDEX.csv](TABLE_LOG_INDEX.csv)。
 
