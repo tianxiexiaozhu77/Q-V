@@ -1,0 +1,235 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/montgomery 8/128
+CARZero/montgomery 48/128
+CARZero/montgomery 80/128
+CARZero/montgomery 112/128
+CARZero/montgomery 128/128
+COMPLETE CARZero montgomery {"macro_auroc": 3.018867924528301, "macro_auprc": 2.8906196943443208}
+UNSUPPORTED chestxdet10_gt No verified native grounding implementation
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/chestxdet10 8/492
+CARZero/chestxdet10 280/492
+CARZero/chestxdet10 424/492
+CARZero/chestxdet10 492/492
+COMPLETE CARZero chestxdet10 {"macro_auroc": 0.036320931807498624, "macro_auprc": 0.35092174254603425}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/chexpert 8/596
+CARZero/chexpert 72/596
+CARZero/chexpert 152/596
+CARZero/chexpert 248/596
+CARZero/chexpert 368/596
+CARZero/chexpert 480/596
+CARZero/chexpert 584/596
+CARZero/chexpert 596/596
+COMPLETE CARZero chexpert {"macro_auroc": 1.8541610210284776, "macro_auprc": 0.9110867784502652}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/shenzhenxray 8/652
+CARZero/shenzhenxray 72/652
+CARZero/shenzhenxray 152/652
+CARZero/shenzhenxray 232/652
+CARZero/shenzhenxray 304/652
+CARZero/shenzhenxray 368/652
+CARZero/shenzhenxray 440/652
+CARZero/shenzhenxray 520/652
+CARZero/shenzhenxray 600/652
+CARZero/shenzhenxray 652/652
+COMPLETE CARZero shenzhenxray {"macro_auroc": 2.5562112356589783, "macro_auprc": 1.726944774179695}
+UNSUPPORTED node21 No verified native grounding implementation
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/covidkaggle 8/1381
+CARZero/covidkaggle 576/1381
+CARZero/covidkaggle 1152/1381
+CARZero/covidkaggle 1381/1381
+COMPLETE CARZero covidkaggle {"macro_auroc": 0.4033854011353477, "macro_auprc": -1.5588836864039113}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/siim_radzero_holdout 8/1694
+CARZero/siim_radzero_holdout 488/1694
+CARZero/siim_radzero_holdout 1024/1694
+CARZero/siim_radzero_holdout 1568/1694
+CARZero/siim_radzero_holdout 1694/1694
+COMPLETE CARZero siim_radzero_holdout {"macro_auroc": 0.038600217370809986, "macro_auprc": -0.6993041235339281}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/siim_pneumothorax 8/1704
+CARZero/siim_pneumothorax 560/1704
+CARZero/siim_pneumothorax 1032/1704
+CARZero/siim_pneumothorax 1592/1704
+CARZero/siim_pneumothorax 1704/1704
+COMPLETE CARZero siim_pneumothorax {"macro_auroc": 0.06518676358233666, "macro_auprc": -0.591861617711853}
+UNSUPPORTED qatacovid_seg No verified native grounding implementation
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/rsna_pneumonia 8/5327
+CARZero/rsna_pneumonia 544/5327
+CARZero/rsna_pneumonia 1088/5327
+CARZero/rsna_pneumonia 1552/5327
+CARZero/rsna_pneumonia 2080/5327
+CARZero/rsna_pneumonia 2624/5327
+CARZero/rsna_pneumonia 3160/5327
+CARZero/rsna_pneumonia 3624/5327
+CARZero/rsna_pneumonia 4168/5327
+CARZero/rsna_pneumonia 4720/5327
+CARZero/rsna_pneumonia 5256/5327
+CARZero/rsna_pneumonia 5327/5327
+COMPLETE CARZero rsna_pneumonia {"macro_auroc": -0.4221304527479597, "macro_auprc": -0.06728331288268774}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/openi 8/7294
+CARZero/openi 136/7294
+CARZero/openi 280/7294
+CARZero/openi 424/7294
+CARZero/openi 544/7294
+CARZero/openi 688/7294
+CARZero/openi 832/7294
+CARZero/openi 976/7294
+CARZero/openi 1096/7294
+CARZero/openi 1240/7294
+CARZero/openi 1384/7294
+CARZero/openi 1528/7294
+CARZero/openi 1656/7294
+CARZero/openi 1800/7294
+CARZero/openi 1944/7294
+CARZero/openi 2080/7294
+CARZero/openi 2184/7294
+CARZero/openi 2328/7294
+CARZero/openi 2464/7294
+CARZero/openi 2600/7294
+CARZero/openi 2720/7294
+CARZero/openi 2856/7294
+CARZero/openi 3000/7294
+CARZero/openi 3144/7294
+CARZero/openi 3272/7294
+CARZero/openi 3416/7294
+CARZero/openi 3560/7294
+CARZero/openi 3704/7294
+CARZero/openi 3824/7294
+CARZero/openi 3968/7294
+CARZero/openi 4112/7294
+CARZero/openi 4256/7294
+CARZero/openi 4384/7294
+CARZero/openi 4528/7294
+CARZero/openi 4672/7294
+CARZero/openi 4808/7294
+CARZero/openi 4936/7294
+CARZero/openi 5080/7294
+CARZero/openi 5216/7294
+CARZero/openi 5360/7294
+CARZero/openi 5488/7294
+CARZero/openi 5624/7294
+CARZero/openi 5760/7294
+CARZero/openi 5896/7294
+CARZero/openi 5992/7294
+CARZero/openi 6112/7294
+CARZero/openi 6224/7294
+CARZero/openi 6344/7294
+CARZero/openi 6456/7294
+CARZero/openi 6584/7294
+CARZero/openi 6712/7294
+CARZero/openi 6840/7294
+CARZero/openi 6952/7294
+CARZero/openi 7080/7294
+CARZero/openi 7200/7294
+CARZero/openi 7294/7294
+COMPLETE CARZero openi {"macro_auroc": 0.3269046038064771, "macro_auprc": 0.24713806602410515}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+CARZero/chest14 8/21101
+CARZero/chest14 208/21101
+CARZero/chest14 464/21101
+CARZero/chest14 696/21101
+CARZero/chest14 936/21101
+CARZero/chest14 1136/21101
+CARZero/chest14 1384/21101
+CARZero/chest14 1616/21101
+CARZero/chest14 1840/21101
+CARZero/chest14 2040/21101
+CARZero/chest14 2280/21101
+CARZero/chest14 2384/21101
+CARZero/chest14 2464/21101
+CARZero/chest14 2528/21101
+CARZero/chest14 2624/21101
+CARZero/chest14 2792/21101
+CARZero/chest14 2960/21101
+CARZero/chest14 3144/21101
+CARZero/chest14 3392/21101
+CARZero/chest14 3632/21101
+CARZero/chest14 3856/21101
+CARZero/chest14 4072/21101
+CARZero/chest14 4280/21101
+CARZero/chest14 4536/21101
+CARZero/chest14 4784/21101
+CARZero/chest14 4976/21101
+CARZero/chest14 5224/21101
+CARZero/chest14 5464/21101
+CARZero/chest14 5680/21101
+CARZero/chest14 5904/21101
+CARZero/chest14 6184/21101
+CARZero/chest14 6456/21101
+CARZero/chest14 6736/21101
+CARZero/chest14 7016/21101
+CARZero/chest14 7168/21101
+CARZero/chest14 7248/21101
+CARZero/chest14 7368/21101
+CARZero/chest14 7600/21101
+CARZero/chest14 7848/21101
+CARZero/chest14 8120/21101
+CARZero/chest14 8416/21101
+CARZero/chest14 8688/21101
+CARZero/chest14 9008/21101
+CARZero/chest14 9320/21101
+CARZero/chest14 9616/21101
+CARZero/chest14 9920/21101
+CARZero/chest14 10224/21101
+CARZero/chest14 10536/21101
+CARZero/chest14 10848/21101
+CARZero/chest14 11120/21101
+CARZero/chest14 11432/21101
+CARZero/chest14 11744/21101
+CARZero/chest14 12040/21101
+CARZero/chest14 12312/21101
+CARZero/chest14 12624/21101
+CARZero/chest14 12888/21101
+CARZero/chest14 13176/21101
+CARZero/chest14 13440/21101
+CARZero/chest14 13736/21101
+CARZero/chest14 14032/21101
+CARZero/chest14 14328/21101
+CARZero/chest14 14616/21101
+CARZero/chest14 14912/21101
+CARZero/chest14 15216/21101
+CARZero/chest14 15528/21101
+CARZero/chest14 15800/21101
+CARZero/chest14 16112/21101
+CARZero/chest14 16408/21101
+CARZero/chest14 16688/21101
+CARZero/chest14 16960/21101
+CARZero/chest14 17256/21101
+CARZero/chest14 17536/21101
+CARZero/chest14 17848/21101
+CARZero/chest14 18128/21101
+CARZero/chest14 18432/21101
+CARZero/chest14 18712/21101
+CARZero/chest14 19024/21101
+CARZero/chest14 19296/21101
+CARZero/chest14 19592/21101
+CARZero/chest14 19896/21101
+CARZero/chest14 20200/21101
+CARZero/chest14 20496/21101
+CARZero/chest14 20768/21101
+CARZero/chest14 21056/21101
+CARZero/chest14 21101/21101
+COMPLETE CARZero chest14 {"macro_auroc": -0.11341235041295583, "macro_auprc": 0.1320444487168393}

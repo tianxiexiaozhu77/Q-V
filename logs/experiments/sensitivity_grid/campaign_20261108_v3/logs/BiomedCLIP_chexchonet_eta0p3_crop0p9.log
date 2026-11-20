@@ -1,0 +1,14 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"status": "running", "model": "BiomedCLIP", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.7270247936248779, "updated_at": "2026-11-08T15:09:39.536644+00:00"}
+{"status": "running", "model": "BiomedCLIP", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 1792, "total": 7407, "elapsed_seconds": 16.10900616645813, "updated_at": "2026-11-08T15:09:54.918659+00:00"}
+{"status": "running", "model": "BiomedCLIP", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 3720, "total": 7407, "elapsed_seconds": 31.164371490478516, "updated_at": "2026-11-08T15:10:09.974022+00:00"}
+{"status": "running", "model": "BiomedCLIP", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 5648, "total": 7407, "elapsed_seconds": 46.2308189868927, "updated_at": "2026-11-08T15:10:25.040445+00:00"}
+{"status": "running", "model": "BiomedCLIP", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 60.135762214660645, "updated_at": "2026-11-08T15:10:38.945394+00:00"}
+COMPLETE BiomedCLIP chexchonet_slvh {"macro_auroc": 1.5663257939086406, "macro_auprc": 0.3973831071077738, "macro_average_precision": 0.3883551436005314}
+COMPLETE BiomedCLIP chexchonet_dlv {"macro_auroc": 15.879148425679723, "macro_auprc": 6.605097249443179, "macro_average_precision": 6.8137260240262965}
+COMPLETE BiomedCLIP chexchonet_composite_slvh_dlv {"macro_auroc": 2.968840983571641, "macro_auprc": 1.8731161097951836, "macro_average_precision": 1.8645204782669982}

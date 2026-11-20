@@ -1,0 +1,15 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+RSNA: 16/5327, 8 candidates
+RSNA: 528/5327, 8 candidates
+RSNA: 1040/5327, 8 candidates
+RSNA: 1552/5327, 8 candidates
+RSNA: 2064/5327, 8 candidates
+RSNA: 2576/5327, 8 candidates
+RSNA: 3088/5327, 8 candidates
+RSNA: 3600/5327, 8 candidates
+RSNA: 4112/5327, 8 candidates
+RSNA: 4624/5327, 8 candidates
+RSNA: 5136/5327, 8 candidates
+RSNA: 5327/5327, 8 candidates
+{"dataset": "RSNA", "status": "complete", "rows": 5327, "candidates": {"original": {"macro_auroc": 0.8337270318591214, "macro_auprc": 0.5850121866796125, "macro_average_precision": 0.5855472155292745}, "uniform_eta03": {"macro_auroc": 0.8788545416872233, "macro_auprc": 0.6909255388850193, "macro_average_precision": 0.6911797472459068}, "tta_flip_original": {"macro_auroc": 0.8380480301514022, "macro_auprc": 0.5993416348098493, "macro_average_precision": 0.599759881033157}, "tta_flip_refined": {"macro_auroc": 0.8799218160416586, "macro_auprc": 0.6941995448281181, "macro_average_precision": 0.6944386588411661}, "tta_center_original": {"macro_auroc": 0.8333929826009834, "macro_auprc": 0.5839590484172912, "macro_average_precision": 0.5844815003072553}, "tta_center_refined": {"macro_auroc": 0.8786126715884994, "macro_auprc": 0.6912834187163327, "macro_average_precision": 0.691562899232766}, "tta_fivecrop_original": {"macro_auroc": 0.8358449482414021, "macro_auprc": 0.587621796009667, "macro_average_precision": 0.5881681598094058}, "tta_fivecrop_refined": {"macro_auroc": 0.8790310848164493, "macro_auprc": 0.6934955655795937, "macro_average_precision": 0.6937860571927102}}}

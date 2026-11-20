@@ -1,0 +1,14 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Setting positive classification head weights...
+Setting negative classification head weights...
+Weights have been set.
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.500838041305542, "updated_at": "2026-10-23T16:09:20.601271+00:00"}
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 1888, "total": 7407, "elapsed_seconds": 15.561920404434204, "updated_at": "2026-10-23T16:09:35.662356+00:00"}
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 3480, "total": 7407, "elapsed_seconds": 30.660544395446777, "updated_at": "2026-10-23T16:09:50.760966+00:00"}
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 5296, "total": 7407, "elapsed_seconds": 45.73317909240723, "updated_at": "2026-10-23T16:10:05.833614+00:00"}
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 7064, "total": 7407, "elapsed_seconds": 60.78133749961853, "updated_at": "2026-10-23T16:10:20.881772+00:00"}
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 63.69698786735535, "updated_at": "2026-10-23T16:10:23.797409+00:00"}
+COMPLETE MaCo chexchonet_slvh {"macro_auroc": 4.702999783409156, "macro_auprc": 2.8425336040639446, "macro_average_precision": 2.785777577983095}
+COMPLETE MaCo chexchonet_dlv {"macro_auroc": 0.5045031737079153, "macro_auprc": 10.230470243459026, "macro_average_precision": 8.633617329918037}
+COMPLETE MaCo chexchonet_composite_slvh_dlv {"macro_auroc": 0.7961211672625645, "macro_auprc": 5.627652695978011, "macro_average_precision": 5.580674115204268}

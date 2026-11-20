@@ -1,0 +1,17 @@
+% Load after hyperref in each entry point. The combined copy owns all labels;
+% standalone PDFs import only the labels needed from the other document.
+\newcommand{\mainref}[1]{\ref{#1}}
+\newcommand{\suppref}[1]{\ref{#1}}
+\ifdefined\includesupplement
+  % Both destinations are inside this PDF.
+\else
+  \ifdefined\standalonesupplement
+    % Import numbers from the independent combined build. The supplement
+    % package omits the main PDF, so these references have no external links.
+    \externaldocument[main-][nocite]{build/main_with_supplement}
+    \renewcommand{\mainref}[1]{\ref*{main-#1}}
+  \else
+    \externaldocument[supp-][nocite]{build/supplementary}[supplementary.pdf]
+    \renewcommand{\suppref}[1]{\ref{supp-#1}}
+  \fi
+\fi

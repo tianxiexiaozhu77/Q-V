@@ -1,0 +1,41 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / ChestXDet10 (classification): all prespecified method contrasts.} Mean differences and conditional paired 95\% intervals (pp). Cross-view comparisons do not have a matched view budget.}
+\label{tab:supp-oldci-alpharad-chestxdet10}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+Positive-support-only adaptation $-$ Original & $+0.74\;[+0.34,+1.12]$ & $+2.21\;[+1.00,+3.65]$ \\
+Q $-$ Original & $+1.72\;[+1.04,+2.43]$ & $+4.85\;[+3.09,+6.61]$ \\
+V $-$ Original & $+0.41\;[-0.01,+0.85]$ & $+1.24\;[-0.01,+2.46]$ \\
+Q+V $-$ Original & $+2.13\;[+1.29,+3.01]$ & $+5.42\;[+3.37,+7.27]$ \\
+Prototype $-$ Original & $-8.31\;[-10.40,-6.22]$ & $-9.79\;[-13.79,-5.79]$ \\
+Prototype mix $-$ Original & $+0.23\;[+0.09,+0.38]$ & $+1.02\;[+0.55,+1.67]$ \\
+Tip-Adapter $-$ Original & $-0.22\;[-0.47,+0.04]$ & $-0.06\;[-0.68,+0.59]$ \\
+GDA $-$ Original & $+0.11\;[-0.46,+0.65]$ & $+2.15\;[+0.65,+3.51]$ \\
+Score S $-$ Original & $+1.02\;[+0.44,+1.61]$ & $+4.34\;[+2.80,+5.64]$ \\
+SimNL $-$ Original & $-6.68\;[-8.46,-5.03]$ & $-8.30\;[-11.87,-4.58]$ \\
+Q $-$ Positive-support-only adaptation & $+0.98\;[+0.43,+1.53]$ & $+2.65\;[+1.36,+3.86]$ \\
+Q $-$ V & $+1.31\;[+0.54,+2.08]$ & $+3.62\;[+1.68,+5.58]$ \\
+Q $-$ Q+V & $-0.41\;[-0.86,+0.01]$ & $-0.57\;[-1.38,+0.36]$ \\
+Q $-$ Prototype & $+10.03\;[+8.27,+11.67]$ & $+14.64\;[+10.93,+18.24]$ \\
+Q $-$ Prototype mix & $+1.49\;[+0.89,+2.10]$ & $+3.83\;[+2.27,+5.40]$ \\
+Q $-$ Tip-Adapter & $+1.94\;[+1.30,+2.60]$ & $+4.91\;[+3.16,+6.55]$ \\
+Q $-$ GDA & $+1.61\;[+1.14,+2.12]$ & $+2.70\;[+1.48,+4.11]$ \\
+Q $-$ Score S & $+0.70\;[+0.44,+0.98]$ & $+0.51\;[-0.14,+1.39]$ \\
+Q $-$ SimNL & $+8.41\;[+6.77,+10.14]$ & $+13.15\;[+9.75,+16.53]$ \\
+Q+V $-$ Positive-support-only adaptation & $+1.39\;[+0.69,+2.13]$ & $+3.22\;[+1.56,+4.69]$ \\
+Q+V $-$ Q & $+0.41\;[-0.01,+0.86]$ & $+0.57\;[-0.36,+1.38]$ \\
+Q+V $-$ V & $+1.72\;[+1.04,+2.42]$ & $+4.19\;[+2.36,+5.98]$ \\
+Q+V $-$ Prototype & $+10.44\;[+8.80,+12.05]$ & $+15.21\;[+11.42,+18.71]$ \\
+Q+V $-$ Prototype mix & $+1.90\;[+1.14,+2.71]$ & $+4.40\;[+2.56,+6.14]$ \\
+Q+V $-$ Tip-Adapter & $+2.35\;[+1.55,+3.20]$ & $+5.48\;[+3.59,+7.28]$ \\
+Q+V $-$ GDA & $+2.02\;[+1.43,+2.66]$ & $+3.27\;[+1.85,+4.79]$ \\
+Q+V $-$ Score S & $+1.11\;[+0.63,+1.66]$ & $+1.08\;[+0.07,+2.21]$ \\
+Q+V $-$ SimNL & $+8.81\;[+7.19,+10.49]$ & $+13.72\;[+10.31,+17.00]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

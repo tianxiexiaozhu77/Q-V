@@ -1,0 +1,5 @@
+xFormers is not available (Attention)
+Device: cuda
+CheXchoNet support:   0%|          | 0/4 [00:00<?, ?it/s]CheXchoNet support:  25%|██▌       | 1/4 [00:03<00:11,  3.74s/it]CheXchoNet support:  50%|█████     | 2/4 [00:03<00:03,  1.65s/it]CheXchoNet support:  75%|███████▌  | 3/4 [00:04<00:00,  1.02it/s]CheXchoNet support: 100%|██████████| 4/4 [00:04<00:00,  1.54it/s]CheXchoNet support: 100%|██████████| 4/4 [00:04<00:00,  1.08s/it]
+AlphaRAD CheXchoNet paired-four-arm:   0%|          | 0/926 [00:00<?, ?it/s]AlphaRAD CheXchoNet paired-four-arm:   0%|          | 0/926 [00:01<?, ?it/s]
+{"status": "smoke_complete", "rows": 8, "delta_pp": {"slvh": {"auroc": null, "auprc": null, "average_precision": null}, "dlv": {"auroc": null, "auprc": null, "average_precision": null}, "composite_slvh_dlv": {"auroc": null, "auprc": null, "average_precision": null}}}

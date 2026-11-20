@@ -1,0 +1,24 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{BiomedCLIP / ChestXDet10 (classification): original 11-method/branch comparison.} Mean $\pm$ sample SD over support seeds 42--46. Scores are percentages. V and Q+V use two views; other rows use one.}
+\label{tab:supp-oldmeans-biomedclip-chestxdet10}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Method & AUROC & AUPRC \\
+\midrule
+Original & $60.53\pm0.00$ & $23.69\pm0.00$ \\
+Prototype & $67.11\pm1.28$ & $28.18\pm0.82$ \\
+Prototype mix & $64.51\pm3.75$ & $26.21\pm2.51$ \\
+Tip-Adapter & $61.82\pm1.27$ & $24.08\pm0.36$ \\
+GDA & $64.14\pm3.64$ & $26.72\pm3.09$ \\
+SimNL & $67.19\pm1.56$ & $28.33\pm1.21$ \\
+Positive-support-only adaptation & $61.84\pm1.19$ & $23.79\pm0.37$ \\
+Score S & $65.15\pm3.45$ & $26.54\pm2.36$ \\
+Q & $67.44\pm1.43$ & $27.77\pm0.87$ \\
+V & $60.89\pm0.00$ & $24.40\pm0.00$ \\
+Q+V & $67.77\pm1.42$ & $28.45\pm1.03$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

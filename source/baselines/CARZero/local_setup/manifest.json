@@ -1,0 +1,116 @@
+{
+  "name": "CARZero",
+  "official_repository": "https://github.com/laihaoran/CARZero",
+  "commit": "fa4e09cdfe7801e36e83d96815e3fcf66ffdd13d",
+  "checkpoint_url": "https://drive.google.com/file/d/1kYF-k5otW5DHwz1En5d_ScV3zu2E27Ch/view",
+  "checkpoint_local_path": "baselines/CARZero/pretrain_model/CARZero_best_model.ckpt",
+  "checkpoint_sha256": "d9257c4865898becf3b2ff9ea4bdc4c5ec57da28bc99f4a714812cc589052b33",
+  "checkpoint_status": "downloaded",
+  "environment": "baselines/CARZero/.venv",
+  "environment_status": "validated_cpu",
+  "python": "3.10.12",
+  "classification_adapter": "baselines/CARZero/local_setup/adapter.py",
+  "API": "create_adapter(device).predict(image_paths,class_names) -> np.ndarray[N,C] native scores",
+  "supported_tasks": [
+    "classification"
+  ],
+  "grounding_note": "Official release offers classification. Cross attention alone is not assumed to be a validated grounding/segmentation implementation.",
+  "prompt_protocol": "AlphaRAD common prompt There is [disease].; author prompt JSON archive saved locally.",
+  "training_required": false,
+  "smoke_test_status": "passed",
+  "created_local_date": "2026-10-22",
+  "dependency_lock_source": "local_setup/requirements_eval.txt",
+  "torch": "2.2.2+cu121",
+  "torchvision": "0.17.2",
+  "environment_consistency": "uv pip check passed",
+  "environment_freeze": "local_setup/environment_freeze.txt",
+  "adapter_status": "CPU author-score parity, batch-single parity, complete strict state-key coverage passed",
+  "text_encoder_assets": {
+    "repo": "https://huggingface.co/Laihaoran/BioClinicalMPBERT",
+    "commit": "2adba20d38398369a0ed9c746e3a06e8ecf44726",
+    "files": {
+      "vocab.txt": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02",
+      "config.json": "f44e51eebbba9d12411d9e7de40e432c3dd80789c6b67e553b3e00a0fc8d6fd5"
+    },
+    "weight_source": "All inference parameters loaded strictly from the full official CARZero checkpoint; base initialization is skipped because overwritten."
+  },
+  "launcher": "baselines/CARZero/local_setup/python_local.sh",
+  "launcher_sha256": "6d06ce8b770b9f8ca36d439a96d4856d5ab5c566f709a28cd5f3f002c08963cf",
+  "evaluation_worker": "baselines/local_setup/evaluate_baseline_buffered.py (same calculations; progress writes throttled)",
+  "metadata": {
+    "model": "CARZero",
+    "checkpoint": "baselines/CARZero/pretrain_model/CARZero_best_model.ckpt",
+    "score_kind": "author bidirectional image-to-text/text-to-image fusion logits arithmetic mean",
+    "prompts": "AlphaRAD common prompt: There is [disease].",
+    "native_prompt_archive": "baselines/CARZero/local_assets/author_prompts",
+    "preprocess": "official process_img: OpenCV grayscale, long-side resize with zero padding; checkpoint test CenterCrop/normalization",
+    "checkpoint_image_size": 256,
+    "checkpoint_transforms": {
+      "norm": "CXR_MAE",
+      "random_crop": {
+        "crop_size": 224
+      },
+      "random_horizontal_flip": 0.3,
+      "random_affine": {
+        "degrees": 30,
+        "translate": [
+          0.1,
+          0.1
+        ],
+        "scale": [
+          0.9,
+          1.1
+        ]
+      },
+      "color_jitter": {
+        "bightness": [
+          0.8,
+          1.2
+        ],
+        "contrast": [
+          0.8,
+          1.2
+        ]
+      }
+    },
+    "original_text_encoder": "Laihaoran/BioClinicalMPBERT",
+    "bert_initialization": "local config then complete strict checkpoint load; no randomly initialized inference weights",
+    "vision_initialization": "skip redundant M3AE initializer; complete strict CARZero checkpoint supplies all vision parameters",
+    "supported_tasks": [
+      "classification"
+    ],
+    "native_score_parity": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "batch_size": 2
+    },
+    "protocol_note": "No gradient updates, no additional sigmoid/temperature/feature normalization. Label names replace underscores with spaces.",
+    "checkpoint_key_coverage": {
+      "strict": true,
+      "model_state_keys": 434,
+      "loaded_state_keys": 434,
+      "checkpoint_state_keys": 434,
+      "missing_keys": [],
+      "unexpected_keys": [],
+      "loaded_numel": 220771842,
+      "model_numel": 220771842
+    },
+    "last_prompts": {
+      "Atelectasis": [
+        "There is Atelectasis."
+      ],
+      "Pneumothorax": [
+        "There is Pneumothorax."
+      ]
+    },
+    "batch_single_parity": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "batch_size": 2,
+      "atol": 1e-05,
+      "rtol": 1e-05,
+      "note": "Native per-image fusion; only floating-point image-encoder batching variation permitted."
+    }
+  },
+  "validation_path": "baselines/CARZero/local_setup/validation.json"
+}

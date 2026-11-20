@@ -1,0 +1,246 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+RadZero slvh,dlv,composite_slvh_dlv: 8/8 (3.03 images/s)
+{
+  "status": "complete",
+  "model": "RadZero",
+  "tasks": [
+    "slvh",
+    "dlv",
+    "composite_slvh_dlv"
+  ],
+  "mode": "paired-four-arm",
+  "is_smoke": true,
+  "full_count": 8,
+  "paired_count": 8,
+  "baseline_full": null,
+  "baseline_paired": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 8,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      },
+      "dlv": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      },
+      "composite_slvh_dlv": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "macro_auroc": null,
+    "macro_auprc": null,
+    "micro_auroc": null,
+    "micro_auprc": null,
+    "macro_auroc_defined_classes": 0,
+    "macro_auprc_defined_classes": 0,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "ours_paired": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 8,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      },
+      "dlv": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      },
+      "composite_slvh_dlv": {
+        "positives": 0,
+        "negatives": 8,
+        "auroc": null,
+        "auprc": null
+      }
+    },
+    "macro_auroc": null,
+    "macro_auprc": null,
+    "micro_auroc": null,
+    "micro_auprc": null,
+    "macro_auroc_defined_classes": 0,
+    "macro_auprc_defined_classes": 0,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "eta": 0.3,
+  "delta_pp": {
+    "slvh": {
+      "auroc": null,
+      "auprc": null
+    },
+    "dlv": {
+      "auroc": null,
+      "auprc": null
+    },
+    "composite_slvh_dlv": {
+      "auroc": null,
+      "auprc": null
+    }
+  },
+  "elapsed_seconds": 33.280161335133016,
+  "completed_at": "2026-10-23T15:40:07.295869+00:00",
+  "arms": {
+    "original": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 8,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "composite_slvh_dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        }
+      },
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "micro_auroc": null,
+      "micro_auprc": null,
+      "macro_auroc_defined_classes": 0,
+      "macro_auprc_defined_classes": 0,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "query_only": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 8,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "composite_slvh_dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        }
+      },
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "micro_auroc": null,
+      "micro_auprc": null,
+      "macro_auroc_defined_classes": 0,
+      "macro_auprc_defined_classes": 0,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "tta_center_original": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 8,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "composite_slvh_dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        }
+      },
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "micro_auroc": null,
+      "micro_auprc": null,
+      "macro_auroc_defined_classes": 0,
+      "macro_auprc_defined_classes": 0,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "tta_center_refined": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 8,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        },
+        "composite_slvh_dlv": {
+          "positives": 0,
+          "negatives": 8,
+          "auroc": null,
+          "auprc": null
+        }
+      },
+      "macro_auroc": null,
+      "macro_auprc": null,
+      "micro_auroc": null,
+      "micro_auprc": null,
+      "macro_auroc_defined_classes": 0,
+      "macro_auprc_defined_classes": 0,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    }
+  }
+}

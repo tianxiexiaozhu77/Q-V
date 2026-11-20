@@ -1,0 +1,8 @@
+xFormers is not available (Attention)
+{"status": "authenticating_inputs", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 0.007727384567260742, "smoke": 16}
+{"status": "loading_model", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 6.406021595001221, "smoke": 16}
+Device: cuda
+{"status": "support_fitted", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 15.362818479537964, "smoke": 16, "support_union_count": 233}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 17.032949924468994, "smoke": 16, "done": 8, "total": 16}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 17.22670578956604, "smoke": 16, "done": 16, "total": 16}
+{"status": "smoke_complete", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 20.02055835723877, "smoke": 16, "done": 16, "total": 16}

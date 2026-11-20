@@ -1,0 +1,39 @@
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 8, "total": 7407, "elapsed_seconds": 0.17186570167541504, "updated_at": "2026-10-23T16:13:06.540865+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 1312, "total": 7407, "elapsed_seconds": 15.247573137283325, "updated_at": "2026-10-23T16:13:21.616653+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 2576, "total": 7407, "elapsed_seconds": 30.288313388824463, "updated_at": "2026-10-23T16:13:36.657325+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 3840, "total": 7407, "elapsed_seconds": 45.33012247085571, "updated_at": "2026-10-23T16:13:51.699166+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 4952, "total": 7407, "elapsed_seconds": 60.45254135131836, "updated_at": "2026-10-23T16:14:06.821538+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 6216, "total": 7407, "elapsed_seconds": 75.52637577056885, "updated_at": "2026-10-23T16:14:21.895386+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_slvh"], "done": 7407, "total": 7407, "elapsed_seconds": 89.92646408081055, "updated_at": "2026-10-23T16:14:36.295472+00:00"}
+COMPLETE MAVL chexchonet_slvh {"macro_auroc": 0.9077219798467429, "macro_auprc": 1.3943288768757334, "macro_average_precision": 1.3964146784861602}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.1934192180633545, "updated_at": "2026-10-23T16:14:36.883075+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 1288, "total": 7407, "elapsed_seconds": 15.302839994430542, "updated_at": "2026-10-23T16:14:51.992532+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 2400, "total": 7407, "elapsed_seconds": 30.386866569519043, "updated_at": "2026-10-23T16:15:07.076546+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 3664, "total": 7407, "elapsed_seconds": 45.44665551185608, "updated_at": "2026-10-23T16:15:22.136312+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 4960, "total": 7407, "elapsed_seconds": 60.46650218963623, "updated_at": "2026-10-23T16:15:37.156181+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 6264, "total": 7407, "elapsed_seconds": 75.54659485816956, "updated_at": "2026-10-23T16:15:52.236287+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 7384, "total": 7407, "elapsed_seconds": 90.63173151016235, "updated_at": "2026-10-23T16:16:07.321396+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 90.9237368106842, "updated_at": "2026-10-23T16:16:07.613393+00:00"}
+COMPLETE MAVL chexchonet_dlv {"macro_auroc": 6.976248668296048, "macro_auprc": 1.6578860327074119, "macro_average_precision": 1.7133288416077475}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.17528963088989258, "updated_at": "2026-10-23T16:16:08.154526+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 1304, "total": 7407, "elapsed_seconds": 15.20109510421753, "updated_at": "2026-10-23T16:16:23.180365+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 2616, "total": 7407, "elapsed_seconds": 30.308475971221924, "updated_at": "2026-10-23T16:16:38.287742+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 3936, "total": 7407, "elapsed_seconds": 45.34259009361267, "updated_at": "2026-10-23T16:16:53.321853+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 5064, "total": 7407, "elapsed_seconds": 60.384905099868774, "updated_at": "2026-10-23T16:17:08.364198+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 6360, "total": 7407, "elapsed_seconds": 75.49216961860657, "updated_at": "2026-10-23T16:17:23.471489+00:00"}
+{"status": "running", "model": "MAVL", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 87.35226893424988, "updated_at": "2026-10-23T16:17:35.331584+00:00"}
+COMPLETE MAVL chexchonet_composite_slvh_dlv {"macro_auroc": 7.87795195222979, "macro_auprc": 3.004262596329166, "macro_average_precision": 2.987144188171542}

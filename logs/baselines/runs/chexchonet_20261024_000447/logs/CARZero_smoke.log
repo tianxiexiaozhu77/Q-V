@@ -1,0 +1,16 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 8, "total": 8, "elapsed_seconds": 0.3230478763580322, "updated_at": "2026-10-23T16:08:52.771227+00:00"}
+COMPLETE CARZero chexchonet_slvh {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 8, "total": 8, "elapsed_seconds": 0.24565720558166504, "updated_at": "2026-10-23T16:08:53.317701+00:00"}
+COMPLETE CARZero chexchonet_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 8, "total": 8, "elapsed_seconds": 0.24103569984436035, "updated_at": "2026-10-23T16:08:53.841513+00:00"}
+COMPLETE CARZero chexchonet_composite_slvh_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}

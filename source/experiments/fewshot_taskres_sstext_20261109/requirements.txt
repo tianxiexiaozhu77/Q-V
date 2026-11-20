@@ -1,0 +1,10 @@
+# The local venv reuses the already-installed PyTorch/CUDA stack.
+# Minimal solver + authenticated cached-feature experiment dependencies.
+numpy==1.26.4
+scikit-learn==1.5.1
+scipy==1.13.1
+torch==2.5.1
+omegaconf==2.3.0
+ftfy==6.3.1
+yacs==0.1.8
+pytest==7.4.4

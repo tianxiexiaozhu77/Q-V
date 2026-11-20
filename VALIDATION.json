@@ -1,0 +1,20 @@
+{
+  "active_tables": 51,
+  "main_tables": 4,
+  "supplement_tables": 47,
+  "manual_numeric_cells_verified": 227,
+  "generated_files_with_matching_snapshot": 9,
+  "additional_generated_files_without_snapshot": [
+    "latex_ours/sec/classification_comparison_zh.tex",
+    "latex_ours/sec/component_ablations_zh.tex",
+    "latex_ours/sec/supplement_tables/c_cardiac_ci.tex",
+    "latex_ours/sec/supplement_tables/c_cardiac_means.tex",
+    "latex_ours/sec/supplement_tables/c_cardiac_seeds.tex",
+    "latex_ours/sec/supplement_tables/c_development_seeds.tex"
+  ],
+  "source_manifest_files": 488,
+  "manifest_hashes_verified": true,
+  "full_inference_executed": false,
+  "portable_full_inference_validated": false,
+  "table_rebuild_python_standard_library_only": true
+}

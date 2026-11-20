@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Development scope and interpretation of fixed-support comparisons.} The development scope is defined by the model--dataset pair, while later evaluations on a development dataset can provide cross-backbone evidence.}
+\label{tab:supp-development-scope}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.29\textwidth}p{0.25\textwidth}p{0.36\textwidth}@{}}
+\toprule
+Model--dataset combination & In development scope? & Interpretation \\
+\midrule
+RadZero $\times$ ChestXDet10 & Yes & Development model--development dataset \\
+RadZero $\times$ ChestXray14 & Yes & Development model--development dataset \\
+RadZero $\times$ RSNA & Yes & Development model--development dataset \\
+RadZero $\times$ SIIM (1,694) & Yes & Development model--development dataset \\
+RadZero $\times$ OpenI & Yes, as development scope, but not in the current main evaluation & Development dataset excluded from the current main tables \\
+Other models $\times$ ChestXDet10, ChestXray14, RSNA, or SIIM & No, as the original development model--dataset pair & Cross-backbone transfer evidence \\
+All models $\times$ remaining datasets & No, outside the listed RadZero development scope & Cross-dataset generalization evidence \\
+\bottomrule
+\end{tabular*}
+\end{table*}

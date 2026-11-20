@@ -1,0 +1,33 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: Tensor.T is deprecated on 0-D tensors. This function is the identity in these cases. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3645.)
+  logits = logits.T
+siim_pneumothorax: 16/1704
+siim_pneumothorax: 128/1704
+siim_pneumothorax: 256/1704
+siim_pneumothorax: 384/1704
+siim_pneumothorax: 512/1704
+siim_pneumothorax: 640/1704
+siim_pneumothorax: 768/1704
+siim_pneumothorax: 896/1704
+siim_pneumothorax: 1024/1704
+siim_pneumothorax: 1152/1704
+siim_pneumothorax: 1280/1704
+siim_pneumothorax: 1408/1704
+siim_pneumothorax: 1536/1704
+siim_pneumothorax: 1664/1704
+siim_pneumothorax: 1704/1704
+{"dataset": "siim_pneumothorax", "status": "complete", "branches": {"original": {"macro_auroc": 0.9242957376267813, "macro_auprc": 0.7912227940286233}, "query_refined": {"macro_auroc": 0.9325404613540622, "macro_auprc": 0.8181333475997614}, "tta_center_original": {"macro_auroc": 0.9238471405440642, "macro_auprc": 0.7904973249398798}, "tta_center_refined": {"macro_auroc": 0.9316152298709584, "macro_auprc": 0.8126479912346958}}}
+covidkaggle: 16/1381
+covidkaggle: 128/1381
+covidkaggle: 256/1381
+covidkaggle: 384/1381
+covidkaggle: 512/1381
+covidkaggle: 640/1381
+covidkaggle: 768/1381
+covidkaggle: 896/1381
+covidkaggle: 1024/1381
+covidkaggle: 1152/1381
+covidkaggle: 1280/1381
+covidkaggle: 1381/1381
+{"dataset": "covidkaggle", "status": "complete", "branches": {"original": {"macro_auroc": 0.8383611925894199, "macro_auprc": 0.6982601435389696}, "query_refined": {"macro_auroc": 0.8868270810403441, "macro_auprc": 0.7969833639505528}, "tta_center_original": {"macro_auroc": 0.8377593675957904, "macro_auprc": 0.6920282539897584}, "tta_center_refined": {"macro_auroc": 0.8891232331556775, "macro_auprc": 0.7978022965315431}}}

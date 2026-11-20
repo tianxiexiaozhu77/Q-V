@@ -1,0 +1,24 @@
+{"status": "inputs_authenticated", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 0, "total": 0, "elapsed_seconds": 1.4485762119293213, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "loading", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 0, "total": 0, "elapsed_seconds": 3.2121031284332275, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 16, "total": 233, "elapsed_seconds": 9.372978687286377, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 32, "total": 233, "elapsed_seconds": 9.735120296478271, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 48, "total": 233, "elapsed_seconds": 10.135061025619507, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 64, "total": 233, "elapsed_seconds": 10.522605419158936, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 80, "total": 233, "elapsed_seconds": 10.947429418563843, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 96, "total": 233, "elapsed_seconds": 11.34106707572937, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 112, "total": 233, "elapsed_seconds": 11.732985734939575, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 128, "total": 233, "elapsed_seconds": 12.12111234664917, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 144, "total": 233, "elapsed_seconds": 12.520636320114136, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 160, "total": 233, "elapsed_seconds": 12.905234098434448, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 176, "total": 233, "elapsed_seconds": 13.321487665176392, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 192, "total": 233, "elapsed_seconds": 13.751909017562866, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 208, "total": 233, "elapsed_seconds": 14.144556760787964, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 224, "total": 233, "elapsed_seconds": 14.54902720451355, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 233, "total": 233, "elapsed_seconds": 14.768302917480469, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "complete", "model": "BiomedCLIP", "dataset": "chestxdet10", "done": 492, "total": 492, "elapsed_seconds": 17.228838443756104, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}

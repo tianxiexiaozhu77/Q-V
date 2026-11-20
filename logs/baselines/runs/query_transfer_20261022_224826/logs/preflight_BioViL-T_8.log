@@ -1,0 +1,38 @@
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Some weights of the model checkpoint at /storage/3090group2/zjx/code/medical/baselines/BioViL-T/checkpoints were not used when initializing CXRBertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing CXRBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CXRBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BertTokenizer'. 
+The class this function is called from is 'CXRBertTokenizer'.
+BioViL-T/montgomery 8/8
+COMPLETE BioViL-T montgomery {"macro_auroc": null, "macro_auprc": null}
+BioViL-T/chestxdet10_gt 8/8
+COMPLETE BioViL-T chestxdet10_gt {"pointing_game": -11.428571428571422}
+BioViL-T/chestxdet10 8/8
+COMPLETE BioViL-T chestxdet10 {"macro_auroc": 4.464285714285721, "macro_auprc": 1.6914682539682646}
+BioViL-T/chexpert 8/8
+COMPLETE BioViL-T chexpert {"macro_auroc": 1.8055555555555491, "macro_auprc": 3.9183201058201167}
+BioViL-T/shenzhenxray 8/8
+COMPLETE BioViL-T shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+BioViL-T/node21 8/8
+COMPLETE BioViL-T node21 {"pointing_game": 0.0}
+BioViL-T/covidkaggle 8/8
+COMPLETE BioViL-T covidkaggle {"macro_auroc": 26.66666666666667, "macro_auprc": 11.857142857142854}
+BioViL-T/siim_radzero_holdout 8/8
+COMPLETE BioViL-T siim_radzero_holdout {"macro_auroc": -26.66666666666667, "macro_auprc": -38.61111111111111}
+BioViL-T/siim_pneumothorax 8/8
+COMPLETE BioViL-T siim_pneumothorax {"macro_auroc": -6.666666666666665, "macro_auprc": -5.277777777777781}
+BioViL-T/qatacovid_seg 8/8
+COMPLETE BioViL-T qatacovid_seg {"dice": -0.01647287648340323}
+BioViL-T/rsna_pneumonia 8/8
+COMPLETE BioViL-T rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+BioViL-T/openi 8/8
+COMPLETE BioViL-T openi {"macro_auroc": 0.0, "macro_auprc": 0.0}
+BioViL-T/chest14 8/8
+COMPLETE BioViL-T chest14 {"macro_auroc": -7.539682539682547, "macro_auprc": -12.619047619047622}

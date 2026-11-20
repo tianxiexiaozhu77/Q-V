@@ -1,0 +1,32 @@
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 8, "total": 7407, "elapsed_seconds": 0.10377621650695801, "updated_at": "2026-11-08T15:18:16.357391+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 1800, "total": 7407, "elapsed_seconds": 15.147184610366821, "updated_at": "2026-11-08T15:18:31.400821+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 3656, "total": 7407, "elapsed_seconds": 30.205862522125244, "updated_at": "2026-11-08T15:18:46.459504+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 5456, "total": 7407, "elapsed_seconds": 45.266274213790894, "updated_at": "2026-11-08T15:19:01.519891+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 7104, "total": 7407, "elapsed_seconds": 60.292314291000366, "updated_at": "2026-11-08T15:19:16.545930+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_slvh"], "done": 7407, "total": 7407, "elapsed_seconds": 62.79550218582153, "updated_at": "2026-11-08T15:19:19.049104+00:00"}
+COMPLETE MedKLIP chexchonet_slvh {"macro_auroc": 0.05606866961643808, "macro_auprc": -0.02945023823272691, "macro_average_precision": -0.035147424998797916}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.10261273384094238, "updated_at": "2026-11-08T15:19:19.496824+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 1872, "total": 7407, "elapsed_seconds": 15.159547328948975, "updated_at": "2026-11-08T15:19:34.553789+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 3776, "total": 7407, "elapsed_seconds": 30.236574172973633, "updated_at": "2026-11-08T15:19:49.630820+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 5648, "total": 7407, "elapsed_seconds": 45.262489795684814, "updated_at": "2026-11-08T15:20:04.656734+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 7288, "total": 7407, "elapsed_seconds": 60.302189111709595, "updated_at": "2026-11-08T15:20:19.696421+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 61.24644875526428, "updated_at": "2026-11-08T15:20:20.640661+00:00"}
+COMPLETE MedKLIP chexchonet_dlv {"macro_auroc": 0.36325302822766137, "macro_auprc": 0.03833289044745253, "macro_average_precision": 0.12834230296069615}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.1007242202758789, "updated_at": "2026-11-08T15:20:21.007166+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 1904, "total": 7407, "elapsed_seconds": 15.156542539596558, "updated_at": "2026-11-08T15:20:36.063019+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 3800, "total": 7407, "elapsed_seconds": 30.206716299057007, "updated_at": "2026-11-08T15:20:51.113188+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 5696, "total": 7407, "elapsed_seconds": 45.25682258605957, "updated_at": "2026-11-08T15:21:06.163335+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 7320, "total": 7407, "elapsed_seconds": 60.302767753601074, "updated_at": "2026-11-08T15:21:21.209225+00:00"}
+{"status": "running", "model": "MedKLIP", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 61.02797842025757, "updated_at": "2026-11-08T15:21:21.934422+00:00"}
+COMPLETE MedKLIP chexchonet_composite_slvh_dlv {"macro_auroc": -4.968873292491926, "macro_auprc": -2.880636550008547, "macro_average_precision": -2.9220071336027664}

@@ -1,0 +1,120 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / RSNA: all path branches.} Five-support-seed mean $\pm$ sample SD; absolute scores are percentages. All branches use one view.}
+\label{tab:supp-path-rsna_pneumonia}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Branch & AUROC & AUPRC \\
+\midrule
+Original & $83.26\pm0.00$ & $54.81\pm0.00$ \\
+R & $86.02\pm0.81$ & $60.84\pm2.90$ \\
+A & $85.25\pm0.66$ & $57.78\pm1.47$ \\
+Q & $86.70\pm1.15$ & $61.84\pm3.83$ \\
+S & $84.46\pm2.23$ & $57.77\pm5.57$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / RSNA: all prespecified classification contrasts.} Five-support mean differences and paired 95\% intervals (pp), conditional on the five supports.}
+\label{tab:supp-path-ci-rsna_pneumonia}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+R $-$ Original & $+2.76\;[+2.48,+3.07]$ & $+6.04\;[+5.27,+6.88]$ \\
+A $-$ Original & $+1.99\;[+1.73,+2.26]$ & $+2.97\;[+2.55,+3.40]$ \\
+Q $-$ Original & $+3.44\;[+2.99,+3.91]$ & $+7.03\;[+5.96,+8.18]$ \\
+S $-$ Original & $+1.20\;[+1.08,+1.33]$ & $+2.96\;[+2.56,+3.38]$ \\
+Q $-$ R & $+0.68\;[+0.51,+0.86]$ & $+1.00\;[+0.63,+1.39]$ \\
+Q $-$ A & $+1.45\;[+1.23,+1.68]$ & $+4.06\;[+3.31,+4.88]$ \\
+Q $-$ S & $+2.24\;[+1.90,+2.59]$ & $+4.07\;[+3.35,+4.83]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / ChestXDet10 (classification): all path branches.} Five-support-seed mean $\pm$ sample SD; absolute scores are percentages. All branches use one view.}
+\label{tab:supp-path-chestxdet10}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Branch & AUROC & AUPRC \\
+\midrule
+Original & $81.64\pm0.00$ & $45.72\pm0.00$ \\
+R & $82.60\pm0.20$ & $49.41\pm0.58$ \\
+A & $82.84\pm0.41$ & $47.83\pm0.53$ \\
+Q & $83.36\pm0.61$ & $50.57\pm0.85$ \\
+S & $82.65\pm0.37$ & $50.07\pm1.54$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / ChestXDet10 (classification): all prespecified classification contrasts.} Five-support mean differences and paired 95\% intervals (pp), conditional on the five supports.}
+\label{tab:supp-path-ci-chestxdet10}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+R $-$ Original & $+0.97\;[+0.54,+1.40]$ & $+3.68\;[+2.18,+5.09]$ \\
+A $-$ Original & $+1.20\;[+0.80,+1.62]$ & $+2.10\;[+1.22,+3.13]$ \\
+Q $-$ Original & $+1.72\;[+1.04,+2.43]$ & $+4.85\;[+3.09,+6.61]$ \\
+S $-$ Original & $+1.02\;[+0.44,+1.61]$ & $+4.34\;[+2.80,+5.64]$ \\
+Q $-$ R & $+0.76\;[+0.42,+1.10]$ & $+1.17\;[+0.47,+1.96]$ \\
+Q $-$ A & $+0.52\;[+0.19,+0.85]$ & $+2.75\;[+1.41,+4.08]$ \\
+Q $-$ S & $+0.70\;[+0.44,+0.98]$ & $+0.51\;[-0.14,+1.39]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / SIIM new holdout: all path branches.} Five-support-seed mean $\pm$ sample SD; absolute scores are percentages. All branches use one view.}
+\label{tab:supp-path-siim_new_holdout}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Branch & AUROC & AUPRC \\
+\midrule
+Original & $95.14\pm0.00$ & $79.92\pm0.00$ \\
+R & $95.19\pm0.19$ & $81.17\pm0.89$ \\
+A & $95.10\pm0.17$ & $79.90\pm0.34$ \\
+Q & $94.99\pm0.55$ & $80.72\pm1.52$ \\
+S & $95.13\pm0.03$ & $80.18\pm0.58$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / SIIM new holdout: all prespecified classification contrasts.} Five-support mean differences and paired 95\% intervals (pp), conditional on the five supports.}
+\label{tab:supp-path-ci-siim_new_holdout}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+R $-$ Original & $+0.05\;[-0.10,+0.21]$ & $+1.25\;[-0.25,+2.37]$ \\
+A $-$ Original & $-0.04\;[-0.17,+0.09]$ & $-0.02\;[-0.59,+0.44]$ \\
+Q $-$ Original & $-0.16\;[-0.40,+0.10]$ & $+0.80\;[-0.94,+2.16]$ \\
+S $-$ Original & $-0.01\;[-0.08,+0.05]$ & $+0.26\;[-0.21,+0.61]$ \\
+Q $-$ R & $-0.21\;[-0.33,-0.09]$ & $-0.45\;[-0.85,-0.05]$ \\
+Q $-$ A & $-0.11\;[-0.26,+0.03]$ & $+0.82\;[-0.66,+1.97]$ \\
+Q $-$ S & $-0.14\;[-0.34,+0.05]$ & $+0.54\;[-0.79,+1.62]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+

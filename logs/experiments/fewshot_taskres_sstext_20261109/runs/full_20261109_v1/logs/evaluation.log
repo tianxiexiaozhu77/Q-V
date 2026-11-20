@@ -1,0 +1,21 @@
+Scored BiomedCLIP_rsna_pneumonia/seed_42: 2000 shared paired group draws
+Scored BiomedCLIP_rsna_pneumonia/seed_43: 2000 shared paired group draws
+Scored BiomedCLIP_rsna_pneumonia/seed_44: 2000 shared paired group draws
+Scored BiomedCLIP_rsna_pneumonia/seed_45: 2000 shared paired group draws
+Scored BiomedCLIP_rsna_pneumonia/seed_46: 2000 shared paired group draws
+Scored BiomedCLIP_chestxdet10/seed_42: 2000 shared paired group draws
+Scored BiomedCLIP_chestxdet10/seed_43: 2000 shared paired group draws
+Scored BiomedCLIP_chestxdet10/seed_44: 2000 shared paired group draws
+Scored BiomedCLIP_chestxdet10/seed_45: 2000 shared paired group draws
+Scored BiomedCLIP_chestxdet10/seed_46: 2000 shared paired group draws
+Scored AlphaRAD_rsna_pneumonia/seed_42: 2000 shared paired group draws
+Scored AlphaRAD_rsna_pneumonia/seed_43: 2000 shared paired group draws
+Scored AlphaRAD_rsna_pneumonia/seed_44: 2000 shared paired group draws
+Scored AlphaRAD_rsna_pneumonia/seed_45: 2000 shared paired group draws
+Scored AlphaRAD_rsna_pneumonia/seed_46: 2000 shared paired group draws
+Scored AlphaRAD_chestxdet10/seed_42: 2000 shared paired group draws
+Scored AlphaRAD_chestxdet10/seed_43: 2000 shared paired group draws
+Scored AlphaRAD_chestxdet10/seed_44: 2000 shared paired group draws
+Scored AlphaRAD_chestxdet10/seed_45: 2000 shared paired group draws
+Scored AlphaRAD_chestxdet10/seed_46: 2000 shared paired group draws
+{"status": "complete", "units": 20, "result": "/storage/3090group2/zjx/code/medical/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/RESULTS.json"}

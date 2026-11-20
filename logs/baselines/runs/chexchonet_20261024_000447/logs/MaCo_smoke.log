@@ -1,0 +1,9 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Setting positive classification head weights...
+Setting negative classification head weights...
+Weights have been set.
+{"status": "running", "model": "MaCo", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 8, "total": 8, "elapsed_seconds": 0.5839309692382812, "updated_at": "2026-10-23T16:06:15.271971+00:00"}
+COMPLETE MaCo chexchonet_slvh {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+COMPLETE MaCo chexchonet_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+COMPLETE MaCo chexchonet_composite_slvh_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}

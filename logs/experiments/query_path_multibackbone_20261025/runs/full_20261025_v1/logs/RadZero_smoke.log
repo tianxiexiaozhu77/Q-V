@@ -1,0 +1,7 @@
+{"status": "loading", "model": "RadZero", "done": 0, "total": 0, "elapsed_seconds": 30.527660131454468, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "encoding_support_pool", "model": "RadZero", "done": 0, "total": 87, "elapsed_seconds": 37.539668798446655, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+{"status": "inference", "model": "RadZero", "done": 8, "total": 16, "elapsed_seconds": 47.81448721885681, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "inference", "model": "RadZero", "done": 16, "total": 16, "elapsed_seconds": 48.11479592323303, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "smoke_complete", "model": "RadZero", "done": 16, "total": 16, "elapsed_seconds": 50.01381850242615, "seeds": [42, 43, 44, 45, 46], "smoke": 16}

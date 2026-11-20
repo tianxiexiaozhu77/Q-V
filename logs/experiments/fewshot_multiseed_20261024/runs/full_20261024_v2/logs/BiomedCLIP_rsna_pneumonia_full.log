@@ -1,0 +1,13 @@
+{"status": "inputs_authenticated", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 0, "total": 0, "elapsed_seconds": 4.492051601409912, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "loading", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 0, "total": 0, "elapsed_seconds": 6.601330757141113, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 16, "total": 50, "elapsed_seconds": 12.966212511062622, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 32, "total": 50, "elapsed_seconds": 13.119145631790161, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 48, "total": 50, "elapsed_seconds": 13.269826412200928, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 50, "total": 50, "elapsed_seconds": 13.327553749084473, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}
+{"status": "complete", "model": "BiomedCLIP", "dataset": "rsna_pneumonia", "done": 5327, "total": 5327, "elapsed_seconds": 16.658464431762695, "smoke": 0, "seeds": [42, 43, 44, 45, 46]}

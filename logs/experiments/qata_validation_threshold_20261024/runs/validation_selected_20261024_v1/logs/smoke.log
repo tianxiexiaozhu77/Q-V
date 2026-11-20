@@ -1,0 +1,7 @@
+xFormers is not available (Attention)
+{"status": "authenticating_protocol_and_cache", "model": "AlphaRAD", "dataset": "qatacovid_seg", "done": 0, "total": 0, "smoke": 16, "elapsed_seconds": 3.337860107421875e-06}
+{"status": "loading", "model": "AlphaRAD", "dataset": "qatacovid_seg", "done": 0, "total": 0, "smoke": 16, "elapsed_seconds": 3.181314468383789}
+Device: cuda
+{"status": "validation_inference", "model": "AlphaRAD", "dataset": "qatacovid_seg", "done": 8, "total": 16, "smoke": 16, "elapsed_seconds": 7.268587589263916}
+{"status": "validation_inference", "model": "AlphaRAD", "dataset": "qatacovid_seg", "done": 16, "total": 16, "smoke": 16, "elapsed_seconds": 7.715003728866577}
+{"status": "smoke_complete", "model": "AlphaRAD", "dataset": "qatacovid_seg", "done": 16, "total": 16, "smoke": 16, "elapsed_seconds": 8.639700651168823}

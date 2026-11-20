@@ -1,0 +1,46 @@
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+MAVL/openi: 8/7294
+MAVL/openi: 256/7294
+MAVL/openi: 480/7294
+MAVL/openi: 720/7294
+MAVL/openi: 968/7294
+MAVL/openi: 1216/7294
+MAVL/openi: 1432/7294
+MAVL/openi: 1680/7294
+MAVL/openi: 1928/7294
+MAVL/openi: 2176/7294
+MAVL/openi: 2392/7294
+MAVL/openi: 2640/7294
+MAVL/openi: 2880/7294
+MAVL/openi: 3128/7294
+MAVL/openi: 3352/7294
+MAVL/openi: 3600/7294
+MAVL/openi: 3840/7294
+MAVL/openi: 4088/7294
+MAVL/openi: 4304/7294
+MAVL/openi: 4544/7294
+MAVL/openi: 4784/7294
+MAVL/openi: 5024/7294
+MAVL/openi: 5248/7294
+MAVL/openi: 5488/7294
+MAVL/openi: 5728/7294
+MAVL/openi: 5968/7294
+MAVL/openi: 6208/7294
+MAVL/openi: 6424/7294
+MAVL/openi: 6664/7294
+MAVL/openi: 6904/7294
+MAVL/openi: 7144/7294
+MAVL/openi: 7294/7294
+{"dataset": "openi", "status": "complete", "branches": {"original": {"macro_auroc": 0.7959717835010225, "macro_auprc": 0.19018812998936183}, "query_refined": {"macro_auroc": 0.7969574669139349, "macro_auprc": 0.19173233694958486}, "tta_center_original": {"macro_auroc": 0.8023688116402413, "macro_auprc": 0.19243968855916666}, "tta_center_refined": {"macro_auroc": 0.8041680706718546, "macro_auprc": 0.1938968208232516}}}

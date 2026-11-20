@@ -1,0 +1,23 @@
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/storage/3090group2/zjx/code/medical/baselines/BioViL-T/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Some weights of the model checkpoint at /storage/3090group2/zjx/code/medical/baselines/BioViL-T/checkpoints were not used when initializing CXRBertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing CXRBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CXRBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'BertTokenizer'. 
+The class this function is called from is 'CXRBertTokenizer'.
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.6640663146972656, "updated_at": "2026-10-23T16:09:20.753072+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 1200, "total": 7407, "elapsed_seconds": 15.751449584960938, "updated_at": "2026-10-23T16:09:35.840447+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 2208, "total": 7407, "elapsed_seconds": 30.79270029067993, "updated_at": "2026-10-23T16:09:50.881705+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 3384, "total": 7407, "elapsed_seconds": 45.83596849441528, "updated_at": "2026-10-23T16:10:05.924980+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 4568, "total": 7407, "elapsed_seconds": 60.882744550704956, "updated_at": "2026-10-23T16:10:20.971736+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 5744, "total": 7407, "elapsed_seconds": 75.9643337726593, "updated_at": "2026-10-23T16:10:36.053341+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 6848, "total": 7407, "elapsed_seconds": 92.11075448989868, "updated_at": "2026-10-23T16:10:52.199761+00:00"}
+{"status": "running", "model": "BioViL-T", "datasets": ["chexchonet_slvh", "chexchonet_dlv", "chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 99.31993246078491, "updated_at": "2026-10-23T16:10:59.408938+00:00"}
+COMPLETE BioViL-T chexchonet_slvh {"macro_auroc": 0.9775983167796043, "macro_auprc": 0.2187927851626581, "macro_average_precision": 0.2303905364414549}
+COMPLETE BioViL-T chexchonet_dlv {"macro_auroc": 1.3808315204254296, "macro_auprc": 0.8698220559545125, "macro_average_precision": 0.9560454613006891}
+COMPLETE BioViL-T chexchonet_composite_slvh_dlv {"macro_auroc": 1.8806178052990896, "macro_auprc": 1.197489089424042, "macro_average_precision": 1.220342207463354}

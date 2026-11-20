@@ -1,0 +1,52 @@
+% Saved supplement: fewshot_taskres_sstext_20261109/runs/full_20261109_v1/RESULTS.json.
+% No model inference or metric recomputation is performed by this document.
+\paragraph{TaskRes and SS-Text+ implementation details.}
+\label{supp:taskres_sstext}
+Table~\ref{tab:supp-taskres-sstext} reports the paired comparisons for the implementations described below.
+
+We detail the TaskRes~\cite{taskres} and SS-Text+~\cite{sstextplus} comparisons included in main-paper Table~\mainref{tab:competitors}. Both methods are implemented as feature-level binary one-versus-rest (OvR) ports of the authors' code. The source revisions are \href{https://github.com/geekyutao/TaskRes/tree/5195359661d6bef661090c33b81aacfc7d7cc181}{TaskRes \texttt{5195359}} and \href{https://github.com/jusiro/SS-Text/tree/4bc0c9e3b7b9e0f090079bcc51d7aa852806e91f}{SS-Text \texttt{4bc0c9e}}. These ports preserve the adaptation rules but replace the original benchmark pipelines with disease-specific positive/negative text pairs and deterministic frozen image features; they are not exact reproductions of the authors' original experiments. Both use one original image view, all labels on the same five support draws (seeds 42--46), and the unchanged RSNA/ChestXDet10 test lists. Q uses the same number of test views as these methods; Q+V uses an additional view. Predictions for both adapters were saved for all 20 model--dataset--support-draw configurations before test scoring.
+
+\paragraph{Feature and text interfaces.}
+Table~\ref{tab:supp-taskres-sstext} compares methods using the feature and text interfaces specified here.
+
+BiomedCLIP supplies unit global projected image features. For AlphaRAD, we construct the fixed image features used by TaskRes and SS-Text+ by averaging its projected patch features and applying unit normalization. We preserve the cached native text bases before fitting: BiomedCLIP's native text interface produces unit vectors, whereas AlphaRAD supplies raw projected text vectors. Each method normalizes its final classifier vectors for cosine prediction. The frozen pretrained global contrastive scale multipliers are 85.2323 for BiomedCLIP and 14.2857 for AlphaRAD, read from the authenticated checkpoints and never tuned; AlphaRAD's native FLaS scale is not substituted for its global scale. Both ports output the positive-minus-negative binary logit for each disease.
+
+\paragraph{Support-only fitting.}
+Table~\ref{tab:supp-taskres-sstext} reports results obtained with the support-only fitting procedure below.
+
+TaskRes uses the regular text base and zero-initialized residuals with scale 0.5. We select one learning-rate/checkpoint pair per backbone, dataset, and support draw, shared by all diseases, using the existing grouped five-fold support splits and pooled out-of-fold macro trapezoidal AUPRC. Learning rates are $\{2\!\times\!10^{-4},2\!\times\!10^{-3}\}$; checkpoints are $\{20,50,100,200\}$ epochs, with an additional zero-residual epoch-0 candidate. All checkpoints share a fixed 200-epoch training schedule with one constant warmup epoch at $10^{-5}$ followed by cosine decay. Adam uses batch size 256, weight decay $5\!\times\!10^{-4}$, $(\beta_1,\beta_2)=(0.9,0.999)$, and $\epsilon=10^{-8}$. Ties within $10^{-12}$ favor the smaller epoch and then learning rate; the selected model is refitted from zero on all supports. Only the residuals are optimized, without extra support augmentation. SS-Text+ uses the official fixed settings \texttt{adaptive\_shots}, \texttt{balanced\_importance=False}, and \texttt{repel=True}: each binary outcome with $n_k$ support examples receives text weight $\max(1/n_k,10^{-3})$, and prototype repulsion is applied independently within each disease's negative/positive pair. It uses no optimization, validation-based tuning, or test-distribution statistics.
+
+\paragraph{Readout differences and paired results.}
+Table~\ref{tab:supp-taskres-sstext} gives the paired differences and conditional intervals discussed here.
+
+AlphaRAD Q retains native query-conditioned FLaS aggregation and readout, whereas the two added adapters use pooled global features and a cosine classifier. Their absolute performance differences therefore combine adaptation and representation/readout differences; they do not isolate superiority of one update rule. Table~\ref{tab:supp-taskres-sstext} reports all eight Q--adapter contrasts. Q has higher AUROC and AUPRC than the TaskRes port in all four settings and than the SS-Text+ port in three; on BiomedCLIP/ChestXDet10, the point differences have opposite signs and both intervals cross zero.
+
+Intervals use 2,000 paired test-group bootstrap draws (seed 20261024), with the same dataset-specific draws shared across methods, backbones, and support draws. RSNA resamples verified NIH patients; ChestXDet10 resamples image/exact-duplicate groups. Each replicate averages the five separately fitted support-draw metrics, rather than averaging predictions. The intervals condition on these five support sets, exclude uncertainty over newly sampled supports, and are not adjusted for multiple comparisons. These comparisons use datasets previously used during RadZero development and were conducted after the adaptation rule and default hyperparameters were fixed. They reuse the existing test cohorts.
+
+The accompanying CSV files provide unrounded TaskRes/SS-Text+ means, support-draw results, class summaries, and the eight Q--adapter contrasts; file definitions and the corresponding Q records are listed in \nolinkurl{supplement_data/README.txt}.
+
+\begin{table*}[tp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllcc@{}}
+\toprule
+\multicolumn{5}{l}{\textbf{Q minus the added single-view adapter: mean difference [paired 95\% interval] (pp).}} \\
+Model & Dataset & Comparator & $\Delta$AUROC & $\Delta$AUPRC \\
+\midrule
+BiomedCLIP & RSNA & TaskRes & $+4.17\;[+3.50,+4.93]$ & $+10.52\;[+8.99,+12.13]$ \\
+BiomedCLIP & RSNA & SS-Text+ & $+1.53\;[+1.09,+1.95]$ & $+2.80\;[+1.45,+3.99]$ \\
+\addlinespace[2pt]
+BiomedCLIP & ChestXDet10 & TaskRes & $+3.21\;[+2.25,+4.16]$ & $+1.94\;[+1.17,+3.03]$ \\
+BiomedCLIP & ChestXDet10 & SS-Text+ & $+0.26\;[-0.87,+1.34]$ & $-0.39\;[-1.29,+0.68]$ \\
+\addlinespace[2pt]
+AlphaRAD & RSNA & TaskRes & $+3.49\;[+2.55,+4.43]$ & $+4.79\;[+2.36,+7.12]$ \\
+AlphaRAD & RSNA & SS-Text+ & $+2.45\;[+1.70,+3.20]$ & $+3.93\;[+1.44,+6.30]$ \\
+\addlinespace[2pt]
+AlphaRAD & ChestXDet10 & TaskRes & $+10.41\;[+8.46,+12.47]$ & $+16.11\;[+12.52,+19.47]$ \\
+AlphaRAD & ChestXDet10 & SS-Text+ & $+7.72\;[+6.27,+9.17]$ & $+12.52\;[+8.89,+15.84]$ \\
+\bottomrule
+\end{tabular*}
+\caption{\textbf{Additional TaskRes and SS-Text+ feature-level OvR comparisons.} Both methods in each contrast use the same five support draws and one test view. The conditional intervals do not establish equivalence when crossing zero. AlphaRAD comparisons do not match the internal representation/readout.}
+\label{tab:supp-taskres-sstext}
+\end{table*}

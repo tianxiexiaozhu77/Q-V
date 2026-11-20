@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Post-development sensitivity audit by model and dataset.} Entries are mean Q+V--Original differences in AUROC / AUPRC (percentage points) across the nine fixed parameter slices. CheXchoNet's three tasks are averaged within each slice; they share one patient cohort. All entries are point estimates under the fixed support/test construction.}
+\label{tab:supp-sensitivity-model}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Model & CheXpert & CheXchoNet \\
+\midrule
+AlphaRAD & $+1.35 / +2.43$ & $+1.65 / +1.07$ \\
+BiomedCLIP & $+7.41 / +8.80$ & $+6.33 / +2.37$ \\
+CARZero & $+1.27 / +0.89$ & $+0.64 / +0.21$ \\
+MedKLIP & $-1.03 / +0.57$ & $-0.25 / -0.34$ \\
+RadZero & $+3.55 / +6.11$ & $+1.00 / +0.99$ \\
+\midrule
+All 90 slices & \multicolumn{2}{c}{$+2.19 / +2.31$} \\
+\bottomrule
+\end{tabular*}
+\end{table*}

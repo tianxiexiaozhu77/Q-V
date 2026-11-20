@@ -1,0 +1,12 @@
+xFormers is not available (Attention)
+{"status": "authenticating_inputs", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 2.384185791015625e-06}
+{"status": "loading_model", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 2.067535638809204}
+Device: cuda
+{"status": "support_fitted", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 6.522644758224487, "support_union_count": 50}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 7.201123237609863, "done": 8, "total": 1000}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 12.820586204528809, "done": 200, "total": 1000}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 18.681987524032593, "done": 400, "total": 1000}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 24.549847841262817, "done": 600, "total": 1000}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 30.417094707489014, "done": 800, "total": 1000}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 36.30963611602783, "done": 1000, "total": 1000}
+{"status": "complete", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 0, "elapsed_seconds": 44.66335701942444, "done": 1000, "total": 1000}

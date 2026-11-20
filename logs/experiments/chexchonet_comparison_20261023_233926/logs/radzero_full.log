@@ -1,0 +1,151 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+RadZero slvh,dlv,composite_slvh_dlv: 8/7494 (2.43 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 160/7494 (14.82 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 320/7494 (19.49 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 480/7494 (21.40 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 640/7494 (22.78 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 800/7494 (23.74 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 960/7494 (24.31 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1120/7494 (24.81 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1280/7494 (25.12 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1440/7494 (25.29 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1600/7494 (25.53 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1760/7494 (24.96 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1920/7494 (25.20 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2080/7494 (25.21 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2240/7494 (25.38 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2400/7494 (25.51 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2560/7494 (25.65 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2720/7494 (25.78 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2880/7494 (25.87 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3040/7494 (25.99 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3200/7494 (26.08 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3360/7494 (26.14 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3520/7494 (25.83 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3680/7494 (25.92 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3840/7494 (26.00 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4000/7494 (26.08 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4160/7494 (26.14 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4320/7494 (26.17 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4480/7494 (26.22 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4640/7494 (26.28 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4800/7494 (26.33 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4960/7494 (26.38 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5120/7494 (26.14 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5280/7494 (26.17 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5440/7494 (26.21 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5600/7494 (26.26 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5760/7494 (26.30 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5920/7494 (26.33 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6080/7494 (26.34 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6240/7494 (26.36 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6400/7494 (26.39 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6560/7494 (26.40 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6720/7494 (26.42 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6880/7494 (26.28 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7040/7494 (26.31 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7200/7494 (26.32 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7360/7494 (26.35 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7494/7494 (26.38 images/s)
+{
+  "status": "complete",
+  "model": "RadZero",
+  "tasks": [
+    "slvh",
+    "dlv",
+    "composite_slvh_dlv"
+  ],
+  "mode": "full-original",
+  "is_smoke": false,
+  "full_count": 7494,
+  "paired_count": 7407,
+  "baseline_full": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 7494,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 595,
+        "negatives": 6899,
+        "auroc": 0.7071114922269821,
+        "auprc": 0.1671333581953251
+      },
+      "dlv": {
+        "positives": 330,
+        "negatives": 7164,
+        "auroc": 0.6595058626465662,
+        "auprc": 0.08322600192837781
+      },
+      "composite_slvh_dlv": {
+        "positives": 870,
+        "negatives": 6624,
+        "auroc": 0.709218481037259,
+        "auprc": 0.2590448375948799
+      }
+    },
+    "macro_auroc": 0.6919452786369358,
+    "macro_auprc": 0.1698013992395276,
+    "micro_auroc": 0.6864361817798187,
+    "micro_auprc": 0.16465653154727927,
+    "macro_auroc_defined_classes": 3,
+    "macro_auprc_defined_classes": 3,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "baseline_paired": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 7407,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 567,
+        "negatives": 6840,
+        "auroc": 0.7046712718009014,
+        "auprc": 0.16386050176832725
+      },
+      "dlv": {
+        "positives": 315,
+        "negatives": 7092,
+        "auroc": 0.6536029865979105,
+        "auprc": 0.07666687101649336
+      },
+      "composite_slvh_dlv": {
+        "positives": 828,
+        "negatives": 6579,
+        "auroc": 0.7042380859020761,
+        "auprc": 0.2485656816913755
+      }
+    },
+    "macro_auroc": 0.6875041147669627,
+    "macro_auprc": 0.16303101815873203,
+    "micro_auroc": 0.6822916301365606,
+    "micro_auprc": 0.15868090307574756,
+    "macro_auroc_defined_classes": 3,
+    "macro_auprc_defined_classes": 3,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "ours_paired": null,
+  "eta": 0.3,
+  "delta_pp": {
+    "slvh": {
+      "auroc": null,
+      "auprc": null
+    },
+    "dlv": {
+      "auroc": null,
+      "auprc": null
+    },
+    "composite_slvh_dlv": {
+      "auroc": null,
+      "auprc": null
+    }
+  },
+  "elapsed_seconds": 291.43390932679176,
+  "completed_at": "2026-10-23T15:48:25.879165+00:00"
+}

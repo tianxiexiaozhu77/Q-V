@@ -1,0 +1,5 @@
+original: validation threshold=0.64, Dice=0.52539861
+query_refined: validation threshold=0.63, Dice=0.54445809
+tta_center_original: validation threshold=0.64, Dice=0.52770817
+tta_center_refined: validation threshold=0.64, Dice=0.54890054
+Frozen thresholds: /storage/3090group2/zjx/code/medical/experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/thresholds.json sha256=f9344206d68343c0019315fce23ebb6b6fa28af587a20d3515520bbbf88b4650

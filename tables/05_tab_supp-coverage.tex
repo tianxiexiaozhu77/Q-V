@@ -1,0 +1,28 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{Coverage.} Y: completed; NA: no verified spatial-response implementation in the current evaluation; NR: not run in this evaluation. Abbreviations follow the backbone order in Appendix A. Neither NA nor NR is assigned a score.}
+\label{tab:supp-coverage}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccccccc@{}}
+\toprule
+Task & Alpha & Rad & BioCLIP & BioViL & CheX0 & MedK & MAVL & KAD & MaCo & CAR0 \\
+\midrule
+ChestXray14 & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+ChestXDet10 (classification) & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+ChestXDet10 (PG) & Y & NR & NA & Y & NA & Y & Y & Y & Y & NA \\
+RSNA & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+SIIM (1,704) & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+SIIM (1,694) & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+CheXpert & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+Shenzhen & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+Montgomery & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+CovidKaggle & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+Node21 (PG) & Y & NR & NA & Y & NA & Y & Y & Y & Y & NA \\
+QaTaCOV19 (Dice$^\dagger$) & Y & NR & NA & Y & NA & Y & Y & Y & Y & NA \\
+CheXchoNet / CSLV & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+CheXchoNet / CDLV & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+CheXchoNet / CCOM & Y & Y & Y & Y & Y & Y & Y & Y & Y & Y \\
+\bottomrule
+\end{tabular*}
+\end{table*}

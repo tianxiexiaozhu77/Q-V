@@ -1,0 +1,14 @@
+\subsection{Real-image visualization of the query paths}
+\label{supp:heatmaps}
+Figure~\ref{fig:supp-query-path-heatmaps} shows the qualitative comparison; Tables~\ref{tab:supp-path-chestxdet10} and~\ref{tab:supp-path-ci-chestxdet10} provide the corresponding dataset-level classification results.
+
+Figure~\ref{fig:supp-query-path-heatmaps} illustrates the distinction between R and Q on real ChestXDet10 images. Original and R have identical model-produced spatial responses because both use the original aggregation query vector, even though their final scores differ. Q changes both the aggregation and readout query vectors. Its spatial response can therefore change. The displayed maps are mean per-head scaled cosine responses before attention softmax and context pooling; they visualize the affected query--image matching stage, not the pooled feature vectors or a faithful attribution of the final classifier.
+
+We use support seed 42 and the first three Effusion-annotated images in the frozen spatial-manifest order, without selecting for improved scores or localization. The same color scales are used across all examples and branches. All three examples retain a peak inside an annotated box, while Q lowers the score relative to R in the first two examples and raises it in the third. These images illustrate computational differences; the paired Q--R classification comparisons in Tables~\ref{tab:supp-path-ci-rsna_pneumonia} and~\ref{tab:supp-path-ci-chestxdet10} provide the quantitative evidence for additional classification value in those settings.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/query_path_heatmaps.pdf}
+\caption{\textbf{Real-image comparison of query pathways on AlphaRAD.} Each row shows a ChestXDet10 image with Effusion annotations, Original $(q,q)$, readout-only R $(q,q')$, full query adaptation Q $(q',q')$, and the signed Q--R response difference. Ordered pairs denote (aggregation query vector, final scoring query vector). All branches use the same original image view and support seed 42. Green boxes are ground-truth annotations; white stars mark spatial response maxima. PG is one when the maximum lies inside any target-class box. Scores are saved sigmoid outputs from the model, not calibrated clinical probabilities. We remove the CLS token and bilinearly interpolate the $37\times37$ response to the original image size. All response panels share one raw-value color scale; difference panels share one symmetric scale, with red indicating an increase and blue a decrease. Original and R maps are exactly equal by construction. These are saved model outputs, not synthetic heatmaps; no model inference was rerun. Selection follows manifest order, and neither a changed response nor a higher individual score establishes improved classification or localization.}
+\label{fig:supp-query-path-heatmaps}
+\end{figure*}

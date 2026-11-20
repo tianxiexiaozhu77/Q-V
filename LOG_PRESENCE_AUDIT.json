@@ -1,0 +1,1367 @@
+{
+  "groups": {
+    "fixed_phase6_controller": {
+      "directory": "experiments/query_search_20261021_152010/controller_v2/logs",
+      "exists": true,
+      "logs": 231,
+      "nonempty_logs": 231,
+      "records": 0,
+      "example_logs": [
+        "experiments/query_search_20261021_152010/controller_v2/logs/phase7_alpharad_siim_pneumothorax.log",
+        "experiments/query_search_20261021_152010/controller_v2/logs/phase7_alpharad_node21.log",
+        "experiments/query_search_20261021_152010/controller_v2/logs/phase13_radzero_SIIM.log"
+      ]
+    },
+    "fixed_phase6": {
+      "directory": "experiments/query_search_20261021_152010/runs/phase6",
+      "exists": true,
+      "logs": 0,
+      "nonempty_logs": 0,
+      "records": 25,
+      "example_logs": []
+    },
+    "fixed_baselines": {
+      "directory": "baselines/runs/query_transfer_20261022_224826",
+      "exists": true,
+      "logs": 25,
+      "nonempty_logs": 24,
+      "records": 565,
+      "example_logs": [
+        "baselines/runs/query_transfer_20261022_224826/finalizer.log",
+        "baselines/runs/query_transfer_20261022_224826/preflight_MedKLIP_8.log",
+        "baselines/runs/query_transfer_20261022_224826/preflight_MaCo_8.log"
+      ]
+    },
+    "fixed_cardiac_baselines": {
+      "directory": "baselines/runs/chexchonet_20261024_000447",
+      "exists": true,
+      "logs": 17,
+      "nonempty_logs": 17,
+      "records": 70,
+      "example_logs": [
+        "baselines/runs/chexchonet_20261024_000447/logs/summary.log",
+        "baselines/runs/chexchonet_20261024_000447/logs/MAVL_full.log",
+        "baselines/runs/chexchonet_20261024_000447/logs/MedKLIP_full.log"
+      ]
+    },
+    "fixed_cardiac_alpha_radzero": {
+      "directory": "experiments/chexchonet_comparison_20261023_233926",
+      "exists": true,
+      "logs": 7,
+      "nonempty_logs": 7,
+      "records": 12,
+      "example_logs": [
+        "experiments/chexchonet_comparison_20261023_233926/logs/summary.log",
+        "experiments/chexchonet_comparison_20261023_233926/logs/radzero_paired.log",
+        "experiments/chexchonet_comparison_20261023_233926/logs/alpharad_paired.log"
+      ]
+    },
+    "fixed_chexpert_alpha": {
+      "directory": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385",
+      "exists": true,
+      "logs": 3,
+      "nonempty_logs": 3,
+      "records": 7,
+      "example_logs": [
+        "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/paired.log",
+        "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/full_baseline.log",
+        "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/prepare.log"
+      ]
+    },
+    "fixed_completion": {
+      "directory": "experiments/table2_completion_20261103",
+      "exists": true,
+      "logs": 8,
+      "nonempty_logs": 8,
+      "records": 15,
+      "example_logs": [
+        "experiments/table2_completion_20261103/verification.log",
+        "experiments/table2_completion_20261103/radzero/full_gpu6.log",
+        "experiments/table2_completion_20261103/radzero/full_gpu7.log"
+      ]
+    },
+    "fixed_query_resources": {
+      "directory": "experiments/query_resource_completion_20261103",
+      "exists": true,
+      "logs": 15,
+      "nonempty_logs": 15,
+      "records": 27,
+      "example_logs": [
+        "experiments/query_resource_completion_20261103/verification.log",
+        "experiments/query_resource_completion_20261103/medklip/shenzhenxray_cached.log",
+        "experiments/query_resource_completion_20261103/medklip/montgomery_cached.log"
+      ]
+    },
+    "fixed_rsna_cleanup": {
+      "directory": "experiments/rsna_fixed_patient_cleanup_20261110",
+      "exists": true,
+      "logs": 0,
+      "nonempty_logs": 0,
+      "records": 14,
+      "example_logs": []
+    },
+    "five_seeds": {
+      "directory": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2",
+      "exists": true,
+      "logs": 13,
+      "nonempty_logs": 13,
+      "records": 173,
+      "example_logs": [
+        "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/summary_summary.log",
+        "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_evaluate.log",
+        "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_evaluate.log"
+      ]
+    },
+    "additional_adapters": {
+      "directory": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1",
+      "exists": true,
+      "logs": 21,
+      "nonempty_logs": 21,
+      "records": 4,
+      "example_logs": [
+        "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/evaluation.log",
+        "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_46.log",
+        "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_45.log"
+      ]
+    },
+    "alpha_paths": {
+      "directory": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1",
+      "exists": true,
+      "logs": 6,
+      "nonempty_logs": 6,
+      "records": 32,
+      "example_logs": [
+        "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_all.log",
+        "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_chestxdet10.log",
+        "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/chestxdet10_full.log"
+      ]
+    },
+    "siim_paths": {
+      "directory": "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1",
+      "exists": true,
+      "logs": 4,
+      "nonempty_logs": 4,
+      "records": 19,
+      "example_logs": [
+        "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/evaluation.log",
+        "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/fit_s.log",
+        "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/full.log"
+      ]
+    },
+    "cardiac_paths": {
+      "directory": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1",
+      "exists": true,
+      "logs": 13,
+      "nonempty_logs": 13,
+      "records": 99,
+      "example_logs": [
+        "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/bootstrap.log",
+        "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_full.log",
+        "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_smoke.log"
+      ]
+    },
+    "segmentation": {
+      "directory": "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1",
+      "exists": true,
+      "logs": 4,
+      "nonempty_logs": 4,
+      "records": 10,
+      "example_logs": [
+        "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/evaluate_fixed_test.log",
+        "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/select_validation_thresholds.log",
+        "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/validation_inference.log"
+      ]
+    },
+    "sensitivity": {
+      "directory": "experiments/sensitivity_grid/campaign_20261108_v3",
+      "exists": true,
+      "logs": 90,
+      "nonempty_logs": 90,
+      "records": 247,
+      "example_logs": [
+        "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p6.log",
+        "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p9.log",
+        "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p5_crop0p8.log"
+      ]
+    }
+  },
+  "fixed_source_checks": [
+    {
+      "model": "AlphaRAD",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/AlphaRAD/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/alpharad/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/radzero_ChestXray14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/radzero_ChestXDet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/radzero/full_gpu6/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/radzero/full_gpu7/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/radzero/full_gpu6/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/RadZero/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/radzero/full_gpu6/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "experiments/table2_completion_20261103/radzero/full_gpu7/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "RadZero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "experiments/query_search_20261021_152010/runs/phase6/radzero_SIIM/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "node21",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/BiomedCLIP/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/BioViL-T/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "node21",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/CheXzero/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "experiments/query_resource_completion_20261103/medklip/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MedKLIP/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "experiments/query_resource_completion_20261103/medklip/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "experiments/query_resource_completion_20261103/mavl/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MAVL/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "experiments/query_resource_completion_20261103/mavl/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MAVL",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/KAD/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "KAD",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "node21",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MaCo/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "MaCo",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chest14",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chest14/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chestxdet10/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chestxdet10_gt/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_composite_slvh_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_dlv/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_slvh/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chexpert/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/covidkaggle/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/montgomery/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "node21",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/node21/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/qatacovid_seg/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "path": "experiments/rsna_fixed_patient_cleanup_20261110/models/CARZero/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/shenzhenxray/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/siim_pneumothorax/result.json",
+      "exists": true,
+      "sha256_matches": true
+    },
+    {
+      "model": "CARZero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/siim_radzero_holdout/result.json",
+      "exists": true,
+      "sha256_matches": true
+    }
+  ],
+  "scope": "Presence and source hash audit only; log existence does not prove successful or complete inference."
+}

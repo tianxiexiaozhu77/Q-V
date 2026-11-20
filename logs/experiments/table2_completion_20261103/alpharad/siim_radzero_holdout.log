@@ -1,0 +1,19 @@
+xFormers is not available (Attention)
+Device: cuda
+Historical four-branch regression passed: {'original': 4.656612873077393e-10, 'query_refined': 1.4901161193847656e-08, 'tta_center_original': 1.4901161193847656e-08, 'tta_center_refined': 1.1920928955078125e-07}
+{"status": "running", "images_completed": 8, "images_total": 1694, "elapsed_seconds": 8.544157028198242}
+{"status": "running", "images_completed": 136, "images_total": 1694, "elapsed_seconds": 14.555559635162354}
+{"status": "running", "images_completed": 264, "images_total": 1694, "elapsed_seconds": 20.574201822280884}
+{"status": "running", "images_completed": 392, "images_total": 1694, "elapsed_seconds": 26.57692551612854}
+{"status": "running", "images_completed": 520, "images_total": 1694, "elapsed_seconds": 32.59983825683594}
+{"status": "running", "images_completed": 648, "images_total": 1694, "elapsed_seconds": 38.62060880661011}
+{"status": "running", "images_completed": 776, "images_total": 1694, "elapsed_seconds": 44.68015170097351}
+{"status": "running", "images_completed": 904, "images_total": 1694, "elapsed_seconds": 50.730437994003296}
+{"status": "running", "images_completed": 1032, "images_total": 1694, "elapsed_seconds": 56.81314516067505}
+{"status": "running", "images_completed": 1160, "images_total": 1694, "elapsed_seconds": 62.90005898475647}
+{"status": "running", "images_completed": 1288, "images_total": 1694, "elapsed_seconds": 69.02309083938599}
+{"status": "running", "images_completed": 1416, "images_total": 1694, "elapsed_seconds": 75.15867900848389}
+{"status": "running", "images_completed": 1544, "images_total": 1694, "elapsed_seconds": 81.2887396812439}
+{"status": "running", "images_completed": 1672, "images_total": 1694, "elapsed_seconds": 87.4213707447052}
+{"status": "running", "images_completed": 1694, "images_total": 1694, "elapsed_seconds": 88.49794554710388}
+{"original": {"per_class": {"Pneumothorax": {"auroc": 0.9524719259018131, "average_precision": 0.8713733470490876, "auprc": 0.8710341105630841}}, "valid_class_count": 1, "macro_auroc": 0.9524719259018131, "macro_average_precision": 0.8713733470490876, "macro_auprc": 0.8710341105630841}, "query_refined": {"per_class": {"Pneumothorax": {"auroc": 0.9544624163736074, "average_precision": 0.8782398128359166, "auprc": 0.8779980650623035}}, "valid_class_count": 1, "macro_auroc": 0.9544624163736074, "macro_average_precision": 0.8782398128359166, "macro_auprc": 0.8779980650623035}, "tta_center_original": {"per_class": {"Pneumothorax": {"auroc": 0.9545958272631379, "average_precision": 0.8783549925472055, "auprc": 0.8780499381667681}}, "valid_class_count": 1, "macro_auroc": 0.9545958272631379, "macro_average_precision": 0.8783549925472055, "macro_auprc": 0.8780499381667681}, "tta_center_refined": {"per_class": {"Pneumothorax": {"auroc": 0.9561860850663407, "average_precision": 0.8842766525498377, "auprc": 0.8840864144461483}}, "valid_class_count": 1, "macro_auroc": 0.9561860850663407, "macro_average_precision": 0.8842766525498377, "macro_auprc": 0.8840864144461483}}

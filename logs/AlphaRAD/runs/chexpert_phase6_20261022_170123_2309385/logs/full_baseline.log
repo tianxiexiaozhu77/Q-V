@@ -1,0 +1,274 @@
+xFormers is not available (Attention)
+Device: cuda
+Strict checkpoint load; ignored unused keys: ['logit_scale_aux']
+[chexpert]:   0%|          | 0/84 [00:00<?, ?it/s][chexpert]:   1%|          | 1/84 [00:01<02:23,  1.73s/it][chexpert]:   2%|▏         | 2/84 [00:02<01:11,  1.14it/s][chexpert]:   4%|▎         | 3/84 [00:02<00:48,  1.67it/s][chexpert]:   5%|▍         | 4/84 [00:02<00:41,  1.91it/s][chexpert]:   6%|▌         | 5/84 [00:04<01:09,  1.13it/s][chexpert]:   7%|▋         | 6/84 [00:04<00:54,  1.43it/s][chexpert]:   8%|▊         | 7/84 [00:05<00:50,  1.52it/s][chexpert]:  10%|▉         | 8/84 [00:05<00:40,  1.86it/s][chexpert]:  11%|█         | 9/84 [00:05<00:34,  2.19it/s][chexpert]:  12%|█▏        | 10/84 [00:05<00:29,  2.49it/s][chexpert]:  13%|█▎        | 11/84 [00:06<00:26,  2.74it/s][chexpert]:  14%|█▍        | 12/84 [00:06<00:24,  2.98it/s][chexpert]:  15%|█▌        | 13/84 [00:06<00:23,  2.99it/s][chexpert]:  17%|█▋        | 14/84 [00:07<00:22,  3.16it/s][chexpert]:  18%|█▊        | 15/84 [00:07<00:23,  2.98it/s][chexpert]:  19%|█▉        | 16/84 [00:08<00:28,  2.41it/s][chexpert]:  20%|██        | 17/84 [00:08<00:24,  2.69it/s][chexpert]:  21%|██▏       | 18/84 [00:08<00:22,  2.92it/s][chexpert]:  23%|██▎       | 19/84 [00:08<00:20,  3.12it/s][chexpert]:  24%|██▍       | 20/84 [00:09<00:20,  3.07it/s][chexpert]:  25%|██▌       | 21/84 [00:09<00:19,  3.23it/s][chexpert]:  26%|██▌       | 22/84 [00:09<00:19,  3.13it/s][chexpert]:  27%|██▋       | 23/84 [00:10<00:18,  3.27it/s][chexpert]:  29%|██▊       | 24/84 [00:10<00:17,  3.38it/s][chexpert]:  30%|██▉       | 25/84 [00:10<00:16,  3.48it/s][chexpert]:  31%|███       | 26/84 [00:10<00:16,  3.52it/s][chexpert]:  32%|███▏      | 27/84 [00:11<00:15,  3.57it/s][chexpert]:  33%|███▎      | 28/84 [00:11<00:15,  3.55it/s][chexpert]:  35%|███▍      | 29/84 [00:11<00:15,  3.56it/s][chexpert]:  36%|███▌      | 30/84 [00:12<00:15,  3.59it/s][chexpert]:  37%|███▋      | 31/84 [00:12<00:15,  3.50it/s][chexpert]:  38%|███▊      | 32/84 [00:12<00:15,  3.32it/s][chexpert]:  39%|███▉      | 33/84 [00:12<00:14,  3.41it/s][chexpert]:  40%|████      | 34/84 [00:13<00:15,  3.26it/s][chexpert]:  42%|████▏     | 35/84 [00:13<00:14,  3.35it/s][chexpert]:  43%|████▎     | 36/84 [00:13<00:15,  3.07it/s][chexpert]:  44%|████▍     | 37/84 [00:14<00:14,  3.21it/s][chexpert]:  45%|████▌     | 38/84 [00:14<00:15,  2.99it/s][chexpert]:  46%|████▋     | 39/84 [00:14<00:14,  3.14it/s][chexpert]:  48%|████▊     | 40/84 [00:15<00:13,  3.28it/s][chexpert]:  49%|████▉     | 41/84 [00:15<00:14,  3.06it/s][chexpert]:  50%|█████     | 42/84 [00:15<00:13,  3.20it/s][chexpert]:  51%|█████     | 43/84 [00:16<00:15,  2.72it/s][chexpert]:  52%|█████▏    | 44/84 [00:16<00:13,  2.95it/s][chexpert]:  54%|█████▎    | 45/84 [00:16<00:13,  2.99it/s][chexpert]:  55%|█████▍    | 46/84 [00:17<00:12,  3.15it/s][chexpert]:  56%|█████▌    | 47/84 [00:17<00:11,  3.23it/s][chexpert]:  57%|█████▋    | 48/84 [00:17<00:10,  3.32it/s][chexpert]:  58%|█████▊    | 49/84 [00:18<00:11,  3.05it/s][chexpert]:  60%|█████▉    | 50/84 [00:18<00:10,  3.20it/s][chexpert]:  61%|██████    | 51/84 [00:18<00:11,  2.93it/s][chexpert]:  62%|██████▏   | 52/84 [00:19<00:10,  3.10it/s][chexpert]:  63%|██████▎   | 53/84 [00:19<00:09,  3.17it/s][chexpert]:  64%|██████▍   | 54/84 [00:19<00:09,  3.28it/s][chexpert]:  65%|██████▌   | 55/84 [00:20<00:08,  3.36it/s][chexpert]:  67%|██████▋   | 56/84 [00:20<00:08,  3.42it/s][chexpert]:  68%|██████▊   | 57/84 [00:20<00:09,  2.99it/s][chexpert]:  69%|██████▉   | 58/84 [00:21<00:08,  3.18it/s][chexpert]:  70%|███████   | 59/84 [00:21<00:08,  3.00it/s][chexpert]:  71%|███████▏  | 60/84 [00:21<00:07,  3.16it/s][chexpert]:  73%|███████▎  | 61/84 [00:22<00:07,  2.95it/s][chexpert]:  74%|███████▍  | 62/84 [00:22<00:07,  3.12it/s][chexpert]:  75%|███████▌  | 63/84 [00:22<00:08,  2.60it/s][chexpert]:  76%|███████▌  | 64/84 [00:23<00:07,  2.83it/s][chexpert]:  77%|███████▋  | 65/84 [00:23<00:06,  2.83it/s][chexpert]:  79%|███████▊  | 66/84 [00:23<00:05,  3.03it/s][chexpert]:  80%|███████▉  | 67/84 [00:24<00:06,  2.54it/s][chexpert]:  81%|████████  | 68/84 [00:24<00:05,  2.78it/s][chexpert]:  82%|████████▏ | 69/84 [00:25<00:05,  2.56it/s][chexpert]:  83%|████████▎ | 70/84 [00:25<00:04,  2.80it/s][chexpert]:  85%|████████▍ | 71/84 [00:25<00:05,  2.40it/s][chexpert]:  86%|████████▌ | 72/84 [00:26<00:04,  2.66it/s][chexpert]:  87%|████████▋ | 73/84 [00:26<00:04,  2.46it/s][chexpert]:  88%|████████▊ | 74/84 [00:26<00:03,  2.69it/s][chexpert]:  89%|████████▉ | 75/84 [00:27<00:03,  2.42it/s][chexpert]:  90%|█████████ | 76/84 [00:27<00:02,  2.69it/s][chexpert]:  92%|█████████▏| 77/84 [00:28<00:02,  2.44it/s][chexpert]:  93%|█████████▎| 78/84 [00:28<00:02,  2.71it/s][chexpert]:  94%|█████████▍| 79/84 [00:28<00:01,  2.58it/s][chexpert]:  95%|█████████▌| 80/84 [00:29<00:01,  2.81it/s][chexpert]:  96%|█████████▋| 81/84 [00:29<00:01,  2.47it/s][chexpert]:  98%|█████████▊| 82/84 [00:30<00:00,  2.72it/s][chexpert]:  99%|█████████▉| 83/84 [00:30<00:00,  2.79it/s][chexpert]: 100%|██████████| 84/84 [00:30<00:00,  3.34it/s][chexpert]: 100%|██████████| 84/84 [00:30<00:00,  2.74it/s]
+{
+  "dataset": "chexpert",
+  "manifest": {
+    "task": "classification",
+    "display_name": "CheXpert",
+    "class_names": [
+      "No Finding",
+      "Enlarged Cardiomediastinum",
+      "Cardiomegaly",
+      "Lung Opacity",
+      "Lung Lesion",
+      "Edema",
+      "Consolidation",
+      "Pneumonia",
+      "Atelectasis",
+      "Pneumothorax",
+      "Pleural Effusion",
+      "Fracture"
+    ],
+    "csv_path": "/storage/3090group2/zjx/code/medical/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/data/chexpert_full.csv",
+    "csv_sha256": "910a10d108b430e5b3e6a57502326c97c4b507f6772e6c987eee00d244de16f7",
+    "expected_count": 668,
+    "actual_count": 668,
+    "unique_images": 668,
+    "positive_count": [
+      109,
+      298,
+      175,
+      310,
+      14,
+      85,
+      35,
+      14,
+      178,
+      10,
+      120,
+      6
+    ],
+    "scope": "complete released author test list; original model only",
+    "notes": [
+      "Author image order and all frontal/lateral views retained.",
+      "Author CHEXPERT constant evaluates 12 classes: Pleural Other and Support Devices are omitted from original 14-label CSV vectors."
+    ],
+    "sources": [
+      {
+        "path": "/storage/3090group2/zjx/code/medical/AlphaRAD/local_setup/prepare_chexpert_query_data.py",
+        "sha256": "274874059cb67e785b28793503c85f89da5427ecfb3dd093fb4bd16dfed72850"
+      },
+      {
+        "path": "/storage/3090group2/zjx/code/medical/AlphaRAD/configs/data_csv/chexpert.csv",
+        "sha256": "a1dfe8a23c246d58fe11a21533d1adfb4d28e960805dd7da7e00e8205e42c8ad"
+      },
+      {
+        "path": "/storage/3090group2/zjx/code/medical/data/alpharad/CheXpert/test_labels.csv",
+        "sha256": "d4c8b7ed95c3b2f78d82f92243609042a2ee4014b8bfe029bd572b093fc311a9"
+      },
+      {
+        "path": "/storage/3090group2/zjx/code/medical/AlphaRAD/cxrclip/prompt/constants.py",
+        "sha256": "8dd202f9da534e3bc00711b5be4b54dc2c5b064ff4aa74a8c9e4264bde5fda08"
+      },
+      {
+        "path": "/storage/3090group2/zjx/code/medical/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/data/chexpert_split_audit.json",
+        "sha256": "a59dec0a2474848876723cc3cc179e0439776314686d06dfa8c8198e4c0c1be3"
+      }
+    ]
+  },
+  "csv_sha256": "910a10d108b430e5b3e6a57502326c97c4b507f6772e6c987eee00d244de16f7",
+  "catalog_sha256": "19b124c177316d800bbc4406b60fc60a565f6d2e0539807c7491d3967a46cd15",
+  "rows": 668,
+  "unique_images": 668,
+  "paths_present": true,
+  "label_class_mapping_checked": true,
+  "checkpoint": "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/model/xraydinov2_mpnet/eccv_mpnet_518.tar",
+  "checkpoint_sha256": "97ca9c1fb8e4c869abe9cee592d8b0440d4f1f765efa98808a15e574cb08ccb9",
+  "training": false,
+  "adaptation": false,
+  "author_metrics": {
+    "zeroshot_binary": {
+      "No Finding": {
+        "AUROC": 0.87722177545092,
+        "PR_AUROC": 0.7248567672683602,
+        "Accuracy": 0.9011976047904192,
+        "F1": 0.6944444444444443,
+        "Precision": 0.7009345794392523,
+        "Recall": 0.6880733944954128
+      },
+      "Enlarged Cardiomediastinum": {
+        "AUROC": 0.8766914565572284,
+        "PR_AUROC": 0.8406001321722902,
+        "Accuracy": 0.5538922155688623,
+        "F1": 0.0,
+        "Precision": 0.0,
+        "Recall": 0.0
+      },
+      "Cardiomegaly": {
+        "AUROC": 0.9099855114459577,
+        "PR_AUROC": 0.7909493710165,
+        "Accuracy": 0.7829341317365269,
+        "F1": 0.30622009569377995,
+        "Precision": 0.9411764705882353,
+        "Recall": 0.18285714285714286
+      },
+      "Lung Opacity": {
+        "AUROC": 0.7962155343305101,
+        "PR_AUROC": 0.739621188082386,
+        "Accuracy": 0.5389221556886228,
+        "F1": 0.012820512820512822,
+        "Precision": 1.0,
+        "Recall": 0.0064516129032258064
+      },
+      "Lung Lesion": {
+        "AUROC": 0.9163390126692879,
+        "PR_AUROC": 0.43165714060309573,
+        "Accuracy": 0.9790419161676647,
+        "F1": 0.0,
+        "Precision": 0.0,
+        "Recall": 0.0
+      },
+      "Edema": {
+        "AUROC": 0.9308848753909797,
+        "PR_AUROC": 0.636228461935087,
+        "Accuracy": 0.8832335329341318,
+        "F1": 0.18750000000000003,
+        "Precision": 0.8181818181818182,
+        "Recall": 0.10588235294117647
+      },
+      "Consolidation": {
+        "AUROC": 0.8696908147145114,
+        "PR_AUROC": 0.3776417778171969,
+        "Accuracy": 0.9505988023952096,
+        "F1": 0.15384615384615383,
+        "Precision": 0.75,
+        "Recall": 0.08571428571428572
+      },
+      "Pneumonia": {
+        "AUROC": 0.8402140672782875,
+        "PR_AUROC": 0.4724507419836548,
+        "Accuracy": 0.9820359281437125,
+        "F1": 0.45454545454545453,
+        "Precision": 0.625,
+        "Recall": 0.35714285714285715
+      },
+      "Atelectasis": {
+        "AUROC": 0.8848773217152028,
+        "PR_AUROC": 0.7303339471918251,
+        "Accuracy": 0.8158682634730539,
+        "F1": 0.6666666666666666,
+        "Precision": 0.643979057591623,
+        "Recall": 0.6910112359550562
+      },
+      "Pneumothorax": {
+        "AUROC": 0.954711246200608,
+        "PR_AUROC": 0.5427537112010797,
+        "Accuracy": 0.9835329341317365,
+        "F1": 0.5925925925925927,
+        "Precision": 0.47058823529411764,
+        "Recall": 0.8
+      },
+      "Pleural Effusion": {
+        "AUROC": 0.9482816301703163,
+        "PR_AUROC": 0.8282105397236145,
+        "Accuracy": 0.9026946107784432,
+        "F1": 0.7470817120622568,
+        "Precision": 0.7007299270072993,
+        "Recall": 0.8
+      },
+      "Fracture": {
+        "AUROC": 0.9138972809667674,
+        "PR_AUROC": 0.1943052074631022,
+        "Accuracy": 0.9910179640718563,
+        "F1": 0.0,
+        "Precision": 0.0,
+        "Recall": 0.0
+      },
+      "AUROC(Avg)": 0.8932508772408814,
+      "PR_AUROC(Avg)": 0.6091340822048493,
+      "Accuracy(Avg)": 0.8554141716566867,
+      "AUROC(Weighted)": 0.8740281379614202,
+      "PR_AUROC(Weighted)": 0.7482565752002125,
+      "Accuracy(Weighted)": 0.718242245199409
+    }
+  },
+  "batch_size": 8,
+  "seed": 1234,
+  "device": "NVIDIA GeForce RTX 3090",
+  "cuda_visible_devices": "GPU-abb03698-9f1a-418f-a3d8-f6575faebc6e",
+  "torch_version": "2.9.0+cu128",
+  "classification": {
+    "per_class": {
+      "No Finding": {
+        "positive_count": 109,
+        "auroc": 0.87722177545092,
+        "average_precision": 0.7248567672683602,
+        "auprc_trapezoidal": 0.7234417988336191
+      },
+      "Enlarged Cardiomediastinum": {
+        "positive_count": 298,
+        "auroc": 0.8766914565572284,
+        "average_precision": 0.8406001321722902,
+        "auprc_trapezoidal": 0.8401072191898218
+      },
+      "Cardiomegaly": {
+        "positive_count": 175,
+        "auroc": 0.9099855114459577,
+        "average_precision": 0.7909493710165,
+        "auprc_trapezoidal": 0.7902241388962244
+      },
+      "Lung Opacity": {
+        "positive_count": 310,
+        "auroc": 0.7962155343305101,
+        "average_precision": 0.739621188082386,
+        "auprc_trapezoidal": 0.7387417287430706
+      },
+      "Lung Lesion": {
+        "positive_count": 14,
+        "auroc": 0.9163390126692879,
+        "average_precision": 0.43165714060309573,
+        "auprc_trapezoidal": 0.41856886535051446
+      },
+      "Edema": {
+        "positive_count": 85,
+        "auroc": 0.9308848753909797,
+        "average_precision": 0.636228461935087,
+        "auprc_trapezoidal": 0.6322054025975917
+      },
+      "Consolidation": {
+        "positive_count": 35,
+        "auroc": 0.8696908147145114,
+        "average_precision": 0.3776417778171969,
+        "auprc_trapezoidal": 0.36062751026729983
+      },
+      "Pneumonia": {
+        "positive_count": 14,
+        "auroc": 0.8402140672782875,
+        "average_precision": 0.4724507419836548,
+        "auprc_trapezoidal": 0.4627320254995552
+      },
+      "Atelectasis": {
+        "positive_count": 178,
+        "auroc": 0.8848773217152028,
+        "average_precision": 0.7303339471918251,
+        "auprc_trapezoidal": 0.7292179105432247
+      },
+      "Pneumothorax": {
+        "positive_count": 10,
+        "auroc": 0.954711246200608,
+        "average_precision": 0.5427537112010797,
+        "auprc_trapezoidal": 0.4934635450435011
+      },
+      "Pleural Effusion": {
+        "positive_count": 120,
+        "auroc": 0.9482816301703163,
+        "average_precision": 0.8282105397236145,
+        "auprc_trapezoidal": 0.8274639224235402
+      },
+      "Fracture": {
+        "positive_count": 6,
+        "auroc": 0.9138972809667674,
+        "average_precision": 0.1943052074631022,
+        "auprc_trapezoidal": 0.1512013758990802
+      }
+    },
+    "valid_class_count": 12,
+    "macro_auroc": 0.8932508772408814,
+    "macro_average_precision": 0.6091340822048493,
+    "macro_auprc_trapezoidal": 0.5973329536072537
+  },
+  "elapsed_seconds": 46.29557490348816,
+  "peak_gpu_memory_mib": 1559.97021484375
+}

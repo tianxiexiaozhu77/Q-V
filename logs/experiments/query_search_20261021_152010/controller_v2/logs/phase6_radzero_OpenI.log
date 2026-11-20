@@ -1,0 +1,17 @@
+OpenI: 16/7294, 8 candidates
+OpenI: 528/7294, 8 candidates
+OpenI: 1040/7294, 8 candidates
+OpenI: 1552/7294, 8 candidates
+OpenI: 2064/7294, 8 candidates
+OpenI: 2576/7294, 8 candidates
+OpenI: 3088/7294, 8 candidates
+OpenI: 3600/7294, 8 candidates
+OpenI: 4112/7294, 8 candidates
+OpenI: 4624/7294, 8 candidates
+OpenI: 5136/7294, 8 candidates
+OpenI: 5648/7294, 8 candidates
+OpenI: 6160/7294, 8 candidates
+OpenI: 6672/7294, 8 candidates
+OpenI: 7184/7294, 8 candidates
+OpenI: 7294/7294, 8 candidates
+{"dataset": "OpenI", "status": "complete", "rows": 7294, "candidates": {"original": {"macro_auroc": 0.855796250888782, "macro_auprc": 0.27467806334202766, "macro_average_precision": 0.2846232164178728}, "uniform_eta03": {"macro_auroc": 0.8620568714937039, "macro_auprc": 0.3124324545391918, "macro_average_precision": 0.3228126835426338}, "tta_flip_original": {"macro_auroc": 0.8548993985854143, "macro_auprc": 0.27652163639271804, "macro_average_precision": 0.28683222035001554}, "tta_flip_refined": {"macro_auroc": 0.8616611068192239, "macro_auprc": 0.3350102952300143, "macro_average_precision": 0.33818812558494243}, "tta_center_original": {"macro_auroc": 0.8581115293243887, "macro_auprc": 0.27402927628118057, "macro_average_precision": 0.2810982225364451}, "tta_center_refined": {"macro_auroc": 0.8640765624978674, "macro_auprc": 0.3134375209640459, "macro_average_precision": 0.32385240466297505}, "tta_fivecrop_original": {"macro_auroc": 0.8571410428007421, "macro_auprc": 0.26882440373250105, "macro_average_precision": 0.2749554738702544}, "tta_fivecrop_refined": {"macro_auroc": 0.8630427787263776, "macro_auprc": 0.28566867694801895, "macro_average_precision": 0.29692953483406115}}}

@@ -1,0 +1,24 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{BiomedCLIP / RSNA: original 11-method/branch comparison.} Mean $\pm$ sample SD over support seeds 42--46. Scores are percentages. V and Q+V use two views; other rows use one.}
+\label{tab:supp-oldmeans-biomedclip-rsna_pneumonia}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Method & AUROC & AUPRC \\
+\midrule
+Original & $81.15\pm0.00$ & $52.52\pm0.00$ \\
+Prototype & $83.81\pm1.39$ & $59.68\pm4.97$ \\
+Prototype mix & $81.83\pm1.54$ & $53.82\pm2.92$ \\
+Tip-Adapter & $81.88\pm1.63$ & $53.80\pm2.87$ \\
+GDA & $81.43\pm0.63$ & $52.56\pm0.10$ \\
+SimNL & $84.60\pm1.11$ & $59.14\pm3.32$ \\
+Positive-support-only adaptation & $81.32\pm3.42$ & $54.75\pm6.27$ \\
+Score S & $81.47\pm0.72$ & $52.93\pm0.93$ \\
+Q & $85.35\pm0.85$ & $62.52\pm3.29$ \\
+V & $81.47\pm0.00$ & $52.67\pm0.00$ \\
+Q+V & $85.98\pm0.84$ & $63.41\pm3.39$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

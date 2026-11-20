@@ -1,0 +1,8 @@
+xFormers is not available (Attention)
+{"status": "authenticating_inputs", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 3.5762786865234375e-06}
+{"status": "loading_model", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 2.0491998195648193}
+Device: cuda
+{"status": "support_fitted", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 6.499571323394775, "support_union_count": 50}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 7.222888708114624, "done": 8, "total": 16}
+{"status": "matching_interventions", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 7.490333557128906, "done": 16, "total": 16}
+{"status": "smoke_complete", "model": "AlphaRAD", "dataset": "siim_new_holdout", "smoke": 16, "elapsed_seconds": 9.40693473815918, "done": 16, "total": 16}

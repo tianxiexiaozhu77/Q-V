@@ -1,0 +1,460 @@
+% Shared by the standalone and combined PDF entry points.
+\clearpage
+\setcounter{page}{1}
+\renewcommand{\thepage}{S\arabic{page}}
+\appendix
+\numberwithin{table}{section}
+\renewcommand{\theHtable}{supp.\Alph{section}.\arabic{table}}
+\numberwithin{figure}{section}
+\renewcommand{\theHfigure}{supp.\Alph{section}.\arabic{figure}}
+\extrafloats{100}
+\maketitlesupplementary
+
+\noindent This supplement provides the complete fixed-support results (Appendix~\ref{supp:fixed}), query-path interventions (Appendix~\ref{supp:paths}), repeated-support few-shot comparisons (Appendix~\ref{supp:comparison}), data/selection/statistical protocols (Appendix~\ref{supp:protocol}), the query direction-change bound (Appendix~\ref{supp:query_geometry}), and computational details (Appendix~\ref{supp:computation}). Table generation reads saved numerical records and does not run model inference. The accompanying CSV files retain unrounded values; all primary comparisons described below are also tabulated in the PDF.
+
+\section{Complete Fixed-Support Results}
+\label{supp:fixed}
+\subsection{How to read the complete tables}
+Tables~\ref{tab:supp-fixed-alpharad}--\ref{tab:supp-fixed-carzero} report the four-branch results interpreted in this subsection.
+
+Original uses the task's unadapted query vectors and one original view. Q modifies the query vectors and uses one view; V retains the original query vectors and averages two views; Q+V combines both components. The mixing strength is fixed at $\eta=0.3$, the crop-side ratio at 0.8, and view weights at one half. All four branches share their model's support/test protocol, preprocessing, class order, and pretrained weights. Original and V receive no support labels. The same fixed support images are reused across the transferred backbones.
+
+Tables~\ref{tab:supp-fixed-alpharad}--\ref{tab:supp-fixed-carzero} include all 138 completed paired evaluations across ten models and eleven datasets: 120 classification, 12 localization, and six segmentation tasks. A classification cell contains AUROC / trapezoidal AUPRC in percent; a spatial cell contains PG or Dice in percent. These tables use the original fixed support draws, and must not be substituted for the five-seed means in Appendix~\ref{supp:comparison}. Differences should be calculated from unrounded records, not displayed two-decimal scores. The accompanying \texttt{fixed\_support\_all.csv} includes all 1,032 branch/metric values.
+
+\paragraph{Aggregation and counting.}
+The complete tables and main-paper Table~\mainref{tab:overall} retain both SIIM protocols (1,704 and 1,694 images); they share a dataset and are not independent cohorts. Table~\mainref{tab:overall}'s Avg. column equally weights ten dataset/protocol groups across both panels: six groups from the upper panel, three noncardiac datasets from the lower panel, and one group formed by averaging the three CheXchoNet tasks. Both SIIM protocols contribute separately to that average.
+
+The dataset-averaged ablation in main-paper Table~\mainref{tab:components} instead uses the same 1,704-image SIIM protocol for all ten models, counting SIIM once per model. CheXchoNet CSLV, CDLV, and CCOM share 7,407 test images and are averaged as one dataset. Thus the 120 classification scopes become 110 after excluding duplicate SIIM protocols, and then 90 model--dataset combinations after grouping the cardiac labels. Each of the ten models contributes nine classification datasets to Table~\mainref{tab:components}.
+
+\paragraph{Architecture-specific interpretation.}
+\label{supp:native_averages}
+Tables~\ref{tab:supp-fixed-alpharad}--\ref{tab:supp-fixed-carzero} report the within-backbone comparisons discussed here.
+
+The common query-update formula is applied through each backbone's native interfaces. Support statistics use query-conditioned visual aggregates for AlphaRAD, RadZero, and CARZero, and global or pooled features for the other models; query injection, visual aggregation, and final scoring also differ (main-paper Sec.~\mainref{sec:interfaces}). MedKLIP/MAVL additionally extend the query context for missing categories, with the same initial context shared by all branches within a setting (Appendix~\ref{supp:support_sources}). Consequently, cross-model means describe within-backbone changes under architecture-specific native procedures, not identical internal interventions or equal end-to-end computation. The four-branch comparisons separate Q and V within each procedure. In the competitor tables, Q matches the single-view budget of the other one-view methods; Q+V uses an extra view and is not a matched-compute comparison (Appendix~\ref{supp:computation}).
+
+\paragraph{Historical spatial protocol.}
+Tables~\ref{tab:supp-fixed-alpharad}--\ref{tab:supp-fixed-carzero} mark the historical test-threshold segmentation results; Table~\ref{tab:supp-validation-segmentation} reports the separate validation-threshold evaluation.
+
+The six QaTaCOV19 rows marked $\dagger$ select a threshold using test masks, by scanning $0,0.01,\ldots,1$ and maximizing mean positive-image Dice. They are exploratory. In particular, AlphaRAD Q's historical Dice is 54.02; its separate validation-selected value is 53.81. The main paper reports the latter protocol with 473 additional validation masks. These two protocols are not pooled. Some Node21 PG gains are approximately 0.09 pp and may correspond to a single image. Tiny positive changes, including KAD's approximately 0.00027 pp Dice change, should not be interpreted as meaningful improvement after rounding.
+
+\subsection{Coverage and unavailable evaluations}
+Table~\ref{tab:supp-coverage} retains both unavailable (NA) and unrun (NR) scopes. The nine NA entries concern spatial prediction: BiomedCLIP, CheXzero, and CARZero lack a verified implementation of the model's spatial response output in the current evaluation (three spatial tasks each). All classification scopes are completed; MedKLIP and MAVL use the fixed description extension detailed in Appendix D.2 for Shenzhen and Montgomery. Missing scores are not zero. NR records that an evaluation was not run, without a claim about model capability.
+
+The coverage-table abbreviations are AlphaRAD~\cite{alpharad} (Alpha), RadZero~\cite{radzero} (Rad), BiomedCLIP~\cite{biomedclip} (BioCLIP), BioViL-T~\cite{biovilt} (BioViL), CheXzero~\cite{chexzero} (CheX0), MedKLIP~\cite{medklip} (MedK), MAVL~\cite{mavl}, KAD~\cite{kad}, MaCo~\cite{maco}, and CARZero~\cite{carzero} (CAR0).
+\input{sec/supplement_tables/a_coverage}
+\input{sec/supplement_tables/a_fixed}
+\clearpage
+
+\section{Complete Query-Path Interventions}
+\label{supp:paths}
+\subsection{Separating aggregation from readout}
+\label{supp:alpha_paths}
+Tables~\ref{tab:supp-path-rsna_pneumonia}--\ref{tab:supp-path-ci-siim_new_holdout} report the path-branch scores and paired contrasts for the three evaluation scopes.
+
+For AlphaRAD and RadZero, let the ordered pair denote (visual aggregation query vector, final readout query vector). Original is $(q,q)$, R is $(q,q')$, A is $(q',q)$, and Q is $(q',q')$. Q--R compares different aggregation query vectors with the same adapted readout query vector. A is additionally evaluated in the original AlphaRAD intervention. The same-feature score control S retains both original queries and adds a support-derived residual to the original logit (Appendix~\ref{supp:same_feature_score}); it retains the Original spatial map, which does not explain the added score term. R instead substitutes $q'$ inside the native readout, and Q uses $q'$ for both aggregation and readout. Q--R and Q--S therefore address different comparisons: reaggregation with an adapted readout held fixed, and full query adaptation versus a residual based on the same support features, respectively.
+
+All intervention branches use one original image view, frozen weights, $\eta=0.3$, and five prespecified support-set draws (seeds 42--46). Original is independent of the support draw and therefore has zero support-seed SD. Absolute results report the mean and sample SD; paired tables report mean differences and 95\% test-group bootstrap intervals, in percentage points (pp). The bootstrap is conditional on these five support draws, and no multiple-comparison adjustment is applied.
+
+\paragraph{Why scoring and aggregation can respond differently.}
+\label{supp:path_interpretation}
+For the separately controlled AlphaRAD/RadZero paths, write the native logit as $\ell_c(x;u,v)=h_c(g_c(x;u);v)$, where $g_c$ includes the per-head visual aggregates and $h_c$ retains native normalization, scaling, and head combination. For a fixed image and support set, define
+\begin{equation}
+\begin{aligned}
+\Delta_c^{\mathrm{read}}(x)&=\ell_c(x;q_c,q'_c)-\ell_c(x;q_c,q_c),\\
+\Delta_c^{\mathrm{agg}}(x)&=\ell_c(x;q'_c,q'_c)-\ell_c(x;q_c,q'_c).
+\end{aligned}
+\label{eq:supp-path-decomposition}
+\end{equation}
+The total Q--Original logit change is exactly $\Delta_c^{\mathrm{read}}(x)+\Delta_c^{\mathrm{agg}}(x)$. This is a decomposition along the chosen Original--R--Q path; the aggregation effect with the original readout, A--Original, can differ. The identity concerns logits, not an additive attribution of AUROC or AUPRC to independent mechanisms. Classification effects depend on how these image-specific changes alter the ordering of positive and negative examples.
+
+For nonzero $\mu_c^+-\mu_c^-$, the support direction $d_c$ maximizes the projection of that observed mean difference among unit directions, with $d_c^\top(\mu_c^+-\mu_c^-)=\|\mu_c^+-\mu_c^-\|_2$. This property concerns normalized support features obtained before adaptation. It neither guarantees generalization of the readout nor optimizes the representations $g_c(x;q'_c)$ produced by changing aggregation. In particular, the query update is not fitted to spatial annotations or to a loss evaluated after reaggregation. There is therefore no sign guarantee for the additional aggregation effect on class separation. The following interventions test this additional effect while preserving the adapted native readout, rather than attributing all Q--Original gains to reaggregation.
+
+\paragraph{Evaluation on RadZero development datasets.}
+Tables~\ref{tab:supp-path-rsna_pneumonia}--\ref{tab:supp-path-ci-chestxdet10} report the AlphaRAD interventions on RSNA and ChestXDet10 discussed here.
+
+The RSNA test has 5,327 images from 3,720 mapped NIH patients, with patient-separated supports. ChestXDet10 uses 492 classification images and 409 localization images, with verified image/exact-duplicate-group separation but no reliable patient identifiers. Both datasets were used during development with RadZero; the AlphaRAD interventions were performed after the adaptation rule and parameters were fixed. The saved Q--R classification intervals are positive on both datasets, providing exploratory evidence for a reaggregation benefit on datasets shared with RadZero development. A--Original, R--Original, and Q--A also have both metric intervals above zero: aggregation and readout each provide gains, and updating both improves on either alone. Q--R is positive for AUROC in all five support draws on both datasets, and for AUPRC in four draws on RSNA and all five on ChestXDet10. These counts are descriptive, not independent replications. By contrast, ChestXDet10 Q--S AUPRC is $+0.51\,[-0.14,1.39]$ pp, and Q--Original PG is $+1.06\,[-0.64,2.91]$ pp; both intervals cross zero. Thus the classification gains do not establish improved localization.
+
+\paragraph{Additional same-source SIIM holdout.}
+Tables~\ref{tab:supp-path-siim_new_holdout} and~\ref{tab:supp-path-ci-siim_new_holdout} report the SIIM holdout branch scores and paired contrasts, respectively.
+
+The existing SIIM path study first excludes 1,714 historical images, their DICOM identifier groups, and exact duplicates in original/converted pixels. A fixed 1,000-image holdout contains 211 positive images; five support sets each draw five positives and five negatives from the remaining candidates. PatientID is an image-specific UUID without a cross-examination identity mapping. The split therefore establishes DICOM-identifier-group separation, not verified patient separation or external-hospital validation. Pretraining overlap is also unaudited. This experiment is additional to the 138 main evaluations.
+
+On this holdout, Q--R is $-0.21\,[-0.33,-0.09]$ AUROC and $-0.45\,[-0.85,-0.05]$ AUPRC pp, with both differences negative in four of five support draws. A--Original has small negative mean differences on both metrics, with both intervals crossing zero. R--Original has positive mean differences, but both intervals also cross zero. These results locate a loss from changing aggregation with the adapted readout fixed; they do not establish a readout gain over Original on this holdout. The contrast with RSNA/ChestXDet10 occurs within the same architecture and update rule, so architecture alone does not explain the differing signs. The following tables give every saved classification branch and prespecified classification contrast for all three scopes.
+
+\input{sec/supplement_tables/b_alpha}
+
+\subsection{Six-model cardiac extension}
+\label{supp:cardiac_paths}
+Table~\ref{tab:supp-f-hooks} specifies the decoder intervention locations; Tables~\ref{tab:supp-cardiac-path-alpharad}--\ref{tab:supp-cardiac-path-ci-kad} report the six-model cardiac results and paired contrasts.
+
+We extend the intervention to three cardiac tasks on CheXchoNet and six models: AlphaRAD, RadZero, CARZero, MedKLIP, MAVL, and KAD. Within each task, all models share the same five support sets and patient-bootstrap protocol, and are evaluated on the same 7,407 test images from 2,470 patients. Every task/seed uses its own five positive and five strictly negative support patients. Supports may overlap across seeds and are disjoint from test patients. The three correlated tasks share one cohort. All 270 task $\times$ seed $\times$ branch results are retained; they do not increase the 138-task main-evaluation count.
+
+\paragraph{Architecture-specific controls.}
+AlphaRAD and RadZero allow separate control of the query vectors used for aggregation and final scoring, so we use the Q--R comparison. MedKLIP, MAVL, KAD, and CARZero do not expose an equivalent, independently controlled readout using disease query vectors. Their control F initializes the query path with $q'$ but replaces each visual cross-attention update listed in Table~\ref{tab:supp-f-hooks} with its original-$q$ counterpart for the same image. Residual connections, layer normalization, feed-forward layers, prediction heads, and self-attention where present are recomputed along this intervened path; their intermediate values are not fixed to those of Q. CARZero clamps only the image-to-text calls and reuses Q's text-to-image score. Thus, Q--F measures the effect of recomputing these cross-attention outputs, including downstream interactions, and is not equivalent to Q--R. For each of MedKLIP and MAVL, all branches share the same extended task-query resources and query context.
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}p{0.11\textwidth}p{0.29\textwidth}p{0.07\textwidth}p{0.45\textwidth}@{}}
+\toprule
+Model & Decoder root & Layers & Scope of replacement \\
+\midrule
+MedKLIP & \texttt{model.decoder} & 0--3 & Disease queries attending to image memory; native self-attention remains active. \\
+MAVL & \texttt{model.decoder} & 0--3 & Entire disease/concept query sequence in the native feature-mode classification decoder. \\
+KAD & \texttt{model.decoder} & 0--3 & TQN text queries attending to image memory; native self-attention remains active. \\
+CARZero & \texttt{model.fusion\_module.}\newline\texttt{decoder} & 0--3 & Image memory with text queries only. The native decoder omits self-attention; the reverse-direction score is reused from Q. \\
+\bottomrule
+\end{tabular}
+\caption{Exact F hook locations in the four cardiac decoder models. Paths are relative to the native adapter; append \texttt{.layers[l].multihead\_attn} to each decoder root for every listed zero-based layer $l$. Each hook replaces the complete \texttt{MultiheadAttention} return tuple after output projection and before \texttt{dropout2} and residual addition.}
+\label{tab:supp-f-hooks}
+\end{table*}
+
+\paragraph{Recording and replaying visual updates.}
+Table~\ref{tab:supp-f-hooks} lists the hook locations used for the recording and replay procedure.
+
+For each image and support configuration, an original-$q$ forward pass first records the complete $(\texttt{attn\_output},\texttt{attn\_weights})$ tuple at all four layers. The F pass then starts from $q'$ and replays the recorded tuple at the corresponding layer; a separate unmodified $q'$ pass yields Q. The replaced output has passed through multi-head combination and the attention output projection, but not the decoder's subsequent dropout or residual addition: neither the raw value tensor nor the entire decoder-layer output is replaced. All four decoders use pre-normalization and run in evaluation mode with dropout disabled. The implementation checks exact equality of the visual key/value tensors, output shape, and layer execution order between recording and replay. For CARZero, recording and replay are restricted to each image-to-text call; F averages that intervened score with the unchanged reverse-direction score from Q using the native bidirectional rule.
+
+\paragraph{Results and limits across architectures and tasks.}
+Tables~\ref{tab:supp-cardiac-path-alpharad}--\ref{tab:supp-cardiac-path-ci-kad} provide the branch scores and paired intervals underlying this discussion.
+
+The cardiac results show that reaggregation is not universally beneficial. AlphaRAD and RadZero have negative mean Q--R AUPRC differences on all three tasks. Their three-task mean differences are $-0.3156\,[-0.5931,-0.0767]$ and $-0.6329\,[-1.0811,-0.2776]$ pp, respectively, with both paired 95\% intervals below zero; the intervals for their mean AUROC differences both cross zero. For MedKLIP on CDLV, the Q--F AUPRC difference is $+0.2627\,[0.0310,0.6701]$ pp, whereas the AUROC difference is $+0.3963\,[-0.0102,0.8556]$ pp and its interval crosses zero. This example was selected after inspecting all results and is reported only as an exploratory finding.
+
+AlphaRAD provides a direct example of useful readout adaptation being offset by reaggregation. Its three-task mean R--Original AUPRC difference is $+0.2243\,[0.0409,0.4491]$ pp, whereas Q--R is negative in all five support draws and offsets that gain; the resulting Q--Original mean is $-0.0913$ pp with an interval crossing zero. RadZero's three-task mean Q--R AUPRC difference is also negative in all five draws. These observations support the distinction in Appendix~\ref{supp:path_interpretation}: an image-level direction that improves scoring need not improve aggregation. They do not identify a spatial or clinical cause of the loss, and the cardiac study has no A branch to isolate aggregation with the original readout.
+
+Across all 18 model/task combinations, none has 95\% intervals above zero for both the AUROC and AUPRC differences between Q and its corresponding control; 10 have both metric intervals crossing zero, 4 have both below zero, and 4 have mixed interval categories. For the F-controlled models, this assesses the value of recomputing the specified cross-attention outputs and their downstream effects, not an isolated scoring direction. These interventions indicate where the native prediction path gains or loses from adaptation; they do not supply a validated criterion for choosing a path before seeing a new task's outcomes. Such a criterion would need to be selected using support-only validation and evaluated on untouched test data.
+
+\paragraph{Complete reporting.}
+Tables~\ref{tab:supp-cardiac-path-alpharad}--\ref{tab:supp-cardiac-path-ci-kad} contain the complete cardiac path results.
+
+For every model, the tables give all Original/control/Q means and all three prespecified contrasts: Q--control, Q--Original, and control--Original. The task macro row is computed within each support seed and bootstrap replicate; it is a summary, not another independent cohort.
+\input{sec/supplement_tables/b_cardiac}
+
+\input{sec/query_path_heatmaps}
+\clearpage
+
+\section{Complete Few-Shot Method Comparisons}
+\label{supp:comparison}
+% \subsection{Development datasets: all methods, intervals, and seeds}
+\subsection{Repeated-support comparisons on RSNA and ChestXDet10}
+Tables~\ref{tab:supp-oldmeans-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldmeans-alpharad-chestxdet10} report means and support-seed standard deviations; Tables~\ref{tab:supp-oldci-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldci-alpharad-chestxdet10} report paired contrasts. Table~\ref{tab:supp-taskres-sstext} gives the additional TaskRes and SS-Text+ comparisons.
+
+The original RSNA/ChestXDet10 comparison includes 11 methods/branches, two backbones, and five support-set draws, giving 220 classification results and 44 method means. The additional TaskRes and SS-Text+ comparisons are documented below in the same subsection (\ref{supp:taskres_sstext}).
+% The following tables report all means and sample SDs, all 112 prespecified contrasts, and all 220 individual support-seed scores.
+The following tables report all means and sample SDs and all 112 prespecified contrasts. The 220 individual support-seed scores are retained in the accompanying CSV file \texttt{fewshot\_development\_seeds.csv}. AUROC and trapezoidal AUPRC are the primary metrics; average precision stored by some evaluators is not substituted for AUPRC.
+
+Methods share support labels, grouped cross-validation folds, and test order. Prototype, prototype-score mixing, Tip-Adapter, GDA, and SimNL use frozen global projected features. AlphaRAD Q uses class-local support aggregates obtained through the model's existing aggregation conditioned on query vectors; S uses those same local statistics but modifies only the final logit. V and Q+V use two test views, whereas the other methods use one. Hence a Q+V comparison in this batch alone does not control the competitor's view count.
+
+\paragraph{Positive-support-only adaptation.}
+Tables~\ref{tab:supp-oldmeans-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldmeans-alpharad-chestxdet10} include the positive-support-only control, with paired contrasts in tables~\ref{tab:supp-oldci-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldci-alpharad-chestxdet10}.
+
+This control replaces Q's positive-minus-negative support direction with the normalized positive support mean:
+\[
+\begin{aligned}
+d_c^{\mathrm{pos}}&=\operatorname{norm}(\mu_c^+),\\
+q_c^{\mathrm{pos}}&=a_c\operatorname{norm}(\bar q_c+\eta d_c^{\mathrm{pos}}).
+\end{aligned}
+\]
+Here $\mu_c^+$ is the mean of the same unit-normalized positive support features used by Q. The support draws, feature extraction, $\eta=0.3$, query-scale policy $a_c$, and single-view native prediction path are identical to Q. Only the support direction changes; negative text prompts, where used by the model, remain unchanged in both methods. Thus, ``positive-support-only'' refers to the support evidence used to construct the update direction. The accompanying CSV files retain the original method key \texttt{positive\_query} for this control.
+
+The prototype classifier follows the class-mean prototype principle of Prototypical Networks~\cite{snell2017prototypical}, implemented here as a cosine classifier on frozen features without episodic representation learning. Let $\mathbf f(x)$ be the unit-normalized global projected image feature, and let $\mathbf p_c^+$ and $\mathbf p_c^-$ be the separately unit-normalized means of positive and negative support features for disease $c$. The prototype score is
+\[
+ r_c(x)=\mathbf f(x)^\top(\mathbf p_c^+-\mathbf p_c^-).
+\]
+Prototype-score mixing is our constructed score-level control,
+\[
+ z_c^{\mathrm{mix}}(x)=z_c^{\mathrm{Original}}(x)+\alpha r_c(x),
+\]
+where $z_c^{\mathrm{Original}}$ is the model's native binary margin. A single $\alpha$ per model/task/support seed is selected using the shared grouped support folds and macro trapezoidal AUPRC over $\{0,0.03,0.1,0.3,1,3,10\}$. Prototypes are refitted within each training fold and on all supports after selection. This control combines scores, leaves text queries unchanged, and is not presented as a reproduction of a separate published adaptation method.
+
+\paragraph{Same-feature difference scoring (S).}
+\label{supp:same_feature_score}
+Tables~\ref{tab:supp-oldmeans-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldmeans-alpharad-chestxdet10} include the same-feature score control S, with paired contrasts in tables~\ref{tab:supp-oldci-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldci-alpharad-chestxdet10}.
+
+Let $\bar z_c^0(x)$ denote the unit feature extracted along the Original prediction path. S uses the same normalized positive-minus-negative support mean direction $d_c$ as Q, computed from these features, and predicts
+\begin{equation}
+\ell_c^{\mathrm S}(x)=\ell_c^{\mathrm{Original}}(x)
++\alpha\,(\bar z_c^0(x))^\top d_c.
+\label{eq:supp_same_feature_score}
+\end{equation}
+The positive and negative means are subtracted before their difference is normalized; they are not separately normalized as in the prototype classifier above. A zero mean difference gives $d_c=0$. S keeps the queries unchanged, and both support and test features come from the Original path.
+
+For AlphaRAD, let $\mathbf a_{ch}(x;q_c)$ be the original-query attention context returned by head $h$, after the model's per-head $\ell_2$ normalization. The feature used by both Q's support statistics and S is
+\begin{equation}
+\bar z_c^0(x)=
+\frac{[\mathbf a_{c1}(x;q_c);\ldots;\mathbf a_{cH}(x;q_c)]}
+{\|[\mathbf a_{c1}(x;q_c);\ldots;\mathbf a_{cH}(x;q_c)]\|_2}.
+\end{equation}
+Thus, S's residual is one dot product on the concatenated, unit-normalized feature. It does not apply an additional temperature or the native head-weight aggregation to this residual; the original logit retains the model's native per-head normalization, temperature, and head-combination rule. For BiomedCLIP, $\bar z_c^0(x)=\mathbf f(x)$ is the unit global projected image feature, shared across classes and independent of the query. Its Original margin in this implementation is $\mathbf f(x)^\top q_c^+-\mathbf f(x)^\top q_c^-$ for the positive and negative text vectors, without an extra CLIP logit-scale multiplier.
+
+A single $\alpha$ is shared across classes for each model, dataset, and support draw. We select it from $\{0,0.03,0.1,0.3,1,3,10\}$ using the common grouped five-fold support splits and pooled out-of-fold macro trapezoidal AUPRC. Each fold recomputes $d_c$ using only its training supports; after selection, directions are recomputed on all supports. Scores within $10^{-12}$ of the best candidate are tied in favor of smaller $\alpha$. If a training fold lacks either binary label for a class, nonzero candidates are invalid and the procedure falls back to $\alpha=0$, which recovers Original. S introduces no adapted query. For AlphaRAD, R changes the query inside the native readout, preserving its normalization and scaling, while Q also changes the aggregation query. Their predictions are not assumed to be identical even when they share the same support direction.
+
+Tip-Adapter~\cite{tipadapter} and GDA~\cite{gda} are binary one-versus-rest (OvR) ports, with the Kubokawa--Srivastava (KS) precision-matrix estimator for GDA~\cite{kubokawa2008precision}. SimNL~\cite{simnl} is a trainable cache/text-residual OvR adaptation on fixed image features. It uses neither additional image augmentation nor generated descriptions. Encoder freezing therefore does not make the entire comparison optimization-free. These ports are distinct from exact reproductions of their authors' single-label experiments.
+
+The intervals in the following tables use patient resampling for RSNA and image/exact-duplicate-group resampling for ChestXDet10. They preserve negative and mixed-sign differences and intervals crossing zero.
+% The separate seed tables make support sensitivity visible without treating the five fitted models as a prediction ensemble.
+
+
+% BEGIN temporarily commented cardiac method comparison appendix (former C.2).
+% \subsection{CheXchoNet: seven competitors under both view budgets}
+% The cardiac comparison contains Original, Q, prototype classification, prototype-score mixing, Tip-Adapter, GDA, SimNL, Project and Mix (P\&M), and a linear probe, each under one and two test views. Two backbones, three tasks, five supports, and 18 method/view conditions give 540 individual results and 108 task-level means. The following tables include all seven competitors, the task macro summaries, all 200 prespecified contrasts including those summaries, and every task-level seed score. The macro rows do not increase the number of independent tasks or patients.
+% 
+% P\&M is a formula-based binary-task port that retains text-subspace projection, mixed prototypes, and the image-covariance discriminant. The audited author-repository snapshot did not provide an executable implementation; this is not an official-code reproduction. Text SVD retains 99\% squared-singular-value energy; all actual task/fold fits retained rank two. This batch uses the common original-view support budget rather than P\&M's ten support augmentations. The linear probe fits L2-regularized logistic regression with an intercept. Both it and SimNL fit small parameters while freezing the pretrained backbone.
+% 
+% A competitor is tuned and fitted once, then the same fitted model is applied to original and cropped test images. No additional support/validation views or fusion-weight tuning are introduced for the two-view version. AlphaRAD's Q+V averages logits before sigmoid; BiomedCLIP's Q+V averages probabilities; competitor methods average their margins/logits. Equal view counts therefore do not equate score domains, intermediate features, or end-to-end computation. In particular, AlphaRAD's global-feature competitors and class-local Q still differ in representation.
+% 
+% Each contrast table contains same-view comparisons with all seven competitors, Q--Original or Q+V--V, and the two-view-minus-one-view effect for every method. A favorable comparison against another adapter must not be interpreted as an improvement over Original. The already-used cardiac cohort also does not become an independent dataset when new comparison methods are added.
+% END temporarily commented cardiac method comparison appendix (former C.2).
+\input{sec/supplement_tables/c_development_means}
+\input{sec/supplement_tables/c_development_ci}
+\input{sec/taskres_sstext_comparison}
+% Temporarily hide the original per-seed tables; keep the source tables and CSV records.
+% \input{sec/supplement_tables/c_development_seeds}
+% BEGIN temporarily commented cardiac method comparison tables.
+% \input{sec/supplement_tables/c_cardiac_means}
+% \input{sec/supplement_tables/c_cardiac_ci}
+% \input{sec/supplement_tables/c_cardiac_seeds}
+% END temporarily commented cardiac method comparison tables.
+\clearpage
+
+\section{Data, Support Selection, and Statistical Protocols}
+\label{supp:protocol}
+\subsection{Fixed-support budgets and evaluation labels}
+Table~\ref{tab:supp-counts} lists every evaluated scope. Multilabel tasks select five positive anchor images per class, with distinct anchor images across classes and all disease labels retained for each image. The resulting support sets contain 50/70/60 images for ChestXDet10/ChestXray14/CheXpert. Images selected as anchors for another class can also be positive for the current class, so its actual positive count may exceed five. Binary tasks use five positive and five negative images. Negative denotes absence of the target label, not a globally healthy image. A class requires both support labels. If the positive-minus-negative mean difference is zero, we define $d_c=0$ and skip the update, preserving the original query vector.
+
+\input{sec/supplement_tables/d_counts}
+
+The evaluated multilabel dictionaries are:
+\begin{itemize}
+\item \textbf{ChestXray14 (14):} Atelectasis, Cardiomegaly, Effusion, Infiltration, Mass, Nodule, Pneumonia, Pneumothorax, Consolidation, Edema, Emphysema, Fibrosis, Pleural Thickening, Hernia.
+\item \textbf{ChestXDet10 (10):} Atelectasis, Calcification, Consolidation, Effusion, Emphysema, Fibrosis, Fracture, Mass, Nodule, Pneumothorax.
+\item \textbf{CheXpert (12):} No Finding, Enlarged Cardiomediastinum, Cardiomegaly, Lung Opacity, Lung Lesion, Edema, Consolidation, Pneumonia, Atelectasis, Pneumothorax, Pleural Effusion, Fracture. Pleural Other and Support Devices are excluded.
+\end{itemize}
+The accompanying label-order CSV preserves the exact names and class indices used for each model. No patient or image identifiers are included in these supplementary summary files.
+
+\subsection{Support/test separation by evaluation batch}
+\label{supp:support_sources}
+Table~\ref{tab:supp-support-sources} identifies the support source and test construction for each dataset and evaluation protocol. Support budgets and label handling are specified in Appendix D.1. The source must be specified by protocol: fixed-support and repeated-support experiments can use different support sources on the same dataset. The transferred backbones reuse the frozen support/test manifests rather than select a new split for each model. Both SIIM protocols are evaluated for all ten models; each protocol uses the same support and test images across models. Patient separation is claimed only where reliable identifiers support it.
+
+Separate training data are used for the 1,704-image SIIM protocol's supports and the repeated-support ChestXDet10 comparisons. QaTaCOV19 combines training positives with separate normal controls. CovidKaggle draws from outside the author evaluation list, and the corrected RSNA repeated-support experiment draws from officially labeled images after excluding reference patients; these are described by their actual selection rules rather than assumed to be independent official training splits. Repeated CheXchoNet supports come from the patient subset reserved during the initial repartition.
+
+\input{sec/support_sources}
+
+\paragraph{Relation to AlphaRAD's test sets.}
+Tables~\ref{tab:supp-counts} and~\ref{tab:supp-support-sources} summarize the final fixed-support counts and the support/test construction described here.
+
+The initial RSNA reference is the 5,337-image test list used by RadZero~\cite{radzero} and adopted by AlphaRAD~\cite{alpharad}, with 1,218 positives before support selection. We retain the original ten-image support set. An audit using the official RSNA-to-NIH mapping identified 30 additional images from seven of their patients in the historical 5,327-image test list. Excluding these images leaves 5,297 test images from 3,713 patients, with no support/test patient overlap. All ten models and all four branches use this corrected test set; their fixed-support metrics are recomputed from the saved predictions without changing supports, queries, or model weights. The original predictions and result files remain archived. For CheXpert, the initial 668 images follow the test CSV released in AlphaRAD's repository; the preparation script checks image identities and all 14 source labels against the released label file before selecting supports for the 12 evaluated labels. Both fixed-support protocols therefore sample labeled supports from the released evaluation lists and exclude all images of support patients before scoring. This construction evaluates few-shot adaptation within repartitioned target-task lists; repartitioning these lists does not itself establish a new external cohort.
+
+CheXchoNet differs: AlphaRAD reports a manually constructed 7,494-image test subset, whereas our available data were independently sampled from CheXchoNet 1.0.0 to match that image count. The stored sampling manifest explicitly identifies the subset as neither an official dataset split nor AlphaRAD's paper split. We then select supports and remove their patients from this independently constructed subset. Matching the reported image count does not establish matching image identities.
+
+\paragraph{Original fixed-support evaluation.}
+Table~\ref{tab:supp-support-sources} lists the support sources for the original fixed-support protocols; Table~\ref{tab:supp-counts} gives their evaluation counts.
+
+For the four originally evaluated RadZero datasets retained here, supports were drawn from earlier local evaluation lists, excluding support images and identifiable groups from the final test lists. AlphaRAD similarly repartitioned ChestXDet10, ChestXray14, RSNA, Shenzhen, Montgomery, CheXpert, and Node21. Node21 removes five positive support images; the five negative supports were not in the positive-image localization test. AlphaRAD SIIM uses separate training supports, QaTaCOV19 uses training positives plus separate normal controls, and CovidKaggle uses supports outside the evaluation list; those tests retain their original local image lists. Without reliable patient identifiers, image/group separation alone is not reported as comprehensive patient or near-duplicate exclusion.
+
+\paragraph{Corrected RSNA and ChestXDet10 repeated supports.}
+Table~\ref{tab:supp-support-sources} summarizes the repeated-support construction used for the comparisons in tables~\ref{tab:supp-oldmeans-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldmeans-alpharad-chestxdet10}.
+
+Seeds 42--46 are fixed before inference, shared by methods/backbones, and never selected for their test score. RSNA uses the official RSNA-to-NIH identity mapping to exclude every test patient from the support candidate pool. Each support set has one image from five positive and five strictly negative patients. The repeated-support and query-path experiments retain their fixed test set of 5,327 images from 3,720 patients: their supports were sampled after excluding all patients represented in the entire 5,337-image reference cohort. They are unaffected by the additional exclusions needed for the original fixed supports. Consequently, fixed-support and repeated-support Original scores can differ because the test sets differ. The older DICOM PatientID field was an examination UUID, so the corrected repeated-support protocol replaces the earlier patient-overlap-prone support comparison. ChestXDet10 draws 50 distinct author-training images per seed and checks image/exact-duplicate groups against the fixed 492-image test. Patient-level exclusion is unverified there. The 409-image localization subset is evaluated separately.
+
+\paragraph{Additional classification coverage.}
+Table~\ref{tab:supp-coverage} records the completed scopes; Tables~\ref{tab:supp-fixed-alpharad} and~\ref{tab:supp-fixed-radzero} give the corresponding AlphaRAD and RadZero results.
+
+Six additional fixed-support evaluations cover AlphaRAD on SIIM (1,694), and RadZero on CheXpert, Shenzhen, Montgomery, CovidKaggle, and SIIM (1,704). They reuse the existing support/test identities, labels, and class order without resampling or parameter selection. For all models, SIIM (1,704) uses ten supports from separate training DICOMs; SIIM (1,694) uses the ten supports held out from the original 1,704-image evaluation list. Each model retains its native image preprocessing. For the additional RadZero tasks, disease names are inserted into the fixed native template \texttt{There is [disease]}; Consolidation, Edema, and Fracture use the phrases \texttt{Pulmonary Consolidation}, \texttt{Pulmonary Edema}, and \texttt{Bone Fracture}, respectively. Original, Q, V, and Q+V share these descriptions and the frozen weights.
+
+\input{sec/native_interfaces}
+
+\paragraph{MedKLIP query construction and adaptation.}
+Tables~\ref{tab:supp-added-disease-prompts} and~\ref{tab:supp-cardiac-prompts} list the additional tuberculosis and cardiac descriptions used with this query construction.
+
+MedKLIP~\cite{medklip} retains its released 75 observation descriptions, their order, and the existing dataset-label mapping. Each description is padded or truncated to 64 tokens and encoded by frozen Bio\_ClinicalBERT~\cite{alsentzer2019clinicalbert}. Its 768-dimensional final-layer CLS embedding $\mathbf e(t)$ passes through the pretrained affine disease projection $P$, yielding the 256-dimensional decoder query $q=P(\mathbf e(t))$. The complete context enters the original decoder and shared binary classifier.
+
+Support features are the spatial means of the image encoder's projected memory tokens. Adaptation replaces only the target classes' 256-dimensional query rows after $P$ and before the decoder, preserving their original norms. Other projected query rows remain unchanged. The text encoder, projection, image encoder, decoder, and prediction head all remain frozen.
+
+\paragraph{CovidKaggle query construction.}
+Tables~\ref{tab:supp-fixed-medklip} and~\ref{tab:supp-fixed-mavl} report the CovidKaggle results for the query constructions described here.
+
+MedKLIP encodes the published COVID-19 disease description with the same frozen text encoder and appends its embedding to the original 75, giving 76 queries after the disease projection. MAVL~\cite{mavl} uses its released COVID-19 disease description and eight visual concept descriptions. Frozen Bio\_ClinicalBERT encodes these texts with a maximum length of 64 tokens; their CLS embeddings form nine slots for COVID-19, giving 76 diseases with nine slots each while retaining all original disease queries. MAVL follows its released COVID configuration, using the epoch-40 checkpoint and text-mode scoring with normal/clear reference queries. Within each model, all four branches share the fixed descriptions, initial query configuration, checkpoint, and scoring procedure. Original/V retain the unadapted queries; Q/Q+V adapt the target-class queries after the disease projection.
+
+\paragraph{Additional disease-query description.}
+Four fixed-support evaluations extend MedKLIP and MAVL to Shenzhen and Montgomery using the study-defined tuberculosis description in Table~\ref{tab:supp-added-disease-prompts}, fixed before these evaluations. Both datasets reuse the existing support/test identities, labels, and class order: Shenzhen has 10 supports and 652 test images, and Montgomery has 10 and 128.
+
+MedKLIP appends one tuberculosis embedding to its original 75, giving 76 queries. MAVL appends the same disease to its original 75, repeating its CLS embedding across eight concept slots and one description slot, giving 76 diseases with nine slots each. Both models use maximum token length 64. This study-defined description is not a model-author prompt for these tasks and is not selected using test scores.
+
+Appending context can change existing-class outputs through query self-attention. Therefore, Original, Q, V, and Q+V share the same extended context, descriptions, query order, frozen weights, and prediction head. Original/V use unadapted projected queries; Q/Q+V replace the target-class projections with adapted queries. The original context embeddings are retained. Settings remain $\eta=0.3$, crop-side ratio 0.8, and equal averaging of view probabilities.
+
+\begin{table*}[t]
+\centering
+\caption{\textbf{Fixed tuberculosis description.} This sentence is defined for this study and shared by MedKLIP, MAVL, and all four inference branches.}
+\label{tab:supp-added-disease-prompts}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lp{0.77\textwidth}@{}}
+\toprule
+Disease & Description \\
+\midrule
+Tuberculosis & Pulmonary tuberculosis is an infection of the lungs caused by Mycobacterium tuberculosis. \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\paragraph{CheXpert expansion.}
+Tables~\ref{tab:supp-counts} and~\ref{tab:supp-support-sources} summarize the CheXpert evaluation size and support/test construction.
+
+In the fixed-support evaluation, the source is AlphaRAD's released test list of 668 images with 14 label columns. Sixty supports belong to 56 patients. Removing all 72 images from those patients yields 596 test images from 444 patients. All compared models and branches use the same 12 labels, excluding Pleural Other and Support Devices, and the same final list. The final Fracture class has only one positive image from one patient; its instability can influence the macro mean. Scores on the full 668-image source are not mixed into paired gains.
+
+\paragraph{CheXchoNet expansion and repeated supports.}
+Tables~\ref{tab:supp-counts} and~\ref{tab:supp-support-sources} give the cardiac evaluation counts and support sources; Tables~\ref{tab:supp-cardiac-path-alpharad}--\ref{tab:supp-cardiac-path-ci-kad} report the repeated-support path results.
+
+Our independently sampled source subset has 7,494 CLAHE-preprocessed $224\times224$ images from 2,500 patients. The initial fixed-support evaluation selects ten images per task (five positives/five negatives), jointly involving 30 distinct patients. Removing all 87 images of those patients gives 7,407 test images from 2,470 patients, shared by all models and all three tasks. CSLV denotes severe left ventricular hypertrophy, CDLV left ventricular dilation, and CCOM their union. Their source label columns are \texttt{slvh}, \texttt{dlv}, and \texttt{composite\_slvh\_dlv}, respectively. Test-positive counts are 567, 315, and 828, respectively. Negative counts are therefore 6,840, 7,092, and 6,579.
+
+
+% The repeated-support path and method comparisons draw only from the reserved 87 images/30 patients.
+The repeated-support path comparisons draw only from the reserved 87 images/30 patients. Each task/seed uses five positive and five strictly negative patients, one image each, without borrowing another task's support labels. Five-seed supports may overlap. All models share the same support images, labels, test order, and patient-separated test cohort. This verifies support/test patient separation within our independently constructed subset; overlap with backbone-pretraining patients remains unaudited.
+
+\paragraph{CheXchoNet query construction example.}
+Table~\ref{tab:supp-cardiac-prompts} reproduces the three task descriptions used by the MedKLIP and MAVL extensions. These descriptions are fixed before inference and shared by the Original and query-adapted branches. They are defined for this study rather than taken from official CheXchoNet implementations of these backbones.
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Fixed CheXchoNet task descriptions.} Wording and punctuation are reproduced exactly from the experiment prompts.}
+\label{tab:supp-cardiac-prompts}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lp{0.77\linewidth}@{}}
+\toprule
+Task & Description \\
+\midrule
+CSLV & There is severe left ventricular hypertrophy. \\
+CDLV & There is dilated left ventricle. \\
+CCOM & There is severe left ventricular hypertrophy or dilated left ventricle. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For example, let $t_{\mathrm{CSLV}}$ be the CSLV sentence in the table and $\mathbf e(t)$ its CLS embedding from the frozen Bio\_ClinicalBERT text encoder, using a maximum token length of 64.
+
+For MedKLIP, $t_{\mathrm{CSLV}}$ is exactly ``There is severe left ventricular hypertrophy.'' Its embedding is appended with those for CDLV and CCOM, in the table's order, to the original 75 embeddings. All 78 queries are retained when evaluating any single cardiac task. The unadapted CSLV query is
+\[
+q_{\mathrm{CSLV}}=P\big(\mathbf e(t_{\mathrm{CSLV}})\big)\in\mathbb R^{256}.
+\]
+Original/V use this query unchanged. Q/Q+V substitute its support-adapted vector $q'_{\mathrm{CSLV}}$ after $P$, retaining the other 77 projected rows and the original decoder/classifier. CDLV and CCOM use their respective support labels in separate evaluations; existing cardiomegaly queries are not used as proxies.
+
+MAVL retains nine query slots per disease: eight concept slots and one description slot. For CSLV, all nine slots receive the same task-description embedding,
+\[
+\underbrace{[\mathbf e(t_{\mathrm{CSLV}}),\ldots,\mathbf e(t_{\mathrm{CSLV}})]}_{9\ \text{slots}}.
+\]
+CDLV and CCOM use their respective descriptions in the same way. The original 75 diseases and their concept queries are retained, and the model processes 78 diseases with nine slots each. The Original branch uses the resulting queries without support-based adaptation. The query-adapted branch updates the target-task vectors after the disease embedding projection, applying the same disease-specific support direction to all nine MAVL slots. Text descriptions, query layout, model weights, and prediction heads are shared across the compared branches.
+
+\paragraph{Segmentation validation.}
+\label{supp:segmentation_validation}
+Table~\ref{tab:supp-validation-segmentation} reports the validation-selected thresholds, test Dice scores, and paired changes from Original.
+
+AlphaRAD's separate QaTaCOV19 threshold study uses 473 images from 200 training patients for validation and 2,113 test images from 474 patients. Identified validation patients are disjoint from known support/test patients. Ten image-labeled supports are retained; five normal supports lack reliable patient identifiers, permitting only exact-pixel-duplicate checks. Each branch selects a threshold from $0,0.01,\ldots,1$ by maximizing mean validation Dice, breaking ties toward the smallest threshold. The selected thresholds are saved before test scoring in this evaluation. These 473 validation masks are additional supervision.
+
+For each image, the native FP32 grounding response contains one CLS value and $37\times37$ spatial values. For V and Q+V, fusion precedes normalization: the crop's raw spatial responses are inverse-warped to the original grid and averaged with the full-image responses over valid view coverage, retaining the full-image response outside the crop; the two CLS values are averaged separately and prepended to the fused spatial values (Appendix~\ref{supp:view_fusion}). No softmax or per-view min--max normalization is applied during this fusion. Let $r$ denote the resulting 1,370-value vector, or the single-view vector for Original and Q. Per-image min--max normalization includes the CLS value:
+\[
+u_i=\frac{r_i-\min_j r_j}{\max_j r_j-\min_j r_j+10^{-8}}.
+\]
+We then discard the normalized CLS value, reshape the remaining values to $37\times37$, bilinearly upsample to the $224\times224$ ground-truth mask size with \texttt{align\_corners=False}, and apply sigmoid. The predicted mask is $\widehat M(p)=\mathbf{1}[P(p)>\tau]$, where $P$ is this post-sigmoid response. Both $P$ and $\tau$ are represented in float32, and the comparison is strictly greater than. This same processing applies to validation and test images; the reported thresholds therefore act on $P$ after all these steps.
+
+Original and Q+V both select 0.64 and therefore reproduce their historical test-selected point estimates. Q selects 0.63 and obtains 53.81 Dice, compared with its historical 54.02 at 0.64. Positive-image mean foreground Dice does not evaluate false-positive regions in normal patients. The paired patient-bootstrap intervals are conditional on the support set, validation split, and selected thresholds. QaTaCOV19 was evaluated after the adaptation rule and parameters were fixed. The historical test-selected and current validation-selected threshold protocols are reported separately.
+
+\input{sec/validation_segmentation}
+
+\subsection{Support-only selection and fixed evaluation rules}
+\label{supp:selection}
+The selection rules below apply to the method comparisons in tables~\ref{tab:supp-oldmeans-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldmeans-alpharad-chestxdet10} and Table~\ref{tab:supp-taskres-sstext}; Tables~\ref{tab:supp-oldci-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldci-alpharad-chestxdet10} report the associated prespecified contrasts for the original comparison.
+
+Each tunable competitor uses the same five grouped support folds as the other methods in its setting. Prototypes, covariance estimates, caches, and trainable heads are refitted within each fold. The selection objective is macro trapezoidal AUPRC on the pooled out-of-fold predictions, followed by one refit on all support examples. 
+% In binary cardiac tasks, each fold trains on four positive/four negative patients and validates on one positive/one negative patient.
+ Folds, candidate grids, methods, and test order are fixed before inference; complete fits/predictions are saved before test scoring.
+
+Prototype-score mixing, same-feature score S, and Tip-Adapter use mixing candidates $\{0,0.03,0.1,0.3,1,3,10\}$; Tip-Adapter additionally uses $\beta\in\{1,2,5,10\}$. GDA uses mixing candidates $\{0,10^{-4},10^{-3},10^{-2},0.1,1\}$. 
+% P\&M uses ten equally spaced candidates in $[0,1]$ for each of $\lambda$ and $\gamma$, with its text-SVD rank fixed by the 99\% energy rule.
+ 
+% Linear-probe $C$ ranges over $10^{-4},10^{-3},\ldots,10^4$, with an intercept, L2 regularization, L-BFGS, maximum 2,000 iterations, and tolerance $10^{-8}$.
+ Q uses $\eta=0.3$, fixed during development and not retuned in these comparisons. The crop-side ratio 0.8 and equal fusion weights are likewise retained from development. 
+% The same selected competitor is used in both view conditions.
+
+
+SimNL selects among 0, 10, 20, and 40 training epochs using the same support-only folds. Its base learning rate is $10^{-4}$, with a fivefold multiplier for the negative adapter, weight decay 0.1, and Adam epsilon $10^{-3}$. Selecting a zero score-mixing weight is a legitimate support-validation outcome, not a discarded run. SimNL's zero-epoch option still retains its initialized positive/negative cache contributions, so it is not synonymous with Original. All pretrained backbones remain frozen; trainable small adapters are explicitly distinguished from the gradient-free query vector update.
+
+\subsection{Metrics, paired bootstrap, and development history}
+\label{supp:statistics}
+Tables~\ref{tab:supp-oldci-biomedclip-rsna_pneumonia}--\ref{tab:supp-oldci-alpharad-chestxdet10} and tables~\ref{tab:supp-cardiac-path-alpharad}--\ref{tab:supp-cardiac-path-ci-kad} report contrasts using the statistical conventions below. Table~\ref{tab:supp-development-scope} summarizes the development scope.
+
+Classification reports image-level, class-macro AUROC and trapezoidal PR-curve area. The latter differs from average precision. Localization uses Pointing Game (PG)~\cite{zhang2016pointinggame}: it selects one spatial maximum and counts a hit if it lies in any true box for that class, averaging positive images and then valid classes. The repeated-support ChestXDet10 PG bootstrap samples the complete 492-image test cohort and evaluates its 409 annotated images; the 83 unannotated images contribute neither hits nor cases. This differs from always drawing 409 annotated examples.
+
+For repeated-support comparisons, the reported point estimates average the five support-specific metrics rather than ensemble predictions. Test predictions are saved before computing evaluation metrics. We use 2,000 paired group-bootstrap replicates with seed 20261024. All methods, branches, and support seeds in a dataset share each sampled test-group list. RSNA and CheXchoNet sample patients with all their images; ChestXDet10 samples image/exact-duplicate groups; the additional SIIM holdout samples DICOM identifier groups. For each replicate, compute each fitted support model's metric, subtract paired methods, and then average the five differences. The 2.5th and 97.5th percentiles give the 95\% interval. Cardiac task macros average the three task metrics within the same seed and replicate. Pixels are not independent bootstrap units.
+
+Support-seed SD uses the sample definition ($n-1$ denominator). It describes variation across the five particular support draws. The bootstrap intervals instead describe test-group sampling conditional on those supports; they do not integrate arbitrary future support sampling. Segmentation intervals are additionally conditional on the validation split and thresholds. No correction is made for multiple comparisons or the post hoc selection of the MedKLIP/CDLV example.
+
+\paragraph{Fixed-support counts and development history.}
+Tables~\ref{tab:supp-counts} and~\ref{tab:supp-development-scope} summarize the fixed-support evaluation counts and development scope, respectively.
+
+The 120 fixed-support classification comparisons in main-paper Table~\mainref{tab:overall} provide point estimates without per-comparison bootstrap intervals. The 95/120 tally describes joint AUROC/AUPRC point-estimate improvements of Q+V over Original and includes comparisons from development; it is not a statistically significant success rate. Intervals from the repeated-support, path, and spatial batches are conditional on their respective support configurations and cannot be used to assign significance to this tally. The same datasets and cohorts can recur across batches.
+
+Method development used only one model, RadZero, on five datasets: ChestXDet10, ChestXray14, OpenI, SIIM, and RSNA. All other models and datasets were evaluated after the adaptation rule and parameters had been fixed and were not used for method development or selection of the proposed method's default hyperparameters. The fixed choices comprise the query update, $\eta=0.3$, the 0.8 crop-side ratio, equal fusion weights, and the Original, Q, V, and Q+V branches. OpenI belongs to the development history but is excluded from the current eleven-dataset reporting scope. Consequently, the current 138 fixed-support comparisons contain four RadZero development comparisons---ChestXDet10, ChestXray14, RSNA, and the 1,694-image SIIM protocol---and 134 subsequent comparisons with the fixed method. AlphaRAD and the other eight backbones belong to the subsequent evaluation stage; the additional RadZero evaluations also use the fixed method. The original experiment records are retained.
+Table~\ref{tab:supp-development-scope} summarizes which model--dataset combinations belong to this development scope and how later comparisons should be interpreted.
+% Author-confirmed development scope: RadZero only, on the five datasets listed above. Evaluation coverage does not define development scope.
+
+\begin{table*}[t]
+\centering
+\caption{\textbf{Development scope and interpretation of fixed-support comparisons.} The development scope is defined by the model--dataset pair, while later evaluations on a development dataset can provide cross-backbone evidence.}
+\label{tab:supp-development-scope}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{0.29\textwidth}p{0.25\textwidth}p{0.36\textwidth}@{}}
+\toprule
+Model--dataset combination & In development scope? & Interpretation \\
+\midrule
+RadZero $\times$ ChestXDet10 & Yes & Development model--development dataset \\
+RadZero $\times$ ChestXray14 & Yes & Development model--development dataset \\
+RadZero $\times$ RSNA & Yes & Development model--development dataset \\
+RadZero $\times$ SIIM (1,694) & Yes & Development model--development dataset \\
+RadZero $\times$ OpenI & Yes, as development scope, but not in the current main evaluation & Development dataset excluded from the current main tables \\
+Other models $\times$ ChestXDet10, ChestXray14, RSNA, or SIIM & No, as the original development model--dataset pair & Cross-backbone transfer evidence \\
+All models $\times$ remaining datasets & No, outside the listed RadZero development scope & Cross-dataset generalization evidence \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+Some subsequent comparisons evaluate new models on datasets used during RadZero development; others evaluate datasets outside the five-dataset development scope. These provide cross-model and cross-dataset evidence, respectively. CheXchoNet was first evaluated with the fixed method and later reused for path interventions; this reuse does not make it a method-development dataset or add another independent cohort. Support/test separation, method-development history, and pretraining overlap are documented separately.
+
+\subsection{Fixed-grid sensitivity audit}
+\label{supp:sensitivity}
+Table~\ref{tab:supp-sensitivity-model} summarizes the audit by model and dataset; Table~\ref{tab:supp-sensitivity-slices} summarizes the fixed parameter slices.
+
+After the early development stage fixed $\eta=0.3$ and the 0.8 crop-side ratio, we ran an additional post-development sensitivity audit on five backbones (AlphaRAD, RadZero, BiomedCLIP, MedKLIP, and CARZero) and two datasets (CheXpert and CheXchoNet). The audit uses nine predefined slices rather than the full Cartesian product: $\eta\in\{0,0.1,0.2,0.3,0.5,0.7\}$ with crop ratio 0.8, and crop ratios $\{0.6,0.7,0.8,0.9\}$ with $\eta=0.3$. This audit is additional to the 138 main paired evaluations; its fixed-support point estimates are separate from the 90-group component ablation and do not enter the 95/120 tally. All slices use the same fixed support/test construction. For CheXchoNet, the three cardiac task scores are averaged within each model--dataset--configuration slice; the tasks share one patient cohort.
+
+All values in Tables~\ref{tab:supp-sensitivity-model} and~\ref{tab:supp-sensitivity-slices} are Q+V--Original point-estimate differences in percentage points. The $\eta=0$ slice retains the original query vectors and therefore measures two-view fusion without query adaptation; its mean AUROC/AUPRC changes are +0.63/+0.44 pp. Across the 90 model--dataset--configuration slices, the mean AUROC/AUPRC changes are +2.19/+2.31 pp; 72 slices improve on both metrics and six decline on both. At $\eta=0.3$ and crop ratio 0.8, the mean changes across the ten model--dataset settings are +2.62/+2.83 pp. At the same crop ratio, this setting exceeds $\eta=0$ by approximately +1.99/+2.40 pp on average. The historical setting is near the best aggregate performance among the inspected configurations, although individual model--dataset settings can decline. This post-development audit characterizes sensitivity on the evaluated grid and was not used to reselect the main configuration. These are descriptive point estimates conditional on the fixed support/test construction; this audit does not quantify uncertainty across new support sets or introduce an additional cohort.
+
+\input{sec/supplement_tables/e_sensitivity}
+
+\section{Direction-change bound for query vector adaptation}
+\label{supp:query_geometry}
+Let $q\ne0$ be an original query vector, $\bar q=q/\|q\|_2$, and $d$ a unit support direction obtained by normalizing the difference between positive and negative support-feature means. For $a>0$ and $0\leq\eta<1$, the update is
+\begin{equation}
+q'=a\frac{\bar q+\eta d}{\|\bar q+\eta d\|_2}.
+\end{equation}
+The denominator is nonzero because $\|\bar q+\eta d\|_2\geq1-\eta>0$. Writing $t=\bar q^\top d\in[-1,1]$ and $\theta=\angle(\bar q,q')$, we obtain
+\begin{equation}
+\cos\theta=\frac{1+\eta t}{\sqrt{1+2\eta t+\eta^2}}.
+\end{equation}
+As a function of $t$, this expression is minimized at $t=-\eta$, where it equals $\sqrt{1-\eta^2}$. Therefore $\theta\leq\arcsin\eta$; with $\eta=0.3$, the direction change is at most approximately $17.46^\circ$. When the positive and negative support-feature means are equal, no direction is formed and the original query vector is retained. The bound is an intrinsic property of the update formula, not an additional angle-clipping operation. It bounds the change in query-vector direction but guarantees neither stable predictions nor improved performance.
+
+\section{Computational Details}
+\label{supp:computation}
+\paragraph{Support processing and query caching.}
+For a fixed support set and task configuration, support features are extracted in advance using only original views. The adapted query vectors are cached and reused across test images, without reprocessing or retrieving support examples during test inference. CheXzero extracts support features and adapts query vectors separately for each of its ten ensemble members.
+
+For $C$ disease classes and query dimension $D$, caching one adapted query vector per class requires $O(CD)$ space. MAVL retains nine query slots per disease (eight concept slots and one description slot), and CheXzero caches a separate set of adapted query vectors for each ensemble member. With the number of queries per class and the ensemble size treated as fixed constants, the query-cache complexity remains $O(CD)$. This describes the adapted-query cache, not total model storage or peak inference memory.
+
+\paragraph{Test-time computation.}
+Q uses one test view, while Q+V uses the original view and a center-cropped view. Each model member processes each required view using its existing prediction procedure with the adapted queries. CheXzero retains all ten members for every view, corresponding to ten member-level forward passes per test image for Q and twenty for Q+V. These counts describe the computation structure; actual inference latency has not been benchmarked uniformly.
+
+
+\input{sec/view_fusion}

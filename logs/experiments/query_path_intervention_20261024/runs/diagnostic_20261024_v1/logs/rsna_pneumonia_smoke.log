@@ -1,0 +1,8 @@
+xFormers is not available (Attention)
+{"status": "authenticating_inputs", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 0.0052416324615478516, "smoke": 16}
+{"status": "loading_model", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 5.854454040527344, "smoke": 16}
+Device: cuda
+{"status": "support_fitted", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 10.312809228897095, "smoke": 16, "support_union_count": 50}
+{"status": "matching_interventions", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 12.352000713348389, "smoke": 16, "done": 8, "total": 16}
+{"status": "matching_interventions", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 12.419264078140259, "smoke": 16, "done": 16, "total": 16}
+{"status": "smoke_complete", "dataset": "rsna_pneumonia", "model": "AlphaRAD", "elapsed_seconds": 14.105653285980225, "smoke": 16, "done": 16, "total": 16}

@@ -1,0 +1,45 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+{"status": "loading", "model": "AlphaRAD", "done": 0, "total": 0, "elapsed_seconds": 21.773029088974, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+Device: cuda
+{"status": "encoding_support_pool", "model": "AlphaRAD", "done": 0, "total": 87, "elapsed_seconds": 25.23894429206848, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 8, "total": 7407, "elapsed_seconds": 29.707325220108032, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 208, "total": 7407, "elapsed_seconds": 35.01774740219116, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 408, "total": 7407, "elapsed_seconds": 40.31490516662598, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 608, "total": 7407, "elapsed_seconds": 47.00142741203308, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 808, "total": 7407, "elapsed_seconds": 52.327688694000244, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 1008, "total": 7407, "elapsed_seconds": 57.66659426689148, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 1208, "total": 7407, "elapsed_seconds": 63.02161765098572, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 1408, "total": 7407, "elapsed_seconds": 68.36964750289917, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 1608, "total": 7407, "elapsed_seconds": 73.75227785110474, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 1808, "total": 7407, "elapsed_seconds": 79.1317241191864, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 2008, "total": 7407, "elapsed_seconds": 84.54297161102295, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 2208, "total": 7407, "elapsed_seconds": 89.9597225189209, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 2408, "total": 7407, "elapsed_seconds": 95.3863320350647, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 2608, "total": 7407, "elapsed_seconds": 100.80922293663025, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 2808, "total": 7407, "elapsed_seconds": 107.49558234214783, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 3008, "total": 7407, "elapsed_seconds": 112.93717837333679, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 3208, "total": 7407, "elapsed_seconds": 118.37784552574158, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 3408, "total": 7407, "elapsed_seconds": 123.82637739181519, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 3608, "total": 7407, "elapsed_seconds": 129.2667636871338, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 3808, "total": 7407, "elapsed_seconds": 134.70025730133057, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 4008, "total": 7407, "elapsed_seconds": 140.16759371757507, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 4208, "total": 7407, "elapsed_seconds": 145.61312198638916, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 4408, "total": 7407, "elapsed_seconds": 151.07129001617432, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 4608, "total": 7407, "elapsed_seconds": 156.53593111038208, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 4808, "total": 7407, "elapsed_seconds": 162.03452467918396, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 5008, "total": 7407, "elapsed_seconds": 168.73293113708496, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 5208, "total": 7407, "elapsed_seconds": 174.1889307498932, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 5408, "total": 7407, "elapsed_seconds": 179.66016244888306, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 5608, "total": 7407, "elapsed_seconds": 185.1416139602661, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 5808, "total": 7407, "elapsed_seconds": 190.62234044075012, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 6008, "total": 7407, "elapsed_seconds": 196.10512232780457, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 6208, "total": 7407, "elapsed_seconds": 201.5601110458374, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 6408, "total": 7407, "elapsed_seconds": 207.03486323356628, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 6608, "total": 7407, "elapsed_seconds": 212.50050568580627, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 6808, "total": 7407, "elapsed_seconds": 217.9459090232849, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 7008, "total": 7407, "elapsed_seconds": 223.40888595581055, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 7208, "total": 7407, "elapsed_seconds": 230.20918583869934, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "inference", "model": "AlphaRAD", "done": 7407, "total": 7407, "elapsed_seconds": 235.65339159965515, "seeds": [42, 43, 44, 45, 46], "smoke": 0}
+{"status": "complete", "model": "AlphaRAD", "done": 7407, "total": 7407, "elapsed_seconds": 242.1031436920166, "seeds": [42, 43, 44, 45, 46], "smoke": 0}

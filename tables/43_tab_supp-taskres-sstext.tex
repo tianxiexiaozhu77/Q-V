@@ -1,0 +1,25 @@
+\begin{table*}[tp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllcc@{}}
+\toprule
+\multicolumn{5}{l}{\textbf{Q minus the added single-view adapter: mean difference [paired 95\% interval] (pp).}} \\
+Model & Dataset & Comparator & $\Delta$AUROC & $\Delta$AUPRC \\
+\midrule
+BiomedCLIP & RSNA & TaskRes & $+4.17\;[+3.50,+4.93]$ & $+10.52\;[+8.99,+12.13]$ \\
+BiomedCLIP & RSNA & SS-Text+ & $+1.53\;[+1.09,+1.95]$ & $+2.80\;[+1.45,+3.99]$ \\
+\addlinespace[2pt]
+BiomedCLIP & ChestXDet10 & TaskRes & $+3.21\;[+2.25,+4.16]$ & $+1.94\;[+1.17,+3.03]$ \\
+BiomedCLIP & ChestXDet10 & SS-Text+ & $+0.26\;[-0.87,+1.34]$ & $-0.39\;[-1.29,+0.68]$ \\
+\addlinespace[2pt]
+AlphaRAD & RSNA & TaskRes & $+3.49\;[+2.55,+4.43]$ & $+4.79\;[+2.36,+7.12]$ \\
+AlphaRAD & RSNA & SS-Text+ & $+2.45\;[+1.70,+3.20]$ & $+3.93\;[+1.44,+6.30]$ \\
+\addlinespace[2pt]
+AlphaRAD & ChestXDet10 & TaskRes & $+10.41\;[+8.46,+12.47]$ & $+16.11\;[+12.52,+19.47]$ \\
+AlphaRAD & ChestXDet10 & SS-Text+ & $+7.72\;[+6.27,+9.17]$ & $+12.52\;[+8.89,+15.84]$ \\
+\bottomrule
+\end{tabular*}
+\caption{\textbf{Additional TaskRes and SS-Text+ feature-level OvR comparisons.} Both methods in each contrast use the same five support draws and one test view. The conditional intervals do not establish equivalence when crossing zero. AlphaRAD comparisons do not match the internal representation/readout.}
+\label{tab:supp-taskres-sstext}
+\end{table*}

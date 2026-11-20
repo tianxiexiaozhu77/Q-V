@@ -1,0 +1,11 @@
+EVALUATE SIIM support seed 42
+SPATIAL SIIM support seed 42: 211 positive images
+EVALUATE SIIM support seed 43
+SPATIAL SIIM support seed 43: 211 positive images
+EVALUATE SIIM support seed 44
+SPATIAL SIIM support seed 44: 211 positive images
+EVALUATE SIIM support seed 45
+SPATIAL SIIM support seed 45: 211 positive images
+EVALUATE SIIM support seed 46
+SPATIAL SIIM support seed 46: 211 positive images
+{"status": "complete", "output": "/storage/3090group2/zjx/code/medical/experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/evaluation", "coverage": {"classification_seed_rows": 25, "classification_means": 5, "spatial_seed_rows": 25, "spatial_means": 5}}

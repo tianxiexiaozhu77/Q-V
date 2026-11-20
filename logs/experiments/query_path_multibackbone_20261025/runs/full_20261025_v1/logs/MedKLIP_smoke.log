@@ -1,0 +1,17 @@
+{"status": "loading_model", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 3.7283694744110107, "smoke": 16}
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+{"status": "fitting_all_support_queries", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 15.611262321472168, "smoke": 16}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 16, "elapsed_seconds": 16.91190242767334, "smoke": 16}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 8, "total": 16, "elapsed_seconds": 18.2515287399292, "smoke": 16}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 16, "total": 16, "elapsed_seconds": 18.886455535888672, "smoke": 16}
+{"status": "smoke_complete", "model": "MedKLIP", "contrast": "Q-F", "done": 16, "total": 16, "elapsed_seconds": 19.51382088661194, "smoke": 16}

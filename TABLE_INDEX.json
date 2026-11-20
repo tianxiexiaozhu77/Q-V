@@ -1,0 +1,461 @@
+[
+  {
+    "number": "1",
+    "label": "tab:overall",
+    "source": "latex_ours/sec/classification_comparison.tex",
+    "file": "tables/01_tab_overall.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_classification_table.py"
+  },
+  {
+    "number": "2",
+    "label": "tab:competitors",
+    "source": "latex_ours/main.tex",
+    "file": "tables/02_tab_competitors.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "manual LaTeX, aggregate CSV supplied"
+  },
+  {
+    "number": "3",
+    "label": "tab:components",
+    "source": "latex_ours/sec/component_ablations.tex",
+    "file": "tables/03_tab_components.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_classification_table.py"
+  },
+  {
+    "number": "4",
+    "label": "tab:paths",
+    "source": "latex_ours/main.tex",
+    "file": "tables/04_tab_paths.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "manual LaTeX, aggregate CSV supplied"
+  },
+  {
+    "number": "A.1",
+    "label": "tab:supp-coverage",
+    "source": "latex_ours/sec/supplement_tables/a_coverage.tex",
+    "file": "tables/05_tab_supp-coverage.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.2",
+    "label": "tab:supp-fixed-alpharad",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/06_tab_supp-fixed-alpharad.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.3",
+    "label": "tab:supp-fixed-radzero",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/07_tab_supp-fixed-radzero.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.4",
+    "label": "tab:supp-fixed-biomedclip",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/08_tab_supp-fixed-biomedclip.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.5",
+    "label": "tab:supp-fixed-biovil-t",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/09_tab_supp-fixed-biovil-t.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.6",
+    "label": "tab:supp-fixed-chexzero",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/10_tab_supp-fixed-chexzero.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.7",
+    "label": "tab:supp-fixed-medklip",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/11_tab_supp-fixed-medklip.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.8",
+    "label": "tab:supp-fixed-mavl",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/12_tab_supp-fixed-mavl.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.9",
+    "label": "tab:supp-fixed-kad",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/13_tab_supp-fixed-kad.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.10",
+    "label": "tab:supp-fixed-maco",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/14_tab_supp-fixed-maco.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "A.11",
+    "label": "tab:supp-fixed-carzero",
+    "source": "latex_ours/sec/supplement_tables/a_fixed.tex",
+    "file": "tables/15_tab_supp-fixed-carzero.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.1",
+    "label": "tab:supp-path-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/16_tab_supp-path-rsna_pneumonia.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.2",
+    "label": "tab:supp-path-ci-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/17_tab_supp-path-ci-rsna_pneumonia.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.3",
+    "label": "tab:supp-path-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/18_tab_supp-path-chestxdet10.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.4",
+    "label": "tab:supp-path-ci-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/19_tab_supp-path-ci-chestxdet10.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.5",
+    "label": "tab:supp-path-siim_new_holdout",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/20_tab_supp-path-siim_new_holdout.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.6",
+    "label": "tab:supp-path-ci-siim_new_holdout",
+    "source": "latex_ours/sec/supplement_tables/b_alpha.tex",
+    "file": "tables/21_tab_supp-path-ci-siim_new_holdout.tex",
+    "family": "alpharad_paths",
+    "entry": "experiments/query_path_intervention_20261024/run_campaign.py; experiments/query_path_intervention_20261024/run_siim.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.7",
+    "label": "tab:supp-f-hooks",
+    "source": "latex_ours/sec/supplementary.tex",
+    "file": "tables/22_tab_supp-f-hooks.tex",
+    "family": "protocol_documentation",
+    "entry": "see source LaTeX and native adapters",
+    "generator": "manual LaTeX, not an experimental metric table"
+  },
+  {
+    "number": "B.8",
+    "label": "tab:supp-cardiac-path-alpharad",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/23_tab_supp-cardiac-path-alpharad.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.9",
+    "label": "tab:supp-cardiac-path-ci-alpharad",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/24_tab_supp-cardiac-path-ci-alpharad.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.10",
+    "label": "tab:supp-cardiac-path-radzero",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/25_tab_supp-cardiac-path-radzero.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.11",
+    "label": "tab:supp-cardiac-path-ci-radzero",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/26_tab_supp-cardiac-path-ci-radzero.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.12",
+    "label": "tab:supp-cardiac-path-carzero",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/27_tab_supp-cardiac-path-carzero.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.13",
+    "label": "tab:supp-cardiac-path-ci-carzero",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/28_tab_supp-cardiac-path-ci-carzero.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.14",
+    "label": "tab:supp-cardiac-path-medklip",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/29_tab_supp-cardiac-path-medklip.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.15",
+    "label": "tab:supp-cardiac-path-ci-medklip",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/30_tab_supp-cardiac-path-ci-medklip.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.16",
+    "label": "tab:supp-cardiac-path-mavl",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/31_tab_supp-cardiac-path-mavl.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.17",
+    "label": "tab:supp-cardiac-path-ci-mavl",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/32_tab_supp-cardiac-path-ci-mavl.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.18",
+    "label": "tab:supp-cardiac-path-kad",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/33_tab_supp-cardiac-path-kad.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "B.19",
+    "label": "tab:supp-cardiac-path-ci-kad",
+    "source": "latex_ours/sec/supplement_tables/b_cardiac.tex",
+    "file": "tables/34_tab_supp-cardiac-path-ci-kad.tex",
+    "family": "cardiac_paths",
+    "entry": "experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.1",
+    "label": "tab:supp-oldmeans-biomedclip-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/c_development_means.tex",
+    "file": "tables/35_tab_supp-oldmeans-biomedclip-rsna_pneumonia.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.2",
+    "label": "tab:supp-oldmeans-biomedclip-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/c_development_means.tex",
+    "file": "tables/36_tab_supp-oldmeans-biomedclip-chestxdet10.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.3",
+    "label": "tab:supp-oldmeans-alpharad-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/c_development_means.tex",
+    "file": "tables/37_tab_supp-oldmeans-alpharad-rsna_pneumonia.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.4",
+    "label": "tab:supp-oldmeans-alpharad-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/c_development_means.tex",
+    "file": "tables/38_tab_supp-oldmeans-alpharad-chestxdet10.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.5",
+    "label": "tab:supp-oldci-biomedclip-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/c_development_ci.tex",
+    "file": "tables/39_tab_supp-oldci-biomedclip-rsna_pneumonia.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.6",
+    "label": "tab:supp-oldci-biomedclip-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/c_development_ci.tex",
+    "file": "tables/40_tab_supp-oldci-biomedclip-chestxdet10.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.7",
+    "label": "tab:supp-oldci-alpharad-rsna_pneumonia",
+    "source": "latex_ours/sec/supplement_tables/c_development_ci.tex",
+    "file": "tables/41_tab_supp-oldci-alpharad-rsna_pneumonia.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.8",
+    "label": "tab:supp-oldci-alpharad-chestxdet10",
+    "source": "latex_ours/sec/supplement_tables/c_development_ci.tex",
+    "file": "tables/42_tab_supp-oldci-alpharad-chestxdet10.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "C.9",
+    "label": "tab:supp-taskres-sstext",
+    "source": "latex_ours/sec/taskres_sstext_comparison.tex",
+    "file": "tables/43_tab_supp-taskres-sstext.tex",
+    "family": "five_support_seeds",
+    "entry": "experiments/fewshot_multiseed_20261024/run_campaign.py; experiments/fewshot_taskres_sstext_20261109/run_campaign.py",
+    "generator": "manual LaTeX, aggregate CSV supplied"
+  },
+  {
+    "number": "D.1",
+    "label": "tab:supp-counts",
+    "source": "latex_ours/sec/supplement_tables/d_counts.tex",
+    "file": "tables/44_tab_supp-counts.tex",
+    "family": "fixed_support",
+    "entry": "baselines/paper_draft_zh/build_verified_results.py",
+    "generator": "latex_ours/scripts/build_supplement.py"
+  },
+  {
+    "number": "D.2",
+    "label": "tab:supp-support-sources",
+    "source": "latex_ours/sec/support_sources.tex",
+    "file": "tables/45_tab_supp-support-sources.tex",
+    "family": "protocol_documentation",
+    "entry": "see source LaTeX and native adapters",
+    "generator": "manual LaTeX, not an experimental metric table"
+  },
+  {
+    "number": "D.3",
+    "label": "tab:supp-added-disease-prompts",
+    "source": "latex_ours/sec/supplementary.tex",
+    "file": "tables/46_tab_supp-added-disease-prompts.tex",
+    "family": "protocol_documentation",
+    "entry": "see source LaTeX and native adapters",
+    "generator": "manual LaTeX, not an experimental metric table"
+  },
+  {
+    "number": "D.4",
+    "label": "tab:supp-cardiac-prompts",
+    "source": "latex_ours/sec/supplementary.tex",
+    "file": "tables/47_tab_supp-cardiac-prompts.tex",
+    "family": "protocol_documentation",
+    "entry": "see source LaTeX and native adapters",
+    "generator": "manual LaTeX, not an experimental metric table"
+  },
+  {
+    "number": "D.5",
+    "label": "tab:supp-validation-segmentation",
+    "source": "latex_ours/sec/validation_segmentation.tex",
+    "file": "tables/48_tab_supp-validation-segmentation.tex",
+    "family": "validation_segmentation",
+    "entry": "experiments/qata_validation_threshold_20261024/run_campaign.py",
+    "generator": "manual LaTeX"
+  },
+  {
+    "number": "D.6",
+    "label": "tab:supp-development-scope",
+    "source": "latex_ours/sec/supplementary.tex",
+    "file": "tables/49_tab_supp-development-scope.tex",
+    "family": "protocol_documentation",
+    "entry": "see source LaTeX and native adapters",
+    "generator": "manual LaTeX, not an experimental metric table"
+  },
+  {
+    "number": "D.7",
+    "label": "tab:supp-sensitivity-model",
+    "source": "latex_ours/sec/supplement_tables/e_sensitivity.tex",
+    "file": "tables/50_tab_supp-sensitivity-model.tex",
+    "family": "sensitivity",
+    "entry": "experiments/sensitivity_grid/run_sensitivity_campaign.py",
+    "generator": "manual LaTeX"
+  },
+  {
+    "number": "D.8",
+    "label": "tab:supp-sensitivity-slices",
+    "source": "latex_ours/sec/supplement_tables/e_sensitivity.tex",
+    "file": "tables/51_tab_supp-sensitivity-slices.tex",
+    "family": "sensitivity",
+    "entry": "experiments/sensitivity_grid/run_sensitivity_campaign.py",
+    "generator": "manual LaTeX"
+  }
+]

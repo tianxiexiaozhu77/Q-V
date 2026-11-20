@@ -1,0 +1,152 @@
+[
+  {
+    "model": "AlphaRAD",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.9.0",
+      "torchvision": "0.24.0",
+      "numpy": "1.24.3",
+      "transformers": "4.57.1",
+      "opencv-python-headless": "4.8.0.76"
+    },
+    "torch_build": {
+      "__version__": "2.9.0+cu128",
+      "cuda": "12.8"
+    }
+  },
+  {
+    "model": "RadZero_i2cl",
+    "python": "3.12.7",
+    "packages": {
+      "torch": "2.2.1",
+      "torchvision": "0.17.1",
+      "numpy": "1.26.4",
+      "transformers": "4.39.3",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.1+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "BiomedCLIP",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "BioViL-T",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "CheXzero",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "MedKLIP",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "MAVL",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "KAD",
+    "python": "3.10.22",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.26.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.11.0.86"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "MaCo",
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.23.5",
+      "transformers": "4.26.1",
+      "opencv-python-headless": "4.10.0.84"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  },
+  {
+    "model": "CARZero",
+    "python": "3.10.12",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "numpy": "1.24.4",
+      "transformers": "4.35.2",
+      "opencv-python-headless": "4.8.1.78"
+    },
+    "torch_build": {
+      "__version__": "2.2.2+cu121",
+      "cuda": "12.1"
+    }
+  }
+]

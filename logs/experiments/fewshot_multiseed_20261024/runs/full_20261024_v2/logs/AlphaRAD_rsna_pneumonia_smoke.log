@@ -1,0 +1,14 @@
+{"status": "inputs_authenticated", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 0, "total": 0, "elapsed_seconds": 5.321245193481445, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "loading", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 0, "total": 0, "elapsed_seconds": 7.598297834396362, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+xFormers is not available (Attention)
+Device: cuda
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 8, "total": 50, "elapsed_seconds": 18.07906985282898, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 16, "total": 50, "elapsed_seconds": 18.287524938583374, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 24, "total": 50, "elapsed_seconds": 18.50350594520569, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 32, "total": 50, "elapsed_seconds": 18.717838525772095, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 40, "total": 50, "elapsed_seconds": 18.924062490463257, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 48, "total": 50, "elapsed_seconds": 19.143296718597412, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "support_union", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 50, "total": 50, "elapsed_seconds": 19.223697900772095, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "positive_query_test", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 8, "total": 16, "elapsed_seconds": 22.22278380393982, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "positive_query_test", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 16, "total": 16, "elapsed_seconds": 22.396587133407593, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}
+{"status": "smoke_complete", "model": "AlphaRAD", "dataset": "rsna_pneumonia", "done": 16, "total": 16, "elapsed_seconds": 24.363847494125366, "smoke": 16, "seeds": [42, 43, 44, 45, 46]}

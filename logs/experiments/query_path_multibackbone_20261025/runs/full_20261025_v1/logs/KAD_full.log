@@ -1,0 +1,50 @@
+{"status": "loading_model", "model": "KAD", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 3.103271484375, "smoke": 0}
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+{"status": "fitting_all_support_queries", "model": "KAD", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 9.73647952079773, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 0, "total": 7407, "elapsed_seconds": 11.121147871017456, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 8, "total": 7407, "elapsed_seconds": 12.343067646026611, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 208, "total": 7407, "elapsed_seconds": 27.708844661712646, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 416, "total": 7407, "elapsed_seconds": 43.01310157775879, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 600, "total": 7407, "elapsed_seconds": 58.501598834991455, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 808, "total": 7407, "elapsed_seconds": 73.90445494651794, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 1016, "total": 7407, "elapsed_seconds": 89.1156599521637, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 1224, "total": 7407, "elapsed_seconds": 104.314448595047, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 1408, "total": 7407, "elapsed_seconds": 119.79146242141724, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 1616, "total": 7407, "elapsed_seconds": 134.83740162849426, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 1824, "total": 7407, "elapsed_seconds": 150.22943925857544, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 2032, "total": 7407, "elapsed_seconds": 165.41323685646057, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 2216, "total": 7407, "elapsed_seconds": 180.9477837085724, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 2424, "total": 7407, "elapsed_seconds": 196.20247507095337, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 2632, "total": 7407, "elapsed_seconds": 211.30094146728516, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 2840, "total": 7407, "elapsed_seconds": 226.43443632125854, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 3024, "total": 7407, "elapsed_seconds": 241.8580677509308, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 3232, "total": 7407, "elapsed_seconds": 256.946017742157, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 3440, "total": 7407, "elapsed_seconds": 272.1059331893921, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 3648, "total": 7407, "elapsed_seconds": 287.2611720561981, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 3832, "total": 7407, "elapsed_seconds": 302.58348965644836, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 4040, "total": 7407, "elapsed_seconds": 317.6351218223572, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 4248, "total": 7407, "elapsed_seconds": 332.7255027294159, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 4464, "total": 7407, "elapsed_seconds": 348.2614085674286, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 4656, "total": 7407, "elapsed_seconds": 364.1717758178711, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 4864, "total": 7407, "elapsed_seconds": 379.3303234577179, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 5072, "total": 7407, "elapsed_seconds": 394.47094202041626, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 5280, "total": 7407, "elapsed_seconds": 409.72275257110596, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 5480, "total": 7407, "elapsed_seconds": 426.22750186920166, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 5688, "total": 7407, "elapsed_seconds": 441.36011362075806, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 5880, "total": 7407, "elapsed_seconds": 456.52457451820374, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 6072, "total": 7407, "elapsed_seconds": 472.00552582740784, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 6272, "total": 7407, "elapsed_seconds": 488.387220621109, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 6480, "total": 7407, "elapsed_seconds": 503.6479141712189, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 6688, "total": 7407, "elapsed_seconds": 518.8900129795074, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 6904, "total": 7407, "elapsed_seconds": 534.332670211792, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 7104, "total": 7407, "elapsed_seconds": 550.797119140625, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 7312, "total": 7407, "elapsed_seconds": 565.9862012863159, "smoke": 0}
+{"status": "inference", "model": "KAD", "contrast": "Q-F", "done": 7407, "total": 7407, "elapsed_seconds": 572.9588057994843, "smoke": 0}
+{"status": "complete", "model": "KAD", "contrast": "Q-F", "done": 7407, "total": 7407, "elapsed_seconds": 580.8118672370911, "smoke": 0}

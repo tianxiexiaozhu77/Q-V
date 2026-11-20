@@ -1,0 +1,115 @@
+{
+  "name": "MaCo",
+  "official_repository": "https://github.com/SZUHvern/MaCo",
+  "commit": "bda781f3064273218d02b8d5a9103a0ab2bf98da",
+  "checkpoint_url": "https://drive.google.com/file/d/1B87JuLJnjh_CoQpjT7RWGTp6alfXV8_0/view",
+  "checkpoint_local_path": "baselines/MaCo/checkpoints/maco.pth",
+  "checkpoint_sha256": "08bfd049637431cf1e475bfc1aefd322810551ce2efc0d9ceecea980aa0f6627",
+  "checkpoint_status": "downloaded",
+  "environment": "baselines/MaCo/.venv",
+  "environment_status": "validated_cpu",
+  "python": "3.10.12",
+  "classification_adapter": "baselines/MaCo/local_setup/adapter.py",
+  "API": "create_adapter(device).predict(image_paths,class_names) -> np.ndarray[N,C] native scores",
+  "supported_tasks": [
+    "classification",
+    "grounding",
+    "segmentation"
+  ],
+  "grounding_note": "Native phrase-grounding heatmap with verified author numerical parity; nearest restoration to full original image. Shared Dice evaluates this heatmap, not the separately fine-tuned segmentation head.",
+  "prompt_protocol": "AlphaRAD common prompt There is [disease].; MaCo retains native four negative prompts which AlphaRAD paper does not detail.",
+  "training_required": false,
+  "smoke_test_status": "passed",
+  "created_local_date": "2026-10-22",
+  "dependency_lock_source": "local_setup/requirements_eval.txt",
+  "torch": "2.2.2+cu121",
+  "torchvision": "0.17.2",
+  "environment_consistency": "uv pip check passed",
+  "environment_freeze": "local_setup/environment_freeze.txt",
+  "adapter_status": "CPU classification and native phrase-grounding numerical parity passed",
+  "launcher": "baselines/MaCo/local_setup/python_local.sh",
+  "launcher_sha256": "6d06ce8b770b9f8ca36d439a96d4856d5ab5c566f709a28cd5f3f002c08963cf",
+  "evaluation_worker": "baselines/local_setup/evaluate_baseline_buffered.py (same calculations; progress writes throttled)",
+  "metadata": {
+    "model": "MaCo",
+    "checkpoint": "baselines/MaCo/checkpoints/maco.pth",
+    "native_score_parity": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "batch_size": 2
+    },
+    "score_kind": "native positive-vs-negative two-way softmax probability",
+    "prompts": "author default: one positive and four negative prompts; arithmetic text embedding mean",
+    "preprocess": "author Resize(shorter=224), CenterCrop224, grayscale3, ToTensor, Normalize(.4978,.2449)",
+    "normalization": "no feature normalization or added temperature",
+    "supported_tasks": [
+      "classification",
+      "grounding",
+      "segmentation"
+    ],
+    "grounding_preprocess": "author direct 224x224 bicubic resize (no crop), grayscale3 normalization; native 224 map nearest-resized to each original H/W, returned as list[N] of [C,H,W], full image coverage",
+    "segmentation_note": "Evaluate the same native zero-shot phrase-grounding heatmap with shared Dice protocol; not the separately fine-tuned SIIM segmentation head.",
+    "grounding_score": "author per-patch linear projection weighted by softmax(pos_weight_img/.02), raw dot product with text, Gaussian sigma1.5, nearest resize224",
+    "load_report": {
+      "missing_keys": [
+        "cls_head.fc.weight",
+        "cls_head.neg_fc.weight"
+      ],
+      "unexpected_keys": [
+        "mask_token",
+        "logit_scale",
+        "decoder_pos_embed",
+        "Tpar",
+        "decoder_embed.weight",
+        "decoder_embed.bias",
+        "decoder_norm.weight",
+        "decoder_norm.bias",
+        "decoder_pred.weight",
+        "decoder_pred.bias",
+        "pos_weight_img.weight",
+        "pos_weight_img.bias",
+        "pos_weight_text.weight",
+        "pos_weight_text.bias",
+        "pos_cat.weight",
+        "pos_cat.bias",
+        "WCE.weight"
+      ]
+    },
+    "protocol_note": "AlphaRAD paper common positive prompt There is [disease]. matches author default (trailing whitespace tokenizes identically). Four author native negative prompts retained; AlphaRAD does not specify these negative prompts. No prompt selection on test labels.",
+    "checkpoint_compatibility": "Restore BERT pooler dense 384->768 from released checkpoint shape (source HF default is 384->384). Original first-token/Tanh pooling preserved; all projection weights loaded, no new inference parameters.",
+    "last_prompts": {
+      "Atelectasis": {
+        "pos": [
+          "There is atelectasis. "
+        ],
+        "neg": [
+          "the lung is clear.",
+          "There is no atelectasis. ",
+          "no atelectasis. ",
+          "no evidence of atelectasis. "
+        ]
+      },
+      "Pneumothorax": {
+        "pos": [
+          "There is pneumothorax. "
+        ],
+        "neg": [
+          "the lung is clear.",
+          "There is no pneumothorax. ",
+          "no pneumothorax. ",
+          "no evidence of pneumothorax. "
+        ]
+      }
+    },
+    "grounding_native_parity": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "shape": [
+        1024,
+        1024
+      ],
+      "comparison": "Original Engine methods (CPU placement only), original full MaCo model with checkpoint-shaped pooler and strict checkpoint; native 224 maps nearest restored to original H/W"
+    }
+  },
+  "validation_path": "baselines/MaCo/local_setup/validation.json"
+}

@@ -1,0 +1,54 @@
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:29: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__("pkg_resources").declare_namespace(__name__)
+/storage/3090group2/zjx/code/medical/baselines/CARZero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 8, "total": 7407, "elapsed_seconds": 0.3164336681365967, "updated_at": "2026-11-08T15:36:30.669363+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 728, "total": 7407, "elapsed_seconds": 15.446106433868408, "updated_at": "2026-11-08T15:36:45.799073+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 1360, "total": 7407, "elapsed_seconds": 30.53390336036682, "updated_at": "2026-11-08T15:37:00.886849+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 2072, "total": 7407, "elapsed_seconds": 45.69311213493347, "updated_at": "2026-11-08T15:37:16.046052+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 2776, "total": 7407, "elapsed_seconds": 60.81149411201477, "updated_at": "2026-11-08T15:37:31.164446+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 3488, "total": 7407, "elapsed_seconds": 75.91190552711487, "updated_at": "2026-11-08T15:37:46.264859+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 4120, "total": 7407, "elapsed_seconds": 91.03504014015198, "updated_at": "2026-11-08T15:38:01.387977+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 4808, "total": 7407, "elapsed_seconds": 106.1517288684845, "updated_at": "2026-11-08T15:38:16.504668+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 5520, "total": 7407, "elapsed_seconds": 121.32811379432678, "updated_at": "2026-11-08T15:38:31.681049+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 6240, "total": 7407, "elapsed_seconds": 136.42783164978027, "updated_at": "2026-11-08T15:38:46.780754+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 6840, "total": 7407, "elapsed_seconds": 151.52004599571228, "updated_at": "2026-11-08T15:39:01.872990+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_slvh"], "done": 7407, "total": 7407, "elapsed_seconds": 163.3072235584259, "updated_at": "2026-11-08T15:39:13.660166+00:00"}
+COMPLETE CARZero chexchonet_slvh {"macro_auroc": 0.8130150479078502, "macro_auprc": 0.10187141820986456, "macro_average_precision": 0.10746570793118138}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.24074101448059082, "updated_at": "2026-11-08T15:39:14.468977+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 728, "total": 7407, "elapsed_seconds": 15.306002616882324, "updated_at": "2026-11-08T15:39:29.534251+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 1448, "total": 7407, "elapsed_seconds": 30.492514848709106, "updated_at": "2026-11-08T15:39:44.720775+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 2144, "total": 7407, "elapsed_seconds": 45.519426584243774, "updated_at": "2026-11-08T15:39:59.747686+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 2768, "total": 7407, "elapsed_seconds": 60.69023895263672, "updated_at": "2026-11-08T15:40:14.918498+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 3488, "total": 7407, "elapsed_seconds": 75.90499520301819, "updated_at": "2026-11-08T15:40:30.133252+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 4208, "total": 7407, "elapsed_seconds": 91.02982544898987, "updated_at": "2026-11-08T15:40:45.258081+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 4920, "total": 7407, "elapsed_seconds": 106.17375683784485, "updated_at": "2026-11-08T15:41:00.402014+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 5536, "total": 7407, "elapsed_seconds": 121.25909113883972, "updated_at": "2026-11-08T15:41:15.487350+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 6248, "total": 7407, "elapsed_seconds": 136.39692187309265, "updated_at": "2026-11-08T15:41:30.625179+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 6960, "total": 7407, "elapsed_seconds": 151.5023684501648, "updated_at": "2026-11-08T15:41:45.730628+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 161.2301049232483, "updated_at": "2026-11-08T15:41:55.458336+00:00"}
+COMPLETE CARZero chexchonet_dlv {"macro_auroc": -0.7175086616711068, "macro_auprc": -0.5942582167339048, "macro_average_precision": -0.6226278701542645}
+/storage/3090group2/zjx/code/medical/baselines/CARZero/CARZero/models/CARZero_model_dqn_wo_self_atten_gl_mlp.py:299: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  all_imgs.append(torch.tensor(img))
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 8, "total": 7407, "elapsed_seconds": 0.2474968433380127, "updated_at": "2026-11-08T15:41:56.060442+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 632, "total": 7407, "elapsed_seconds": 15.440157413482666, "updated_at": "2026-11-08T15:42:11.253131+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 1352, "total": 7407, "elapsed_seconds": 30.627774000167847, "updated_at": "2026-11-08T15:42:26.440749+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 2072, "total": 7407, "elapsed_seconds": 45.733590602874756, "updated_at": "2026-11-08T15:42:41.546560+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 2456, "total": 7407, "elapsed_seconds": 60.85985851287842, "updated_at": "2026-11-08T15:42:56.672833+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 3104, "total": 7407, "elapsed_seconds": 76.05423378944397, "updated_at": "2026-11-08T15:43:11.867204+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 3800, "total": 7407, "elapsed_seconds": 91.11733078956604, "updated_at": "2026-11-08T15:43:26.930307+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 4512, "total": 7407, "elapsed_seconds": 106.2045328617096, "updated_at": "2026-11-08T15:43:42.017515+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 5216, "total": 7407, "elapsed_seconds": 121.38672041893005, "updated_at": "2026-11-08T15:43:57.199691+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 5808, "total": 7407, "elapsed_seconds": 136.8899006843567, "updated_at": "2026-11-08T15:44:12.702871+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 6520, "total": 7407, "elapsed_seconds": 153.32937693595886, "updated_at": "2026-11-08T15:44:29.142345+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 7232, "total": 7407, "elapsed_seconds": 168.45208525657654, "updated_at": "2026-11-08T15:44:44.265053+00:00"}
+{"status": "running", "model": "CARZero", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 7407, "total": 7407, "elapsed_seconds": 172.94250202178955, "updated_at": "2026-11-08T15:44:48.755470+00:00"}
+COMPLETE CARZero chexchonet_composite_slvh_dlv {"macro_auroc": 0.9695980403171323, "macro_auprc": 0.5570490612412327, "macro_average_precision": 0.5612008350041497}

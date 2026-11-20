@@ -1,0 +1,25 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MedKLIP / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-medklip}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $50.8241\pm0.0000$ & $7.6899\pm0.0000$ \\
+CSLV & F & $50.2231\pm1.0530$ & $7.5244\pm0.2422$ \\
+CSLV & Q & $49.6969\pm1.1289$ & $7.4023\pm0.2296$ \\
+CDLV & Original & $67.3992\pm0.0000$ & $9.1956\pm0.0000$ \\
+CDLV & F & $67.5638\pm0.3776$ & $9.0553\pm0.3520$ \\
+CDLV & Q & $67.9601\pm0.4774$ & $9.3180\pm0.3333$ \\
+CCOM & Original & $55.3247\pm0.0000$ & $14.2528\pm0.0000$ \\
+CCOM & F & $54.7097\pm1.1228$ & $13.6005\pm0.7003$ \\
+CCOM & Q & $55.0515\pm1.9795$ & $13.5729\pm0.9475$ \\
+Task macro & Original & $57.8493\pm0.0000$ & $10.3795\pm0.0000$ \\
+Task macro & F & $57.4988\pm0.4923$ & $10.0600\pm0.3083$ \\
+Task macro & Q & $57.5695\pm0.6269$ & $10.0977\pm0.3850$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

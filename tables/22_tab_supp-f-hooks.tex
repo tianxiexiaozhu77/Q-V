@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}p{0.11\textwidth}p{0.29\textwidth}p{0.07\textwidth}p{0.45\textwidth}@{}}
+\toprule
+Model & Decoder root & Layers & Scope of replacement \\
+\midrule
+MedKLIP & \texttt{model.decoder} & 0--3 & Disease queries attending to image memory; native self-attention remains active. \\
+MAVL & \texttt{model.decoder} & 0--3 & Entire disease/concept query sequence in the native feature-mode classification decoder. \\
+KAD & \texttt{model.decoder} & 0--3 & TQN text queries attending to image memory; native self-attention remains active. \\
+CARZero & \texttt{model.fusion\_module.}\newline\texttt{decoder} & 0--3 & Image memory with text queries only. The native decoder omits self-attention; the reverse-direction score is reused from Q. \\
+\bottomrule
+\end{tabular}
+\caption{Exact F hook locations in the four cardiac decoder models. Paths are relative to the native adapter; append \texttt{.layers[l].multihead\_attn} to each decoder root for every listed zero-based layer $l$. Each hook replaces the complete \texttt{MultiheadAttention} return tuple after output projection and before \texttt{dropout2} and residual addition.}
+\label{tab:supp-f-hooks}
+\end{table*}

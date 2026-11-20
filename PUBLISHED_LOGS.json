@@ -1,0 +1,1693 @@
+{
+  "count": 241,
+  "selection": "Text logs from indexed paper experiment batches; controller logs restricted to phase6_*.log. Empty logs and failure/retry traces are retained. Files copied unchanged.",
+  "files": [
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_ChestXray14.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_ChestXray14.log",
+      "bytes": 2863,
+      "sha256": "3c03beda78163ccfdb336f4f558d63edd254675cfb1ca37183904205a06b9070"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_SIIM.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_SIIM.log",
+      "bytes": 1849,
+      "sha256": "f28127d0d7699b49b857c1badff8b1ce516879d08015b2288d409c0f35c16414"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_shenzhenxray.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_shenzhenxray.log",
+      "bytes": 9634,
+      "sha256": "178cf566f881cdefe0e735db4db793aa11af09acd751f6d2894917f251647f75"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chestxdet10.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chestxdet10.log",
+      "bytes": 7560,
+      "sha256": "8dfbd5a3f9907c149fcc8c40c40cc9bd28afd091787d585cc22060d8e7e1991b"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chest14.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chest14.log",
+      "bytes": 264458,
+      "sha256": "1d1bc2e26e3db7fc5ecb36bdef66ef6ee44c4daacd541dc59fa81771e218d4a4"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_siim_pneumothorax.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_siim_pneumothorax.log",
+      "bytes": 24255,
+      "sha256": "151b9029163de32347d55c2590a0f60935378cfc78a93ea4778f2bc9dad0ab76"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_montgomery.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_montgomery.log",
+      "bytes": 2971,
+      "sha256": "1e3e3400627813c37eee592666b2a5f3e10a71250227bbc3657e5c5cb8d6cdc4"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_OpenI.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_OpenI.log",
+      "bytes": 1690,
+      "sha256": "5832c62b7bc8013bdf5fb0e8d80e172c7e00326901b5d8b3a23a21816e9a1247"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_ChestXDet10.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_ChestXDet10.log",
+      "bytes": 1271,
+      "sha256": "cbacf7935cbbe81db27f6069bdfb7a8fb7b856f3ef1d8631ecd68b8fc7c597c1"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chestxdet10_gt.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_chestxdet10_gt.log",
+      "bytes": 70130,
+      "sha256": "40db53a9ce6c5ee484bccf9915073e753f33aa0a78701dd1598e3c73aea829f1"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_node21.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_node21.log",
+      "bytes": 42117,
+      "sha256": "7cac0b51529fff1f504baea349095471a9a2af2f3f66f2ad353f5288234d1dbe"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_rsna_pneumonia.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_rsna_pneumonia.log",
+      "bytes": 71052,
+      "sha256": "9c3a5b7fd915cc0e3bbd90eca2dd2f3f9522de9015b7e9f3c8af2c8061db7a05"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_RSNA.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_radzero_RSNA.log",
+      "bytes": 2056,
+      "sha256": "c471b1a5b9b6fb3f259bdeaa3d31ce050958f07633f62c1494faa25cc18b19b8"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_qatacovid_seg.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_qatacovid_seg.log",
+      "bytes": 28099,
+      "sha256": "bc9036b9c1aafcdf62ed3fdbd83a909bafb5cabf944a7307e1da85de4b688162"
+    },
+    {
+      "group": "fixed_phase6_controller",
+      "original_path": "experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_covidkaggle.log",
+      "published_path": "logs/experiments/query_search_20261021_152010/controller_v2/logs/phase6_alpharad_covidkaggle.log",
+      "bytes": 18895,
+      "sha256": "e7d2459851f198849608094f249a060c3ff23cdc3ccd5550dd9e6dc352fc0fed"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/finalizer.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/finalizer.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/preflight_MedKLIP_8.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/preflight_MedKLIP_8.log",
+      "bytes": 2734,
+      "sha256": "5bf87aefbc6e2e8489514daabcf5ff93e875ba662c61ec0eb3753f0d13924a4f"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/preflight_MaCo_8.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/preflight_MaCo_8.log",
+      "bytes": 3018,
+      "sha256": "f95e3906ae588e85155275bec7983334f657e210c5f760334ef88e9bf778c27b"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/resume_controller.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/resume_controller.log",
+      "bytes": 615,
+      "sha256": "3bc07afe47e4570296f5e3b06e093fa68eddd37de1ae04456ff5b3c66ea7c808"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/final_audit.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/final_audit.log",
+      "bytes": 81,
+      "sha256": "ec1f0376ac05b7e9a972a8ba2c29352f081ee1705d7552e27df43cfa29182e51"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/BiomedCLIP_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/BiomedCLIP_full_1.log",
+      "bytes": 7826,
+      "sha256": "2fa8b7ff755bfaf2d8d896d64371341ee455d41d1729b19c7944e5748701500e"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/BiomedCLIP_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/BiomedCLIP_smoke_0.log",
+      "bytes": 2339,
+      "sha256": "40515c12581188ecaa97d2833412228f79b3b9d284b0e2c314e994d984e0e2ce"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MedKLIP_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MedKLIP_full_1.log",
+      "bytes": 7567,
+      "sha256": "7a9186e7d379752f3060c286d593358c0a9ad70af592a76822caf73d6e05027c"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MedKLIP_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MedKLIP_smoke_0.log",
+      "bytes": 2734,
+      "sha256": "fcac50934cba28c3ff1fa7142630c46f4a78ee698a5f16841450df933ce0737b"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_full_2.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_full_2.log",
+      "bytes": 9341,
+      "sha256": "5cf71b2eaa33a90b9ccbb69bf9606ec1524b28e0d63a1a1f7ce75dc128bafad7"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_smoke_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_smoke_1.log",
+      "bytes": 3289,
+      "sha256": "49ac66beb0aa8f93708f9f9536a9fa7570d98c953e8836eaa8bc419341ebe4f8"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MaCo_full_2.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MaCo_full_2.log",
+      "bytes": 8443,
+      "sha256": "3a1fc21f756f69bd7b7478352e2716783dab5dc87b7556a388807ad0f91b9df5"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MaCo_smoke_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MaCo_smoke_1.log",
+      "bytes": 3018,
+      "sha256": "f95e3906ae588e85155275bec7983334f657e210c5f760334ef88e9bf778c27b"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/preflight_BiomedCLIP_8.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/preflight_BiomedCLIP_8.log",
+      "bytes": 2339,
+      "sha256": "40515c12581188ecaa97d2833412228f79b3b9d284b0e2c314e994d984e0e2ce"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/preflight_BioViL-T_8.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/preflight_BioViL-T_8.log",
+      "bytes": 3289,
+      "sha256": "49ac66beb0aa8f93708f9f9536a9fa7570d98c953e8836eaa8bc419341ebe4f8"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/KAD_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/KAD_full_1.log",
+      "bytes": 10381,
+      "sha256": "7afe8cd73720bdf6cefbf2b52f7e8bfbad0860614ded159fabbe3ad66c333a52"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MAVL_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MAVL_full_1.log",
+      "bytes": 14581,
+      "sha256": "b9aaca40da4f36ccd1189a3184f9c814a7a6db032abcb7ca0c0843314bd17a14"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/KAD_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/KAD_smoke_0.log",
+      "bytes": 1905,
+      "sha256": "a8dce74cfb549761e60e325e2261807b2886b5e7c00c73dc60196a58a94e3a65"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/CheXzero_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/CheXzero_full_1.log",
+      "bytes": 9949,
+      "sha256": "a9b3a156e40110cf6bffcd48f94c2b70ab1fa8369309a281d03cb405cac8964b"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/CARZero_full_1.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/CARZero_full_1.log",
+      "bytes": 11290,
+      "sha256": "9a793ec142ae27383c5becbcefc05afd5f13bb0dc71b799086ca61d676a69d65"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MAVL_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MAVL_smoke_0.log",
+      "bytes": 7000,
+      "sha256": "08d475a2683c4bd05d417e4d3b0aa39caf1b8ee45bac118204e9a4e45905a968"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/BioViL-T_smoke_0.log",
+      "bytes": 3271,
+      "sha256": "44bb69f7c8cd00d3226e542fc123b6b525008e4bfc914c4f887bcd2236042f3f"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/MaCo_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/MaCo_smoke_0.log",
+      "bytes": 3633,
+      "sha256": "ab0aae857adaebfd64866619e67b03c91640f376b5c4e1f356c28a9eb5f483dc"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/CARZero_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/CARZero_smoke_0.log",
+      "bytes": 4572,
+      "sha256": "7f3cbb871bbbbe9578c2e018b10c95b6753d03d162d099b59787365f4e5b6031"
+    },
+    {
+      "group": "fixed_baselines",
+      "original_path": "baselines/runs/query_transfer_20261022_224826/logs/CheXzero_smoke_0.log",
+      "published_path": "logs/baselines/runs/query_transfer_20261022_224826/logs/CheXzero_smoke_0.log",
+      "bytes": 1484,
+      "sha256": "5fa7aac48baa3c91405d26fef6244511073dde2337a8d2303868408e33ed8576"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/summary.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/summary.log",
+      "bytes": 429,
+      "sha256": "bc186f9c6aa301e59a237e56a248189dc53c7f25a002a5df3f50222372bb240d"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MAVL_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MAVL_full.log",
+      "bytes": 7389,
+      "sha256": "e8450d58284304eddcf27f3b977308fd716a2217b3a12a8de71467d86679ace4"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MedKLIP_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MedKLIP_full.log",
+      "bytes": 5253,
+      "sha256": "39e164aa72d179a96000f80c28368ec7727bb9ce8bccfc90e4fe8d5b57669d23"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/BiomedCLIP_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/BiomedCLIP_full.log",
+      "bytes": 2626,
+      "sha256": "8ca26074b6b46fd3e2c5acba34c5cd3497fc1c9fe84e620abc2fc03f069b6456"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/KAD_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/KAD_full.log",
+      "bytes": 4547,
+      "sha256": "6ec9cd9480df9f0a5b3d0ed59237545025c4de3b7bc57cdc8682d7d65398fcc2"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/BioViL-T_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/BioViL-T_full.log",
+      "bytes": 4294,
+      "sha256": "a9a6fb2590f3eaa53f48a9a290c0172be593b332a8d2c8ac0be577daad19ad6c"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MaCo_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MaCo_full.log",
+      "bytes": 2244,
+      "sha256": "74e51eaa2a9aef497ec6d2a1e18d8e8314570e7b45e269dc561e5f71ea042328"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/CARZero_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/CARZero_full.log",
+      "bytes": 10115,
+      "sha256": "d37bd260a387cd9fb0ad2a9cfc1a44b5cfad22285f10e9fc3b93b72a438fdfb1"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/CheXzero_full.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/CheXzero_full.log",
+      "bytes": 4180,
+      "sha256": "f839c014fa0c991d1cf6790d81c00cfb4cd279712a92f4cd88454152cfea7838"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MAVL_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MAVL_smoke.log",
+      "bytes": 2353,
+      "sha256": "c6a29b25db3c90b1a710d95d291b14f7a545776e75febd08c63556acbac7f0c9"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MedKLIP_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MedKLIP_smoke.log",
+      "bytes": 2368,
+      "sha256": "3a09451f8c3f96662b5867d87836f3993e8892b7cf0cde3c3510021cde96e548"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/BiomedCLIP_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/BiomedCLIP_smoke.log",
+      "bytes": 1509,
+      "sha256": "de6ea844eda7e365541d1320f69705f7153d18ceeab83b86870ab71d30fb714d"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/KAD_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/KAD_smoke.log",
+      "bytes": 1706,
+      "sha256": "51384d42b031dcdb0389a3250b05b7fd904699e6116a1cfccab01819795c6fc6"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/BioViL-T_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/BioViL-T_smoke.log",
+      "bytes": 2458,
+      "sha256": "1ae1ceaa25c29b3f2f622d4d6e52611b2334bba39b1903610e2f70659fd45515"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/MaCo_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/MaCo_smoke.log",
+      "bytes": 919,
+      "sha256": "5c27a213861db07742b6ff15fbd6078cd408ea83e605ce22d9246cef96f39acf"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/CARZero_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/CARZero_smoke.log",
+      "bytes": 2574,
+      "sha256": "19a4238bd1ba0c95ba772f267c21eb504eb394587589dd716c5827c33ae823b8"
+    },
+    {
+      "group": "fixed_cardiac_baselines",
+      "original_path": "baselines/runs/chexchonet_20261024_000447/logs/CheXzero_smoke.log",
+      "published_path": "logs/baselines/runs/chexchonet_20261024_000447/logs/CheXzero_smoke.log",
+      "bytes": 877,
+      "sha256": "c171d0a7081079a7673fff26d76da883715028bea9042a93e61413baede5ec65"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/summary.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/summary.log",
+      "bytes": 473,
+      "sha256": "3c5c70a46fee5a4f9ffb8d6e84972bbd980e306df5821e7522e241074768ebca"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/radzero_paired.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/radzero_paired.log",
+      "bytes": 11151,
+      "sha256": "e7a5d3c30445f88a40cc22b34ea287a5c297573813ffd071485cb56d4d0d9c83"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/alpharad_paired.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/alpharad_paired.log",
+      "bytes": 91510,
+      "sha256": "65637d52753922648aa1845cb6a37f70c7c78b866e2ec5e7e18d4107fcee0e9e"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/radzero_full.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/radzero_full.log",
+      "bytes": 6345,
+      "sha256": "6eec6243846ca6a27dffc7c64ca0caacd3ceb296c8138d050bb50779da91f7e0"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/alpharad_full.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/alpharad_full.log",
+      "bytes": 89906,
+      "sha256": "0cc9412b45f618437c747ebb1b9550a9f36b49f0b227384e305bf95e3edfee48"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/radzero_smoke.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/radzero_smoke.log",
+      "bytes": 7085,
+      "sha256": "c7ddc7b8c17638136abf97ce7d2538a8f81503a7f284971666e341bf3e7f3297"
+    },
+    {
+      "group": "fixed_cardiac_alpha_radzero",
+      "original_path": "experiments/chexchonet_comparison_20261023_233926/logs/alpharad_smoke.log",
+      "published_path": "logs/experiments/chexchonet_comparison_20261023_233926/logs/alpharad_smoke.log",
+      "bytes": 935,
+      "sha256": "0d0cbdb6b35910ed19c2382ea9e5ace311b1192ed4f91eb07ec8d7022013b040"
+    },
+    {
+      "group": "fixed_chexpert_alpha",
+      "original_path": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/paired.log",
+      "published_path": "logs/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/paired.log",
+      "bytes": 8257,
+      "sha256": "cfec52b7e1668229949f96e1fd6db76290010462372ad411f54cc1ce53d874db"
+    },
+    {
+      "group": "fixed_chexpert_alpha",
+      "original_path": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/full_baseline.log",
+      "published_path": "logs/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/full_baseline.log",
+      "bytes": 15053,
+      "sha256": "09fd544538bdb2f33b94e4e0b1382f04484f413a1d4bd0c24db76a396d8a76dd"
+    },
+    {
+      "group": "fixed_chexpert_alpha",
+      "original_path": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/prepare.log",
+      "published_path": "logs/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/logs/prepare.log",
+      "bytes": 362,
+      "sha256": "b9238185aaad09b575c6501c78ce03925071b4ac4ccec7800eb623a31d7ef485"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/verification.log",
+      "published_path": "logs/experiments/table2_completion_20261103/verification.log",
+      "bytes": 1172,
+      "sha256": "6bd48a0299f687e0a39f8d5a577f0515d02108c0131bb4607cebd18053429659"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/radzero/full_gpu6.log",
+      "published_path": "logs/experiments/table2_completion_20261103/radzero/full_gpu6.log",
+      "bytes": 2404,
+      "sha256": "b4ba0a546041e0cafe2b4ae90ebfa420363968b03fbea1af7797a74c4dd7f3a8"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/radzero/full_gpu7.log",
+      "published_path": "logs/experiments/table2_completion_20261103/radzero/full_gpu7.log",
+      "bytes": 2385,
+      "sha256": "33a893bb8c404ae494af99f3f9da66563d331c2dd8256e309e0e78dbd0b0eae9"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/radzero/smoke_v1.log",
+      "published_path": "logs/experiments/table2_completion_20261103/radzero/smoke_v1.log",
+      "bytes": 1166,
+      "sha256": "7a61f9abe34d2b34707f162f7f0982e69c2b01c8d661f815b9aec69b7b3b2e5b"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/alpharad/openi.log",
+      "published_path": "logs/experiments/table2_completion_20261103/alpharad/openi.log",
+      "bytes": 15533,
+      "sha256": "02f859b4ca886704f974d50387745235ced45a8245ac3ac358e305aa97954031"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/alpharad/siim_radzero_holdout.log",
+      "published_path": "logs/experiments/table2_completion_20261103/alpharad/siim_radzero_holdout.log",
+      "bytes": 3049,
+      "sha256": "162db5828c2fc76b5b9988ba04b06aa08a29ff4a3500d2aeb3cd37bb4c6c1e2b"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/alpharad/smoke_openi.log",
+      "published_path": "logs/experiments/table2_completion_20261103/alpharad/smoke_openi.log",
+      "bytes": 6068,
+      "sha256": "f651551186cc7f7d1c5a3d46c462fd94d09b8df7b14bac1496e25ac2f6a80504"
+    },
+    {
+      "group": "fixed_completion",
+      "original_path": "experiments/table2_completion_20261103/alpharad/smoke_siim1694.log",
+      "published_path": "logs/experiments/table2_completion_20261103/alpharad/smoke_siim1694.log",
+      "bytes": 1360,
+      "sha256": "3b3271c56f45add8121400c3fe5f176936bba5eaf84926b9a7937b33142551b3"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/verification.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/verification.log",
+      "bytes": 1295,
+      "sha256": "4f5906ce7e95dfca2d22b79ae265c757dc114f3c5ae6c12ce9a94fec903cfb1b"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/shenzhenxray_cached.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/shenzhenxray_cached.log",
+      "bytes": 2157,
+      "sha256": "8cdc57c991cccc1e0f6398042301f4718bc920f951b654d0281a32517f4be76b"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/montgomery_cached.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/montgomery_cached.log",
+      "bytes": 2038,
+      "sha256": "b03ff94a1527c2e7ca1550dccc26afb8674d02da89e2fbef0871f68a25a8db22"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/openi_cached.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/openi_cached.log",
+      "bytes": 3235,
+      "sha256": "e1821660754d5e05a73f8c3de742417d4a0f0d2b38f7cfdf1bc1d5732f69ec9a"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/smoke_cached_montgomery.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/smoke_cached_montgomery.log",
+      "bytes": 1811,
+      "sha256": "66553dea1576278292ef2a59c78994e3bb4ca3d8f5586de319b6ac15e60d0aac"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/smoke_cached_openi.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/smoke_cached_openi.log",
+      "bytes": 1798,
+      "sha256": "150de63e0dcb949b5554b839cebb0bf6c0e4b1dfe8dffbb7d7fd1989e9b22d0f"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/montgomery.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/montgomery.log",
+      "bytes": 2817,
+      "sha256": "25f3b98470a62b07a524c4200a6daf58e5370a16fe15758a785687abea454d9c"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/openi.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/openi.log",
+      "bytes": 2968,
+      "sha256": "80b300246c96329961be79f4fb1d95239ac463a0e074937516f15548c9d60187"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/smoke_openi.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/smoke_openi.log",
+      "bytes": 1797,
+      "sha256": "3131862da1045867893eea458b12f084a4bc4c524a0654794b9745fd99ea6309"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/medklip/smoke_montgomery.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/medklip/smoke_montgomery.log",
+      "bytes": 1810,
+      "sha256": "504f59d6422948315fd9f7cc6f3f56f729c9c981b479e703a208a623ca715228"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/mavl/full_tb.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/mavl/full_tb.log",
+      "bytes": 3296,
+      "sha256": "7c59320cf0f4db901bc8d8f30ab24cf35d9ea0dca44a1797ece95b2d552a6f0f"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/mavl/full_openi.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/mavl/full_openi.log",
+      "bytes": 2720,
+      "sha256": "01dfc1313ea07dbe33604ec9ba0751c17e3751ae744b8aca822585599915d5ff"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/mavl/smoke_corrected.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/mavl/smoke_corrected.log",
+      "bytes": 1916,
+      "sha256": "4db679fb01b03436803077acf60974816a7045f534b82a60ad2c340fdb80024d"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/mavl/smoke.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/mavl/smoke.log",
+      "bytes": 2459,
+      "sha256": "a063ca5d62e4ae7693d536947acb45a773ef6452a03a704b53f276e5ae0662c8"
+    },
+    {
+      "group": "fixed_query_resources",
+      "original_path": "experiments/query_resource_completion_20261103/mavl/diagnostics/precision_diagnosis.log",
+      "published_path": "logs/experiments/query_resource_completion_20261103/mavl/diagnostics/precision_diagnosis.log",
+      "bytes": 3054,
+      "sha256": "144832fb4f6529aae217472dd0bd7dc76134c1b503a0324cf39d288b46ad0a7b"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/summary_summary.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/summary_summary.log",
+      "bytes": 1561,
+      "sha256": "c3e2a7fa31c0f845d85ae688903d402f05e3ba2b03e535e46201df97f9820771"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_evaluate.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_evaluate.log",
+      "bytes": 997,
+      "sha256": "00a625dadad20b8f58972e66514bdff9ca6ace4370f7fec68f46231eb4ba6361"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_evaluate.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_evaluate.log",
+      "bytes": 23000,
+      "sha256": "75f5cdc41b4cbb93d9b7bb3bc6e0d41716627a110613d3c01d44bbc0839c4263"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_evaluate.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_evaluate.log",
+      "bytes": 1285,
+      "sha256": "e9cc5496170082f1526d7df894e11d2475856a3d22bd2a7336e59f92341ebe06"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_evaluate.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_evaluate.log",
+      "bytes": 1315,
+      "sha256": "91c67e2dc81b4c98e60a406bd891a2b5fec3e3fe398371fd31fef23518e118a9"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_full.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_full.log",
+      "bytes": 6843,
+      "sha256": "c8c957c81635f2ee93d74c6d11383524638f2b1363105365e1159fb32ac040fc"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_full.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_full.log",
+      "bytes": 7329,
+      "sha256": "0cd3d14c82acad0e9f5feb87075e563df2042bd34a4e35b5d08c3ac083c0cb8f"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_full.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_full.log",
+      "bytes": 4249,
+      "sha256": "45d3f5c79a3bb07e15660db7b92926126fbf7b39aaff1142ea314fd4e9c5edd8"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_full.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_full.log",
+      "bytes": 2227,
+      "sha256": "5f44de39c3b4836ace133a3ebb95f37b2b8e98f05c8b78c2ee07bafca32821fb"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_smoke.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_chestxdet10_smoke.log",
+      "bytes": 6494,
+      "sha256": "d144489783bb8ef6c708efc11ccced088f9926702747966a22542fc833fcd9fe"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_smoke.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_chestxdet10_smoke.log",
+      "bytes": 4268,
+      "sha256": "cc73e3127fe233a4c9c0ab2ba503263c484db0212ff3769276f2a8a5628bba54"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_smoke.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/AlphaRAD_rsna_pneumonia_smoke.log",
+      "bytes": 2286,
+      "sha256": "c42007c9f9cb73580d5e78982727075898860249852d46c82ea8b751a355ec5a"
+    },
+    {
+      "group": "five_seeds",
+      "original_path": "experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_smoke.log",
+      "published_path": "logs/experiments/fewshot_multiseed_20261024/runs/full_20261024_v2/logs/BiomedCLIP_rsna_pneumonia_smoke.log",
+      "bytes": 2236,
+      "sha256": "6e53a5a838e274d2b90551fa42cd241bc2948b2102e6a30ca4c355e3f961a2d5"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/evaluation.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/evaluation.log",
+      "bytes": 1575,
+      "sha256": "8d77c99263c9c86a83fc87ed7aad746209fd3c23a9efd0df1db9219c26d49349"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_46.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_46.log",
+      "bytes": 181,
+      "sha256": "40af9a10ab27702d2fb549dd8297d833274b088ecf760f7fc4179ccdfdf93b6c"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_45.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_45.log",
+      "bytes": 181,
+      "sha256": "280a073db02f2a02672c3c93eb8fb13aee14ea7a6fbb7bc0087c76b31fa805bf"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_44.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_44.log",
+      "bytes": 181,
+      "sha256": "0583067a18b09cf03aa2a9554c6528987fc5668422c65cdeb324eae2fc3b3e19"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_43.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_43.log",
+      "bytes": 181,
+      "sha256": "92fb7ce2d05bd8805c8702c1b3f84f500552cef6fc9150615959cb3686cae59e"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_42.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_chestxdet10_seed_42.log",
+      "bytes": 181,
+      "sha256": "87e3af6950c9348a60f5f25a42ef7b6be416a31cde25fa416a479198cbd87a67"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_46.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_46.log",
+      "bytes": 190,
+      "sha256": "60b0420a82ee48f96ff4b17f1028ecc134431dd654f5bea7d657315adee6446c"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_45.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_45.log",
+      "bytes": 190,
+      "sha256": "f9c2fc22fdbcfcec494bac4c365d12f6e29d5e78a9004ffb87fcb59e8386c92a"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_44.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_44.log",
+      "bytes": 190,
+      "sha256": "3d20663c86b52ea82e2203c389a90f268ee5e21ccd7ffc8d311349a2ce047de4"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_43.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_43.log",
+      "bytes": 190,
+      "sha256": "2de00c2f7f5faae0f2a483d0ccf3ad9213c065e943765cb3fd297e1ce02d119a"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_42.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/AlphaRAD_rsna_pneumonia_seed_42.log",
+      "bytes": 190,
+      "sha256": "5310b0f1873cfc8e28cee7c4fda7ff02eb6075f4daa3a39661edc63ef5829950"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_46.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_46.log",
+      "bytes": 187,
+      "sha256": "d2b8bc441c6817cc26e5638c8b94a187050296b72b927b8bc32ffdc088b148d7"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_45.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_45.log",
+      "bytes": 187,
+      "sha256": "e7e5fffb432f475549100c1df25c2b4647687892a332f18bf99192187d51f7b5"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_44.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_44.log",
+      "bytes": 187,
+      "sha256": "fd9697db44eaa87886fb8d61a07a2f4b7d1724419f291f984d6695a94d4c1d15"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_43.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_43.log",
+      "bytes": 187,
+      "sha256": "f6fb84399df5667bb3a2941a689659aa1bc3ffbd57669b7ed21b6237144073d2"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_42.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_chestxdet10_seed_42.log",
+      "bytes": 187,
+      "sha256": "c2bfb21e8fa13ed52519abb934fa334300901be9f01218f625e4cfcad754865d"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_46.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_46.log",
+      "bytes": 196,
+      "sha256": "615cd9ec62428a71530fff984e8f557ab333836219db753ad7a399e1adf32c18"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_45.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_45.log",
+      "bytes": 196,
+      "sha256": "d797df0dbd5a1490f47de4c1d4a9f956b06eddca72220f21766738e8f5f76aea"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_44.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_44.log",
+      "bytes": 196,
+      "sha256": "1db47e2284c06d7f5f347df6d8dad54c5202f6993b905092b54970b8111e88cf"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_43.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_43.log",
+      "bytes": 196,
+      "sha256": "e51c92323fe8af16d64075e968adb20b3b6eace4aa78914182aa27e0e2cc930c"
+    },
+    {
+      "group": "additional_adapters",
+      "original_path": "experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_42.log",
+      "published_path": "logs/experiments/fewshot_taskres_sstext_20261109/runs/full_20261109_v1/logs/BiomedCLIP_rsna_pneumonia_seed_42.log",
+      "bytes": 196,
+      "sha256": "ba5e3d586e2daa18a0cb8a1f9af3245a1046f25bbf27ec14c328fef11e41ca63"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_all.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_all.log",
+      "bytes": 488,
+      "sha256": "ac099b538cd861c3f8cf20fc046b19971790b73190ff8cdc6bd117cdfe37850f"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_chestxdet10.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/evaluate_chestxdet10.log",
+      "bytes": 423,
+      "sha256": "5ebab9f9646465e6d4eeb1a817ef8c91e80e7b50d95f28c9b7c7821b01540952"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/chestxdet10_full.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/chestxdet10_full.log",
+      "bytes": 1257,
+      "sha256": "b99f2de0d0a7437540ad8dba231204b863c92734261b52333089c3228063b19c"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/rsna_pneumonia_full.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/rsna_pneumonia_full.log",
+      "bytes": 5282,
+      "sha256": "2a61c2d1949214aa547c6f3929d4f9e38b1ddae30ba03b48b2773dbd07059639"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/rsna_pneumonia_smoke.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/rsna_pneumonia_smoke.log",
+      "bytes": 962,
+      "sha256": "24d8eef6a57a5bad0e7a489c353453720d97bc159850e0fdd0ac2ad6ee829bcc"
+    },
+    {
+      "group": "alpha_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/chestxdet10_smoke.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/logs/chestxdet10_smoke.log",
+      "bytes": 942,
+      "sha256": "cc249b10a3fc17bb80e71ca32e4c0f402e1a0cb9aa914fab15c63e8d8a6f9d75"
+    },
+    {
+      "group": "siim_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/evaluation.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/evaluation.log",
+      "bytes": 677,
+      "sha256": "4277975a6383b34272ced83c4953af7ebe222310c14c8620630dfad2011b103d"
+    },
+    {
+      "group": "siim_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/fit_s.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/fit_s.log",
+      "bytes": 42,
+      "sha256": "972886ce24a3a4239bc80effe13710aeeb6902291ade5b22296f5e5bc5909726"
+    },
+    {
+      "group": "siim_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/full.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/full.log",
+      "bytes": 1640,
+      "sha256": "2c62c1c8d6637e7abf244b2afec78f06060f3fcfd645c4bb9ab7b7bcf24598b4"
+    },
+    {
+      "group": "siim_paths",
+      "original_path": "experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/smoke.log",
+      "published_path": "logs/experiments/query_path_intervention_20261024/runs/siim_holdout_20261024_v1/logs/smoke.log",
+      "bytes": 971,
+      "sha256": "5613e879315d8c05104ec1e9fa3695bea1d3a7d7a6e1bb71967777ba2478ef1f"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/bootstrap.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/bootstrap.log",
+      "bytes": 360,
+      "sha256": "5941e96867f7f01651e243e948621e74b4e7d10748ec882a9d0e9a55846fc33b"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_full.log",
+      "bytes": 6617,
+      "sha256": "cd62f47e72f2ec24a90190c2e036ae5cdee99adbd45c589f88b4259d70282103"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/KAD_smoke.log",
+      "bytes": 1648,
+      "sha256": "66aa45b861a22139cbeae765177af8f8bf7c432fac6beb7b8eab6873cf199fcb"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MAVL_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MAVL_full.log",
+      "bytes": 10084,
+      "sha256": "598064402f37b786445606d27ac5ba67e4a50e04b176a73fdcb6f237e6ee3c01"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MAVL_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MAVL_smoke.log",
+      "bytes": 2293,
+      "sha256": "52f87f31cb16977d8867e8de50abe9f51a0e7a49f8f05bc50e6ac3cc343ad336"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MedKLIP_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MedKLIP_full.log",
+      "bytes": 7711,
+      "sha256": "f0cff0e42dc61f38ef97c0d1fd6fe6c0db4c70ea4ec21edb3589f00652d3f64f"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/CARZero_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/CARZero_full.log",
+      "bytes": 16019,
+      "sha256": "e42b9361b645bad00b1fd57777acd8349988d5d724a788f3dd0decf1743fc77c"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MedKLIP_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/MedKLIP_smoke.log",
+      "bytes": 2308,
+      "sha256": "f260ada57e3907749f3551696353fe5844bcb28aa2068397d1d14b307d172b0e"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/CARZero_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/CARZero_smoke.log",
+      "bytes": 2514,
+      "sha256": "e45ea71a2eb82c46e6ab4f6cb03bb5d3cbf172e7963cefba7f5d12ce49c40915"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/AlphaRAD_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/AlphaRAD_full.log",
+      "bytes": 7081,
+      "sha256": "6bb12f51735574255b13df088de21a801d118a28a84d0b802d673603445b11f3"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/RadZero_full.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/RadZero_full.log",
+      "bytes": 6993,
+      "sha256": "ec7cf23a70268c50842d45c2813c232cb98684136960d8ebefb933504bafd951"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/RadZero_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/RadZero_smoke.log",
+      "bytes": 1282,
+      "sha256": "81fabfa79207dc25fb428999f1b49b387d2ba8fde2228bf66c06a2af8248ed76"
+    },
+    {
+      "group": "cardiac_paths",
+      "original_path": "experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/AlphaRAD_smoke.log",
+      "published_path": "logs/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1/logs/AlphaRAD_smoke.log",
+      "bytes": 1487,
+      "sha256": "271f4f1e8313d8dc6cd5d8afa0eae5aad4dbd634ae2a3ce359b0a96bd24e8ed8"
+    },
+    {
+      "group": "segmentation",
+      "original_path": "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/evaluate_fixed_test.log",
+      "published_path": "logs/experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/evaluate_fixed_test.log",
+      "bytes": 2124,
+      "sha256": "445befc87a16192b875f4e4b286b8a8cedbbdab37432bfd8b47519c5607ea35d"
+    },
+    {
+      "group": "segmentation",
+      "original_path": "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/select_validation_thresholds.log",
+      "published_path": "logs/experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/select_validation_thresholds.log",
+      "bytes": 466,
+      "sha256": "8ed327d1255d58309afdef169b6516143248bdc78f14b93467be9af8d3ef02b4"
+    },
+    {
+      "group": "segmentation",
+      "original_path": "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/validation_inference.log",
+      "published_path": "logs/experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/validation_inference.log",
+      "bytes": 1159,
+      "sha256": "30c93b144e4d44e8cf70e66b20f0e9c9b9ec9ca1fc1ea6821e223d20820b60bf"
+    },
+    {
+      "group": "segmentation",
+      "original_path": "experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/smoke.log",
+      "published_path": "logs/experiments/qata_validation_threshold_20261024/runs/validation_selected_20261024_v1/logs/smoke.log",
+      "bytes": 844,
+      "sha256": "2edc1ced3b20b0394e69fde4568d43e07e54bee5b7a1f74fa15f188810e89d38"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p6.log",
+      "bytes": 1687,
+      "sha256": "0b705088b0d9e9a9649a8e7457815859725b757dde35e4524b3e9b0dcd5a67b2"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p9.log",
+      "bytes": 1685,
+      "sha256": "80c5762c0bba72b2e0adacecb64676bc4ad7d6c10f47749381a6ec3de58682d6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p5_crop0p8.log",
+      "bytes": 1687,
+      "sha256": "df7f0e56129c92c8b458b3fce7aaa7613b86f2e9ce567a75e3512dcee09326ab"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0_crop0p8.log",
+      "bytes": 5252,
+      "sha256": "f80a70d1ae94886ed9ccfc332ad183f30899fb3884e900ed305abc6fac08b697"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p2_crop0p8.log",
+      "bytes": 1686,
+      "sha256": "fd5abefaea67614970e5129f9004fa2c2948530033fdda5ca594bdc6f3a17264"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p8.log",
+      "bytes": 5453,
+      "sha256": "bbacd844e3148b3b17ece091cad50931d1c53e08fc8143f33e6fc7c2d8f73dcb"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0_crop0p8.log",
+      "bytes": 1688,
+      "sha256": "91869d28e599605157c9469f1263f63b9f0990bdcc1e8b3697134f9b696e84fc"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p5_crop0p8.log",
+      "bytes": 5468,
+      "sha256": "ab6b426d0003c51cbbdfb3ec78a2d76880d3cabff4f1934d9340e04e09e53b6e"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p7.log",
+      "bytes": 2623,
+      "sha256": "25b6080695aeae0448b954c50b006c824d9548c131ef861b126e65bf9307a92f"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p7_crop0p8.log",
+      "bytes": 5255,
+      "sha256": "25fb371e10d502a5a6ab5af3967b3975cf5a32bef17e2bb1fe067279253ea465"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p7_crop0p8.log",
+      "bytes": 2627,
+      "sha256": "c60c0e7ea366737e9d1b4c4d97c18fb8367c769d6eee67e7bb6138705a6c0ce2"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p7.log",
+      "bytes": 5457,
+      "sha256": "663ee31c40dcb8f67b7d8f02dd7b7bc423931bf25d5cc4ddcae60b7ba445727e"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p8.log",
+      "bytes": 2627,
+      "sha256": "d6ef9dfa926a1ab2651d3b630779504c8c907d94f632c4ab8cc146e011bfab2f"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0_crop0p8.log",
+      "bytes": 1902,
+      "sha256": "151516cfc6eba2be083b7467ebd969cf19a896f74a038e17daeccbb4d0c6c3ca"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p1_crop0p8.log",
+      "bytes": 2874,
+      "sha256": "6e902bdd1358e0d7b5392d04b1044d229aa0c3e7e8eefa61fbc5a715b8bb2feb"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p5_crop0p8.log",
+      "bytes": 1903,
+      "sha256": "976bc69ab52334641fbe294ab3f963aaa356348f055a82aac475b3b1bf024cdc"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p8.log",
+      "bytes": 1903,
+      "sha256": "d1f1c8ea6921aa7f0b439b0c299ce385a022e51ba0c937e24da52bcbdd9cf6bf"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p2_crop0p8.log",
+      "bytes": 1903,
+      "sha256": "cae1ac0d05d9d7437d150fe88bf5c68bda632403d21b81aa029df1e7e067db32"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p1_crop0p8.log",
+      "bytes": 1903,
+      "sha256": "6236ba7748ff66e10c55989c9b3e2ebf00d59c16e953f23c32d2896efd7a60d9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p7_crop0p8.log",
+      "bytes": 1215,
+      "sha256": "fe848dc78eaf2dacee501a7833d3fa18d60a1001327eaeafd609f3bcd0dfd659"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0_crop0p8.log",
+      "bytes": 10299,
+      "sha256": "ea25549bbded4d7ac2ea2f60a3bf5cbff8f1c22890f55929727bc2e3837df1f3"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p9.log",
+      "bytes": 1902,
+      "sha256": "9e1a6809d76e7ec6eba8f64821d5a1a5fb2e0af876bc8d5a2beb2c8589565e17"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p7.log",
+      "bytes": 1903,
+      "sha256": "aa7678b193cf5130c49d6696989fe50a975070279531a9c5e1ab83d5397c47d3"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p3_crop0p6.log",
+      "bytes": 1902,
+      "sha256": "cc6ab38a100621ba4108bf5417a066dd9a2de58fe5349a49701c5ab64f2cf4cc"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0_crop0p8.log",
+      "bytes": 1218,
+      "sha256": "172ab0cd860b8b1216658e78b47f2729c96f11a4438e7ad2386f26fe2d599b8f"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p2_crop0p8.log",
+      "bytes": 10485,
+      "sha256": "9205fcad55ac50d51dcd054378e6083b6275810f7c25757dcf3ed9fd517cfb95"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p7.log",
+      "bytes": 11155,
+      "sha256": "339e9db825866212769a43786d6f54096d52c1196ff47e663a62536a7e47317b"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p5_crop0p8.log",
+      "bytes": 10109,
+      "sha256": "4960b659ada3cd218e6df3abcfc079df1b1feadc688bd0eae3db64c6b519e792"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p7_crop0p8.log",
+      "bytes": 11145,
+      "sha256": "6b4f1a7518d8c5d1eca8718d6abdbf667fce04fe23d1a4bfd44c626ae5b90bf0"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p6.log",
+      "bytes": 10110,
+      "sha256": "5cc38b28a97a91681b22f67249895fe5be01f350c0cd70ebd42e4defbe607223"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p8.log",
+      "bytes": 11151,
+      "sha256": "6c9aa79426cbbe09f99e9ebd06bbe1b2fc6314c17024eae98b44c8195e5da0ee"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p9.log",
+      "bytes": 9903,
+      "sha256": "7172b71645cd7aa1e9b228b165afa6a06ce189029d5b52ac3a15da1c54f31b58"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p1_crop0p8.log",
+      "bytes": 11147,
+      "sha256": "f3e6ff1529ea9cd75282d28584bccf15fd20709b56543c6cbda3cb62f3d44fb6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p7.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p7_crop0p8.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p8.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p1_crop0p8.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p7_crop0p8.log",
+      "bytes": 91508,
+      "sha256": "302eb1168f746737c9e4120480611e636d4783d92a63665e6340de12bf6f36ac"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p7_crop0p8.log",
+      "bytes": 8175,
+      "sha256": "f1e35908e2a27b029d2e3f23a7a6196281276d98ee02fae249ed331a824f6df4"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p7_crop0p8.log",
+      "bytes": 1687,
+      "sha256": "8f9655233e714f80b39b2c11ee86cee9d9781e00cfc28ceb6321415cc62552a6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p7.log",
+      "bytes": 10112,
+      "sha256": "a70542e4c13da1e225504b86ef684590b1ee11e45ad32ecadd4a8b0330fb55d7"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p7_crop0p8.log",
+      "bytes": 10110,
+      "sha256": "31dcc1402205eb96b1bf2c381815fe8576ea7bc7e4328a18a6f58d7b64756446"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p3_crop0p8.log",
+      "bytes": 10292,
+      "sha256": "833a3746b8a268dad260b39bb4536a5b25349d08d2f53800d35436330f92c942"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexchonet_eta0p1_crop0p8.log",
+      "bytes": 10288,
+      "sha256": "3a9d00e3ebebd656de5ed78c51d617507d6bcef8c7bc8c63cbc714562871bdef"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p7_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/CARZero_chexpert_eta0p7_crop0p8.log",
+      "bytes": 1902,
+      "sha256": "0069099746abfa8241bca3c240353ea688da9618773bcfd66650ca6f002c87c2"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p9.log",
+      "bytes": 5458,
+      "sha256": "0db8215dca0d70c41a499c7b295045df67b04a69b95a727b8f3d371fb6c02866"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p3_crop0p6.log",
+      "bytes": 4868,
+      "sha256": "76d84aaa68ab20f95bc4ecda07783385cb4e3953cdb7ad0b3210770d11896408"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p2_crop0p8.log",
+      "bytes": 5058,
+      "sha256": "0dc2adf870eb685d8d864af0d2bc63246276e9632711402235d544a5011008f2"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexchonet_eta0p1_crop0p8.log",
+      "bytes": 5252,
+      "sha256": "c58144c54fa2ac8f69f495bac9e5126352bbf86a6b5dfa2f2214adb4b8688f31"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p7.log",
+      "bytes": 1687,
+      "sha256": "1edc246963a9243d9978a027d72a8a9f9552ad3879e90faffe6e721a736bc6ee"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0_crop0p8.log",
+      "bytes": 8173,
+      "sha256": "0a68274db3aca12a8e16cc229734dfcb97eccdb3fb28a298838ac35491519fea"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p1_crop0p8.log",
+      "bytes": 8172,
+      "sha256": "95b09b812aa540494a4ae62edac9cb20a12bd305585dfcc7ce9c8a08f33a7dc1"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p2_crop0p8.log",
+      "bytes": 8171,
+      "sha256": "071d176edd7c5fc75266c58bf999cb0abfcc24ebc6c72bd74a9a14912268c8d3"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p8.log",
+      "bytes": 8173,
+      "sha256": "9da301ddb81d5f511da385d012364415fbe47326d5dc48a6c53a6076823ec7b8"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p5_crop0p8.log",
+      "bytes": 8258,
+      "sha256": "9d26042320343b46bd354eba242b2814757502b5213b98569b6b8ec7fd5f5c7e"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p6.log",
+      "bytes": 8174,
+      "sha256": "6cc33666d4b4c0839578af69d9dc2fd395a814d2cd1101217b104f183a221ea5"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p7.log",
+      "bytes": 8174,
+      "sha256": "a231e60d6c3301d0fd468500ed8648c69d644fc54d9740dba253513e9ede4e2e"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexpert_eta0p3_crop0p9.log",
+      "bytes": 8173,
+      "sha256": "9f1a8e94bba89ec17db06d3b38194be78d50ca5f1f9cb61d5cf15f03b77157ca"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0_crop0p8.log",
+      "bytes": 91515,
+      "sha256": "1725a398413f637f441e9b6c1ef06ff592c6b0155aa21d706008123be9892a22"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p1_crop0p8.log",
+      "bytes": 91516,
+      "sha256": "9e6d0d8c6270aeb41dcf5df8b4dd580fc9f407d07059d06d388791ad83ac1162"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p2_crop0p8.log",
+      "bytes": 91515,
+      "sha256": "069e5a9ed8287f725bd5f2f606c8d7125c5463be494201deba0b06c1a24f393d"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p8.log",
+      "bytes": 91510,
+      "sha256": "b07daca6d3a14566464dbd9afa4199120cf109e40874779f68fc05eed0ce0134"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p5_crop0p8.log",
+      "bytes": 91506,
+      "sha256": "c75a9ec4ab1c43f2c7c4bc05bff2e4f01961ce4b2e28a32cd8d89da9bdfe696d"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p6.log",
+      "bytes": 91509,
+      "sha256": "482cf9c9770b50aa17332dc03429b71da9c215f16e4d952f51e5efbe32b4ffa9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p7.log",
+      "bytes": 91511,
+      "sha256": "f5dd33890ae6c430164bfa07efe2f8bb82ce97fd7b792e52cc8e01650a3fbbed"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/AlphaRAD_chexchonet_eta0p3_crop0p9.log",
+      "bytes": 91405,
+      "sha256": "4ea590af013eafec4d9983c1a5a79314364586edaaf8895f245725a7f801b36f"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0_crop0p8.log",
+      "bytes": 37,
+      "sha256": "57e1f15be21a145b9496905f12adc3e8edccc61b7ab83d0e98840ef80fc37abd"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p2_crop0p8.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p5_crop0p8.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p6.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexpert_eta0p3_crop0p9.log",
+      "bytes": 37,
+      "sha256": "55aa33161f95bedc2d30211f4bee252e771361ae3769d33c4692c88380ea00c9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0_crop0p8.log",
+      "bytes": 11158,
+      "sha256": "ee48c0959d8aca99291ba25589a0e2bb9d2dd170eb986cb5d1ef688e5d55787f"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p2_crop0p8.log",
+      "bytes": 11146,
+      "sha256": "fedb1da46035b4236fe676e9bfc061e8c627ef6de955d4a7d92a830edef8519d"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p5_crop0p8.log",
+      "bytes": 11155,
+      "sha256": "8f27593454326a11a08e18a5ee49cc7446465335e27d47c774faa857e41872b6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p6.log",
+      "bytes": 11146,
+      "sha256": "f297b798342a71697b33d96efb0b06459db2eef1da5c8de6c4cda70b76c6fe34"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/RadZero_chexchonet_eta0p3_crop0p9.log",
+      "bytes": 11150,
+      "sha256": "34eb48c9108097963a89353f8d928b2fba67c9fb0e0cf91184803774febbfc93"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p1_crop0p8.log",
+      "bytes": 1216,
+      "sha256": "203305129b8b4985c17a553f6a8a71e7d7133bf5c4291af3834b117c8dab6ac6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p2_crop0p8.log",
+      "bytes": 1217,
+      "sha256": "5f02d44bd68ac5fd98b3586f5135bdd84ddd5ccf9be3d710298c7b3ab5d71417"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p8.log",
+      "bytes": 1216,
+      "sha256": "121c3f2809e627bc77a8d9d9e34e67f16c6fa952f79f66e39be7f255d1a0b845"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p5_crop0p8.log",
+      "bytes": 1217,
+      "sha256": "4bd314b84ea3ef8b11e086946137ea0833898aacb89a70ef31df27f81dfe1017"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p6.log",
+      "bytes": 1217,
+      "sha256": "a055c991fbdedc012c0b834298ac4a80d4c68063e39e778e8d9b16e1386d46ac"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p7.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p7.log",
+      "bytes": 1216,
+      "sha256": "4893c35901de0d682f5d10a6094932f87f3cd34c077b3795843471c7eedd82b9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexpert_eta0p3_crop0p9.log",
+      "bytes": 1216,
+      "sha256": "4fd7eaf3b6114c5d7fb1735ac1bfbb3f06df2e93e0d1d74f760ebe9812309833"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0_crop0p8.log",
+      "bytes": 2636,
+      "sha256": "7d8b2a5e31b5dd244d2965378c25198c5407a8847c8b6914189dab13ec7c8787"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p2_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p2_crop0p8.log",
+      "bytes": 2627,
+      "sha256": "de7d51351661de351b5fb00c8dde829ff305dcea7a2370a0b32448182bb093c6"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p5_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p5_crop0p8.log",
+      "bytes": 2623,
+      "sha256": "1b5f5adb9db70facb2754f66b8a5f4611efc0cc536ae672d1da9cde75502ada9"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p6.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p6.log",
+      "bytes": 2621,
+      "sha256": "9905928a6300647cc020fbcc11989ed332a39b195b29a5bf8c16de069e27545d"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p9.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/BiomedCLIP_chexchonet_eta0p3_crop0p9.log",
+      "bytes": 2626,
+      "sha256": "ab14733b2521f761d023ebdc3ce75a5f31f8317bb9ce88b6953af584a1338d06"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p1_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p1_crop0p8.log",
+      "bytes": 1687,
+      "sha256": "e2a9a377197dabb68f4ed388f71b850ed530afdf5e7a88f2ddfaf00f43b68498"
+    },
+    {
+      "group": "sensitivity",
+      "original_path": "experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p8.log",
+      "published_path": "logs/experiments/sensitivity_grid/campaign_20261108_v3/logs/MedKLIP_chexpert_eta0p3_crop0p8.log",
+      "bytes": 1686,
+      "sha256": "99611c9618ea8e3652a30387e54273969f07026c0a55906ce5941ba7d71a2dcb"
+    }
+  ]
+}

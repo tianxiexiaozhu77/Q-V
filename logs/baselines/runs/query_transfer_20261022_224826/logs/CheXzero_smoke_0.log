@@ -1,0 +1,25 @@
+/storage/3090group2/zjx/code/medical/baselines/CheXzero/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+CheXzero/montgomery 2/2
+COMPLETE CheXzero montgomery {"macro_auroc": null, "macro_auprc": null}
+UNSUPPORTED chestxdet10_gt No verified native grounding implementation
+CheXzero/chestxdet10 2/2
+COMPLETE CheXzero chestxdet10 {"macro_auroc": 0.0, "macro_auprc": 0.0}
+CheXzero/chexpert 2/2
+COMPLETE CheXzero chexpert {"macro_auroc": -50.0, "macro_auprc": -37.5}
+CheXzero/shenzhenxray 2/2
+COMPLETE CheXzero shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+UNSUPPORTED node21 No verified native grounding implementation
+CheXzero/covidkaggle 2/2
+COMPLETE CheXzero covidkaggle {"macro_auroc": 0.0, "macro_auprc": 0.0}
+CheXzero/siim_radzero_holdout 2/2
+COMPLETE CheXzero siim_radzero_holdout {"macro_auroc": 0.0, "macro_auprc": 0.0}
+CheXzero/siim_pneumothorax 2/2
+COMPLETE CheXzero siim_pneumothorax {"macro_auroc": 0.0, "macro_auprc": 0.0}
+UNSUPPORTED qatacovid_seg No verified native grounding implementation
+CheXzero/rsna_pneumonia 2/2
+COMPLETE CheXzero rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+CheXzero/openi 2/2
+COMPLETE CheXzero openi {"macro_auroc": null, "macro_auprc": null}
+CheXzero/chest14 2/2
+COMPLETE CheXzero chest14 {"macro_auroc": null, "macro_auprc": null}

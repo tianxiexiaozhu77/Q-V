@@ -1,0 +1,198 @@
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Image feature extractor: resnet50
+UNSUPPORTED montgomery MedKLIP verified description resources lack: Tuberculosis
+MedKLIP/chestxdet10_gt 8/409
+MedKLIP/chestxdet10_gt 32/409
+MedKLIP/chestxdet10_gt 48/409
+MedKLIP/chestxdet10_gt 64/409
+MedKLIP/chestxdet10_gt 88/409
+MedKLIP/chestxdet10_gt 112/409
+MedKLIP/chestxdet10_gt 136/409
+MedKLIP/chestxdet10_gt 160/409
+MedKLIP/chestxdet10_gt 184/409
+MedKLIP/chestxdet10_gt 208/409
+MedKLIP/chestxdet10_gt 232/409
+MedKLIP/chestxdet10_gt 256/409
+MedKLIP/chestxdet10_gt 272/409
+MedKLIP/chestxdet10_gt 288/409
+MedKLIP/chestxdet10_gt 304/409
+MedKLIP/chestxdet10_gt 328/409
+MedKLIP/chestxdet10_gt 344/409
+MedKLIP/chestxdet10_gt 360/409
+MedKLIP/chestxdet10_gt 384/409
+MedKLIP/chestxdet10_gt 400/409
+MedKLIP/chestxdet10_gt 409/409
+COMPLETE MedKLIP chestxdet10_gt {"pointing_game": 5.482975909827409}
+MedKLIP/chestxdet10 8/492
+MedKLIP/chestxdet10 224/492
+MedKLIP/chestxdet10 408/492
+MedKLIP/chestxdet10 492/492
+COMPLETE MedKLIP chestxdet10 {"macro_auroc": -1.1911446073431753, "macro_auprc": -1.3266030759761405}
+MedKLIP/chexpert 8/596
+MedKLIP/chexpert 80/596
+MedKLIP/chexpert 152/596
+MedKLIP/chexpert 224/596
+MedKLIP/chexpert 296/596
+MedKLIP/chexpert 376/596
+MedKLIP/chexpert 448/596
+MedKLIP/chexpert 504/596
+MedKLIP/chexpert 568/596
+MedKLIP/chexpert 596/596
+COMPLETE MedKLIP chexpert {"macro_auroc": -0.9074735350987351, "macro_auprc": 0.761636392985332}
+UNSUPPORTED shenzhenxray MedKLIP verified description resources lack: Tuberculosis
+MedKLIP/node21 8/1129
+MedKLIP/node21 416/1129
+MedKLIP/node21 776/1129
+MedKLIP/node21 1129/1129
+COMPLETE MedKLIP node21 {"pointing_game": 7.5287865367581945}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+MedKLIP/covidkaggle 8/1381
+MedKLIP/covidkaggle 1000/1381
+MedKLIP/covidkaggle 1381/1381
+COMPLETE MedKLIP covidkaggle {"macro_auroc": 1.973010046682111, "macro_auprc": 3.214278139624549}
+MedKLIP/siim_radzero_holdout 8/1694
+MedKLIP/siim_radzero_holdout 680/1694
+MedKLIP/siim_radzero_holdout 1264/1694
+MedKLIP/siim_radzero_holdout 1694/1694
+COMPLETE MedKLIP siim_radzero_holdout {"macro_auroc": -1.6551844361077372, "macro_auprc": -3.106045822212522}
+MedKLIP/siim_pneumothorax 8/1704
+MedKLIP/siim_pneumothorax 680/1704
+MedKLIP/siim_pneumothorax 1352/1704
+MedKLIP/siim_pneumothorax 1704/1704
+COMPLETE MedKLIP siim_pneumothorax {"macro_auroc": -1.5054287256338172, "macro_auprc": -2.728829980723879}
+MedKLIP/qatacovid_seg 8/2113
+MedKLIP/qatacovid_seg 544/2113
+MedKLIP/qatacovid_seg 1200/2113
+MedKLIP/qatacovid_seg 1928/2113
+MedKLIP/qatacovid_seg 2113/2113
+COMPLETE MedKLIP qatacovid_seg {"dice": 2.5081987856858277}
+MedKLIP/rsna_pneumonia 8/5327
+MedKLIP/rsna_pneumonia 664/5327
+MedKLIP/rsna_pneumonia 1240/5327
+MedKLIP/rsna_pneumonia 1896/5327
+MedKLIP/rsna_pneumonia 2560/5327
+MedKLIP/rsna_pneumonia 3224/5327
+MedKLIP/rsna_pneumonia 3792/5327
+MedKLIP/rsna_pneumonia 4384/5327
+MedKLIP/rsna_pneumonia 4744/5327
+MedKLIP/rsna_pneumonia 5327/5327
+COMPLETE MedKLIP rsna_pneumonia {"macro_auroc": 1.2598386223464098, "macro_auprc": 4.168910275789983}
+UNSUPPORTED openi MedKLIP verified description resources lack: Calcified Granuloma, Granuloma
+MedKLIP/chest14 8/21101
+MedKLIP/chest14 208/21101
+MedKLIP/chest14 408/21101
+MedKLIP/chest14 616/21101
+MedKLIP/chest14 808/21101
+MedKLIP/chest14 1016/21101
+MedKLIP/chest14 1224/21101
+MedKLIP/chest14 1440/21101
+MedKLIP/chest14 1624/21101
+MedKLIP/chest14 1832/21101
+MedKLIP/chest14 2016/21101
+MedKLIP/chest14 2224/21101
+MedKLIP/chest14 2408/21101
+MedKLIP/chest14 2608/21101
+MedKLIP/chest14 2816/21101
+MedKLIP/chest14 3032/21101
+MedKLIP/chest14 3208/21101
+MedKLIP/chest14 3392/21101
+MedKLIP/chest14 3544/21101
+MedKLIP/chest14 3704/21101
+MedKLIP/chest14 3888/21101
+MedKLIP/chest14 4104/21101
+MedKLIP/chest14 4320/21101
+MedKLIP/chest14 4528/21101
+MedKLIP/chest14 4712/21101
+MedKLIP/chest14 4920/21101
+MedKLIP/chest14 5136/21101
+MedKLIP/chest14 5344/21101
+MedKLIP/chest14 5544/21101
+MedKLIP/chest14 5752/21101
+MedKLIP/chest14 5944/21101
+MedKLIP/chest14 6152/21101
+MedKLIP/chest14 6344/21101
+MedKLIP/chest14 6552/21101
+MedKLIP/chest14 6760/21101
+MedKLIP/chest14 6976/21101
+MedKLIP/chest14 7168/21101
+MedKLIP/chest14 7384/21101
+MedKLIP/chest14 7592/21101
+MedKLIP/chest14 7808/21101
+MedKLIP/chest14 8016/21101
+MedKLIP/chest14 8232/21101
+MedKLIP/chest14 8440/21101
+MedKLIP/chest14 8648/21101
+MedKLIP/chest14 8840/21101
+MedKLIP/chest14 9048/21101
+MedKLIP/chest14 9256/21101
+MedKLIP/chest14 9464/21101
+MedKLIP/chest14 9664/21101
+MedKLIP/chest14 9872/21101
+MedKLIP/chest14 10072/21101
+MedKLIP/chest14 10272/21101
+MedKLIP/chest14 10464/21101
+MedKLIP/chest14 10672/21101
+MedKLIP/chest14 10880/21101
+MedKLIP/chest14 11088/21101
+MedKLIP/chest14 11288/21101
+MedKLIP/chest14 11496/21101
+MedKLIP/chest14 11696/21101
+MedKLIP/chest14 11800/21101
+MedKLIP/chest14 11880/21101
+MedKLIP/chest14 11976/21101
+MedKLIP/chest14 12128/21101
+MedKLIP/chest14 12320/21101
+MedKLIP/chest14 12496/21101
+MedKLIP/chest14 12680/21101
+MedKLIP/chest14 12856/21101
+MedKLIP/chest14 13064/21101
+MedKLIP/chest14 13248/21101
+MedKLIP/chest14 13456/21101
+MedKLIP/chest14 13656/21101
+MedKLIP/chest14 13856/21101
+MedKLIP/chest14 14048/21101
+MedKLIP/chest14 14264/21101
+MedKLIP/chest14 14464/21101
+MedKLIP/chest14 14672/21101
+MedKLIP/chest14 14872/21101
+MedKLIP/chest14 15072/21101
+MedKLIP/chest14 15248/21101
+MedKLIP/chest14 15368/21101
+MedKLIP/chest14 15536/21101
+MedKLIP/chest14 15744/21101
+MedKLIP/chest14 15904/21101
+MedKLIP/chest14 16088/21101
+MedKLIP/chest14 16272/21101
+MedKLIP/chest14 16472/21101
+MedKLIP/chest14 16672/21101
+MedKLIP/chest14 16872/21101
+MedKLIP/chest14 17048/21101
+MedKLIP/chest14 17256/21101
+MedKLIP/chest14 17464/21101
+MedKLIP/chest14 17672/21101
+MedKLIP/chest14 17864/21101
+MedKLIP/chest14 18080/21101
+MedKLIP/chest14 18288/21101
+MedKLIP/chest14 18504/21101
+MedKLIP/chest14 18696/21101
+MedKLIP/chest14 18904/21101
+MedKLIP/chest14 19120/21101
+MedKLIP/chest14 19328/21101
+MedKLIP/chest14 19520/21101
+MedKLIP/chest14 19720/21101
+MedKLIP/chest14 19928/21101
+MedKLIP/chest14 20136/21101
+MedKLIP/chest14 20328/21101
+MedKLIP/chest14 20536/21101
+MedKLIP/chest14 20744/21101
+MedKLIP/chest14 20952/21101
+MedKLIP/chest14 21101/21101
+COMPLETE MedKLIP chest14 {"macro_auroc": -0.9100747404535814, "macro_auprc": -0.6002046091769186}

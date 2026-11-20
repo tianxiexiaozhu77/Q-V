@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{\textbf{Aggregation versus readout on AlphaRAD.} Five-support-seed mean AUROC / AUPRC (\%), with one test view. Parentheses denote (aggregation query vector, readout query vector). Q--R fixes the adapted readout query vector and changes only aggregation.}
+\label{tab:paths}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Branch & RSNA & ChestXDet10 \\
+\midrule
+Original $(q,q)$ & 83.26 / 54.81 & 81.64 / 45.72 \\
+R $(q,q^{\prime})$ & 86.02 / 60.84 & 82.60 / 49.41 \\
+A $(q^{\prime},q)$ & 85.25 / 57.78 & 82.84 / 47.83 \\
+Q $(q^{\prime},q^{\prime})$ & 86.70 / 61.84 & 83.36 / 50.57 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,43 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Setting positive classification head weights...
+Setting negative classification head weights...
+Weights have been set.
+MaCo/montgomery 8/8
+COMPLETE MaCo montgomery {"macro_auroc": null, "macro_auprc": null}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chestxdet10_gt 8/8
+COMPLETE MaCo chestxdet10_gt {"pointing_game": 8.571428571428573}
+MaCo/chestxdet10 8/8
+COMPLETE MaCo chestxdet10 {"macro_auroc": 1.1111111111111183, "macro_auprc": -11.990740740740735}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chexpert 8/8
+COMPLETE MaCo chexpert {"macro_auroc": 0.0, "macro_auprc": -0.7615740740740673}
+MaCo/shenzhenxray 8/8
+COMPLETE MaCo shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/node21 8/8
+COMPLETE MaCo node21 {"pointing_game": 0.0}
+MaCo/covidkaggle 8/8
+COMPLETE MaCo covidkaggle {"macro_auroc": 6.666666666666665, "macro_auprc": 4.5000000000000036}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/siim_radzero_holdout 8/8
+COMPLETE MaCo siim_radzero_holdout {"macro_auroc": -6.666666666666665, "macro_auprc": -5.27777777777777}
+MaCo/siim_pneumothorax 8/8
+COMPLETE MaCo siim_pneumothorax {"macro_auroc": 0.0, "macro_auprc": 0.0}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/qatacovid_seg 8/8
+COMPLETE MaCo qatacovid_seg {"dice": 0.004404616886305446}
+MaCo/rsna_pneumonia 8/8
+COMPLETE MaCo rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+MaCo/openi 8/8
+COMPLETE MaCo openi {"macro_auroc": 0.0, "macro_auprc": 0.0}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chest14 8/8
+COMPLETE MaCo chest14 {"macro_auroc": 41.66666666666667, "macro_auprc": 36.52777777777778}

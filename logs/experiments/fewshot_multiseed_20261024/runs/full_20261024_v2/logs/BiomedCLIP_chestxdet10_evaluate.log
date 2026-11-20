@@ -1,0 +1,13 @@
+BiomedCLIP/chestxdet10/seed_42: original score grids, shared support-only folds
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+BiomedCLIP/chestxdet10/seed_43: original score grids, shared support-only folds
+BiomedCLIP/chestxdet10/seed_44: original score grids, shared support-only folds
+BiomedCLIP/chestxdet10/seed_45: original score grids, shared support-only folds
+BiomedCLIP/chestxdet10/seed_46: original score grids, shared support-only folds
+All five support fits/predictions committed; unlocking fixed-test labels and spatial boxes.
+{"model": "BiomedCLIP", "dataset": "chestxdet10", "seed": 42, "status": "complete", "methods": 11}
+{"model": "BiomedCLIP", "dataset": "chestxdet10", "seed": 43, "status": "complete", "methods": 11}
+{"model": "BiomedCLIP", "dataset": "chestxdet10", "seed": 44, "status": "complete", "methods": 11}
+{"model": "BiomedCLIP", "dataset": "chestxdet10", "seed": 45, "status": "complete", "methods": 11}
+{"model": "BiomedCLIP", "dataset": "chestxdet10", "seed": 46, "status": "complete", "methods": 11}

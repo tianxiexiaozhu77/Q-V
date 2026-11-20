@@ -1,0 +1,163 @@
+{
+  "official_repository": "https://github.com/xiaoman-zhang/KAD",
+  "checkpoint_source": "https://drive.google.com/drive/folders/1ArEgk-VNKZnXd5Fjkf6tiNA4YvBDZCCF",
+  "checkpoints": [
+    {
+      "path": "baselines/KAD/local_assets/KAD_224_best_valid.pt",
+      "url": "https://drive.google.com/file/d/1EOuWd6v4Us3lAYEwGcSPtH29616pELED/view",
+      "sha256": "eae032570a2b041b6da629ad2e2bfc36283e4995d56d64779dc3d1a6a70021ea",
+      "status": "downloaded",
+      "size_bytes": 1823932739
+    }
+  ],
+  "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10382552/",
+  "architecture": "KAD-224 ResNet50 stage3 + Med-KEBERT text encoder + TQN",
+  "supported_tasks": "classification and last-layer TQN cross-attention grounding, 224-resolution variant",
+  "limitations": [
+    "New diseases use bare lowercase disease names without tuning; named diseases follow official synonyms.",
+    "Author checkpoint has full trained text_encoder, so separate pretrained BERT weights are not required.",
+    "Native source unused institutional petrel client import omitted; model definitions otherwise unchanged.",
+    "Selected 224 variant to match AlphaRAD baseline table, not 512/1024."
+  ],
+  "status": "ready",
+  "commit": "591d999e325a783868599b3e53067acd2ecbddc0",
+  "environment": "baselines/KAD/.venv",
+  "python": "baselines/KAD/.venv/bin/python",
+  "adapter": "baselines/KAD/local_setup/adapter.py",
+  "training_performed": false,
+  "dependency_profile": [
+    "Python3.10",
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+    "transformers==4.35.2",
+    "numpy<2",
+    "einops",
+    "pandas",
+    "scikit-learn",
+    "pillow",
+    "timm==0.9.7"
+  ],
+  "dependency_note": "Inference-only dependencies. Upstream requirements contain author-local build paths and training-only packages; these are not installed.",
+  "metrics_protocol": "Root fixed test manifests, no support/test resampling; native positive-class probabilities; all requested classes or explicit unsupported error; no training.",
+  "environment_status": "isolated environment installed and CPU validation passed",
+  "dependency_lock": "baselines/KAD/local_setup/requirements.lock.txt",
+  "adapter_sha256": "370aecaf2b869b1c9481f298f6929920bf53d8d7c56bb02d7d9c4a989e8f3acf",
+  "grounding_protocol": "Native scalar maps inverse-mapped to full original image coordinates. Unified evaluator supplies matched phase6 PG/Dice rules. Native MAVL per-map threshold grid differs from unified comparison protocol; explicitly report this difference.",
+  "launcher": {
+    "path": "baselines/KAD/local_setup/python_local.sh",
+    "sha256": "d587b32e3f205ec0184c34b99084e3d59f68f762a9769f4e6d00cef42d946662",
+    "common_worker_original": "baselines/local_setup/evaluate_baseline.py",
+    "common_worker_redirect": "baselines/local_setup/evaluate_baseline_buffered.py",
+    "worker_sha256": "68d4fa692e8d3b382be0767d401cb50272acc007919630d912a13116731fdfcc",
+    "change": "Parent common evaluator with progress persistence throttled to every10 seconds; numerical evaluation unchanged. Other Python script arguments unchanged."
+  },
+  "text_assets": [
+    {
+      "path": "baselines/KAD/local_assets/Med-KEBERT/config.json",
+      "resolved_path": "baselines/KAD/local_assets/Med-KEBERT/config.json",
+      "size_bytes": 690,
+      "sha256": "457edfd9fc4cb9a6d3cf58826e91907255d60b383eac6eb790ef3dd04e32d629"
+    },
+    {
+      "path": "baselines/KAD/local_assets/Med-KEBERT/vocab.txt",
+      "resolved_path": "baselines/KAD/local_assets/Med-KEBERT/vocab.txt",
+      "size_bytes": 225062,
+      "sha256": "7b36651908a88bc38bda41b728b2a598191e0d3b553cbacf7b1e5f026d5b5b9f"
+    },
+    {
+      "path": "baselines/KAD/local_assets/Med-KEBERT/tokenizer.json",
+      "resolved_path": "baselines/KAD/local_assets/Med-KEBERT/tokenizer.json",
+      "size_bytes": 678903,
+      "sha256": "8d0d18d79af91cc3b41e365cde4de7067ca32ac84a48a58306241157e814fcfb"
+    },
+    {
+      "path": "baselines/KAD/local_assets/Med-KEBERT/tokenizer_config.json",
+      "resolved_path": "baselines/KAD/local_assets/Med-KEBERT/tokenizer_config.json",
+      "size_bytes": 373,
+      "sha256": "0ee5466fb57a6665a3a79901c671b7eb9c75c11849562dc2fa46e7ed37a3f487"
+    },
+    {
+      "path": "baselines/KAD/local_assets/Med-KEBERT/special_tokens_map.json",
+      "resolved_path": "baselines/KAD/local_assets/Med-KEBERT/special_tokens_map.json",
+      "size_bytes": 125,
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"
+    }
+  ],
+  "cpu_validation": "baselines/KAD/local_setup/smoke_test.json",
+  "runtime_metadata": {
+    "model": "KAD-224",
+    "score_kind": "positive_class_softmax_probability",
+    "checkpoint": "baselines/KAD/local_assets/KAD_224_best_valid.pt",
+    "preprocess": "RGB; bicubic resize 224x224; ImageNet normalization. Matches author CheXpert/PadChest pipeline; NIH images are square so scalar Resize is equivalent.",
+    "prompts": "bare disease names (official KAD protocol); max_length=256; pooled BERT -> MLP -> TQN",
+    "label_mapping": {
+      "no finding": "normal",
+      "no findings": "normal",
+      "effusion": "pleural effusion",
+      "mass": "lung mass",
+      "nodule": "lung nodule",
+      "pleural thickening": "pleural thicken",
+      "pleural_thickening": "pleural thicken",
+      "covid": "covid-19"
+    },
+    "transformers_compatibility": "Restore persistence of original deterministic arange position_ids buffer after validating its exact values, then strict-load every checkpoint key.",
+    "limitations": [
+      "Beyond author evaluated disease lists, bare class names are an explicit zero-shot transfer protocol; no prompt tuning.",
+      "CPU construction skips overwritten ImageNet/BERT initialization downloads; all image/text/TQN checkpoint keys loaded strictly."
+    ],
+    "grounding": {
+      "source": "baselines/KAD/A3_CLIP/plot_visualize_512.py",
+      "method": "final TQN layer averaged-head raw attention; OpenCV INTER_LINEAR to original extent",
+      "variant": "KAD224 14x14 (official plotting example is KAD512 16x16)",
+      "values": "raw continuous attention before display-only maximum scaling, uint8 quantization and JET colormap",
+      "crop": false
+    }
+  },
+  "source_checksums": {
+    "A2_KEBERT/dataload.py": "7a78175414947c99dfc00c725136f0f1868a4c4a6bfd34bc700d71e454166a87",
+    "A2_KEBERT/main.py": "0f5cd32b8925a705ad647c9418c9b64bd86f1376abcc14b95b47cb5f576483e9",
+    "A2_KEBERT/model.py": "8ca9e9bafa0a847bdf07a4ffd4dab1b9dbb15bfe25a759aee1ebb822e6ab717f",
+    "A2_KEBERT/training/distributed.py": "f0f55f6dc905f0d54b60693d0a3bb672fac678ce22a15c1db6c2c0cd707f2214",
+    "A2_KEBERT/training/logger.py": "d90ffad0a42e9d8f1b15af6a0db819e178d6a880f8203c6a51368856cd26f3ee",
+    "A2_KEBERT/training/loss.py": "2066cd26840a006838ffaa97404e36c4aa1d64c50cb5e807057d17a08ffde472",
+    "A2_KEBERT/training/params.py": "edf62c46f76147172b27da112c69773424ce56d535ba6f3713bdd2f8a48a1c0d",
+    "A2_KEBERT/training/scheduler.py": "77767a9af54c1e90c38404e334b6f660254204a84aa1f0a6a199bbda1765141c",
+    "A2_KEBERT/training/train.py": "6d74c2681a11f03fb8c17c24ddb0cd86801ee26764246c6b50520629a677bf5f",
+    "A3_CLIP/dataset/dataset.py": "f18dc982b3f6eeaaeecc904f4d9c4f331c5f48aa4a05c3155f1729c62cbbad0e",
+    "A3_CLIP/dataset/randaugment.py": "9685d968c3530b9324a79e8cd6aa7f55a7e3b3cb5c4924fde4aca9d0c1b1fc01",
+    "A3_CLIP/dataset/test_dataset.py": "f1e3395905fa1800ff6074c87cf429a042b2df094f39ed389104efea2857c920",
+    "A3_CLIP/engine/train_fg.py": "fc38470bbd5f564500c99724f0073e21bc6b4687a8719e0248458f2357e1e7c6",
+    "A3_CLIP/factory/loss.py": "83085df7de6ba0d8576e0196e0210ed910ae18f80a6f3098eb64e7ce70ed38e7",
+    "A3_CLIP/factory/metric.py": "ca38f2feff14f07519310b1001b61c86699320b7bb138a574c5da9e3872e4bf9",
+    "A3_CLIP/factory/utils.py": "e106d934b5d415ee5737d48cb65c0fa1c32644830c06c5bcddf289259706c91a",
+    "A3_CLIP/main.py": "9e4c1b683cd9accb13a4bea8ecfa8c7297c726241b4dca2d5e8d155957cd63c3",
+    "A3_CLIP/models/clip_tqn.py": "91bbd725b7c46604d08a8ee97952aeb503f326b8e40bbba0878a9f95758d5f10",
+    "A3_CLIP/models/transformer_decoder.py": "ee67b4aae21917aedef6a302f3c1ef09d6bd1cd1305fbc2665357395033c6bd0",
+    "A3_CLIP/models/vit.py": "7b8b1ac6555d3c2d1c77768d37023caec236e368c124f30fb65fa077de694faa",
+    "A3_CLIP/optim/__init__.py": "5abc4ca1bbf4d76844bd009af5d81b1e80268a1e6ce7ad088b45ed36c4b267e8",
+    "A3_CLIP/optim/adafactor.py": "33519b74a769488d34d8e4b91790848b89998cc96fc3df7910a991cf8a9a5914",
+    "A3_CLIP/optim/adahessian.py": "bc9b50f1b65318bae4318b863ce25d80efb957c86356f336225f874aa839f40a",
+    "A3_CLIP/optim/adamp.py": "311a1b886c8f02041705a09dabe02900731845c37bb9d455c87b9c7773b356a5",
+    "A3_CLIP/optim/adamw.py": "32331eeca262241f1907194b623b82c40717ee2bfbb72fc998c56d9a0df02029",
+    "A3_CLIP/optim/lookahead.py": "7bfed9e0a55a005924bb55424d8617a97f4767027fb0af0b23711aaaf36fcb5a",
+    "A3_CLIP/optim/nadam.py": "b288c8645ac8eb4f2c8e2a5c0264069bc65823a6a7df0102fe7e194d0d3a2987",
+    "A3_CLIP/optim/novograd.py": "85caf09387410397d6f7cba87c1a0db40c86fa578a05e518b9a803d4f6a34570",
+    "A3_CLIP/optim/nvnovograd.py": "88cd66af428b64a3b283f124f34ddc017884777ec7b56d594597a96807bd8e5f",
+    "A3_CLIP/optim/optim_factory.py": "f3d70d07bed695964999964399b967b0555041b6c204538eb9b8e02156f7fb55",
+    "A3_CLIP/optim/radam.py": "7c947f26ca01f1af09aa936e35527847221b2d409c23a73d8bcdf42ecd230faf",
+    "A3_CLIP/optim/rmsprop_tf.py": "30708c92097bb654085083c70355f2437f424fd8f4693f175e32908f891c0df1",
+    "A3_CLIP/optim/sgdp.py": "20de1e18ad152964ee123bffe20ba9fd4574fa4fcfa85c6bcd66c84f88996e10",
+    "A3_CLIP/plot_visualize_512.py": "83a1ed1a0b80dc2052830c984b84ec94289a649425d335872a124f7f81d63d0b",
+    "A3_CLIP/scheduler/__init__.py": "ebe28574439380008037c670e4fdfe3f8ef742bfd63f87687e47fd1314e9c479",
+    "A3_CLIP/scheduler/cosine_lr.py": "4bd7693cc5b77419a8ce4cd60eb9d7b9686955596e4c38f85ca17507e60aeefa",
+    "A3_CLIP/scheduler/plateau_lr.py": "f37d4b07c5c4da71824a65d279685237c6c3aff4b8ad2f66011d5364d97eb6d0",
+    "A3_CLIP/scheduler/scheduler.py": "b7517bb0f79a3334e2a3ac5ecb14bdcf69cb28c62dd3c734c4e3d212d0955228",
+    "A3_CLIP/scheduler/scheduler_factory.py": "ccb1d1ae562d45621d3c4d05df81969c9c32fc7355d54a2d8cd97d1c103470d2",
+    "A3_CLIP/scheduler/step_lr.py": "d8bf2e03f9aae7fdb98cbd16012367690dc8917f6ae5c66013bf3d3c1357af28",
+    "A3_CLIP/scheduler/tanh_lr.py": "24aa0c5bdfd0518df0a259348fc9612d2ed3743a3065f22218fb68c528336cd0",
+    "A3_CLIP/test_chestxray14.py": "e05df87162e683613f47c378fbcdf9a756b9af36d6e177cf495729cb9322f0fb",
+    "A3_CLIP/test_chexpert.py": "399323862a3fd770a4eae7ca05af73ec055618d1442f5a55ae90ef6adf60d3f7",
+    "A3_CLIP/test_padchest.py": "51eeb547e9bff12f3f67b5ca15f9d7674bc05d7b20d487ccbcab585255396386",
+    "local_setup/adapter.py": "370aecaf2b869b1c9481f298f6929920bf53d8d7c56bb02d7d9c4a989e8f3acf"
+  }
+}

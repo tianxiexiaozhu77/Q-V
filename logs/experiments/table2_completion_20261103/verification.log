@@ -1,0 +1,15 @@
+Verifying AlphaRAD / openi: identities, code, weights and images
+PASS AlphaRAD / openi: all four AUROC/AUPRC/AP metrics reproduced
+Verifying AlphaRAD / siim_radzero_holdout: identities, code, weights and images
+PASS AlphaRAD / siim_radzero_holdout: all four AUROC/AUPRC/AP metrics reproduced
+Verifying RadZero / chexpert: identities, code, weights and images
+PASS RadZero / chexpert: all four AUROC/AUPRC/AP metrics reproduced
+Verifying RadZero / shenzhenxray: identities, code, weights and images
+PASS RadZero / shenzhenxray: all four AUROC/AUPRC/AP metrics reproduced
+Verifying RadZero / montgomery: identities, code, weights and images
+PASS RadZero / montgomery: all four AUROC/AUPRC/AP metrics reproduced
+Verifying RadZero / siim_pneumothorax: identities, code, weights and images
+PASS RadZero / siim_pneumothorax: all four AUROC/AUPRC/AP metrics reproduced
+Verifying RadZero / covidkaggle: identities, code, weights and images
+PASS RadZero / covidkaggle: all four AUROC/AUPRC/AP metrics reproduced
+Verified all 7 pairs, 28 branch metric sets and 13877 hashed files: /storage/3090group2/zjx/code/medical/experiments/table2_completion_20261103/VERIFIED_COMPLETION.json

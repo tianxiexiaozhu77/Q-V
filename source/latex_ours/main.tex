@@ -1,0 +1,332 @@
+% CVPR 2027 anonymous review manuscript.
+% Source: ../baselines/paper_draft_zh/CVPR_假设结果评审版.md
+% The reported experiments combine the supplied manuscript's saved records
+% with subsequently completed and verified evaluations.
+% Original author-kit files are preserved in build/template_backup/.
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[review]{cvpr}
+% Omit conference and confidentiality headers in both reading copies.
+\ClearShipoutPicture
+\makeatletter
+\patchcmd{\@maketitle}{Anonymous \confName~submission}{\@author}{}{%
+  \PackageError{main}{Could not replace the anonymous author label}{}%
+}
+\makeatother
+\input{preamble}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+\input{crossrefs}
+\def\confName{CVPR}
+\def\confYear{2027}
+\newcommand{\norm}[1]{\operatorname{norm}\!\left(#1\right)}
+\newcommand{\method}{disease query vector adaptation}
+\title{Few-Shot Disease Query Adaptation for Frozen Chest X-ray Vision--Language Models}
+\author{Anonymous submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Fixed disease queries in chest X-ray vision--language models do not directly incorporate labeled visual evidence from a target task. We propose a method (Q+V) combining support-based query adaptation with two-view fusion. Each query is updated using the normalized difference between mean positive and negative support-image features, anchored to its original direction. Adapted queries follow each model's native prediction path with frozen weights. For query-independent features and dot-product scoring, we relate the query update to a support-derived score correction; in prediction paths where queries participate in visual aggregation, the update can also change the aggregated representations used for prediction. With equal-weight fusion of full-image and center-crop predictions, we evaluate ten pretrained models on eleven datasets. Averaged over ten classification dataset/protocol groups, Q+V improves AUROC and AUPRC over Original by 2.95 and 3.58 percentage points, respectively, with both metrics improving in 95 of 120 fixed-support model--task/protocol comparisons. Component ablations isolate the contributions of query adaptation and two-view fusion. Controlled comparisons of aggregation and scoring on AlphaRAD provide exploratory evidence of additional reaggregation gains on RSNA and ChestXDet10.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+Chest X-ray vision--language models encode disease descriptions as query vectors and use them to connect textual concepts with image representations. Cross-dataset performance variation in chest X-ray models motivates adaptation to target data~\cite{zech2018generalization}. When a few labeled target images are available, their visual evidence can inform prediction, but fixed disease queries do not directly incorporate these examples. We study how to adapt these queries while keeping pretrained model weights frozen.
+
+Existing few-shot adaptation methods incorporate support evidence through mechanisms such as learned classifier residuals~\cite{taskres} and support-cache predictions~\cite{tipadapter}. A disease query provides an adaptation interface inside the pretrained prediction process: in models such as AlphaRAD and RadZero, it helps construct the visual representation as well as score it. Updating this interface can therefore introduce support evidence into visual aggregation while retaining the pretrained decoder and prediction head. For query-independent features and dot-product scoring, the update is related to a support-derived score correction. We examine when access to the aggregation path provides an additional benefit beyond adapting the readout.
+
+Our full method (Q+V) combines backpropagation-free disease-query adaptation with equal-weight full-image/center-crop fusion. Each query is adapted using the normalized difference between mean positive and negative support-image features, anchored to its original direction. The adapted queries are cached and reused through each model's native prediction path without an additional classifier (Fig.~\ref{fig:method}). After support processing, prediction uses these cached queries without comparing each test image with a support cache. Score-level controls and path interventions distinguish the effects of the scoring direction from those of constructing a different visual representation. Single-view query adaptation (Q) and two-view fusion without adaptation (V) serve as component ablations.
+
+We evaluate ten pretrained models on eleven datasets, including settings used during method development. Our main results (Table~\ref{tab:overall}) show that Q+V improves mean AUROC/AUPRC over Original by 2.95/3.58 percentage points across ten classification dataset/protocol groups. Table~\ref{tab:components} isolates the contributions of Q and V. In AlphaRAD, both aggregation-only and readout-only updates improve classification on RSNA and ChestXDet10, and their joint update improves on each individually. Additional path controls show that reaggregation gains depend on the model and task (Appendix~\suppref{supp:paths}).
+
+Our contributions are threefold:
+\begin{itemize}
+    \item A full method (Q+V) combining backpropagation-free adaptation of native disease queries with two-view fusion, incorporating positive and negative support evidence while retaining pretrained decoders and prediction heads.
+    \item An analysis connecting query adaptation to score correction, with controlled AlphaRAD interventions that separate the contributions of visual aggregation and final scoring on two datasets.
+    \item An evaluation of the full method across ten models and eleven datasets, with component ablations, repeated-support comparisons, parameter-sensitivity analysis, and separate spatial evaluation to characterize the method's applicability.
+\end{itemize}
+
+\section{Related Work}
+\label{sec:related}
+\paragraph{Vision--language models for chest X-rays.}
+Relevant research spans image--text representation learning~\cite{biomedclip,chexzero,biovilt}, medical knowledge and visual concepts~\cite{medklip,kad,mavl}, and fine-grained alignment and cross-modal fusion~\cite{maco,carzero,radzero,alpharad}. We adapt disease queries through these models' native interfaces, which differ in visual features, query injection points, and scoring functions.
+
+\paragraph{Few-shot adaptation and zero-shot enhancement.}
+TaskRes optimizes an additive residual for a frozen text classifier~\cite{taskres}; Tip-Adapter combines support-cache and pretrained predictions~\cite{tipadapter}. Related approaches use class-mean/covariance discrimination (GDA)~\cite{gda}, complementary negative features (SimNL)~\cite{simnl}, and projected text/visual prototype mixing (P\&M)~\cite{projectmix}. CALIP uses parameter-free cross-modal attention~\cite{calip}, while TIMO explores mutual text--image guidance~\cite{timo}. In medical imaging, Shakeri et al.~\cite{medicalfewshot} benchmark strict few-shot adaptation and evaluate a probe that learns class-wise weights blending visual prototypes and text embeddings. SS-Text+ addresses imbalanced support sets without additional validation data through a training-free probe combining visual and textual information~\cite{sstextplus}. Our focus is a disease-query update computed from positive and negative support-feature statistics without backpropagation, together with an analysis of its effects on native scoring and, where applicable, visual aggregation.
+
+\paragraph{Test-time augmentation.}
+Shanmugam et al.~\cite{tta} examine uniform test-time averaging and learn aggregation weights. We use fixed equal weights for full-image and center-crop predictions, isolating this component in the ablation.
+
+\section{Method}
+\label{sec:method}
+\subsection{Setting and support statistics}
+\label{sec:support}
+Figure~\ref{fig:method} summarizes support processing, query adaptation, and test prediction. Let $\mathcal S=\{(x_i,y_i)\}_{i=1}^{N}$ be a labeled support set, where $x_i$ is a chest X-ray after native preprocessing and $y_i\in\{0,1\}^{C}$ gives its labels for $C$ diseases; $y_{ic}=1$ and $0$ denote positive and negative labels for disease $c$. The original query $q_c$ is obtained from the frozen text encoder with the model's required pooling or projection. All network weights remain frozen, and support and test images are disjoint. For a preprocessed image $x$, let $s_c(x;q_c)$ denote the classification score in the model-specific fusion domain (Appendix~\suppref{supp:view_fusion}) and $H_c(x;q_c)$ an available spatial response.
+
+In AlphaRAD, \emph{visual feature aggregation} uses softmax-normalized query--location similarities to weight spatial image features. \emph{Final scoring (readout)} matches this aggregate to the query, retaining native per-head normalization, scaling, and output rules. The query thus influences both aggregation and scoring. This within-image aggregation is distinct from averaging support features across images and fusing predictions across views (Sec.~\ref{sec:views}).
+
+Let $z_{ic}$ denote the frozen visual feature of support image $x_i$. The support feature $z_{ic}$ and query $q_c$ have matching dimensionality at the selected adaptation interface. We suppress additional concept, prediction-branch, and ensemble indices; their architecture-specific handling is described in Sec.~\ref{sec:interfaces}. AlphaRAD, RadZero, and CARZero use features aggregated with the original queries; the other models use global or pooled features shared across diseases, so $z_{ic}$ is independent of $c$. We normalize each feature as $\bar z_{ic}=z_{ic}/\|z_{ic}\|_2$, compute separate positive and negative means, and normalize their difference to obtain the update direction:
+\begin{equation}
+\begin{split}
+\mu_c^+ &= \frac{1}{|\mathcal P_c|}\sum_{i\in\mathcal P_c}\bar z_{ic},\qquad
+\mu_c^- = \frac{1}{|\mathcal N_c|}\sum_{i\in\mathcal N_c}\bar z_{ic},\\
+d_c &= \norm{\mu_c^+-\mu_c^-},
+\end{split}
+\label{eq:direction}
+\end{equation}
+where $\mathcal P_c=\{i:y_{ic}=1\}$, $\mathcal N_c=\{i:y_{ic}=0\}$, and $\operatorname{norm}$ denotes $\ell_2$ normalization. If $\mu_c^+=\mu_c^-$, we define $d_c=0$ and skip the update, retaining the original query vector $q_c$. Each disease requires both positive and negative supports. Computing the two means separately prevents the larger group from dominating solely through its sample count. Negative labels are disease-specific: a pneumothorax-negative image may still contain pneumonia.
+
+Support statistics are computed from the original support views, using the unadapted queries wherever aggregation is query-dependent. The adapted queries are computed once per support set and reused for all test images and views, without recomputing support statistics after adaptation.
+
+\begin{figure*}[t]
+\centering
+\input{figures/native_query_pipeline}
+\caption{\textbf{Disease query vector adaptation illustrated with a pleural effusion example.} The disease description is encoded as a text query vector, adapted using support images, and matched to a held-out chest X-ray to produce a disease score and a query-related spatial response map. (a) Frozen support processing yields class means; the original query vector conditions aggregation when required. (b) Their contrast updates the query vector without changing model weights. (c) The cached query drives both visual feature aggregation and final scoring in AlphaRAD (Sec.~\ref{sec:support}); normalization, scaling, and multi-head details are omitted. Spatial responses branch from query--position similarities before softmax. For the full Q+V configuration, average the two views' logits before sigmoid and inverse-warp/fuse their spatial responses. This AlphaRAD/ChestXDet10 Effusion example uses 50 supports (four shown) and the first held-out test image. The Q+V score is uncalibrated; the heatmap shows query-related responses scaled for display, not a segmentation mask. Green box: ground truth; star: predicted peak.}
+\label{fig:method}
+\end{figure*}
+
+\subsection{Disease query vector update}
+We add the support direction to the original query direction, normalize the result, and restore the appropriate vector scale:
+\begin{equation}
+\bar q_c=\norm{q_c},\qquad
+q'_c=a_c\norm{\bar q_c+\eta d_c},\quad \eta=0.3.
+\label{eq:query}
+\end{equation}
+Here $\eta$ is a fixed mixing coefficient, not a parameter learned by backpropagation. AlphaRAD and RadZero use unit query vectors ($a_c=1$); the other eight models set $a_c=\|q_c\|_2$ so that the query vector retains its original length after the update. For models with positive and negative text prompts, only the positive query vector is adapted.
+
+For $0\leq\eta<1$, the update bounds the query-direction change by $\arcsin\eta$ (approximately $17.46^\circ$ at $\eta=0.3$), a geometric property that does not guarantee prediction stability or performance gains (Appendix~\suppref{supp:query_geometry}).
+
+\paragraph{How query vector updates affect prediction.}
+If the visual features $z$ are independent of the query vector and scoring uses a dot product, the adapted score expands as
+\begin{equation}
+z^\top q'_c=\frac{a_c}{\|\bar q_c+\eta d_c\|_2}
+\big(z^\top\bar q_c+\eta z^\top d_c\big).
+\label{eq:linear}
+\end{equation}
+The two terms measure alignment with the original query direction and the support direction. For a fixed class and support set, the prefactor is positive and independent of the test image. Under these assumptions, the adapted score and the additive score in parentheses induce the same ranking and hence the same AUROC and AUPRC. This ranking equivalence does not establish equality of numerical scores or thresholded predictions; equivalence under the native readout also depends on normalization, negative-prompt terms, and other readout operations. Query-guided aggregation can additionally change the features being scored, whose effect we test with path controls in Sec.~\ref{sec:paths}.
+
+For a model with separately controlled aggregation and readout queries, let $g_c(x;u)$ denote the visual aggregate constructed with query $u$, and $h_c(z;v)$ the native readout with query $v$, including normalization and scaling. Readout-only adaptation evaluates $h_c(g_c(x;q_c);q'_c)$; full adaptation evaluates $h_c(g_c(x;q'_c);q'_c)$. The latter changes the representation presented to the same adapted scorer. However, $d_c$ is estimated from image-level class statistics under the original representation. Its construction does not optimize the spatial weights or class separation after reaggregation, so a useful scoring direction need not be a useful aggregation query. Appendix~\suppref{supp:path_interpretation} formalizes this distinction.
+
+\subsection{Query vector adaptation in different models}
+\label{sec:interfaces}
+We apply Eq.~\ref{eq:query} through each backbone's native interfaces, retaining its preprocessing, decoder, and output rules. In query-guided models such as AlphaRAD and RadZero, adapted queries enter both visual aggregation and scoring; when the visual features used for scoring are query-independent, adaptation primarily affects scoring. Model-specific injection points, query layouts, spatial branches, and ensemble handling are detailed in Appendix~\suppref{supp:native_interfaces}.
+
+\subsection{Two-view inference strategy}
+\label{sec:views}
+The full method, Q+V, uses adapted queries with two views: the original image and a center crop with side ratio 0.8. Original and Q use one original view with unadapted and adapted queries, respectively; V uses both views with unadapted queries. The crop is applied after native preprocessing and resized to the input size. Both views share the same queries, and their classification scores are fused with equal weights in each model's native score domain. The fusion equation, model-specific score domains, and spatial alignment and coverage rules are given in Appendix~\suppref{supp:view_fusion}.
+
+\section{Experimental Protocol}
+\label{sec:protocol}
+\paragraph{Coverage and metrics.}
+We evaluate ten models using publicly released pretrained weights on eleven datasets: ChestXray14~\cite{wang2017chestxray8}, ChestXDet10~\cite{liu2020chestxdet10}, RSNA~\cite{shih2019rsna}, SIIM~\cite{filice2020siim}, CheXpert~\cite{irvin2019chexpert}, Shenzhen and Montgomery~\cite{jaeger2014tuberculosisdatasets}, CovidKaggle~\cite{chowdhury2020covidradiography,rahman2021covidradiography}, Node21~\cite{sogancioglu2024node21}, QaTaCOV19~\cite{degerli2022qatacov19}, and CheXchoNet~\cite{elias2024chexchonet}. Dataset sizes, support budgets, data sources, and splits are detailed in Appendices D.1--D.2.
+
+In each paired comparison, the original and adapted models are evaluated on the same test set using the same metrics; all Original baseline results are obtained by rerunning the models in this study. The fixed Q+V evaluation contains 120 classification and 18 spatial comparisons. Comparisons are counted by model, task, and evaluation protocol; the same test set may be used in multiple comparisons. Classification uses class-macro AUROC and trapezoidal area under the precision--recall curve (AUPRC), rather than average precision. Scores are percentages and differences are percentage points (pp), computed before rounding. Pointing Game (PG)~\cite{zhang2016pointinggame} checks whether the single response maximum lies in any ground-truth box for a class, averaging positive images and then valid classes.
+
+% BEGIN commented main dataset table: details are in Appendices D.1--D.2.
+% \begin{table}[t]
+% \centering
+% \caption{\textbf{Evaluation scope.} Test counts are images. ChestXDet10 lists classification/localization counts; SIIM lists two protocols on the same dataset. The cardiac tasks share one cohort.}
+% \label{tab:data}
+% \small
+% \setlength{\tabcolsep}{5pt}
+% \begin{tabular}{@{}lrrr@{}}
+% \toprule
+% Dataset & Classes & Support & Test \\
+% \midrule
+% ChestXray14~\cite{wang2017chestxray8} & 14 & 70 & 21,101 \\
+% ChestXDet10~\cite{liu2020chestxdet10} & 10 & 50 & 492 / 409 \\
+% RSNA~\cite{shih2019rsna} & 1 & 10 & 5,297 \\
+% SIIM~\cite{filice2020siim} & 1 & 10 & 1,704 / 1,694 \\
+% CheXpert~\cite{irvin2019chexpert} & 12 & 60 & 596 \\
+% Shenzhen~\cite{jaeger2014tuberculosisdatasets} & 1 & 10 & 652 \\
+% Montgomery~\cite{jaeger2014tuberculosisdatasets} & 1 & 10 & 128 \\
+% CovidKaggle~\cite{chowdhury2020covidradiography,rahman2021covidradiography} & 1 & 10 & 1,381 \\
+% Node21 (PG)~\cite{sogancioglu2024node21} & 1 & 10 & 1,129 \\
+% QaTaCOV19 (Dice)~\cite{degerli2022qatacov19} & 1 & 10 & 2,113 \\
+% CheXchoNet~\cite{elias2024chexchonet} & 3 binary & 10/task & 7,407 \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% END commented main dataset table.
+
+\paragraph{Support budgets.}
+Binary tasks use five positive and five negative support images. Multilabel tasks use five positive anchor images per class, with distinct anchors across classes and all disease labels retained. The pooled support set contains $5C$ distinct images, and a class may have more than five positive supports. Models evaluated under the same protocol share support and test sets; data sources, splits, and separation checks are detailed in Appendix~\suppref{supp:support_sources}.
+
+\paragraph{Query construction for added categories.}
+MedKLIP and MAVL extend the query context for missing categories using fixed disease descriptions. Within each model and task, Original, Q, V, and Q+V start from the same unadapted query context and share model weights and prediction heads. Exact descriptions, query layouts, and encoding procedures are given in Appendix~\suppref{supp:support_sources}.
+
+\paragraph{Development settings.}
+Method development used only RadZero on five datasets: ChestXDet10, ChestXray14, OpenI, SIIM, and RSNA. The adaptation rule, $\eta=0.3$, crop-side ratio 0.8, equal fusion weights, and four branches were then fixed for subsequent main evaluations on other models and datasets. Parameter variations were examined separately in the sensitivity audit and were not used to reselect the main configuration. OpenI is included in this development history but excluded from the current eleven-dataset evaluation. Among the 138 fixed-support comparisons, four are RadZero development comparisons---ChestXDet10, ChestXray14, RSNA, and SIIM (1,694); the remaining 134 use the fixed method. Full development and reporting scopes are given in Appendix~\suppref{supp:statistics}.
+
+\paragraph{Few-shot comparisons and statistics.}
+Table~\ref{tab:overall} reports fixed-support point estimates. Repeated-support comparisons use five prespecified support-set draws, shared across methods within each task and evaluated on the same fixed test cohort. Their means average the five support-specific metric values rather than ensemble predictions. Tunable competitors use support-only cross-validation with frozen pretrained encoders (Appendix~\suppref{supp:selection}). Paired 95\% confidence intervals for method differences use 2,000 test-group bootstrap resamples, with each sampled test-group list shared across methods and support draws. These intervals are conditional on the evaluated support configurations and do not incorporate uncertainty from drawing new support sets. No multiple-comparison correction is applied. Resampling units and complete statistical procedures are given in Appendix~\suppref{supp:statistics}.
+
+\section{Results}
+\label{sec:results}
+\subsection{Main classification results}
+\label{sec:overall}
+
+Table~\ref{tab:overall} reports the main classification results, comparing Original with our full method (Q+V) across the ten models. The three CheXchoNet tasks are severe left ventricular hypertrophy (CSLV), left ventricular dilation (CDLV), and their union (CCOM). These tasks and both SIIM protocols are listed separately, and multilabel scores are macro-averaged over classes. Each Original--Q+V pair uses the same model weights and test images.
+
+\input{sec/classification_comparison}
+
+In the fixed RSNA and CheXpert protocols, supports are sampled from released evaluation lists, and all images of the support patients are excluded before scoring. For RSNA, an audit using the official RSNA-to-NIH mapping yields a patient-separated test set of 5,297 images from 3,713 patients. These are target-dataset few-shot evaluations; repartitioning an existing evaluation list does not itself establish a new external cohort. Pretraining overlap for CheXchoNet is unaudited (Appendix~\suppref{supp:support_sources}).
+
+Cross-model means summarize changes under each architecture's native procedure, rather than an identical internal intervention (Appendix~\suppref{supp:native_averages}). The point-estimate means increase in every reported dataset, task, and protocol column; this does not imply an improvement for every model--task pair. Averaging the ten dataset/protocol groups, with both SIIM protocols counted separately, mean AUROC/AUPRC increases from 79.77/54.18 for Original to 82.71/57.76 for Q+V. Gains vary by dataset: the mean AUROC/AUPRC changes are +6.72/+6.43 pp on Shenzhen, +5.14/+6.00 pp on Montgomery, and +4.78/+6.59 pp on CovidKaggle.
+
+Across all 120 fixed-support classification comparisons, 95 have higher point estimates for both metrics, 15 have lower point estimates for both, and 10 have mixed signs. Retaining only the 1,704-image SIIM protocol yields 110 model--task comparisons (88 joint improvements, 13 joint declines, and nine mixed), corresponding to 90 model--dataset combinations after grouping the three cardiac tasks. These Q+V point estimates include development comparisons and have no per-comparison intervals (Appendix~\suppref{supp:statistics}). They do not establish statistical significance; the separate contributions of Q and V are assessed in Sec.~\ref{sec:components}.
+
+On CheXpert, Q+V improves AlphaRAD's AUROC/AUPRC from 91.39/56.63 to 93.14/60.19; the Fracture subset contains only one positive image from one patient, so its contribution to the macro average is unstable. In the fixed-support CheXchoNet evaluation, 25 of 30 model--task combinations improve both metrics, three decline in both, and two have mixed signs; the three tasks share one patient cohort. The descriptive mean over the 30 combinations improves AUROC/AUPRC over Original by 2.33/2.04 pp.
+
+Performance declines remain for individual model--dataset pairs. For example, MAVL loses 3.65/8.34 AUROC/AUPRC pp on CovidKaggle, and BioViL-T loses 3.41/2.86 pp on Shenzhen.
+
+A post-development sensitivity audit finds similar aggregate performance for nearby configurations, although individual model--dataset settings can decline. The audit was not used to reselect the main configuration; complete configurations and results appear in Appendix~\suppref{supp:sensitivity}.
+
+\subsection{Comparison with other few-shot adaptation methods}
+\label{sec:competitors}
+Table~\ref{tab:competitors} compares BiomedCLIP and AlphaRAD on RSNA and ChestXDet10 over the same five prespecified support draws. Prototype and score-mixing definitions and the binary Tip-Adapter/GDA/SimNL ports are detailed in Appendix~\suppref{supp:comparison}. TaskRes and SS-Text+ use feature-level binary ports of the official classifier and solver: TaskRes uses support-only cross-validation, whereas SS-Text+ retains its fixed closed-form rule (Appendix~\suppref{supp:taskres_sstext}). For AlphaRAD, the prototype classifier, prototype score mixing, Tip-Adapter, GDA, SimNL, TaskRes, and SS-Text+ use global projected support features, whereas Q uses disease-specific support aggregates. TaskRes and SS-Text+ additionally use a global-feature cosine classifier for scoring. Same-feature difference scoring (S) shares Q's support direction $d_c$ but retains the original queries and adds only a score residual:
+\begin{equation}
+\ell_c^{\mathrm S}(x)=\ell_c^{\mathrm{Original}}(x)
++\alpha\,\bar z_c(x;q_c)^\top d_c.
+\label{eq:same_feature_score}
+\end{equation}
+Here $\ell_c^{\mathrm{Original}}$ is the unadapted binary logit or margin, and $\bar z_c(x;q_c)$ is the unit test feature extracted along the Original path using $q_c$, not $q'_c$. For BiomedCLIP, this feature is query-independent. The scalar $\alpha$ is shared across classes within each model--dataset--support draw and selected by support-set cross-validation. Appendix~\suppref{supp:same_feature_score} specifies the feature construction, scaling, and selection procedure.
+
+Q matches the test-view count of the one-view baselines. V and Q+V use two test views, so Q+V combines adaptation with an additional view and does not provide a matched-compute ranking. Forward-pass counts and native fusion rules are detailed in Appendix~\suppref{supp:computation}.
+
+\begin{table*}[t]
+\centering
+\caption{\textbf{Five-support-seed comparison.} Entries are mean AUROC / AUPRC (\%) across five prespecified support-set draws (seeds 42--46). The best value for each metric in each column is bolded, and the second-best is underlined. All methods share support labels and test images within each setting; tunable methods use the same support folds. Q+V and V use two test views; other rows use one, so the view budgets are not fully matched. Q matches the test-view count of the one-view baselines. TaskRes and SS-Text+ use feature-level binary ports; for AlphaRAD, their global-feature readout differs from Q's native readout (Sec.~\ref{sec:competitors}). Means alone do not establish a statistically supported ranking.}
+\label{tab:competitors}
+\small
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc}
+\toprule
+Method & \multicolumn{2}{c}{BiomedCLIP~\cite{biomedclip}} & \multicolumn{2}{c}{AlphaRAD~\cite{alpharad}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & RSNA & ChestXDet10 & RSNA & ChestXDet10 \\
+\midrule
+Original & 81.15 / 52.52 & 60.53 / 23.69 & 83.26 / 54.81 & 81.64 / 45.72 \\
+Prototype classifier~\cite{snell2017prototypical} & 83.81 / 59.68 & 67.11 / 28.18 & 82.71 / 55.24 & 73.33 / 35.93 \\
+Prototype score mixing (our control) & 81.83 / 53.82 & 64.51 / 26.21 & 83.41 / 55.08 & 81.87 / 46.74 \\
+Tip-Adapter~\cite{tipadapter} & 81.88 / 53.80 & 61.82 / 24.08 & 84.38 / 57.39 & 81.42 / 45.66 \\
+GDA~\cite{gda} & 81.43 / 52.56 & 64.14 / 26.72 & 84.44 / 57.99 & 81.75 / 47.87 \\
+SimNL~\cite{simnl} & 84.60 / 59.14 & 67.19 / \underline{28.33} & 83.45 / 56.92 & 74.95 / 37.42 \\
+% New baseline means: fewshot_taskres_sstext_20261109/runs/full_20261109_v1/RESULTS.json.
+TaskRes~\cite{taskres} & 81.18 / 52.00 & 64.23 / 25.83 & 83.22 / 57.05 & 72.94 / 34.46 \\
+SS-Text+~\cite{sstextplus} & 83.82 / 59.71 & 67.18 / 28.16 & 84.25 / 57.91 & 75.64 / 38.06 \\
+Positive-support-only adaptation & 81.32 / 54.75 & 61.84 / 23.79 & 83.25 / 54.70 & 82.38 / 47.93 \\
+Same-feature difference scoring (S) & 81.47 / 52.93 & 65.15 / 26.54 & 84.46 / 57.77 & 82.65 / 50.07 \\
+Query adaptation only (Q) & \underline{85.35} / \underline{62.52} & \underline{67.44} / 27.77 & \underline{86.70} / \underline{61.84} & \underline{83.36} / \underline{50.57} \\
+Two views (V) & 81.47 / 52.67 & 60.89 / 24.40 & 83.10 / 55.17 & 82.05 / 46.96 \\
+\textbf{Full method (Q+V)} & \textbf{85.98} / \textbf{63.41} & \textbf{67.77} / \textbf{28.45} & \textbf{86.75} / \textbf{62.10} & \textbf{83.77} / \textbf{51.15} \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+Our full method, Q+V, achieves the highest mean AUROC and AUPRC in all four combinations, although its two-view budget differs from that of the one-view adaptation baselines. On BiomedCLIP/ChestXDet10, its paired 95\% intervals relative to SimNL include zero for both metrics (Appendix Table~\suppref{tab:supp-oldci-biomedclip-chestxdet10}). All intervals in these comparisons are conditional on the five support draws and unadjusted for multiple comparisons (Appendix~\suppref{supp:statistics}).
+
+Among the single-view methods, Q achieves the highest mean AUROC in all four model--dataset combinations and the highest mean AUPRC in three. The exception is BiomedCLIP/ChestXDet10, where Q obtains 27.77 AUPRC, below the prototype classifier's 28.18, SimNL's 28.33, and SS-Text+'s 28.16. Across these four settings, all eight paired 95\% intervals for Q--Original differences lie above zero (Appendix~\suppref{supp:comparison}). Q also improves both metrics over positive-support-only adaptation in all four settings, with all conditional paired 95\% intervals above zero, supporting the positive--negative support contrast in these evaluations. These repeated-support results are separate from the fixed-support 95/120 tally.
+
+For the feature-level TaskRes and SS-Text+ ports, Q has higher mean AUROC and AUPRC than TaskRes in all four settings and than SS-Text+ in three, with the corresponding paired intervals above zero. Both Q--SS-Text+ intervals cross zero on BiomedCLIP/ChestXDet10 (Appendix~\suppref{supp:taskres_sstext}). For AlphaRAD, these differences combine adaptation effects with differences in visual aggregation and readout.
+
+% BEGIN temporarily commented cardiac comparison section (sec:neighbors).
+% \subsection{Cardiac comparisons with equal view counts}
+% \label{sec:neighbors}
+% Using AlphaRAD as the backbone, we compare Q against seven alternatives on the existing patient-separated CheXchoNet cohort: prototypes, prototype-score mixing, Tip-Adapter, GDA, SimNL, P\&M, and a linear probe. Each task/seed uses only its own five positive and five negative patients, sampled from the 87-image, 30-patient support pool. Five-fold patient splits use four positive/four negative training patients and one positive/one negative validation patient. Support sets may overlap across seeds.
+% 
+% P\&M is a formula-based binary-task implementation, not a reproduction of executable official code. It retains text-subspace projection, mixed prototypes, and an image-covariance discriminant. Text SVD retains 99\% energy (rank two in every fitted fold); $\lambda$ and $\gamma$ each use ten evenly spaced candidates in $[0,1]$. The linear probe is L2-regularized logistic regression with an intercept and nine $C$ candidates from $10^{-4}$ to $10^4$. All methods use original-view support images; P\&M's ten support augmentations are not used. Each competitor is selected and fitted once, then applied to both test views without extra support views or fusion tuning. Competitors average their margins/logits; Q+V retains the score domains in Sec.~\ref{sec:views}. Matching view count does not equate representations or total runtime.
+% 
+% \begin{table*}[t]
+% \centering
+% \caption{\textbf{Matched-view comparison of AlphaRAD on CheXchoNet.} Five-support-seed mean AUROC / AUPRC (\%). The best value for each metric within each row is bolded, and the second-best is underlined. All rows use the same 7,407 test images from 2,470 patients. Original uses the indicated view count (the two-view version is V); the query adaptation branch is Q or Q+V. P\&M is our binary-task implementation. These repeated-support means are distinct from the fixed-support transfer results.}
+% \label{tab:neighbors}
+% \small
+% \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrcccc}
+% \toprule
+% Backbone & Task & Views & Original & Q / Q+V & P\&M & Linear probe \\
+% \midrule
+% \multirow{6}{*}{AlphaRAD} & \multirow{2}{*}{CSLV} & 1 & \underline{67.97} / \underline{14.80} & \textbf{70.10} / \textbf{14.86} & 60.14 / 10.89 & 60.19 / 12.57 \\
+%  &  & 2 & \underline{69.35} / \textbf{15.01} & \textbf{70.42} / \underline{14.82} & 60.60 / 11.32 & 61.01 / 12.78 \\
+%  & \multirow{2}{*}{CDLV} & 1 & \textbf{66.29} / \textbf{8.09} & \underline{66.01} / \underline{7.83} & 55.98 / 5.87 & 60.33 / 6.54 \\
+%  &  & 2 & \textbf{65.91} / \textbf{7.68} & \underline{65.44} / \underline{7.42} & 56.47 / 5.94 & 60.52 / 6.55 \\
+%  & \multirow{2}{*}{CCOM} & 1 & \underline{68.24} / \textbf{23.57} & \textbf{70.32} / \underline{23.49} & 53.66 / 13.32 & 57.07 / 14.22 \\
+%  &  & 2 & \underline{69.25} / \textbf{23.45} & \textbf{70.44} / \underline{23.00} & 54.25 / 13.85 & 58.00 / 14.62 \\
+% \bottomrule
+% \end{tabular*}
+% \end{table*}
+% 
+% Table~\ref{tab:neighbors} reports AlphaRAD results averaged over five support sets for CSLV, CDLV, and CCOM under two view budgets. Across all six settings, Q or Q+V achieves higher mean AUROC and AUPRC than the listed P\&M and linear-probe baselines. Against P\&M, the paired 95\% intervals for both metrics are above zero in all six settings; against the linear probe, only CCOM has intervals above zero for both metrics under both view budgets. For two-view CCOM, Q+V improves on the linear probe by $+12.44\,[8.60,16.00]$ AUROC and $+8.38\,[4.95,12.18]$ AUPRC pp.
+% 
+% Compared with Original under the same view count, query adaptation improves AUROC on CSLV and CCOM under both budgets, while both metrics decrease slightly on CDLV. Mean AUPRC increases slightly only for single-view CSLV and is slightly lower in the other five settings; the paired 95\% intervals for AUPRC differences include zero in all six settings.
+% 
+% The complete comparisons in Appendix~C.2 also show that AlphaRAD Q+V trails two-view GDA on CDLV by $-1.00\,[-1.74,-0.29]$ AUROC and $-1.13\,[-2.14,-0.49]$ AUPRC pp. Against two-view Tip-Adapter on CCOM, it improves AUROC but loses $0.96\,[0.23,1.78]$ AUPRC pp.
+% 
+% END temporarily commented cardiac comparison section.
+
+\subsection{Component ablation of Q+V}
+\label{sec:components}
+
+Table~\ref{tab:components} ablates the full Q+V method using Original, Q, and V across the same nine classification datasets for each model. Multilabel metrics are macro-averaged over classes, and the three CheXchoNet tasks are averaged as one dataset. All models use the same 1,704-image SIIM protocol. We equally weight datasets within each model; the last row equally averages the ten model means.
+
+\input{sec/component_ablations}
+
+Across the 90 model--dataset combinations, Q improves mean AUROC/AUPRC over Original by 2.80/3.66 pp, compared with 0.44/0.29 pp for V. Under two-view inference, query adaptation yields mean gains of 2.66/3.54 pp (Q+V versus V). With the adapted queries fixed, adding the second view yields further mean gains of 0.30/0.17 pp (Q+V versus Q). These fixed-support point estimates describe component effects within each model's native prediction procedure.
+
+Q+V does not yield the highest mean scores for every model. Q achieves the highest mean AUROC and AUPRC for BioViL-T, MedKLIP, and MaCo, whereas V does so for CARZero. For subsequent main evaluations, we retain the Q+V configuration fixed during early development without choosing a branch separately for each test set.
+
+\subsection{Visual aggregation analysis on AlphaRAD}
+\label{sec:paths}
+On AlphaRAD/RSNA and AlphaRAD/ChestXDet10, we separately control the queries used for visual aggregation and final scoring (Sec.~\ref{sec:support}). Writing each branch as (aggregation query, readout query), we compare Original $(q,q)$, R $(q,q^{\prime})$, A $(q^{\prime},q)$, and Q $(q^{\prime},q^{\prime})$. All four branches share the same five prespecified support sets and one test view; query updates use a fixed strength of $\eta=0.3$. Q--R changes only the aggregation query while holding the adapted readout query fixed, measuring the additional effect of reaggregation.
+
+S is a separate score-level control: it retains both original queries and adds the residual in Eq.~\ref{eq:same_feature_score}, with its coefficient selected by support-only cross-validation. Q--S therefore compares full query adaptation with a score residual derived from the same support features; it does not isolate reaggregation.
+
+\begin{table}[t]
+\centering
+\caption{\textbf{Aggregation versus readout on AlphaRAD.} Five-support-seed mean AUROC / AUPRC (\%), with one test view. Parentheses denote (aggregation query vector, readout query vector). Q--R fixes the adapted readout query vector and changes only aggregation.}
+\label{tab:paths}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Branch & RSNA & ChestXDet10 \\
+\midrule
+Original $(q,q)$ & 83.26 / 54.81 & 81.64 / 45.72 \\
+R $(q,q^{\prime})$ & 86.02 / 60.84 & 82.60 / 49.41 \\
+A $(q^{\prime},q)$ & 85.25 / 57.78 & 82.84 / 47.83 \\
+Q $(q^{\prime},q^{\prime})$ & 86.70 / 61.84 & 83.36 / 50.57 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+As shown in Table~\ref{tab:paths}, Q improves mean AUROC/AUPRC over R by 0.68/1.00 pp on RSNA and 0.76/1.17 pp on ChestXDet10. The paired 95\% intervals for all four gains lie above zero (Appendix Tables~\suppref{tab:supp-path-ci-rsna_pneumonia} and~\suppref{tab:supp-path-ci-chestxdet10}), consistent with exploratory evidence for an additional reaggregation benefit on these two datasets. A and R also each improve over Original, and Q improves over A, with both metric intervals above zero in each contrast. In these two settings, changing aggregation contributes beyond adapting the readout, and adapting the readout contributes beyond changing aggregation. The gains from A and R relative to Original are not independent additive contributions to Q. The intervals are conditional on the five support draws and unadjusted for multiple comparisons (Appendix~\suppref{supp:statistics}). On ChestXDet10, Q improves AUROC/AUPRC by 0.70/0.51 pp over the same-feature difference scoring control S, which adjusts only the final score, but the paired 95\% interval for the AUPRC gain includes zero (Appendix Table~\suppref{tab:supp-path-ci-chestxdet10}).
+
+Reaggregation gains depend on the model and task; complete results for the additional SIIM holdout and cardiac path controls appear in Appendix~\suppref{supp:paths}. These findings do not establish a rule for selecting query paths on unseen tasks or identify which image regions cause the classification changes.
+
+\subsection{Spatial evaluation}
+\label{sec:spatialresults}
+
+Query adaptation alone does not consistently improve localization (Appendices~\suppref{supp:fixed} and~\suppref{supp:alpha_paths}). On AlphaRAD/QaTaCOV19, single-view Q improves Dice over Original by $+1.46\,[1.01,1.89]$ pp (paired 95\% interval), with thresholds selected separately for each branch on validation masks and fixed before testing. The reported Dice is evaluated only on positive images and does not assess false-positive regions on normal images; full segmentation results and procedures are given in Appendix~\suppref{supp:segmentation_validation}.
+
+\section{Conclusion}
+Q+V combines support-based adaptation of native disease queries with two-view prediction fusion, with frozen weights and no backpropagation. The evaluation shows mean classification improvements in the studied settings, and component ablations indicate a larger mean contribution from query adaptation than from view fusion alone. On AlphaRAD/RSNA and AlphaRAD/ChestXDet10, path interventions provide exploratory evidence that changing visual aggregation can add to the gains from updating the scoring query. Reaggregation gains depend on the model and task and should not be assumed to generalize. Spatial quality requires separate assessment and is not implied by classification gains. Limited support sampling and dataset reuse in some comparisons constrain generalization claims. Sensitivity analysis was not used to reselect the main configuration. Further evaluation should use independent cohorts, additional support draws, and matched computational budgets to assess transfer and the contribution of each prediction path.
+
+% CVPR 2027 excludes the following statement and references from the main
+% eight-page limit. Keep the statement after the main text, before references.
+\clearpage
+\section*{LLM Usage Statement}
+OpenAI Codex assisted in preparing and reviewing the English manuscript, Chinese translation, and supplementary text, including drafting and language editing, structural review, LaTeX editing, literature searches, and consistency checks of text, tables, and references.
+% Authors: extend this statement if other generative-AI tools were used in the
+% underlying research. Confirm all scientific claims and disclosures before submission.
+{
+\small
+% Number references by first citation, also in the combined reading copy.
+\bibliographystyle{ieeenat_unsrt_fullname}
+\bibliography{main}
+}
+% Compile main_with_supplement.tex for the combined reading copy.
+\ifdefined\includesupplement
+\input{sec/supplementary}
+\fi
+\end{document}

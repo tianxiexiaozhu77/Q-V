@@ -1,0 +1,231 @@
+[
+  {
+    "model": "AlphaRAD",
+    "repository": "https://github.com/jz5426/ECCV-2026-AlphaRAD",
+    "revision": "59a28b0211081a99936da37902b3e5ee081056f5",
+    "checkout_path": "AlphaRAD",
+    "checkpoint_url": "https://huggingface.co/maxxyouu/AlphaRAD",
+    "checkpoints": [
+      {
+        "path": "AlphaRAD/local_assets/model/xraydinov2_mpnet/eccv_mpnet_518.tar"
+      }
+    ]
+  },
+  {
+    "model": "RadZero",
+    "repository": "https://github.com/deepnoid-ai/RadZero",
+    "revision": "656ae5f1af3f106e96c95542ce3ee5c0ee8777fc",
+    "revision_note": "Commit of local RadZero upstream checkout; RadZero_i2cl working copy is not itself a Git checkout.",
+    "checkout_path": "RadZero_i2cl",
+    "checkpoint_url": "https://huggingface.co/Deepnoid/RadZero",
+    "checkpoints": [
+      {
+        "path": "RadZero_i2cl/local_assets/model/model.safetensors"
+      }
+    ]
+  },
+  {
+    "model": "BiomedCLIP",
+    "repository": "https://github.com/mlfoundations/open_clip",
+    "revision": "f08f25f3f226bdb538de2b4ed48a9213ba6b179e",
+    "checkpoint_url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "checkpoint_revision": "9f341de24bfb00180f1b847274256e9b65a3a32e",
+    "checkpoints": [
+      {
+        "path": "baselines/BiomedCLIP/checkpoints/open_clip_pytorch_model.bin",
+        "size": 783705670,
+        "sha256": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be",
+        "matches_official_sha": true
+      }
+    ],
+    "checkout_path": "baselines/BiomedCLIP/official"
+  },
+  {
+    "model": "BioViL-T",
+    "repository": "https://github.com/microsoft/hi-ml",
+    "revision": "b67c1d27c6b17d8e8ff01f8c507f3cabdb307388",
+    "checkpoint_url": "https://huggingface.co/microsoft/BiomedVLP-BioViL-T",
+    "checkpoint_revision": "692f09e9be1bfe5fdd5f3efdd0e1eca7d2c10b23",
+    "checkpoints": [
+      {
+        "path": "baselines/BioViL-T/checkpoints/biovil_t_image_model_proj_size_128.pt",
+        "size": 109745561,
+        "sha256": "b2399d73dc2a68b9f3a1950e864ae0ecd24093fb07aa459d7e65807ebdc0fb77",
+        "matches_official_sha": true
+      },
+      {
+        "path": "baselines/BioViL-T/checkpoints/pytorch_model.bin",
+        "size": 440966107,
+        "sha256": "6d86a8d760eaa09c9a55d57cc6f6bb01b0cbccb8b827fc775a79f37a8fbda76c",
+        "matches_official_sha": true
+      }
+    ],
+    "checkout_path": "baselines/BioViL-T/official"
+  },
+  {
+    "model": "CheXzero",
+    "repository": "https://github.com/rajpurkarlab/CheXzero",
+    "revision": "5c341db0fe0db2f663a2c136c7120a8b303f1d11",
+    "checkpoint_url": "https://drive.google.com/drive/folders/1makFLiEMbSleYltaRxw81aBhEDMpVwno",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_16000_0.861.pt",
+        "size": 353548709,
+        "sha256": "8f5f2679d205476b2e8f8c5112d010008b85ee3d17286cf4d301e50857282006",
+        "google_drive_id": "1YCV_8fHTBzMMX3DKzhsBLK4Czrp03ju-",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_17000_0.863.pt",
+        "size": 353548709,
+        "sha256": "ba3f39d6981c252148d7c3eff37979f2f28d29d193259eda06aaae6b5df596f5",
+        "google_drive_id": "1UptppovinnBS7zl_5OvTj9v7UObCNllA",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_35000_0.864.pt",
+        "size": 353548709,
+        "sha256": "40ad37ea1933b6ae021a570d1a228e1b21ce1f7f4741348050766c365de214e9",
+        "google_drive_id": "1IEdILq06WgbVMBIz2DSyu8oDSJEGlSvh",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_0.0002_original_23000_0.854.pt",
+        "size": 353548709,
+        "sha256": "060d9743c5580b35ce42b602adc1a6dd8cd77e06055a0699584eb111757d9460",
+        "google_drive_id": "1Q2klR1TE6-GxqTR9C8-r5Y3XxygtPRVt",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_16000_0.858.pt",
+        "size": 353548709,
+        "sha256": "6af517141430a61ac4084d8d08cf77d713dda8386eb1bb4afa4ea621b3483a6b",
+        "google_drive_id": "1ubtwzK0QPXJBMnRpab3pf1VLgOMqBwtA",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_18000_0.862.pt",
+        "size": 353548709,
+        "sha256": "0bc03704af2c5db952d2b9f59af1d93b7baa58b2346c953abf556d00eeccf7dc",
+        "google_drive_id": "1GmsTIzNbICY9yhcVgxUCxXz4dggwbT4F",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_22000_0.864.pt",
+        "size": 353548709,
+        "sha256": "567a2efbabc6a02370de6e18178afd22ee72d7e6f29a789db1535e5c798d6ae8",
+        "google_drive_id": "1P3D5qukxg3oX88LrAJwRb_03h59O9jdk",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_128_0.0002_original_8000_0.857.pt",
+        "size": 353548709,
+        "sha256": "c1ec95b173e8dcd007320e6c33c2ae29023f5f38efc208add99702150c0a72f7",
+        "google_drive_id": "1xmCrWThAhq7-nPB77Jgaft_KLYcPMuJ_",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_128_0.0002_original_15000_0.859.pt",
+        "size": 353548709,
+        "sha256": "620ee11d836f65104cd77c3764fd11ee787d709b0873ea58ca1acbf89c40c50c",
+        "google_drive_id": "1bGFF8e--30SLZzDhJAL0qLOLhsq5Ff-7",
+        "official_checksum_available": false
+      },
+      {
+        "path": "baselines/CheXzero/checkpoints/best_128_5e-05_original_22000_0.855.pt",
+        "size": 353548709,
+        "sha256": "1e3ae7be8d92caf09aa101ab81840b39ee4b1cad3111522250800566834622bf",
+        "google_drive_id": "1S1qkcx0XDW0CRUDvZvpt_kChCNZ3VM2E",
+        "official_checksum_available": false
+      }
+    ],
+    "checkout_path": "baselines/CheXzero/official"
+  },
+  {
+    "model": "MedKLIP",
+    "repository": "https://github.com/MediaBrain-SJTU/MedKLIP",
+    "revision": "8e60b035ddc160f44a389f476b596f1052f02d8f",
+    "checkpoint_url": "https://drive.google.com/drive/folders/1HBShH7J_pO8onkzuweDgDq2QPqj6zjG_",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/MedKLIP/local_assets/checkpoint_final.pth",
+        "url": "https://drive.google.com/file/d/1tPpWoxpmBZadCsbqnrmyxIgacRm7S1Xf/view",
+        "sha256": "b44748e00cae76f60b76a3f35d2459527fdb7624562f393de05b89c3174f8de4",
+        "status": "downloaded",
+        "size_bytes": 173962223
+      }
+    ],
+    "checkout_path": "baselines/MedKLIP"
+  },
+  {
+    "model": "MAVL",
+    "repository": "https://github.com/hieuvmphan/CVPR2024_MAVL",
+    "revision": "6a5eacd0833875102e09147d8a0bcdd4000c4ed9",
+    "checkpoint_url": "https://drive.google.com/drive/folders/1EN-oHVk513qmoehWypkrJ2Ero5PoUmId",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/MAVL/local_assets/checkpoint_full_46.pth",
+        "url": "https://drive.google.com/file/d/1kV3kEujvNArFzpdwylFnjfvWXSuMFjs4/view",
+        "sha256": "77a8e92d5732d2b20616eba588e6d2fd69d779f6834dc11de7b69772b9ae5395",
+        "status": "downloaded",
+        "size_bytes": 236294511
+      },
+      {
+        "path": "baselines/MAVL/local_assets/checkpoint_full_40.pth",
+        "url": "https://drive.google.com/file/d/1kjhLqon_GVNwC6mvJOrWVPcCE9uHxH5N/view",
+        "sha256": "fbc089d4ebac2e9d32a0a637daffe047a0202ff1787a31881f6995ca82d29eff",
+        "status": "downloaded",
+        "size_bytes": 236294058
+      }
+    ],
+    "checkout_path": "baselines/MAVL"
+  },
+  {
+    "model": "KAD",
+    "repository": "https://github.com/xiaoman-zhang/KAD",
+    "revision": "591d999e325a783868599b3e53067acd2ecbddc0",
+    "checkpoint_url": "https://drive.google.com/drive/folders/1ArEgk-VNKZnXd5Fjkf6tiNA4YvBDZCCF",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/KAD/local_assets/KAD_224_best_valid.pt",
+        "url": "https://drive.google.com/file/d/1EOuWd6v4Us3lAYEwGcSPtH29616pELED/view",
+        "sha256": "eae032570a2b041b6da629ad2e2bfc36283e4995d56d64779dc3d1a6a70021ea",
+        "status": "downloaded",
+        "size_bytes": 1823932739
+      }
+    ],
+    "checkout_path": "baselines/KAD"
+  },
+  {
+    "model": "MaCo",
+    "repository": "https://github.com/SZUHvern/MaCo",
+    "revision": "bda781f3064273218d02b8d5a9103a0ab2bf98da",
+    "checkpoint_url": "https://drive.google.com/file/d/1B87JuLJnjh_CoQpjT7RWGTp6alfXV8_0/view",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/MaCo/checkpoints/maco.pth",
+        "sha256": "08bfd049637431cf1e475bfc1aefd322810551ce2efc0d9ceecea980aa0f6627"
+      }
+    ],
+    "checkout_path": "baselines/MaCo"
+  },
+  {
+    "model": "CARZero",
+    "repository": "https://github.com/laihaoran/CARZero",
+    "revision": "fa4e09cdfe7801e36e83d96815e3fcf66ffdd13d",
+    "checkpoint_url": "https://drive.google.com/file/d/1kYF-k5otW5DHwz1En5d_ScV3zu2E27Ch/view",
+    "checkpoint_revision": null,
+    "checkpoints": [
+      {
+        "path": "baselines/CARZero/pretrain_model/CARZero_best_model.ckpt",
+        "sha256": "d9257c4865898becf3b2ff9ea4bdc4c5ec57da28bc99f4a714812cc589052b33"
+      }
+    ],
+    "checkout_path": "baselines/CARZero"
+  }
+]

@@ -1,0 +1,10 @@
+xFormers is not available (Attention)
+{"status": "authenticating_inputs", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 0.002951383590698242, "smoke": 0}
+{"status": "loading_model", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 2.54185152053833, "smoke": 0}
+Device: cuda
+{"status": "support_fitted", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 11.675612926483154, "smoke": 0, "support_union_count": 233}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 13.466732740402222, "smoke": 0, "done": 8, "total": 492}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 17.462924480438232, "smoke": 0, "done": 208, "total": 492}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 22.880049467086792, "smoke": 0, "done": 408, "total": 492}
+{"status": "matching_interventions", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 24.1312038898468, "smoke": 0, "done": 492, "total": 492}
+{"status": "complete", "dataset": "chestxdet10", "model": "AlphaRAD", "elapsed_seconds": 55.19958424568176, "smoke": 0, "done": 492, "total": 492}

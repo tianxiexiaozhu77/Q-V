@@ -1,0 +1,29 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+BiomedCLIP/montgomery 8/8
+COMPLETE BiomedCLIP montgomery {"macro_auroc": null, "macro_auprc": null}
+UNSUPPORTED chestxdet10_gt No verified native grounding implementation
+BiomedCLIP/chestxdet10 8/8
+COMPLETE BiomedCLIP chestxdet10 {"macro_auroc": 7.797619047619053, "macro_auprc": 3.773148148148142}
+BiomedCLIP/chexpert 8/8
+COMPLETE BiomedCLIP chexpert {"macro_auroc": 2.6388888888888906, "macro_auprc": -6.26984126984127}
+BiomedCLIP/shenzhenxray 8/8
+COMPLETE BiomedCLIP shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+UNSUPPORTED node21 No verified native grounding implementation
+BiomedCLIP/covidkaggle 8/8
+COMPLETE BiomedCLIP covidkaggle {"macro_auroc": -19.999999999999996, "macro_auprc": -8.03571428571428}
+BiomedCLIP/siim_radzero_holdout 8/8
+COMPLETE BiomedCLIP siim_radzero_holdout {"macro_auroc": -40.0, "macro_auprc": -32.04365079365078}
+BiomedCLIP/siim_pneumothorax 8/8
+COMPLETE BiomedCLIP siim_pneumothorax {"macro_auroc": -33.333333333333336, "macro_auprc": -31.1111111111111}
+UNSUPPORTED qatacovid_seg No verified native grounding implementation
+BiomedCLIP/rsna_pneumonia 8/8
+COMPLETE BiomedCLIP rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+BiomedCLIP/openi 8/8
+COMPLETE BiomedCLIP openi {"macro_auroc": -2.777777777777768, "macro_auprc": -2.440476190476182}
+BiomedCLIP/chest14 8/8
+COMPLETE BiomedCLIP chest14 {"macro_auroc": -3.9682539682539653, "macro_auprc": 12.698412698412687}

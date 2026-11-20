@@ -1,0 +1,11 @@
+AlphaRAD/rsna_pneumonia/seed_42: original score grids, shared support-only folds
+AlphaRAD/rsna_pneumonia/seed_43: original score grids, shared support-only folds
+AlphaRAD/rsna_pneumonia/seed_44: original score grids, shared support-only folds
+AlphaRAD/rsna_pneumonia/seed_45: original score grids, shared support-only folds
+AlphaRAD/rsna_pneumonia/seed_46: original score grids, shared support-only folds
+All five support fits/predictions committed; unlocking fixed-test labels and spatial boxes.
+{"model": "AlphaRAD", "dataset": "rsna_pneumonia", "seed": 42, "status": "complete", "methods": 11}
+{"model": "AlphaRAD", "dataset": "rsna_pneumonia", "seed": 43, "status": "complete", "methods": 11}
+{"model": "AlphaRAD", "dataset": "rsna_pneumonia", "seed": 44, "status": "complete", "methods": 11}
+{"model": "AlphaRAD", "dataset": "rsna_pneumonia", "seed": 45, "status": "complete", "methods": 11}
+{"model": "AlphaRAD", "dataset": "rsna_pneumonia", "seed": 46, "status": "complete", "methods": 11}

@@ -1,0 +1,25 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{RadZero / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-radzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ R & $-0.4186\;[-1.0076,+0.1482]$ & $-0.6420\;[-1.2585,-0.1538]$ \\
+CSLV & Q $-$ Original & $-0.0833\;[-1.2242,+0.9504]$ & $-0.7347\;[-2.1266,+0.5416]$ \\
+CSLV & R $-$ Original & $+0.3352\;[-0.3101,+0.9708]$ & $-0.0927\;[-1.1054,+1.0309]$ \\
+CDLV & Q $-$ R & $-0.6906\;[-1.2655,-0.1525]$ & $-0.4679\;[-0.9987,-0.1120]$ \\
+CDLV & Q $-$ Original & $+0.0304\;[-0.9046,+1.0312]$ & $+0.2730\;[-0.3779,+0.9646]$ \\
+CDLV & R $-$ Original & $+0.7209\;[+0.0248,+1.4835]$ & $+0.7409\;[+0.2188,+1.5107]$ \\
+CCOM & Q $-$ R & $+0.0908\;[-0.2954,+0.4880]$ & $-0.7888\;[-1.5010,-0.2200]$ \\
+CCOM & Q $-$ Original & $+0.5217\;[-0.0955,+1.1836]$ & $-0.7886\;[-2.0018,+0.2658]$ \\
+CCOM & R $-$ Original & $+0.4309\;[+0.0559,+0.8296]$ & $+0.0002\;[-0.6975,+0.6587]$ \\
+Task macro & Q $-$ R & $-0.3394\;[-0.7088,+0.0322]$ & $-0.6329\;[-1.0811,-0.2776]$ \\
+Task macro & Q $-$ Original & $+0.1562\;[-0.4356,+0.7760]$ & $-0.4168\;[-1.1700,+0.2624]$ \\
+Task macro & R $-$ Original & $+0.4957\;[+0.1432,+0.8868]$ & $+0.2161\;[-0.2704,+0.7487]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

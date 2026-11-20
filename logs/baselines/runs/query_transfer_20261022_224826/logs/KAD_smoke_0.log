@@ -1,0 +1,34 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+KAD/montgomery 2/2
+COMPLETE KAD montgomery {"macro_auroc": null, "macro_auprc": null}
+KAD/chestxdet10_gt 2/2
+COMPLETE KAD chestxdet10_gt {"pointing_game": 0.0}
+KAD/chestxdet10 2/2
+COMPLETE KAD chestxdet10 {"macro_auroc": 0.0, "macro_auprc": 0.0}
+KAD/chexpert 2/2
+COMPLETE KAD chexpert {"macro_auroc": 0.0, "macro_auprc": 0.0}
+KAD/shenzhenxray 2/2
+COMPLETE KAD shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+KAD/node21 2/2
+COMPLETE KAD node21 {"pointing_game": 50.0}
+KAD/covidkaggle 2/2
+COMPLETE KAD covidkaggle {"macro_auroc": 0.0, "macro_auprc": 0.0}
+KAD/siim_radzero_holdout 2/2
+COMPLETE KAD siim_radzero_holdout {"macro_auroc": 0.0, "macro_auprc": 0.0}
+KAD/siim_pneumothorax 2/2
+COMPLETE KAD siim_pneumothorax {"macro_auroc": 0.0, "macro_auprc": 0.0}
+KAD/qatacovid_seg 2/2
+COMPLETE KAD qatacovid_seg {"dice": -3.777736314639657}
+KAD/rsna_pneumonia 2/2
+COMPLETE KAD rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+KAD/openi 2/2
+COMPLETE KAD openi {"macro_auroc": null, "macro_auprc": null}
+KAD/chest14 2/2
+COMPLETE KAD chest14 {"macro_auroc": null, "macro_auprc": null}

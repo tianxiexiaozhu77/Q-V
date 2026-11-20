@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "counts": {
+    "models": 8,
+    "tasks_per_model": 3,
+    "paired_comparisons": 24,
+    "prediction_branches": 96,
+    "both_up": 21,
+    "both_down": 3,
+    "mixed_or_tied": 0
+  },
+  "results": "/storage/3090group2/zjx/code/medical/baselines/runs/chexchonet_20261024_000447/RESULTS.txt",
+  "audit": "/storage/3090group2/zjx/code/medical/baselines/runs/chexchonet_20261024_000447/FINAL_AUDIT.json"
+}

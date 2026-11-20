@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+build/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.dcm
+*.dicom
+*.log
+build_verified/
+build_sensitivity_check/
+!logs/**/*.log

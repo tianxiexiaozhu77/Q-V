@@ -1,0 +1,9 @@
+/storage/3090group2/zjx/code/medical/AlphaRAD/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+xFormers is not available (Attention)
+{"status": "loading", "model": "AlphaRAD", "done": 0, "total": 0, "elapsed_seconds": 66.1746826171875, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+Device: cuda
+{"status": "encoding_support_pool", "model": "AlphaRAD", "done": 0, "total": 87, "elapsed_seconds": 69.30914521217346, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "inference", "model": "AlphaRAD", "done": 8, "total": 16, "elapsed_seconds": 73.9880747795105, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "inference", "model": "AlphaRAD", "done": 16, "total": 16, "elapsed_seconds": 74.22781419754028, "seeds": [42, 43, 44, 45, 46], "smoke": 16}
+{"status": "smoke_complete", "model": "AlphaRAD", "done": 16, "total": 16, "elapsed_seconds": 89.82100582122803, "seeds": [42, 43, 44, 45, 46], "smoke": 16}

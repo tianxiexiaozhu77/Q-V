@@ -1,0 +1,278 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-alpharad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 83.12 / 26.65 & 83.89 / 27.48 & 83.38 / 27.22 & 84.14 / 27.89 \\
+ChestXDet10 (classification) & 81.64 / 45.72 & 82.93 / 50.48 & 82.05 / 46.96 & 83.42 / 51.16 \\
+ChestXDet10 (PG) & 66.76 & 68.47 & 66.26 & 69.47 \\
+CheXchoNet / CCOM & 68.24 / 23.57 & 70.34 / 26.77 & 69.25 / 23.45 & 70.65 / 26.71 \\
+CheXchoNet / CDLV & 66.29 / 8.09 & 66.54 / 8.71 & 65.91 / 7.68 & 66.15 / 8.27 \\
+CheXchoNet / CSLV & 67.97 / 14.80 & 70.76 / 15.46 & 69.35 / 15.01 & 71.06 / 15.48 \\
+CheXpert & 91.39 / 56.63 & 92.86 / 59.87 & 91.66 / 57.58 & 93.14 / 60.19 \\
+CovidKaggle & 89.61 / 83.18 & 90.41 / 84.52 & 89.57 / 82.75 & 90.69 / 84.71 \\
+Montgomery & 98.29 / 97.78 & 98.99 / 98.73 & 97.11 / 96.61 & 98.52 / 98.27 \\
+Node21 (PG) & 66.61 & 64.48 & 70.06 & 69.44 \\
+QaTaCOV19 (Dice$^\dagger$) & 52.34 & 54.02 & 52.59 & 54.51 \\
+RSNA & 83.28 / 54.74 & 88.70 / 68.39 & 83.11 / 55.09 & 88.71 / 68.62 \\
+Shenzhen & 95.43 / 96.52 & 96.48 / 97.32 & 96.33 / 97.08 & 97.36 / 97.89 \\
+SIIM (1,704) & 95.25 / 87.16 & 95.32 / 87.54 & 95.46 / 87.86 & 95.52 / 88.02 \\
+SIIM (1,694) & 95.25 / 87.10 & 95.45 / 87.80 & 95.46 / 87.80 & 95.62 / 88.41 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{RadZero: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-radzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 80.48 / 21.29 & 82.32 / 22.86 & 80.51 / 21.45 & 82.31 / 22.79 \\
+ChestXDet10 (classification) & 78.98 / 42.14 & 81.29 / 43.66 & 78.66 / 41.71 & 80.97 / 43.64 \\
+CheXchoNet / CCOM & 70.42 / 24.86 & 70.65 / 25.99 & 70.60 / 24.32 & 70.74 / 25.61 \\
+CheXchoNet / CDLV & 65.36 / 7.67 & 67.87 / 11.33 & 64.45 / 7.08 & 67.70 / 10.86 \\
+CheXchoNet / CSLV & 70.47 / 16.39 & 71.14 / 16.28 & 70.89 / 16.22 & 71.56 / 16.25 \\
+CheXpert & 83.89 / 52.24 & 85.96 / 55.85 & 85.04 / 53.89 & 87.13 / 56.44 \\
+CovidKaggle & 83.84 / 69.83 & 88.68 / 79.70 & 83.78 / 69.20 & 88.91 / 79.78 \\
+Montgomery & 94.89 / 95.40 & 97.28 / 97.53 & 94.47 / 95.13 & 97.01 / 97.51 \\
+RSNA & 83.38 / 58.43 & 87.91 / 69.03 & 83.35 / 58.32 & 87.88 / 69.07 \\
+Shenzhen & 95.89 / 96.90 & 97.29 / 97.89 & 96.28 / 97.24 & 97.41 / 98.01 \\
+SIIM (1,704) & 92.43 / 79.12 & 93.25 / 81.81 & 92.38 / 79.05 & 93.16 / 81.26 \\
+SIIM (1,694) & 92.40 / 79.01 & 93.79 / 83.11 & 92.36 / 78.96 & 93.86 / 83.04 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{BiomedCLIP: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-biomedclip}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 63.33 / 8.91 & 69.83 / 11.45 & 63.69 / 9.18 & 70.13 / 11.72 \\
+ChestXDet10 (classification) & 60.53 / 23.69 & 68.52 / 28.77 & 60.89 / 24.40 & 68.09 / 29.27 \\
+CheXchoNet / CCOM & 56.15 / 12.39 & 58.56 / 14.15 & 56.78 / 12.46 & 59.62 / 14.46 \\
+CheXchoNet / CDLV & 46.22 / 3.70 & 60.95 / 10.39 & 45.13 / 3.61 & 63.12 / 9.93 \\
+CheXchoNet / CSLV & 56.29 / 8.52 & 57.28 / 8.83 & 57.09 / 8.60 & 57.61 / 8.86 \\
+CheXpert & 65.12 / 22.19 & 73.86 / 31.68 & 65.83 / 24.01 & 73.74 / 32.43 \\
+CovidKaggle & 70.32 / 55.40 & 86.65 / 75.92 & 69.63 / 53.64 & 85.79 / 75.48 \\
+Montgomery & 75.09 / 75.67 & 88.40 / 90.25 & 78.24 / 78.53 & 89.64 / 90.74 \\
+RSNA & 81.21 / 52.68 & 86.40 / 65.94 & 81.53 / 52.88 & 87.07 / 67.18 \\
+Shenzhen & 79.51 / 81.44 & 86.79 / 88.41 & 84.00 / 85.88 & 88.43 / 90.37 \\
+SIIM (1,704) & 66.06 / 40.63 & 76.53 / 50.22 & 67.24 / 41.65 & 77.58 / 52.13 \\
+SIIM (1,694) & 66.34 / 40.75 & 75.37 / 49.67 & 67.39 / 41.78 & 75.74 / 49.71 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{BioViL-T: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-biovil-t}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 71.27 / 11.76 & 72.73 / 12.48 & 70.95 / 11.56 & 72.47 / 12.23 \\
+ChestXDet10 (classification) & 67.63 / 28.92 & 68.33 / 29.73 & 66.67 / 29.02 & 67.42 / 28.88 \\
+ChestXDet10 (PG) & 34.76 & 35.59 & 34.61 & 34.99 \\
+CheXchoNet / CCOM & 65.14 / 18.90 & 64.92 / 18.99 & 67.06 / 19.97 & 67.02 / 20.10 \\
+CheXchoNet / CDLV & 62.96 / 7.46 & 62.85 / 7.55 & 64.52 / 8.18 & 64.34 / 8.33 \\
+CheXchoNet / CSLV & 65.14 / 12.90 & 63.99 / 12.40 & 67.10 / 13.58 & 66.12 / 13.12 \\
+CheXpert & 77.65 / 37.43 & 79.58 / 39.13 & 79.07 / 37.89 & 80.79 / 39.37 \\
+CovidKaggle & 60.40 / 45.34 & 71.21 / 57.34 & 62.87 / 46.37 & 73.23 / 58.48 \\
+Montgomery & 92.53 / 93.43 & 92.58 / 93.29 & 90.31 / 91.39 & 89.74 / 90.54 \\
+Node21 (PG) & 0.27 & 0.53 & 0.09 & 0.35 \\
+QaTaCOV19 (Dice$^\dagger$) & 27.80 & 28.83 & 28.20 & 28.52 \\
+RSNA & 85.67 / 56.47 & 87.05 / 60.46 & 85.49 / 56.08 & 86.96 / 60.37 \\
+Shenzhen & 89.12 / 91.16 & 90.08 / 92.14 & 84.39 / 86.80 & 85.71 / 88.30 \\
+SIIM (1,704) & 78.50 / 50.31 & 76.35 / 45.60 & 78.03 / 50.00 & 76.32 / 45.41 \\
+SIIM (1,694) & 78.52 / 50.16 & 77.04 / 46.13 & 78.04 / 49.81 & 76.85 / 45.67 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{CheXzero: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-chexzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 73.61 / 14.12 & 74.82 / 14.89 & 73.80 / 14.23 & 74.90 / 15.30 \\
+ChestXDet10 (classification) & 67.98 / 31.50 & 68.63 / 32.37 & 68.31 / 31.24 & 69.03 / 32.53 \\
+CheXchoNet / CCOM & 63.75 / 15.72 & 66.78 / 24.33 & 64.77 / 16.40 & 67.30 / 24.42 \\
+CheXchoNet / CDLV & 63.89 / 6.17 & 69.48 / 12.69 & 65.39 / 6.77 & 70.51 / 13.65 \\
+CheXchoNet / CSLV & 65.31 / 12.05 & 63.10 / 11.16 & 66.62 / 12.76 & 63.54 / 11.42 \\
+CheXpert & 81.05 / 45.28 & 80.47 / 45.76 & 81.60 / 45.93 & 81.21 / 46.47 \\
+CovidKaggle & 81.83 / 74.58 & 83.74 / 74.20 & 83.82 / 76.05 & 85.01 / 75.70 \\
+Montgomery & 85.99 / 86.68 & 91.30 / 92.47 & 87.65 / 88.45 & 92.75 / 92.93 \\
+RSNA & 86.27 / 59.36 & 87.54 / 65.75 & 86.46 / 59.98 & 87.48 / 65.45 \\
+Shenzhen & 80.30 / 81.92 & 89.57 / 90.58 & 80.06 / 81.95 & 89.74 / 91.16 \\
+SIIM (1,704) & 78.82 / 56.23 & 79.69 / 55.82 & 79.05 / 56.40 & 80.83 / 57.64 \\
+SIIM (1,694) & 78.73 / 55.90 & 82.36 / 59.61 & 78.94 / 56.00 & 82.98 / 60.30 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MedKLIP: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-medklip}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 76.15 / 15.98 & 75.64 / 15.59 & 75.71 / 15.64 & 75.24 / 15.38 \\
+ChestXDet10 (classification) & 73.03 / 33.91 & 72.16 / 33.11 & 72.63 / 33.08 & 71.83 / 32.59 \\
+ChestXDet10 (PG) & 38.20 & 38.16 & 43.19 & 43.68 \\
+CheXchoNet / CCOM & 55.32 / 14.25 & 51.57 / 12.04 & 56.38 / 14.58 & 53.26 / 12.52 \\
+CheXchoNet / CDLV & 67.40 / 9.20 & 67.12 / 8.73 & 68.92 / 10.00 & 68.71 / 9.58 \\
+CheXchoNet / CSLV & 50.82 / 7.69 & 49.77 / 7.48 & 52.25 / 7.89 & 51.34 / 7.70 \\
+CheXpert & 87.52 / 55.16 & 87.17 / 55.55 & 87.01 / 55.36 & 86.61 / 55.92 \\
+CovidKaggle & 84.67 / 75.52 & 87.01 / 78.86 & 84.64 / 76.05 & 86.64 / 78.74 \\
+Montgomery & 80.65 / 78.63 & 85.33 / 83.29 & 79.82 / 78.58 & 83.30 / 83.51 \\
+Node21 (PG) & 14.97 & 13.55 & 22.94 & 22.50 \\
+QaTaCOV19 (Dice$^\dagger$) & 39.11 & 40.10 & 40.64 & 41.62 \\
+RSNA & 86.47 / 63.59 & 87.36 / 65.90 & 86.87 / 65.94 & 87.74 / 67.84 \\
+Shenzhen & 65.61 / 67.56 & 65.75 / 67.84 & 67.04 / 67.06 & 66.70 / 67.41 \\
+SIIM (1,704) & 90.37 / 76.12 & 90.12 / 75.86 & 88.91 / 73.19 & 88.86 / 73.39 \\
+SIIM (1,694) & 90.32 / 75.96 & 90.01 / 75.61 & 88.85 / 73.00 & 88.66 / 72.86 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MAVL: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-mavl}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 76.89 / 16.76 & 77.07 / 16.89 & 76.70 / 16.74 & 76.92 / 16.74 \\
+ChestXDet10 (classification) & 75.17 / 36.64 & 75.29 / 36.73 & 74.61 / 35.58 & 74.70 / 35.67 \\
+ChestXDet10 (PG) & 34.93 & 35.23 & 36.60 & 35.76 \\
+CheXchoNet / CCOM & 54.94 / 14.60 & 60.02 / 16.26 & 59.74 / 16.47 & 62.82 / 17.61 \\
+CheXchoNet / CDLV & 55.70 / 5.15 & 60.90 / 6.24 & 57.27 / 5.56 & 62.68 / 6.81 \\
+CheXchoNet / CSLV & 66.96 / 14.88 & 67.57 / 15.60 & 67.38 / 15.63 & 67.87 / 16.28 \\
+CheXpert & 86.22 / 53.99 & 86.06 / 51.78 & 87.00 / 51.65 & 87.01 / 52.01 \\
+CovidKaggle & 87.39 / 79.74 & 83.85 / 71.28 & 87.27 / 79.94 & 83.74 / 71.40 \\
+Montgomery & 83.75 / 76.09 & 89.01 / 85.23 & 85.03 / 77.74 & 89.91 / 86.80 \\
+Node21 (PG) & 14.44 & 14.26 & 17.63 & 17.80 \\
+QaTaCOV19 (Dice$^\dagger$) & 46.76 & 46.78 & 46.97 & 47.18 \\
+RSNA & 86.94 / 65.91 & 87.35 / 66.08 & 87.25 / 67.25 & 87.67 / 67.49 \\
+Shenzhen & 71.33 / 74.02 & 82.10 / 84.95 & 80.74 / 82.06 & 86.64 / 87.99 \\
+SIIM (1,704) & 93.35 / 83.74 & 93.34 / 83.94 & 93.57 / 83.94 & 93.62 / 84.21 \\
+SIIM (1,694) & 93.32 / 83.58 & 93.39 / 83.85 & 93.52 / 83.75 & 93.63 / 84.07 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{KAD: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-kad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 80.97 / 23.17 & 81.13 / 23.29 & 81.04 / 23.46 & 81.21 / 23.74 \\
+ChestXDet10 (classification) & 75.86 / 39.85 & 76.48 / 40.51 & 75.83 / 38.76 & 76.59 / 40.28 \\
+ChestXDet10 (PG) & 21.11 & 21.47 & 22.77 & 22.57 \\
+CheXchoNet / CCOM & 70.52 / 27.31 & 71.22 / 27.93 & 71.37 / 27.88 & 71.99 / 28.14 \\
+CheXchoNet / CDLV & 64.50 / 9.81 & 64.54 / 10.61 & 64.54 / 10.42 & 64.53 / 11.02 \\
+CheXchoNet / CSLV & 71.02 / 17.99 & 71.41 / 18.50 & 71.53 / 18.17 & 72.08 / 18.68 \\
+CheXpert & 88.19 / 48.92 & 88.47 / 50.72 & 88.91 / 50.41 & 89.04 / 52.02 \\
+CovidKaggle & 79.79 / 55.69 & 85.65 / 71.18 & 81.64 / 59.71 & 86.39 / 74.50 \\
+Montgomery & 87.14 / 87.54 & 90.54 / 90.17 & 87.80 / 88.43 & 91.04 / 91.29 \\
+Node21 (PG) & 2.48 & 2.39 & 2.13 & 2.57 \\
+QaTaCOV19 (Dice$^\dagger$) & 20.33 & 20.33 & 20.33 & 20.33 \\
+RSNA & 81.59 / 48.04 & 83.67 / 51.62 & 81.92 / 48.72 & 84.01 / 52.41 \\
+Shenzhen & 76.98 / 81.56 & 82.58 / 86.17 & 79.10 / 83.48 & 83.96 / 87.14 \\
+SIIM (1,704) & 89.06 / 71.57 & 89.18 / 71.81 & 89.44 / 72.40 & 89.58 / 72.99 \\
+SIIM (1,694) & 88.98 / 71.31 & 89.77 / 72.94 & 89.36 / 72.07 & 90.03 / 73.32 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MaCo: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-maco}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 77.53 / 16.40 & 78.57 / 24.41 & 77.20 / 15.91 & 78.17 / 21.99 \\
+ChestXDet10 (classification) & 71.49 / 33.96 & 72.46 / 37.09 & 70.97 / 33.35 & 72.29 / 35.24 \\
+ChestXDet10 (PG) & 10.86 & 14.59 & 11.94 & 17.07 \\
+CheXchoNet / CCOM & 67.20 / 18.15 & 67.97 / 24.80 & 67.38 / 18.77 & 67.99 / 23.78 \\
+CheXchoNet / CDLV & 69.59 / 9.34 & 70.99 / 20.33 & 70.24 / 9.31 & 70.10 / 19.57 \\
+CheXchoNet / CSLV & 60.77 / 10.17 & 64.65 / 12.52 & 61.92 / 10.47 & 65.47 / 13.02 \\
+CheXpert & 78.82 / 43.52 & 89.76 / 52.31 & 78.40 / 43.24 & 88.64 / 50.35 \\
+CovidKaggle & 78.92 / 64.27 & 85.08 / 74.94 & 77.54 / 62.07 & 83.78 / 72.26 \\
+Montgomery & 78.42 / 75.07 & 94.06 / 93.11 & 76.55 / 70.55 & 93.23 / 91.78 \\
+Node21 (PG) & 0.00 & 0.00 & 0.09 & 0.09 \\
+QaTaCOV19 (Dice$^\dagger$) & 23.37 & 27.07 & 21.34 & 25.12 \\
+RSNA & 86.12 / 60.76 & 86.82 / 69.04 & 86.25 / 61.95 & 86.86 / 68.79 \\
+Shenzhen & 70.52 / 69.21 & 93.29 / 94.55 & 70.29 / 69.19 & 93.45 / 94.61 \\
+SIIM (1,704) & 86.75 / 68.46 & 88.64 / 72.60 & 85.33 / 65.16 & 87.98 / 68.75 \\
+SIIM (1,694) & 86.69 / 68.32 & 89.43 / 73.78 & 85.27 / 65.01 & 88.55 / 69.06 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{CARZero: complete fixed-support results.} Classification cells are AUROC / AUPRC (\%); PG and Dice are single percentages. $\dagger$: historical test-mask threshold selection. All four branches are retained, including declines.}
+\label{tab:supp-fixed-carzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+Dataset / task & Original & Q & V & Q+V \\
+\midrule
+ChestXray14 & 80.80 / 22.33 & 80.74 / 22.27 & 80.74 / 22.62 & 80.69 / 22.46 \\
+ChestXDet10 (classification) & 80.20 / 43.18 & 80.13 / 43.47 & 80.34 / 43.07 & 80.23 / 43.53 \\
+CheXchoNet / CCOM & 62.56 / 18.94 & 62.58 / 19.01 & 63.88 / 19.70 & 63.87 / 19.68 \\
+CheXchoNet / CDLV & 64.36 / 7.26 & 64.19 / 7.20 & 64.42 / 7.19 & 64.23 / 7.12 \\
+CheXchoNet / CSLV & 59.49 / 11.41 & 59.25 / 11.20 & 60.73 / 11.83 & 60.57 / 11.62 \\
+CheXpert & 89.93 / 55.20 & 89.55 / 55.03 & 92.03 / 56.21 & 91.79 / 56.11 \\
+CovidKaggle & 81.80 / 67.52 & 81.39 / 66.85 & 82.55 / 66.68 & 82.20 / 65.96 \\
+Montgomery & 80.60 / 78.96 & 80.53 / 78.65 & 83.75 / 81.97 & 83.62 / 81.85 \\
+RSNA & 74.62 / 39.72 & 73.38 / 38.93 & 75.29 / 40.39 & 74.20 / 39.65 \\
+Shenzhen & 76.76 / 80.69 & 76.60 / 80.66 & 79.66 / 82.57 & 79.32 / 82.42 \\
+SIIM (1,704) & 92.31 / 79.13 & 92.29 / 78.92 & 92.40 / 78.73 & 92.37 / 78.54 \\
+SIIM (1,694) & 92.31 / 79.10 & 92.27 / 78.74 & 92.39 / 78.66 & 92.35 / 78.40 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+

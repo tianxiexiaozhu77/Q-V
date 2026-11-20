@@ -1,0 +1,14 @@
+{
+  "python": "3.12.7",
+  "packages": {
+    "torch": "2.5.1",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.1",
+    "scipy": "1.13.1",
+    "omegaconf": "2.3.0"
+  },
+  "cuda_build": "12.4",
+  "cuda_initialized": false,
+  "execution_environment": "experiments/fewshot_taskres_sstext_20261109/.venv",
+  "isolation": "venv with system-site-packages; reuses installed PyTorch/CUDA; exact used package versions locked"
+}

@@ -1,0 +1,249 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Setting positive classification head weights...
+Setting negative classification head weights...
+Weights have been set.
+MaCo/montgomery 8/128
+MaCo/montgomery 32/128
+MaCo/montgomery 56/128
+MaCo/montgomery 88/128
+MaCo/montgomery 120/128
+MaCo/montgomery 128/128
+COMPLETE MaCo montgomery {"macro_auroc": 14.817610062893083, "macro_auprc": 16.708444776120224}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chestxdet10_gt 8/409
+MaCo/chestxdet10_gt 32/409
+MaCo/chestxdet10_gt 40/409
+MaCo/chestxdet10_gt 48/409
+MaCo/chestxdet10_gt 56/409
+MaCo/chestxdet10_gt 64/409
+MaCo/chestxdet10_gt 72/409
+MaCo/chestxdet10_gt 80/409
+MaCo/chestxdet10_gt 88/409
+MaCo/chestxdet10_gt 96/409
+MaCo/chestxdet10_gt 104/409
+MaCo/chestxdet10_gt 112/409
+MaCo/chestxdet10_gt 120/409
+MaCo/chestxdet10_gt 128/409
+MaCo/chestxdet10_gt 144/409
+MaCo/chestxdet10_gt 152/409
+MaCo/chestxdet10_gt 160/409
+MaCo/chestxdet10_gt 168/409
+MaCo/chestxdet10_gt 176/409
+MaCo/chestxdet10_gt 184/409
+MaCo/chestxdet10_gt 192/409
+MaCo/chestxdet10_gt 200/409
+MaCo/chestxdet10_gt 208/409
+MaCo/chestxdet10_gt 216/409
+MaCo/chestxdet10_gt 224/409
+MaCo/chestxdet10_gt 248/409
+MaCo/chestxdet10_gt 264/409
+MaCo/chestxdet10_gt 280/409
+MaCo/chestxdet10_gt 304/409
+MaCo/chestxdet10_gt 328/409
+MaCo/chestxdet10_gt 352/409
+MaCo/chestxdet10_gt 376/409
+MaCo/chestxdet10_gt 400/409
+MaCo/chestxdet10_gt 409/409
+COMPLETE MaCo chestxdet10_gt {"pointing_game": 6.215154579017629}
+MaCo/chestxdet10 8/492
+MaCo/chestxdet10 376/492
+MaCo/chestxdet10 492/492
+COMPLETE MaCo chestxdet10 {"macro_auroc": 0.799870618674825, "macro_auprc": 1.284400762548299}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chexpert 8/596
+MaCo/chexpert 136/596
+MaCo/chexpert 280/596
+MaCo/chexpert 416/596
+MaCo/chexpert 520/596
+MaCo/chexpert 596/596
+COMPLETE MaCo chexpert {"macro_auroc": 9.815458895980766, "macro_auprc": 6.831580612219818}
+MaCo/shenzhenxray 8/652
+MaCo/shenzhenxray 64/652
+MaCo/shenzhenxray 128/652
+MaCo/shenzhenxray 184/652
+MaCo/shenzhenxray 240/652
+MaCo/shenzhenxray 288/652
+MaCo/shenzhenxray 344/652
+MaCo/shenzhenxray 368/652
+MaCo/shenzhenxray 392/652
+MaCo/shenzhenxray 416/652
+MaCo/shenzhenxray 440/652
+MaCo/shenzhenxray 480/652
+MaCo/shenzhenxray 536/652
+MaCo/shenzhenxray 592/652
+MaCo/shenzhenxray 640/652
+MaCo/shenzhenxray 652/652
+COMPLETE MaCo shenzhenxray {"macro_auroc": 22.923078371027096, "macro_auprc": 25.402355924598417}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/node21 8/1129
+MaCo/node21 376/1129
+MaCo/node21 816/1129
+MaCo/node21 1129/1129
+COMPLETE MaCo node21 {"pointing_game": 0.08857395925597875}
+MaCo/covidkaggle 8/1381
+MaCo/covidkaggle 840/1381
+MaCo/covidkaggle 1381/1381
+COMPLETE MaCo covidkaggle {"macro_auroc": 4.864209847158141, "macro_auprc": 7.988349208427492}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/siim_radzero_holdout 8/1694
+MaCo/siim_radzero_holdout 816/1694
+MaCo/siim_radzero_holdout 1672/1694
+MaCo/siim_radzero_holdout 1694/1694
+COMPLETE MaCo siim_radzero_holdout {"macro_auroc": 1.8539666615081218, "macro_auprc": 0.7412406215218659}
+MaCo/siim_pneumothorax 8/1704
+MaCo/siim_pneumothorax 848/1704
+MaCo/siim_pneumothorax 1704/1704
+COMPLETE MaCo siim_pneumothorax {"macro_auroc": 1.2242669993761668, "macro_auprc": 0.2856077155217185}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/qatacovid_seg 8/2113
+MaCo/qatacovid_seg 624/2113
+MaCo/qatacovid_seg 1336/2113
+MaCo/qatacovid_seg 1976/2113
+MaCo/qatacovid_seg 2113/2113
+COMPLETE MaCo qatacovid_seg {"dice": 1.7507177758989716}
+MaCo/rsna_pneumonia 8/5327
+MaCo/rsna_pneumonia 928/5327
+MaCo/rsna_pneumonia 1848/5327
+MaCo/rsna_pneumonia 2768/5327
+MaCo/rsna_pneumonia 3544/5327
+MaCo/rsna_pneumonia 4416/5327
+MaCo/rsna_pneumonia 5304/5327
+MaCo/rsna_pneumonia 5327/5327
+COMPLETE MaCo rsna_pneumonia {"macro_auroc": 0.6987581062553261, "macro_auprc": 7.906958988406931}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/openi 8/7294
+MaCo/openi 136/7294
+MaCo/openi 248/7294
+MaCo/openi 376/7294
+MaCo/openi 504/7294
+MaCo/openi 616/7294
+MaCo/openi 696/7294
+MaCo/openi 784/7294
+MaCo/openi 864/7294
+MaCo/openi 944/7294
+MaCo/openi 1072/7294
+MaCo/openi 1200/7294
+MaCo/openi 1328/7294
+MaCo/openi 1440/7294
+MaCo/openi 1568/7294
+MaCo/openi 1696/7294
+MaCo/openi 1824/7294
+MaCo/openi 1936/7294
+MaCo/openi 2064/7294
+MaCo/openi 2184/7294
+MaCo/openi 2312/7294
+MaCo/openi 2424/7294
+MaCo/openi 2552/7294
+MaCo/openi 2672/7294
+MaCo/openi 2800/7294
+MaCo/openi 2912/7294
+MaCo/openi 3040/7294
+MaCo/openi 3168/7294
+MaCo/openi 3296/7294
+MaCo/openi 3416/7294
+MaCo/openi 3544/7294
+MaCo/openi 3672/7294
+MaCo/openi 3800/7294
+MaCo/openi 3920/7294
+MaCo/openi 4048/7294
+MaCo/openi 4176/7294
+MaCo/openi 4304/7294
+MaCo/openi 4416/7294
+MaCo/openi 4544/7294
+MaCo/openi 4672/7294
+MaCo/openi 4800/7294
+MaCo/openi 4912/7294
+MaCo/openi 5048/7294
+MaCo/openi 5176/7294
+MaCo/openi 5304/7294
+MaCo/openi 5424/7294
+MaCo/openi 5552/7294
+MaCo/openi 5688/7294
+MaCo/openi 5816/7294
+MaCo/openi 5936/7294
+MaCo/openi 6064/7294
+MaCo/openi 6192/7294
+MaCo/openi 6328/7294
+MaCo/openi 6448/7294
+MaCo/openi 6576/7294
+MaCo/openi 6704/7294
+MaCo/openi 6832/7294
+MaCo/openi 6960/7294
+MaCo/openi 7088/7294
+MaCo/openi 7216/7294
+MaCo/openi 7294/7294
+COMPLETE MaCo openi {"macro_auroc": -1.841264289614719, "macro_auprc": 3.2431237333486407}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chest14 8/21101
+MaCo/chest14 368/21101
+MaCo/chest14 672/21101
+MaCo/chest14 1032/21101
+MaCo/chest14 1392/21101
+MaCo/chest14 1752/21101
+MaCo/chest14 2064/21101
+MaCo/chest14 2416/21101
+MaCo/chest14 2776/21101
+MaCo/chest14 3136/21101
+MaCo/chest14 3448/21101
+MaCo/chest14 3808/21101
+MaCo/chest14 4168/21101
+MaCo/chest14 4528/21101
+MaCo/chest14 4824/21101
+MaCo/chest14 5160/21101
+MaCo/chest14 5392/21101
+MaCo/chest14 5712/21101
+MaCo/chest14 6016/21101
+MaCo/chest14 6336/21101
+MaCo/chest14 6696/21101
+MaCo/chest14 7048/21101
+MaCo/chest14 7352/21101
+MaCo/chest14 7704/21101
+MaCo/chest14 8040/21101
+MaCo/chest14 8384/21101
+MaCo/chest14 8696/21101
+MaCo/chest14 9008/21101
+MaCo/chest14 9360/21101
+MaCo/chest14 9720/21101
+MaCo/chest14 10024/21101
+MaCo/chest14 10368/21101
+MaCo/chest14 10728/21101
+MaCo/chest14 11072/21101
+MaCo/chest14 11384/21101
+MaCo/chest14 11696/21101
+MaCo/chest14 11944/21101
+MaCo/chest14 12256/21101
+MaCo/chest14 12576/21101
+MaCo/chest14 12936/21101
+MaCo/chest14 13296/21101
+MaCo/chest14 13656/21101
+MaCo/chest14 13960/21101
+MaCo/chest14 14312/21101
+MaCo/chest14 14672/21101
+MaCo/chest14 15024/21101
+MaCo/chest14 15336/21101
+MaCo/chest14 15696/21101
+MaCo/chest14 16024/21101
+MaCo/chest14 16376/21101
+MaCo/chest14 16688/21101
+MaCo/chest14 17040/21101
+MaCo/chest14 17392/21101
+MaCo/chest14 17752/21101
+MaCo/chest14 18080/21101
+MaCo/chest14 18440/21101
+MaCo/chest14 18800/21101
+MaCo/chest14 19160/21101
+MaCo/chest14 19520/21101
+MaCo/chest14 19872/21101
+MaCo/chest14 20224/21101
+MaCo/chest14 20584/21101
+MaCo/chest14 20928/21101
+MaCo/chest14 21101/21101
+COMPLETE MaCo chest14 {"macro_auroc": 0.6380119714649579, "macro_auprc": 5.590859530812844}

@@ -1,0 +1,25 @@
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+{"status": "running", "dataset": "openi", "done": 8, "total": 7294, "elapsed_seconds": 13.821241855621338}
+{"status": "running", "dataset": "openi", "done": 552, "total": 7294, "elapsed_seconds": 28.88939929008484}
+{"status": "running", "dataset": "openi", "done": 1184, "total": 7294, "elapsed_seconds": 44.10026240348816}
+{"status": "running", "dataset": "openi", "done": 1808, "total": 7294, "elapsed_seconds": 59.223228216171265}
+{"status": "running", "dataset": "openi", "done": 2448, "total": 7294, "elapsed_seconds": 74.31599497795105}
+{"status": "running", "dataset": "openi", "done": 3008, "total": 7294, "elapsed_seconds": 89.4264395236969}
+{"status": "running", "dataset": "openi", "done": 3640, "total": 7294, "elapsed_seconds": 104.48170685768127}
+{"status": "running", "dataset": "openi", "done": 4288, "total": 7294, "elapsed_seconds": 119.65200781822205}
+{"status": "running", "dataset": "openi", "done": 4912, "total": 7294, "elapsed_seconds": 134.77559208869934}
+{"status": "running", "dataset": "openi", "done": 5480, "total": 7294, "elapsed_seconds": 149.9208426475525}
+{"status": "running", "dataset": "openi", "done": 6112, "total": 7294, "elapsed_seconds": 165.0247654914856}
+{"status": "running", "dataset": "openi", "done": 6744, "total": 7294, "elapsed_seconds": 180.2036190032959}
+{"status": "running", "dataset": "openi", "done": 7294, "total": 7294, "elapsed_seconds": 193.29492378234863}
+{"original": {"macro_auroc": 0.7951952227076524, "macro_auprc": 0.17941055726171612}, "query_refined": {"macro_auroc": 0.7928012626917417, "macro_auprc": 0.17309632353304275}, "tta_center_original": {"macro_auroc": 0.7980917487052395, "macro_auprc": 0.1798856938019705}, "tta_center_refined": {"macro_auroc": 0.7963222543953292, "macro_auprc": 0.17331444097947676}}

@@ -1,0 +1,53 @@
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Setting positive classification head weights...
+Setting negative classification head weights...
+Weights have been set.
+MaCo/montgomery 2/2
+COMPLETE MaCo montgomery {"macro_auroc": null, "macro_auprc": null}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/evaluate_query_transfer.py", line 124, in run
+    outputs[key]=fuse_center_maps(identity[ref],center[ref],inputsize)
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/query_refinement_common.py", line 71, in fuse_center_maps
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+MaCo/chestxdet10 2/2
+COMPLETE MaCo chestxdet10 {"macro_auroc": 0.0, "macro_auprc": 0.0}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/chexpert 2/2
+COMPLETE MaCo chexpert {"macro_auroc": -50.0, "macro_auprc": -37.5}
+MaCo/shenzhenxray 2/2
+COMPLETE MaCo shenzhenxray {"macro_auroc": null, "macro_auprc": null}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/evaluate_query_transfer.py", line 124, in run
+    outputs[key]=fuse_center_maps(identity[ref],center[ref],inputsize)
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/query_refinement_common.py", line 71, in fuse_center_maps
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+MaCo/covidkaggle 2/2
+COMPLETE MaCo covidkaggle {"macro_auroc": 0.0, "macro_auprc": 0.0}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+MaCo/siim_radzero_holdout 2/2
+COMPLETE MaCo siim_radzero_holdout {"macro_auroc": 0.0, "macro_auprc": 0.0}
+MaCo/siim_pneumothorax 2/2
+COMPLETE MaCo siim_pneumothorax {"macro_auroc": 0.0, "macro_auprc": 0.0}
+/storage/3090group2/zjx/code/medical/baselines/MaCo/.venv/lib/python3.10/site-packages/transformers/modeling_utils.py:810: FutureWarning: The `device` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/evaluate_query_transfer.py", line 124, in run
+    outputs[key]=fuse_center_maps(identity[ref],center[ref],inputsize)
+  File "/storage/3090group2/zjx/code/medical/baselines/local_setup/query_refinement_common.py", line 71, in fuse_center_maps
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+MaCo/rsna_pneumonia 2/2
+COMPLETE MaCo rsna_pneumonia {"macro_auroc": null, "macro_auprc": null}
+MaCo/openi 2/2
+COMPLETE MaCo openi {"macro_auroc": null, "macro_auprc": null}
+MaCo/chest14 2/2
+COMPLETE MaCo chest14 {"macro_auroc": null, "macro_auprc": null}

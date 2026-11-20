@@ -1,0 +1,7 @@
+BOOTSTRAP AlphaRAD
+BOOTSTRAP RadZero
+BOOTSTRAP CARZero
+BOOTSTRAP MedKLIP
+BOOTSTRAP MAVL
+BOOTSTRAP KAD
+{"status": "complete", "run": "/storage/3090group2/zjx/code/medical/experiments/query_path_multibackbone_20261025/runs/full_20261025_v1", "models": ["AlphaRAD", "RadZero", "CARZero", "MedKLIP", "MAVL", "KAD"], "method_means": 216, "paired_comparisons": 216}

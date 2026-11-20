@@ -1,0 +1,293 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+RadZero slvh,dlv,composite_slvh_dlv: 8/7407 (2.29 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 160/7407 (11.64 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 320/7407 (12.73 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 480/7407 (13.37 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 640/7407 (13.78 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 800/7407 (13.99 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 960/7407 (14.15 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1120/7407 (14.13 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1280/7407 (14.15 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1440/7407 (12.99 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1600/7407 (13.17 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1760/7407 (12.55 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 1920/7407 (12.73 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2080/7407 (12.88 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2240/7407 (13.01 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2400/7407 (13.12 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2560/7407 (13.20 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2720/7407 (13.21 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 2880/7407 (13.29 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3040/7407 (13.37 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3200/7407 (13.44 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3360/7407 (13.51 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3520/7407 (13.57 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3680/7407 (13.55 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 3840/7407 (13.60 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4000/7407 (13.65 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4160/7407 (13.70 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4320/7407 (13.74 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4480/7407 (13.74 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4640/7407 (13.78 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4800/7407 (13.81 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 4960/7407 (13.85 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5120/7407 (13.82 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5280/7407 (13.46 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5440/7407 (13.50 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5600/7407 (13.54 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5760/7407 (13.58 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 5920/7407 (13.61 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6080/7407 (13.64 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6240/7407 (13.63 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6400/7407 (13.66 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6560/7407 (13.65 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6720/7407 (13.68 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 6880/7407 (13.70 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7040/7407 (13.70 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7200/7407 (13.72 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7360/7407 (13.75 images/s)
+RadZero slvh,dlv,composite_slvh_dlv: 7407/7407 (13.76 images/s)
+{
+  "status": "complete",
+  "model": "RadZero",
+  "tasks": [
+    "slvh",
+    "dlv",
+    "composite_slvh_dlv"
+  ],
+  "mode": "paired-four-arm",
+  "is_smoke": false,
+  "full_count": 7407,
+  "paired_count": 7407,
+  "baseline_full": null,
+  "baseline_paired": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 7407,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 567,
+        "negatives": 6840,
+        "auroc": 0.7046712718009014,
+        "auprc": 0.16386050176832725
+      },
+      "dlv": {
+        "positives": 315,
+        "negatives": 7092,
+        "auroc": 0.6536029865979105,
+        "auprc": 0.07666687101649336
+      },
+      "composite_slvh_dlv": {
+        "positives": 828,
+        "negatives": 6579,
+        "auroc": 0.7042380859020761,
+        "auprc": 0.2485656816913755
+      }
+    },
+    "macro_auroc": 0.6875041147669627,
+    "macro_auprc": 0.16303101815873203,
+    "micro_auroc": 0.6822916301365605,
+    "micro_auprc": 0.15868090307574756,
+    "macro_auroc_defined_classes": 3,
+    "macro_auprc_defined_classes": 3,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "ours_paired": {
+    "dataset": "CheXchoNet custom 7494",
+    "evaluation_unit": "image",
+    "sample_count": 7407,
+    "class_count": 3,
+    "score_type": "raw image-text logits (before sigmoid)",
+    "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+    "per_class": {
+      "slvh": {
+        "positives": 567,
+        "negatives": 6840,
+        "auroc": 0.7089457182049774,
+        "auprc": 0.16224304457055372
+      },
+      "dlv": {
+        "positives": 315,
+        "negatives": 7092,
+        "auroc": 0.6444883123394122,
+        "auprc": 0.07082233150821043
+      },
+      "composite_slvh_dlv": {
+        "positives": 828,
+        "negatives": 6579,
+        "auroc": 0.7059748739401389,
+        "auprc": 0.24318021024860118
+      }
+    },
+    "macro_auroc": 0.6864696348281761,
+    "macro_auprc": 0.15874852877578846,
+    "micro_auroc": 0.6840346828588055,
+    "micro_auprc": 0.1559476401970355,
+    "macro_auroc_defined_classes": 3,
+    "macro_auprc_defined_classes": 3,
+    "undefined_metric_policy": "null per class; macro averages defined classes only"
+  },
+  "eta": 0.0,
+  "delta_pp": {
+    "slvh": {
+      "auroc": 0.42744464040760377,
+      "auprc": -0.16174571977735364
+    },
+    "dlv": {
+      "auroc": -0.9114674258498323,
+      "auprc": -0.5844539508282925
+    },
+    "composite_slvh_dlv": {
+      "auroc": 0.17367880380627643,
+      "auprc": -0.538547144277432
+    }
+  },
+  "elapsed_seconds": 547.2770684920251,
+  "completed_at": "2026-11-08T14:50:37.331466+00:00",
+  "arms": {
+    "original": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 7407,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 567,
+          "negatives": 6840,
+          "auroc": 0.7046712718009014,
+          "auprc": 0.16386050176832725
+        },
+        "dlv": {
+          "positives": 315,
+          "negatives": 7092,
+          "auroc": 0.6536029865979105,
+          "auprc": 0.07666687101649336
+        },
+        "composite_slvh_dlv": {
+          "positives": 828,
+          "negatives": 6579,
+          "auroc": 0.7042380859020761,
+          "auprc": 0.2485656816913755
+        }
+      },
+      "macro_auroc": 0.6875041147669627,
+      "macro_auprc": 0.16303101815873203,
+      "micro_auroc": 0.6822916301365605,
+      "micro_auprc": 0.15868090307574756,
+      "macro_auroc_defined_classes": 3,
+      "macro_auprc_defined_classes": 3,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "query_only": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 7407,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 567,
+          "negatives": 6840,
+          "auroc": 0.7046712718009014,
+          "auprc": 0.16386050176832725
+        },
+        "dlv": {
+          "positives": 315,
+          "negatives": 7092,
+          "auroc": 0.6536029865979105,
+          "auprc": 0.07666687101649336
+        },
+        "composite_slvh_dlv": {
+          "positives": 828,
+          "negatives": 6579,
+          "auroc": 0.7042380859020761,
+          "auprc": 0.2485656816913755
+        }
+      },
+      "macro_auroc": 0.6875041147669627,
+      "macro_auprc": 0.16303101815873203,
+      "micro_auroc": 0.6822916301365605,
+      "micro_auprc": 0.15868090307574756,
+      "macro_auroc_defined_classes": 3,
+      "macro_auprc_defined_classes": 3,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "tta_center_original": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 7407,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 567,
+          "negatives": 6840,
+          "auroc": 0.7089457182049774,
+          "auprc": 0.16224304457055372
+        },
+        "dlv": {
+          "positives": 315,
+          "negatives": 7092,
+          "auroc": 0.6444883123394122,
+          "auprc": 0.07082233150821043
+        },
+        "composite_slvh_dlv": {
+          "positives": 828,
+          "negatives": 6579,
+          "auroc": 0.7059748739401389,
+          "auprc": 0.24318021024860118
+        }
+      },
+      "macro_auroc": 0.6864696348281761,
+      "macro_auprc": 0.15874852877578846,
+      "micro_auroc": 0.6840346828588055,
+      "micro_auprc": 0.1559476401970355,
+      "macro_auroc_defined_classes": 3,
+      "macro_auprc_defined_classes": 3,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    },
+    "tta_center_refined": {
+      "dataset": "CheXchoNet custom 7494",
+      "evaluation_unit": "image",
+      "sample_count": 7407,
+      "class_count": 3,
+      "score_type": "raw image-text logits (before sigmoid)",
+      "auprc_method": "trapezoidal auc(recall, precision) from precision_recall_curve",
+      "per_class": {
+        "slvh": {
+          "positives": 567,
+          "negatives": 6840,
+          "auroc": 0.7089457182049774,
+          "auprc": 0.16224304457055372
+        },
+        "dlv": {
+          "positives": 315,
+          "negatives": 7092,
+          "auroc": 0.6444883123394122,
+          "auprc": 0.07082233150821043
+        },
+        "composite_slvh_dlv": {
+          "positives": 828,
+          "negatives": 6579,
+          "auroc": 0.7059748739401389,
+          "auprc": 0.24318021024860118
+        }
+      },
+      "macro_auroc": 0.6864696348281761,
+      "macro_auprc": 0.15874852877578846,
+      "micro_auroc": 0.6840346828588055,
+      "micro_auprc": 0.1559476401970355,
+      "macro_auroc_defined_classes": 3,
+      "macro_auprc_defined_classes": 3,
+      "undefined_metric_policy": "null per class; macro averages defined classes only"
+    }
+  }
+}

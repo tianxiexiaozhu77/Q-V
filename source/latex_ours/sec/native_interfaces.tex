@@ -1,0 +1,10 @@
+% Native interface details relocated from main-paper Sec. 3.3.
+\paragraph{Native feature and query interfaces.}
+\label{supp:native_interfaces}
+Tables~\ref{tab:supp-fixed-alpharad}--\ref{tab:supp-fixed-carzero} report the results obtained through the native interfaces described below.
+
+We adjust each model's disease query vectors using main-paper Eq.~(\mainref{eq:query}) while retaining the preprocessing and prediction procedures of its corresponding Original baseline. AlphaRAD, RadZero, and CARZero compute support statistics from visual aggregates guided by the original query vectors, then update the query vectors entering their matching modules. CARZero updates only the global text query vector, retaining local text features and bidirectional matching.
+
+BiomedCLIP, BioViL-T, and CheXzero use projected global image features to update text query vectors. BioViL-T applies the same support direction separately to its classification and spatial query vectors. Each of CheXzero's ten ensemble members computes its own support statistics and query updates, retaining the original ensemble procedure.
+
+MedKLIP uses mean projected visual features to update query vectors after its disease embedding layer. MAVL uses globally pooled visual features and applies each disease direction to its nine query slots (eight concept slots and one description slot), preserving their individual norms and the full query set. KAD uses mean projected patch features to update query vectors entering its existing TQN module. MaCo uses the projection of mean patch features for classification and position-weighted projected patch features for spatial prediction, updating the corresponding text query vectors. The existing decoders and scoring procedures are retained.

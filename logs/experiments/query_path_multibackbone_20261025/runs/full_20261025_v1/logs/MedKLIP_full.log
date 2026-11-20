@@ -1,0 +1,55 @@
+{"status": "loading_model", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 4.18442702293396, "smoke": 0}
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/storage/3090group2/zjx/code/medical/baselines/MedKLIP/.venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_assets/Bio_ClinicalBERT
+{"status": "fitting_all_support_queries", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 12.294193506240845, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 0, "total": 7407, "elapsed_seconds": 14.684280395507812, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 8, "total": 7407, "elapsed_seconds": 16.057318210601807, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 208, "total": 7407, "elapsed_seconds": 31.3545663356781, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 408, "total": 7407, "elapsed_seconds": 46.9159893989563, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 608, "total": 7407, "elapsed_seconds": 62.20572519302368, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 784, "total": 7407, "elapsed_seconds": 77.6114399433136, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 984, "total": 7407, "elapsed_seconds": 92.93016481399536, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 1184, "total": 7407, "elapsed_seconds": 108.3710105419159, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 1384, "total": 7407, "elapsed_seconds": 123.56363463401794, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 1560, "total": 7407, "elapsed_seconds": 139.17523288726807, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 1760, "total": 7407, "elapsed_seconds": 154.4167444705963, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 1960, "total": 7407, "elapsed_seconds": 170.00060510635376, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 2160, "total": 7407, "elapsed_seconds": 185.44569444656372, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 2336, "total": 7407, "elapsed_seconds": 201.04384183883667, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 2536, "total": 7407, "elapsed_seconds": 216.40761256217957, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 2736, "total": 7407, "elapsed_seconds": 231.47395062446594, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 2928, "total": 7407, "elapsed_seconds": 247.01599049568176, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 3088, "total": 7407, "elapsed_seconds": 262.38653445243835, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 3288, "total": 7407, "elapsed_seconds": 277.7452828884125, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 3488, "total": 7407, "elapsed_seconds": 293.2200164794922, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 3688, "total": 7407, "elapsed_seconds": 308.69537687301636, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 3880, "total": 7407, "elapsed_seconds": 325.5118319988251, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 4080, "total": 7407, "elapsed_seconds": 340.92742896080017, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 4272, "total": 7407, "elapsed_seconds": 356.5683526992798, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 4472, "total": 7407, "elapsed_seconds": 372.06689524650574, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 4640, "total": 7407, "elapsed_seconds": 387.1286573410034, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 4840, "total": 7407, "elapsed_seconds": 402.17845821380615, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 5040, "total": 7407, "elapsed_seconds": 417.4532382488251, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 5240, "total": 7407, "elapsed_seconds": 432.78409934043884, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 5424, "total": 7407, "elapsed_seconds": 448.9860565662384, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 5624, "total": 7407, "elapsed_seconds": 464.36683440208435, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 5816, "total": 7407, "elapsed_seconds": 479.7388656139374, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6000, "total": 7407, "elapsed_seconds": 494.85894751548767, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6200, "total": 7407, "elapsed_seconds": 512.150571346283, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6392, "total": 7407, "elapsed_seconds": 527.2988846302032, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6584, "total": 7407, "elapsed_seconds": 542.5707771778107, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6784, "total": 7407, "elapsed_seconds": 557.6794652938843, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 6960, "total": 7407, "elapsed_seconds": 574.7248468399048, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 7152, "total": 7407, "elapsed_seconds": 589.8015434741974, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 7344, "total": 7407, "elapsed_seconds": 604.8869836330414, "smoke": 0}
+{"status": "inference", "model": "MedKLIP", "contrast": "Q-F", "done": 7407, "total": 7407, "elapsed_seconds": 609.6910326480865, "smoke": 0}
+{"status": "complete", "model": "MedKLIP", "contrast": "Q-F", "done": 7407, "total": 7407, "elapsed_seconds": 615.4021248817444, "smoke": 0}

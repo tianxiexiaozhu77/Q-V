@@ -1,0 +1,24 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / RSNA: original 11-method/branch comparison.} Mean $\pm$ sample SD over support seeds 42--46. Scores are percentages. V and Q+V use two views; other rows use one.}
+\label{tab:supp-oldmeans-alpharad-rsna_pneumonia}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Method & AUROC & AUPRC \\
+\midrule
+Original & $83.26\pm0.00$ & $54.81\pm0.00$ \\
+Prototype & $82.71\pm5.40$ & $55.24\pm11.61$ \\
+Prototype mix & $83.41\pm0.35$ & $55.08\pm0.61$ \\
+Tip-Adapter & $84.38\pm1.79$ & $57.39\pm4.16$ \\
+GDA & $84.44\pm2.04$ & $57.99\pm5.01$ \\
+SimNL & $83.45\pm0.55$ & $56.92\pm1.22$ \\
+Positive-support-only adaptation & $83.25\pm1.46$ & $54.70\pm3.04$ \\
+Score S & $84.46\pm2.23$ & $57.77\pm5.57$ \\
+Q & $86.70\pm1.15$ & $61.84\pm3.83$ \\
+V & $83.10\pm0.00$ & $55.17\pm0.00$ \\
+Q+V & $86.75\pm1.11$ & $62.10\pm3.82$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

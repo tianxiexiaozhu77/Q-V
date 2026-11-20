@@ -1,0 +1,271 @@
+{
+  "repo": "rajpurkarlab/CheXzero",
+  "revision": "5c341db0fe0db2f663a2c136c7120a8b303f1d11",
+  "source_archive_sha256": "569319a9ab823d551a521b41807653bc5f1d83da4cc47dc502f7a1b9bba30197",
+  "model": "CheXzero",
+  "status": "ready",
+  "code_url": "https://github.com/rajpurkarlab/CheXzero",
+  "source_delivery": "Official commit tarball; git clone on NFS failed pack index reads, archive used instead",
+  "environment": "baselines/CheXzero/.venv",
+  "python": "3.10.22",
+  "system_site_packages": false,
+  "adapter": "baselines/CheXzero/local_setup/adapter.py",
+  "launcher": "baselines/CheXzero/local_setup/python_local.sh",
+  "training_required": false,
+  "checkpoint_url": "https://drive.google.com/drive/folders/1makFLiEMbSleYltaRxw81aBhEDMpVwno",
+  "checkpoint_ids": [
+    {
+      "id": "1YCV_8fHTBzMMX3DKzhsBLK4Czrp03ju-",
+      "name": "best_64_0.0001_original_16000_0.861.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1UptppovinnBS7zl_5OvTj9v7UObCNllA",
+      "name": "best_64_0.0001_original_17000_0.863.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1IEdILq06WgbVMBIz2DSyu8oDSJEGlSvh",
+      "name": "best_64_0.0001_original_35000_0.864.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1Q2klR1TE6-GxqTR9C8-r5Y3XxygtPRVt",
+      "name": "best_64_0.0002_original_23000_0.854.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1ubtwzK0QPXJBMnRpab3pf1VLgOMqBwtA",
+      "name": "best_64_5e-05_original_16000_0.858.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1GmsTIzNbICY9yhcVgxUCxXz4dggwbT4F",
+      "name": "best_64_5e-05_original_18000_0.862.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1P3D5qukxg3oX88LrAJwRb_03h59O9jdk",
+      "name": "best_64_5e-05_original_22000_0.864.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1xmCrWThAhq7-nPB77Jgaft_KLYcPMuJ_",
+      "name": "best_128_0.0002_original_8000_0.857.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1bGFF8e--30SLZzDhJAL0qLOLhsq5Ff-7",
+      "name": "best_128_0.0002_original_15000_0.859.pt",
+      "size": 353548709
+    },
+    {
+      "id": "1S1qkcx0XDW0CRUDvZvpt_kChCNZ3VM2E",
+      "name": "best_128_5e-05_original_22000_0.855.pt",
+      "size": 353548709
+    }
+  ],
+  "ensemble_size": 10,
+  "environment_status": "installed",
+  "requirements_lock": "baselines/CheXzero/local_setup/requirements.lock.txt",
+  "dependencies": {
+    "beautifulsoup4": "4.15.0",
+    "certifi": "2026.10.19",
+    "charset-normalizer": "3.5.2",
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "einops": "0.8.2",
+    "filelock": "4.1.0",
+    "fonttools": "4.65.0",
+    "fsspec": "2026.9.0",
+    "ftfy": "6.3.1",
+    "gdown": "6.4.2",
+    "h5py": "3.16.0",
+    "hf-xet": "1.7.0",
+    "huggingface-hub": "0.36.2",
+    "idna": "3.20",
+    "imageio": "2.38.0",
+    "jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "lazy-loader": "0.6",
+    "markupsafe": "3.0.4",
+    "matplotlib": "3.10.9",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "1.26.4",
+    "nvidia-cublas-cu12": "12.1.3.1",
+    "nvidia-cuda-cupti-cu12": "12.1.105",
+    "nvidia-cuda-nvrtc-cu12": "12.1.105",
+    "nvidia-cuda-runtime-cu12": "12.1.105",
+    "nvidia-cudnn-cu12": "8.9.2.26",
+    "nvidia-cufft-cu12": "11.0.2.54",
+    "nvidia-curand-cu12": "10.3.2.106",
+    "nvidia-cusolver-cu12": "11.4.5.107",
+    "nvidia-cusparse-cu12": "12.1.0.106",
+    "nvidia-nccl-cu12": "2.19.3",
+    "nvidia-nvjitlink-cu12": "12.9.86",
+    "nvidia-nvtx-cu12": "12.1.105",
+    "open-clip-torch": "2.23.0",
+    "opencv-python-headless": "4.11.0.86",
+    "packaging": "26.3",
+    "pandas": "2.3.3",
+    "pillow": "12.3.0",
+    "protobuf": "7.36.2",
+    "pydicom": "3.0.2",
+    "pyparsing": "3.3.3",
+    "pysocks": "1.7.1",
+    "python-dateutil": "3.0.0",
+    "pytz": "2026.5",
+    "pyyaml": "6.0.3",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "safetensors": "0.8.0",
+    "scikit-image": "0.25.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "sentencepiece": "0.2.2",
+    "simpleitk": "2.5.6",
+    "six": "1.17.0",
+    "soupsieve": "2.10",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.7.0",
+    "tifffile": "2025.5.10",
+    "timm": "1.0.30",
+    "tokenizers": "0.15.2",
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "tqdm": "4.70.1",
+    "transformers": "4.35.2",
+    "triton": "2.2.0",
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0",
+    "wcwidth": "0.9.3"
+  },
+  "checkpoints": [
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_16000_0.861.pt",
+      "size": 353548709,
+      "sha256": "8f5f2679d205476b2e8f8c5112d010008b85ee3d17286cf4d301e50857282006",
+      "google_drive_id": "1YCV_8fHTBzMMX3DKzhsBLK4Czrp03ju-",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_17000_0.863.pt",
+      "size": 353548709,
+      "sha256": "ba3f39d6981c252148d7c3eff37979f2f28d29d193259eda06aaae6b5df596f5",
+      "google_drive_id": "1UptppovinnBS7zl_5OvTj9v7UObCNllA",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_0.0001_original_35000_0.864.pt",
+      "size": 353548709,
+      "sha256": "40ad37ea1933b6ae021a570d1a228e1b21ce1f7f4741348050766c365de214e9",
+      "google_drive_id": "1IEdILq06WgbVMBIz2DSyu8oDSJEGlSvh",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_0.0002_original_23000_0.854.pt",
+      "size": 353548709,
+      "sha256": "060d9743c5580b35ce42b602adc1a6dd8cd77e06055a0699584eb111757d9460",
+      "google_drive_id": "1Q2klR1TE6-GxqTR9C8-r5Y3XxygtPRVt",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_16000_0.858.pt",
+      "size": 353548709,
+      "sha256": "6af517141430a61ac4084d8d08cf77d713dda8386eb1bb4afa4ea621b3483a6b",
+      "google_drive_id": "1ubtwzK0QPXJBMnRpab3pf1VLgOMqBwtA",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_18000_0.862.pt",
+      "size": 353548709,
+      "sha256": "0bc03704af2c5db952d2b9f59af1d93b7baa58b2346c953abf556d00eeccf7dc",
+      "google_drive_id": "1GmsTIzNbICY9yhcVgxUCxXz4dggwbT4F",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_64_5e-05_original_22000_0.864.pt",
+      "size": 353548709,
+      "sha256": "567a2efbabc6a02370de6e18178afd22ee72d7e6f29a789db1535e5c798d6ae8",
+      "google_drive_id": "1P3D5qukxg3oX88LrAJwRb_03h59O9jdk",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_128_0.0002_original_8000_0.857.pt",
+      "size": 353548709,
+      "sha256": "c1ec95b173e8dcd007320e6c33c2ae29023f5f38efc208add99702150c0a72f7",
+      "google_drive_id": "1xmCrWThAhq7-nPB77Jgaft_KLYcPMuJ_",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_128_0.0002_original_15000_0.859.pt",
+      "size": 353548709,
+      "sha256": "620ee11d836f65104cd77c3764fd11ee787d709b0873ea58ca1acbf89c40c50c",
+      "google_drive_id": "1bGFF8e--30SLZzDhJAL0qLOLhsq5Ff-7",
+      "official_checksum_available": false
+    },
+    {
+      "path": "baselines/CheXzero/checkpoints/best_128_5e-05_original_22000_0.855.pt",
+      "size": 353548709,
+      "sha256": "1e3ae7be8d92caf09aa101ab81840b39ee4b1cad3111522250800566834622bf",
+      "google_drive_id": "1S1qkcx0XDW0CRUDvZvpt_kChCNZ3VM2E",
+      "official_checksum_available": false
+    }
+  ],
+  "cpu_validation": {
+    "path": "baselines/CheXzero/local_setup/cpu_smoke.json",
+    "sha256": "1946f402da1588870a5ed62688e490dc1f7d8db230871bd61f8b2fdcd4cc0d58",
+    "status": "passed",
+    "native_ensemble_max_abs_diff": 5.960464477539063e-08
+  },
+  "adapter_sha256": "bc2f3f0bc6c996ebeba2250a6a57b2479c9c20ea3d3b6e33f8af74d2913fff08",
+  "launcher_sha256": "600b7de8b8142de1af4ed18337ea6673dcf9c818bd972567da3e294910000198",
+  "evaluation_worker": "baselines/local_setup/evaluate_baseline_buffered.py",
+  "evaluation_worker_sha256": "68d4fa692e8d3b382be0767d401cb50272acc007919630d912a13116731fdfcc",
+  "requirements_lock_sha256": "47c4e2b5da717fec40b5df81956d264ea16c8b4eb039888f2707d289978906b9",
+  "inference_metadata": {
+    "model": "CheXzero",
+    "score_kind": "mean_10_model_positive_negative_softmax_probability",
+    "prompt_templates": [
+      "There is {disease}.",
+      "There is no {disease}."
+    ],
+    "prompt_protocol": "AlphaRAD section4.3 positive prefix; original CheXzero binary mechanism. Negative prefix adapted consistently, not specified by AlphaRAD.",
+    "preprocess": "Official data_process.preprocess long-edge320 Lanczos, zero-pad grayscale320; pixel-domain mean101.48761 std83.43944; tensor bicubic Resize224 antialiasFalse",
+    "checkpoint": [
+      "baselines/CheXzero/checkpoints/best_128_0.0002_original_15000_0.859.pt",
+      "baselines/CheXzero/checkpoints/best_128_0.0002_original_8000_0.857.pt",
+      "baselines/CheXzero/checkpoints/best_128_5e-05_original_22000_0.855.pt",
+      "baselines/CheXzero/checkpoints/best_64_0.0001_original_16000_0.861.pt",
+      "baselines/CheXzero/checkpoints/best_64_0.0001_original_17000_0.863.pt",
+      "baselines/CheXzero/checkpoints/best_64_0.0001_original_35000_0.864.pt",
+      "baselines/CheXzero/checkpoints/best_64_0.0002_original_23000_0.854.pt",
+      "baselines/CheXzero/checkpoints/best_64_5e-05_original_16000_0.858.pt",
+      "baselines/CheXzero/checkpoints/best_64_5e-05_original_18000_0.862.pt",
+      "baselines/CheXzero/checkpoints/best_64_5e-05_original_22000_0.864.pt"
+    ],
+    "checkpoint_count": 10,
+    "grounding_available": false,
+    "training": false,
+    "precision": "float32",
+    "class_mapping": {
+      "Pleural_Thickening": "pleural thickening",
+      "otherwise": "identity"
+    },
+    "class_mapping_source": "AlphaRAD/cxrclip/evaluator_utils.py disease_name_mapping; output column names and ordering preserved",
+    "protocol": "Official all-ten released checkpoint ensemble. Per-model softmax of raw positive/negative cosine (no logit_scale), then model mean. Does not use standard OpenAI CLIP normalization."
+  },
+  "notes": [
+    "No training. Complete official ensemble of all ten public author checkpoints; filenames are not selected using the current test labels.",
+    "Exact expected byte sizes and HTTP Content-Range validated; SHA256 recorded after download. Google Drive listing does not publish a separate checksum.",
+    "Native CheXzero binary positive/negative raw-cosine softmax, then arithmetic mean across ten model probabilities. No logit scaling.",
+    "AlphaRAD common positive prompt There is {disease}.; negative adapted consistently as There is no {disease}. AlphaRAD paper does not specify the negative-template details, so this is not claimed to exactly reproduce its original table.",
+    "Pleural_Thickening metadata identifier becomes pleural thickening in text prompts, as explicitly defined by AlphaRAD disease_name_mapping; output columns remain unchanged.",
+    "Native authors pixel-domain mean/std and long-edge 320 grayscale padding retained, followed by tensor bicubic 224 Resize with antialias=False, matching author torchvision version.",
+    "No verified native localization/segmentation interface is claimed."
+  ]
+}

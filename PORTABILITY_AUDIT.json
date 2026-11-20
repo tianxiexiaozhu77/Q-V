@@ -1,0 +1,482 @@
+[
+  {
+    "path": "source/AlphaRAD/local_setup/run_chexpert_query_comparison.py",
+    "line": 161,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only distinct physical GPUs 6 and 7 are authorized\")"
+  },
+  {
+    "path": "source/AlphaRAD/local_setup/run_pretrained.py",
+    "line": 42,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"Only physical GPUs 3\u20137 are authorized for this run\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/audit_i2cl.py",
+    "line": 390,
+    "kind": "local_policy_candidate",
+    "code": "\"\"\"Check the explicitly authorized test-pool holdout against actual DICOM IDs.\"\"\""
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_control.py",
+    "line": 153,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"Only unique physical GPUs 3\u20137 are authorized\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_control.py",
+    "line": 391,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only unique physical GPUs 3\u20137 are authorized\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_control.py",
+    "line": 397,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Deadline cannot exceed the authorized 2026-10-21 10:00 Asia/Shanghai\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_cpu_control.py",
+    "line": 39,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"At most two CPU workers are authorized\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_i2cl_variants.py",
+    "line": 37,
+    "kind": "machine_path",
+    "code": "AUTHOR_WRAPPER = Path(\"/storage/3090group2/zjx/code/medical/I2CL/wrapper.py\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_pairwise_residual.py",
+    "line": 370,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Deadline must have timezone and not exceed authorized 10:00\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/overnight_query_refinement.py",
+    "line": 39,
+    "kind": "local_policy_candidate",
+    "code": "# Keep the guard aligned with the current authorized experiment window.  The"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/run_i2cl.py",
+    "line": 81,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"Only physical GPUs 2\u20137 are authorized\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/run_i2cl.py",
+    "line": 139,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"Only physical GPUs 2\u20137 are authorized\")"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/run_i2cl.py",
+    "line": 327,
+    "kind": "local_policy_candidate",
+    "code": "print(f\"{now()} Waiting for an idle authorized GPU; pending: {', '.join(pending)}\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/summarize_local_native.py",
+    "line": 105,
+    "kind": "local_policy_candidate",
+    "code": "\"SIIM uses the explicitly authorized released-test few-shot group holdout because \""
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_control.py",
+    "line": 51,
+    "kind": "machine_path",
+    "code": "parse_args([\"--queue\", \"/tmp/q\", \"--state-dir\", \"/tmp/s\", \"--gpus\", \"2\"])"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_cpu_control.py",
+    "line": 113,
+    "kind": "machine_path",
+    "code": "parse_args([\"--raw-root\", \"/tmp/raw\", \"--state-dir\", \"/tmp/state\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_cpu_control.py",
+    "line": 114,
+    "kind": "machine_path",
+    "code": "\"--gpu-state\", \"/tmp/gpu\", \"--deadline\", \"2026-10-21T11:00:00+08:00\"])"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_perclass_ridge.py",
+    "line": 80,
+    "kind": "machine_path",
+    "code": "\"--raw-root\", \"/tmp/perclass_new\", \"--state-dir\", \"/tmp/perclass_campaign/cpu\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_perclass_ridge.py",
+    "line": 81,
+    "kind": "machine_path",
+    "code": "\"--gpu-state\", \"/tmp/perclass_campaign/controller/state.json\"])"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_perclass_ridge.py",
+    "line": 86,
+    "kind": "machine_path",
+    "code": "self.assertEqual(Path(job[\"output\"]).parent, Path(\"/tmp/perclass_new/ridge_perclass\"))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_perclass_ridge.py",
+    "line": 88,
+    "kind": "machine_path",
+    "code": "self.assertEqual(argv[-2:], [\"--binary-reference-root\", \"/tmp/perclass_new/ridge_wide\"])"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 13,
+    "kind": "machine_path",
+    "code": "\"--raw-root\", \"/tmp/ridge_wide_test_raw\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 14,
+    "kind": "machine_path",
+    "code": "\"--state-dir\", \"/tmp/ridge_wide_test_campaign/cpu\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 15,
+    "kind": "machine_path",
+    "code": "\"--gpu-state\", \"/tmp/ridge_wide_test_campaign/controller/state.json\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 16,
+    "kind": "machine_path",
+    "code": "\"--cache-root\", \"/tmp/old_frozen_features\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 25,
+    "kind": "machine_path",
+    "code": "self.assertEqual(Path(job[\"cache\"]).parent, Path(\"/tmp/old_frozen_features\"))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 26,
+    "kind": "machine_path",
+    "code": "self.assertEqual(Path(job[\"output\"]).parent, Path(\"/tmp/ridge_wide_test_raw/ridge_wide\"))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 44,
+    "kind": "machine_path",
+    "code": "self.assertIn(Path(\"/tmp/ridge_wide_test_campaign/STOP\"), stops)"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 45,
+    "kind": "machine_path",
+    "code": "self.assertIn(Path(\"/tmp/ridge_wide_test_campaign/controller/STOP\"), stops)"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_overnight_ridge_wide_control.py",
+    "line": 46,
+    "kind": "machine_path",
+    "code": "self.assertIn(Path(\"/tmp/ridge_wide_test_campaign/cpu/STOP\"), stops)"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_query_adapter.py",
+    "line": 96,
+    "kind": "machine_path",
+    "code": "args = parse_args([\"--datasets\", \"SIIM\", \"--output\", \"/tmp/query_adapter_fixture\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_ridge_adapter.py",
+    "line": 63,
+    "kind": "machine_path",
+    "code": "with patch(\"sys.argv\", [\"eval_ridge_adapter.py\", \"--output\", \"/tmp/new_ridge_eval\"]):"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_ridge_adapter.py",
+    "line": 67,
+    "kind": "machine_path",
+    "code": "with patch(\"sys.argv\", [\"eval_ridge_adapter.py\", \"--output\", \"/tmp/new_ridge_eval\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_ridge_adapter.py",
+    "line": 68,
+    "kind": "machine_path",
+    "code": "\"--adapter\", \"/tmp/adapter.npz\", \"--datasets\", \"SIIM\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_ridge_adapter.py",
+    "line": 71,
+    "kind": "machine_path",
+    "code": "self.assertEqual(args.adapter, Path(\"/tmp/adapter.npz\"))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_run_i2cl.py",
+    "line": 57,
+    "kind": "local_policy_candidate",
+    "code": "def test_unauthorized_gpu_is_rejected_before_query(self):"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_weighted_kernel_control.py",
+    "line": 14,
+    "kind": "machine_path",
+    "code": "\"--raw-root\", \"/tmp/new_kernel_raw\", \"--state-dir\", \"/tmp/new_kernel_campaign/cpu\","
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_weighted_kernel_control.py",
+    "line": 15,
+    "kind": "machine_path",
+    "code": "\"--gpu-state\", \"/tmp/new_kernel_campaign/controller/state.json\"]))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_weighted_kernel_control.py",
+    "line": 22,
+    "kind": "machine_path",
+    "code": "self.assertEqual(Path(job[\"output\"]).parent, Path(\"/tmp/new_kernel_raw/weighted_kernel\"))"
+  },
+  {
+    "path": "source/RadZero_i2cl/local_setup/test_weighted_kernel_control.py",
+    "line": 33,
+    "kind": "machine_path",
+    "code": "self.assertIn(Path(\"/tmp/new_kernel_campaign/STOP\"), control.args.stop_files)"
+  },
+  {
+    "path": "source/baselines/MAVL/local_setup/validate_openi18.py",
+    "line": 3,
+    "kind": "local_policy_candidate",
+    "code": "Only two TRAIN images are used.  This script reserves one authorized physical"
+  },
+  {
+    "path": "source/baselines/local_setup/audit_query_transfer.py",
+    "line": 227,
+    "kind": "local_policy_candidate",
+    "code": "require(set(state['gpus']) <= {4, 5, 6, 7}, 'GPU scope differs from user authorization')"
+  },
+  {
+    "path": "source/baselines/local_setup/run_all_verified_baselines.py",
+    "line": 113,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only physical GPUs 4\u20137 are authorized\")"
+  },
+  {
+    "path": "source/baselines/local_setup/run_binary_protocol.py",
+    "line": 107,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only physical GPUs 4\u20137 are authorized\")"
+  },
+  {
+    "path": "source/baselines/local_setup/run_chexchonet.py",
+    "line": 50,
+    "kind": "local_policy_candidate",
+    "code": "parser.error('Only physical GPUs 4-7 are authorized')"
+  },
+  {
+    "path": "source/baselines/local_setup/run_matched_baselines.py",
+    "line": 106,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only physical GPUs 6\u20137 are authorized\")"
+  },
+  {
+    "path": "source/baselines/local_setup/run_query_transfer.py",
+    "line": 102,
+    "kind": "local_policy_candidate",
+    "code": "if not args.gpus or len(set(args.gpus))!=len(args.gpus) or set(args.gpus)-{4,5,6,7}:p.error('Only physicalGPU4-7 authorized')"
+  },
+  {
+    "path": "source/baselines/protocols/chexchonet/MAVL/local_setup/python_local.sh",
+    "line": 3,
+    "kind": "machine_path",
+    "code": "exec bash /storage/3090group2/zjx/code/medical/baselines/MAVL/local_setup/python_local.sh \"$@\""
+  },
+  {
+    "path": "source/baselines/protocols/chexchonet/MedKLIP/local_setup/python_local.sh",
+    "line": 3,
+    "kind": "machine_path",
+    "code": "exec bash /storage/3090group2/zjx/code/medical/baselines/MedKLIP/local_setup/python_local.sh \"$@\""
+  },
+  {
+    "path": "source/experiments/chexchonet_stability_20261024/run_campaign.py",
+    "line": 44,
+    "kind": "local_policy_candidate",
+    "code": "p.error('Use distinct authorized physical GPUs 4--7')"
+  },
+  {
+    "path": "source/experiments/fewshot_multiseed_20261024/cache_multiseed.py",
+    "line": 651,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Inference requires a fresh --output and authorized physical --gpu 4..7\")"
+  },
+  {
+    "path": "source/experiments/fewshot_multiseed_20261024/run_campaign.py",
+    "line": 62,
+    "kind": "local_policy_candidate",
+    "code": "if not args.gpus or len(set(args.gpus)) != len(args.gpus) or not set(args.gpus) <= {4, 5, 6, 7}:"
+  },
+  {
+    "path": "source/experiments/fewshot_multiseed_20261024/run_campaign.py",
+    "line": 63,
+    "kind": "local_policy_candidate",
+    "code": "parser.error('Only distinct physical GPU IDs 4--7 are authorized')"
+  },
+  {
+    "path": "source/experiments/fewshot_native_query/cache_native_common.py",
+    "line": 52,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"This experiment is authorized only on physical GPUs 4\u20137\")"
+  },
+  {
+    "path": "source/experiments/fewshot_native_query/run_suite.py",
+    "line": 68,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError('Only distinct GPUs 4--7 are authorized')"
+  },
+  {
+    "path": "source/experiments/fewshot_native_query/run_suite.py",
+    "line": 112,
+    "kind": "local_policy_candidate",
+    "code": "# Do not silently kill already running, explicitly authorized GPU workers."
+  },
+  {
+    "path": "source/experiments/fewshot_neighbors_20261025/run_campaign.py",
+    "line": 49,
+    "kind": "local_policy_candidate",
+    "code": "parser.error('Use distinct authorized physical GPU IDs 6 and/or 7')"
+  },
+  {
+    "path": "source/experiments/qata_multiseed_20261024/infer_maps.py",
+    "line": 132,
+    "kind": "local_policy_candidate",
+    "code": "raise RuntimeError(\"Run via run_campaign.py to reserve an authorized idle GPU\")"
+  },
+  {
+    "path": "source/experiments/qata_multiseed_20261024/run_campaign.py",
+    "line": 111,
+    "kind": "local_policy_candidate",
+    "code": "if not args.gpus or len(set(args.gpus)) != len(args.gpus) or not set(args.gpus) <= {4, 5, 6, 7}:"
+  },
+  {
+    "path": "source/experiments/qata_multiseed_20261024/run_campaign.py",
+    "line": 112,
+    "kind": "local_policy_candidate",
+    "code": "parser.error('Use distinct authorized physical GPUs 4--7')"
+  },
+  {
+    "path": "source/experiments/qata_multiseed_20261024/run_campaign.py",
+    "line": 147,
+    "kind": "local_policy_candidate",
+    "code": "authorized_gpus=args.gpus, protocol=str(args.protocol),"
+  },
+  {
+    "path": "source/experiments/qata_multiseed_20261024/run_campaign.py",
+    "line": 251,
+    "kind": "local_policy_candidate",
+    "code": "# Only the child group created above may be terminated; other GPU jobs"
+  },
+  {
+    "path": "source/experiments/qata_validation_threshold_20261024/prepare_protocol.py",
+    "line": 6,
+    "kind": "local_policy_candidate",
+    "code": "Only NumPy and Pillow are needed; no model, GPU or prediction is loaded."
+  },
+  {
+    "path": "source/experiments/qata_validation_threshold_20261024/run_campaign.py",
+    "line": 5,
+    "kind": "local_policy_candidate",
+    "code": "labels. GPU inference is limited to an idle authorized physical GPU 4--7."
+  },
+  {
+    "path": "source/experiments/qata_validation_threshold_20261024/run_campaign.py",
+    "line": 49,
+    "kind": "local_policy_candidate",
+    "code": "if not args.gpus or len(set(args.gpus)) != len(args.gpus) or not set(args.gpus) <= {4, 5, 6, 7}:"
+  },
+  {
+    "path": "source/experiments/qata_validation_threshold_20261024/run_campaign.py",
+    "line": 50,
+    "kind": "local_policy_candidate",
+    "code": "parser.error('Use distinct authorized physical GPUs 4--7')"
+  },
+  {
+    "path": "source/experiments/query_path_multibackbone_20261025/infer_radzero.py",
+    "line": 4,
+    "kind": "local_policy_candidate",
+    "code": "Only this worker's new output directory is written. GPU selection/locking is"
+  },
+  {
+    "path": "source/experiments/query_path_multibackbone_20261025/run_campaign.py",
+    "line": 41,
+    "kind": "local_policy_candidate",
+    "code": "p.error('Only distinct physical GPUs 6 and 7 are authorized')"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/campaign_control.py",
+    "line": 157,
+    "kind": "local_policy_candidate",
+    "code": "raise ValueError(\"Only unique physical GPUs 3\u20137 are authorized\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/campaign_control.py",
+    "line": 417,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Only unique physical GPUs 3\u20137 are authorized\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/campaign_control.py",
+    "line": 423,
+    "kind": "local_policy_candidate",
+    "code": "parser.error(\"Deadline cannot exceed the authorized 2026-10-22 10:00 Asia/Shanghai\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/finish_current_queue.py",
+    "line": 2,
+    "kind": "local_policy_candidate",
+    "code": "\"\"\"Refresh the finite, user-authorized queue report and publish its final status.\"\"\""
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/pilot_gate.py",
+    "line": 80,
+    "kind": "local_policy_candidate",
+    "code": "raise QueueError(\"Deadline exceeds the authorized 2026-10-22 10:00 Asia/Shanghai cutoff\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/pilot_gate.py",
+    "line": 84,
+    "kind": "local_policy_candidate",
+    "code": "raise GateStopped(\"authorized deadline reached\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/pilot_gate_distinct.py",
+    "line": 96,
+    "kind": "local_policy_candidate",
+    "code": "raise QueueError(\"Frozen candidate path differs from the authorized phase policy\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/pilot_gate_next.py",
+    "line": 93,
+    "kind": "local_policy_candidate",
+    "code": "raise QueueError(\"Frozen candidate path differs from the authorized phase policy\")"
+  },
+  {
+    "path": "source/experiments/query_search_20261021_152010/code/test_campaign_control.py",
+    "line": 51,
+    "kind": "machine_path",
+    "code": "parse_args([\"--queue\", \"/tmp/q\", \"--state-dir\", \"/tmp/s\", \"--gpus\", \"2\"])"
+  },
+  {
+    "path": "source/experiments/rsna_chest_stability_20261024/run_campaign.py",
+    "line": 44,
+    "kind": "local_policy_candidate",
+    "code": "p.error('Use distinct authorized physical GPUs 4--7')"
+  },
+  {
+    "path": "source/latex_ours/scripts/build_supplement.py",
+    "line": 35,
+    "kind": "machine_path",
+    "code": "assert all('/storage/' not in str(v) and '/home/' not in str(v) for v in r.values())"
+  },
+  {
+    "path": "source/latex_ours/scripts/export_taskres_sstext_csv.py",
+    "line": 60,
+    "kind": "machine_path",
+    "code": "if any(\"/storage/\" in value or \"/home/\" in value for row in rows for value in row.values()):"
+  }
+]

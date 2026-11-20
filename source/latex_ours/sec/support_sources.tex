@@ -1,0 +1,32 @@
+% Support provenance is protocol-specific; keep fixed and repeated draws distinct.
+\begin{table*}[t]
+\centering
+\caption{\textbf{Support-image sources and test-set construction.} Fixed-support rows describe the main evaluation; repeated-support rows describe seeds 42--46. Repartitioned means that support images were selected from an existing evaluation list or collection and removed, together with linked images where identifiable, before testing. Separate training or other-source supports leave the fixed test list unchanged. Image separation alone does not establish patient separation.}
+\label{tab:supp-support-sources}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}p{0.16\textwidth}p{0.28\textwidth}p{0.25\textwidth}p{0.25\textwidth}@{}}
+\toprule
+Dataset / protocol & Support-image source & Final test construction & Identity check / limitation \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Fixed-support evaluation}} \\
+ChestXray14~\cite{wang2017chestxray8} & Repartitioned released evaluation list; 70 supports. & Remove supports and linked patient images; 21,101 remain. & NIH patient IDs from filenames. \\
+ChestXDet10~\cite{liu2020chestxdet10} & Repartitioned released evaluation list; 50 supports. & 542 images become 492 for classification; 409 have localization annotations. & Image / exact-duplicate grouping; patient IDs unavailable. \\
+RSNA~\cite{shih2019rsna} & Ten fixed supports from the 5,337-image RadZero test list also adopted by AlphaRAD. & Remove the ten supports and 30 other images of their patients; 5,297 images from 3,713 patients remain. & Official RSNA-to-NIH mapping; no support/test patient overlap after exclusion. \\
+SIIM (1,694)~\cite{filice2020siim} & Repartitioned 1,704-image evaluation list; ten supports. & 1,694 images remain. & Available DICOM patient/study identifiers. \\
+Shenzhen / Montgomery~\cite{jaeger2014tuberculosisdatasets} & Repartitioned public collections; ten supports per dataset. & 662 to 652 / 138 to 128 images. & Released NLM case identifiers. \\
+Node21~\cite{sogancioglu2024node21} & Public collection; five positive and five negative supports. & Remove five positives from the 1,134-image localization list; negatives were outside that list. & Image IDs only; patient linkage unavailable. \\
+CheXpert~\cite{irvin2019chexpert} & 60 supports from 56 patients held out from AlphaRAD's released 668-image test list. & Remove all 72 images of support patients; 596 remain. & Patient IDs; 444 test patients. \\
+CheXchoNet~\cite{elias2024chexchonet} & Ten supports per task held out from our independently sampled 7,494-image subset, matching AlphaRAD's reported size. & Reserve all 87 images of 30 support patients; 7,407 remain. & Patient IDs; 2,470 test patients. The source subset is not a reproduction of AlphaRAD's image list. \\
+SIIM (1,704) & Separate source training DICOMs outside the fixed test set; ten supports. & Retain the 1,704-image test list. & Exclude test image, patient, and study IDs; decoded-pixel duplicate check. \\
+QaTaCOV19~\cite{degerli2022qatacov19} & Five training positives plus five normal images from Control Group I. & Retain the 2,113-image test list. & Positive subject IDs are disjoint; normal controls lack patient IDs. \\
+CovidKaggle~\cite{chowdhury2020covidradiography,rahman2021covidradiography} & Normal/COVID collection images outside the author evaluation list; ten supports. & Retain the 1,381-image test list. & Image / decoded-pixel checks; no verified official training split or patient linkage. \\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{Repeated-support comparisons (five seeds)}} \\
+ChestXDet10 & Separate author training set; 50 distinct images per seed. & Retain 492 classification / 409 localization images. & Image / exact-duplicate checks; patient separation unverified. \\
+RSNA & Official labeled source after excluding every NIH patient in the historical 5,337-image reference list. & Retain 5,327 images from 3,720 patients. & Official RSNA-to-NIH mapping; ten distinct support patients per seed. \\
+CheXchoNet & Resample the reserved 87 images / 30 patients; ten images per task and seed. & Retain the same 7,407-image test list. & Five positive and five strictly negative patients per task and seed. \\
+\bottomrule
+\end{tabular}
+\end{table*}

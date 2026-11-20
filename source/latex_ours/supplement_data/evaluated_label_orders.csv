@@ -1,0 +1,523 @@
+model,dataset,class_index,class_name
+AlphaRAD,chest14,0,Atelectasis
+AlphaRAD,chest14,1,Cardiomegaly
+AlphaRAD,chest14,2,Effusion
+AlphaRAD,chest14,3,Infiltration
+AlphaRAD,chest14,4,Mass
+AlphaRAD,chest14,5,Nodule
+AlphaRAD,chest14,6,Pneumonia
+AlphaRAD,chest14,7,Pneumothorax
+AlphaRAD,chest14,8,Consolidation
+AlphaRAD,chest14,9,Edema
+AlphaRAD,chest14,10,Emphysema
+AlphaRAD,chest14,11,Fibrosis
+AlphaRAD,chest14,12,Pleural Thickening
+AlphaRAD,chest14,13,Hernia
+AlphaRAD,chestxdet10,0,Atelectasis
+AlphaRAD,chestxdet10,1,Calcification
+AlphaRAD,chestxdet10,2,Consolidation
+AlphaRAD,chestxdet10,3,Effusion
+AlphaRAD,chestxdet10,4,Emphysema
+AlphaRAD,chestxdet10,5,Fibrosis
+AlphaRAD,chestxdet10,6,Fracture
+AlphaRAD,chestxdet10,7,Mass
+AlphaRAD,chestxdet10,8,Nodule
+AlphaRAD,chestxdet10,9,Pneumothorax
+AlphaRAD,chestxdet10_gt,0,Atelectasis
+AlphaRAD,chestxdet10_gt,1,Calcification
+AlphaRAD,chestxdet10_gt,2,Consolidation
+AlphaRAD,chestxdet10_gt,3,Effusion
+AlphaRAD,chestxdet10_gt,4,Emphysema
+AlphaRAD,chestxdet10_gt,5,Fibrosis
+AlphaRAD,chestxdet10_gt,6,Fracture
+AlphaRAD,chestxdet10_gt,7,Mass
+AlphaRAD,chestxdet10_gt,8,Nodule
+AlphaRAD,chestxdet10_gt,9,Pneumothorax
+AlphaRAD,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+AlphaRAD,chexchonet_dlv,0,Dilated Left Ventricle
+AlphaRAD,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+AlphaRAD,chexpert,0,No Finding
+AlphaRAD,chexpert,1,Enlarged Cardiomediastinum
+AlphaRAD,chexpert,2,Cardiomegaly
+AlphaRAD,chexpert,3,Lung Opacity
+AlphaRAD,chexpert,4,Lung Lesion
+AlphaRAD,chexpert,5,Edema
+AlphaRAD,chexpert,6,Consolidation
+AlphaRAD,chexpert,7,Pneumonia
+AlphaRAD,chexpert,8,Atelectasis
+AlphaRAD,chexpert,9,Pneumothorax
+AlphaRAD,chexpert,10,Pleural Effusion
+AlphaRAD,chexpert,11,Fracture
+AlphaRAD,covidkaggle,0,Covid
+AlphaRAD,montgomery,0,Tuberculosis
+AlphaRAD,node21,0,Nodule
+AlphaRAD,qatacovid_seg,0,covid
+AlphaRAD,rsna_pneumonia,0,Pneumonia
+AlphaRAD,shenzhenxray,0,Tuberculosis
+AlphaRAD,siim_pneumothorax,0,Pneumothorax
+AlphaRAD,siim_radzero_holdout,0,Pneumothorax
+RadZero,chest14,0,Atelectasis
+RadZero,chest14,1,Cardiomegaly
+RadZero,chest14,2,Effusion
+RadZero,chest14,3,Infiltration
+RadZero,chest14,4,Mass
+RadZero,chest14,5,Nodule
+RadZero,chest14,6,Pneumonia
+RadZero,chest14,7,Pneumothorax
+RadZero,chest14,8,Consolidation
+RadZero,chest14,9,Edema
+RadZero,chest14,10,Emphysema
+RadZero,chest14,11,Fibrosis
+RadZero,chest14,12,Pleural Thickening
+RadZero,chest14,13,Hernia
+RadZero,chestxdet10,0,Atelectasis
+RadZero,chestxdet10,1,Calcification
+RadZero,chestxdet10,2,Consolidation
+RadZero,chestxdet10,3,Effusion
+RadZero,chestxdet10,4,Emphysema
+RadZero,chestxdet10,5,Fibrosis
+RadZero,chestxdet10,6,Fracture
+RadZero,chestxdet10,7,Mass
+RadZero,chestxdet10,8,Nodule
+RadZero,chestxdet10,9,Pneumothorax
+RadZero,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+RadZero,chexchonet_dlv,0,Dilated Left Ventricle
+RadZero,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+RadZero,chexpert,0,No Finding
+RadZero,chexpert,1,Enlarged Cardiomediastinum
+RadZero,chexpert,2,Cardiomegaly
+RadZero,chexpert,3,Lung Opacity
+RadZero,chexpert,4,Lung Lesion
+RadZero,chexpert,5,Edema
+RadZero,chexpert,6,Consolidation
+RadZero,chexpert,7,Pneumonia
+RadZero,chexpert,8,Atelectasis
+RadZero,chexpert,9,Pneumothorax
+RadZero,chexpert,10,Pleural Effusion
+RadZero,chexpert,11,Fracture
+RadZero,covidkaggle,0,Covid
+RadZero,montgomery,0,Tuberculosis
+RadZero,rsna_pneumonia,0,Pneumonia
+RadZero,shenzhenxray,0,Tuberculosis
+RadZero,siim_pneumothorax,0,Pneumothorax
+RadZero,siim_radzero_holdout,0,Pneumothorax
+BiomedCLIP,chest14,0,Atelectasis
+BiomedCLIP,chest14,1,Cardiomegaly
+BiomedCLIP,chest14,2,Effusion
+BiomedCLIP,chest14,3,Infiltration
+BiomedCLIP,chest14,4,Mass
+BiomedCLIP,chest14,5,Nodule
+BiomedCLIP,chest14,6,Pneumonia
+BiomedCLIP,chest14,7,Pneumothorax
+BiomedCLIP,chest14,8,Consolidation
+BiomedCLIP,chest14,9,Edema
+BiomedCLIP,chest14,10,Emphysema
+BiomedCLIP,chest14,11,Fibrosis
+BiomedCLIP,chest14,12,Pleural Thickening
+BiomedCLIP,chest14,13,Hernia
+BiomedCLIP,chestxdet10,0,Atelectasis
+BiomedCLIP,chestxdet10,1,Calcification
+BiomedCLIP,chestxdet10,2,Consolidation
+BiomedCLIP,chestxdet10,3,Effusion
+BiomedCLIP,chestxdet10,4,Emphysema
+BiomedCLIP,chestxdet10,5,Fibrosis
+BiomedCLIP,chestxdet10,6,Fracture
+BiomedCLIP,chestxdet10,7,Mass
+BiomedCLIP,chestxdet10,8,Nodule
+BiomedCLIP,chestxdet10,9,Pneumothorax
+BiomedCLIP,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+BiomedCLIP,chexchonet_dlv,0,Dilated Left Ventricle
+BiomedCLIP,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+BiomedCLIP,chexpert,0,No Finding
+BiomedCLIP,chexpert,1,Enlarged Cardiomediastinum
+BiomedCLIP,chexpert,2,Cardiomegaly
+BiomedCLIP,chexpert,3,Lung Opacity
+BiomedCLIP,chexpert,4,Lung Lesion
+BiomedCLIP,chexpert,5,Edema
+BiomedCLIP,chexpert,6,Consolidation
+BiomedCLIP,chexpert,7,Pneumonia
+BiomedCLIP,chexpert,8,Atelectasis
+BiomedCLIP,chexpert,9,Pneumothorax
+BiomedCLIP,chexpert,10,Pleural Effusion
+BiomedCLIP,chexpert,11,Fracture
+BiomedCLIP,covidkaggle,0,Covid
+BiomedCLIP,montgomery,0,Tuberculosis
+BiomedCLIP,rsna_pneumonia,0,Pneumonia
+BiomedCLIP,shenzhenxray,0,Tuberculosis
+BiomedCLIP,siim_pneumothorax,0,Pneumothorax
+BiomedCLIP,siim_radzero_holdout,0,Pneumothorax
+BioViL-T,chest14,0,Atelectasis
+BioViL-T,chest14,1,Cardiomegaly
+BioViL-T,chest14,2,Effusion
+BioViL-T,chest14,3,Infiltration
+BioViL-T,chest14,4,Mass
+BioViL-T,chest14,5,Nodule
+BioViL-T,chest14,6,Pneumonia
+BioViL-T,chest14,7,Pneumothorax
+BioViL-T,chest14,8,Consolidation
+BioViL-T,chest14,9,Edema
+BioViL-T,chest14,10,Emphysema
+BioViL-T,chest14,11,Fibrosis
+BioViL-T,chest14,12,Pleural Thickening
+BioViL-T,chest14,13,Hernia
+BioViL-T,chestxdet10,0,Atelectasis
+BioViL-T,chestxdet10,1,Calcification
+BioViL-T,chestxdet10,2,Consolidation
+BioViL-T,chestxdet10,3,Effusion
+BioViL-T,chestxdet10,4,Emphysema
+BioViL-T,chestxdet10,5,Fibrosis
+BioViL-T,chestxdet10,6,Fracture
+BioViL-T,chestxdet10,7,Mass
+BioViL-T,chestxdet10,8,Nodule
+BioViL-T,chestxdet10,9,Pneumothorax
+BioViL-T,chestxdet10_gt,0,Atelectasis
+BioViL-T,chestxdet10_gt,1,Calcification
+BioViL-T,chestxdet10_gt,2,Consolidation
+BioViL-T,chestxdet10_gt,3,Effusion
+BioViL-T,chestxdet10_gt,4,Emphysema
+BioViL-T,chestxdet10_gt,5,Fibrosis
+BioViL-T,chestxdet10_gt,6,Fracture
+BioViL-T,chestxdet10_gt,7,Mass
+BioViL-T,chestxdet10_gt,8,Nodule
+BioViL-T,chestxdet10_gt,9,Pneumothorax
+BioViL-T,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+BioViL-T,chexchonet_dlv,0,Dilated Left Ventricle
+BioViL-T,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+BioViL-T,chexpert,0,No Finding
+BioViL-T,chexpert,1,Enlarged Cardiomediastinum
+BioViL-T,chexpert,2,Cardiomegaly
+BioViL-T,chexpert,3,Lung Opacity
+BioViL-T,chexpert,4,Lung Lesion
+BioViL-T,chexpert,5,Edema
+BioViL-T,chexpert,6,Consolidation
+BioViL-T,chexpert,7,Pneumonia
+BioViL-T,chexpert,8,Atelectasis
+BioViL-T,chexpert,9,Pneumothorax
+BioViL-T,chexpert,10,Pleural Effusion
+BioViL-T,chexpert,11,Fracture
+BioViL-T,covidkaggle,0,Covid
+BioViL-T,montgomery,0,Tuberculosis
+BioViL-T,node21,0,Nodule
+BioViL-T,qatacovid_seg,0,covid
+BioViL-T,rsna_pneumonia,0,Pneumonia
+BioViL-T,shenzhenxray,0,Tuberculosis
+BioViL-T,siim_pneumothorax,0,Pneumothorax
+BioViL-T,siim_radzero_holdout,0,Pneumothorax
+CheXzero,chest14,0,Atelectasis
+CheXzero,chest14,1,Cardiomegaly
+CheXzero,chest14,2,Effusion
+CheXzero,chest14,3,Infiltration
+CheXzero,chest14,4,Mass
+CheXzero,chest14,5,Nodule
+CheXzero,chest14,6,Pneumonia
+CheXzero,chest14,7,Pneumothorax
+CheXzero,chest14,8,Consolidation
+CheXzero,chest14,9,Edema
+CheXzero,chest14,10,Emphysema
+CheXzero,chest14,11,Fibrosis
+CheXzero,chest14,12,Pleural Thickening
+CheXzero,chest14,13,Hernia
+CheXzero,chestxdet10,0,Atelectasis
+CheXzero,chestxdet10,1,Calcification
+CheXzero,chestxdet10,2,Consolidation
+CheXzero,chestxdet10,3,Effusion
+CheXzero,chestxdet10,4,Emphysema
+CheXzero,chestxdet10,5,Fibrosis
+CheXzero,chestxdet10,6,Fracture
+CheXzero,chestxdet10,7,Mass
+CheXzero,chestxdet10,8,Nodule
+CheXzero,chestxdet10,9,Pneumothorax
+CheXzero,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+CheXzero,chexchonet_dlv,0,Dilated Left Ventricle
+CheXzero,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+CheXzero,chexpert,0,No Finding
+CheXzero,chexpert,1,Enlarged Cardiomediastinum
+CheXzero,chexpert,2,Cardiomegaly
+CheXzero,chexpert,3,Lung Opacity
+CheXzero,chexpert,4,Lung Lesion
+CheXzero,chexpert,5,Edema
+CheXzero,chexpert,6,Consolidation
+CheXzero,chexpert,7,Pneumonia
+CheXzero,chexpert,8,Atelectasis
+CheXzero,chexpert,9,Pneumothorax
+CheXzero,chexpert,10,Pleural Effusion
+CheXzero,chexpert,11,Fracture
+CheXzero,covidkaggle,0,Covid
+CheXzero,montgomery,0,Tuberculosis
+CheXzero,rsna_pneumonia,0,Pneumonia
+CheXzero,shenzhenxray,0,Tuberculosis
+CheXzero,siim_pneumothorax,0,Pneumothorax
+CheXzero,siim_radzero_holdout,0,Pneumothorax
+MedKLIP,chest14,0,Atelectasis
+MedKLIP,chest14,1,Cardiomegaly
+MedKLIP,chest14,2,Effusion
+MedKLIP,chest14,3,Infiltration
+MedKLIP,chest14,4,Mass
+MedKLIP,chest14,5,Nodule
+MedKLIP,chest14,6,Pneumonia
+MedKLIP,chest14,7,Pneumothorax
+MedKLIP,chest14,8,Consolidation
+MedKLIP,chest14,9,Edema
+MedKLIP,chest14,10,Emphysema
+MedKLIP,chest14,11,Fibrosis
+MedKLIP,chest14,12,Pleural Thickening
+MedKLIP,chest14,13,Hernia
+MedKLIP,chestxdet10,0,Atelectasis
+MedKLIP,chestxdet10,1,Calcification
+MedKLIP,chestxdet10,2,Consolidation
+MedKLIP,chestxdet10,3,Effusion
+MedKLIP,chestxdet10,4,Emphysema
+MedKLIP,chestxdet10,5,Fibrosis
+MedKLIP,chestxdet10,6,Fracture
+MedKLIP,chestxdet10,7,Mass
+MedKLIP,chestxdet10,8,Nodule
+MedKLIP,chestxdet10,9,Pneumothorax
+MedKLIP,chestxdet10_gt,0,Atelectasis
+MedKLIP,chestxdet10_gt,1,Calcification
+MedKLIP,chestxdet10_gt,2,Consolidation
+MedKLIP,chestxdet10_gt,3,Effusion
+MedKLIP,chestxdet10_gt,4,Emphysema
+MedKLIP,chestxdet10_gt,5,Fibrosis
+MedKLIP,chestxdet10_gt,6,Fracture
+MedKLIP,chestxdet10_gt,7,Mass
+MedKLIP,chestxdet10_gt,8,Nodule
+MedKLIP,chestxdet10_gt,9,Pneumothorax
+MedKLIP,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+MedKLIP,chexchonet_dlv,0,Dilated Left Ventricle
+MedKLIP,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+MedKLIP,chexpert,0,No Finding
+MedKLIP,chexpert,1,Enlarged Cardiomediastinum
+MedKLIP,chexpert,2,Cardiomegaly
+MedKLIP,chexpert,3,Lung Opacity
+MedKLIP,chexpert,4,Lung Lesion
+MedKLIP,chexpert,5,Edema
+MedKLIP,chexpert,6,Consolidation
+MedKLIP,chexpert,7,Pneumonia
+MedKLIP,chexpert,8,Atelectasis
+MedKLIP,chexpert,9,Pneumothorax
+MedKLIP,chexpert,10,Pleural Effusion
+MedKLIP,chexpert,11,Fracture
+MedKLIP,covidkaggle,0,Covid
+MedKLIP,montgomery,0,Tuberculosis
+MedKLIP,node21,0,Nodule
+MedKLIP,qatacovid_seg,0,covid
+MedKLIP,rsna_pneumonia,0,Pneumonia
+MedKLIP,shenzhenxray,0,Tuberculosis
+MedKLIP,siim_pneumothorax,0,Pneumothorax
+MedKLIP,siim_radzero_holdout,0,Pneumothorax
+MAVL,chest14,0,Atelectasis
+MAVL,chest14,1,Cardiomegaly
+MAVL,chest14,2,Effusion
+MAVL,chest14,3,Infiltration
+MAVL,chest14,4,Mass
+MAVL,chest14,5,Nodule
+MAVL,chest14,6,Pneumonia
+MAVL,chest14,7,Pneumothorax
+MAVL,chest14,8,Consolidation
+MAVL,chest14,9,Edema
+MAVL,chest14,10,Emphysema
+MAVL,chest14,11,Fibrosis
+MAVL,chest14,12,Pleural Thickening
+MAVL,chest14,13,Hernia
+MAVL,chestxdet10,0,Atelectasis
+MAVL,chestxdet10,1,Calcification
+MAVL,chestxdet10,2,Consolidation
+MAVL,chestxdet10,3,Effusion
+MAVL,chestxdet10,4,Emphysema
+MAVL,chestxdet10,5,Fibrosis
+MAVL,chestxdet10,6,Fracture
+MAVL,chestxdet10,7,Mass
+MAVL,chestxdet10,8,Nodule
+MAVL,chestxdet10,9,Pneumothorax
+MAVL,chestxdet10_gt,0,Atelectasis
+MAVL,chestxdet10_gt,1,Calcification
+MAVL,chestxdet10_gt,2,Consolidation
+MAVL,chestxdet10_gt,3,Effusion
+MAVL,chestxdet10_gt,4,Emphysema
+MAVL,chestxdet10_gt,5,Fibrosis
+MAVL,chestxdet10_gt,6,Fracture
+MAVL,chestxdet10_gt,7,Mass
+MAVL,chestxdet10_gt,8,Nodule
+MAVL,chestxdet10_gt,9,Pneumothorax
+MAVL,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+MAVL,chexchonet_dlv,0,Dilated Left Ventricle
+MAVL,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+MAVL,chexpert,0,No Finding
+MAVL,chexpert,1,Enlarged Cardiomediastinum
+MAVL,chexpert,2,Cardiomegaly
+MAVL,chexpert,3,Lung Opacity
+MAVL,chexpert,4,Lung Lesion
+MAVL,chexpert,5,Edema
+MAVL,chexpert,6,Consolidation
+MAVL,chexpert,7,Pneumonia
+MAVL,chexpert,8,Atelectasis
+MAVL,chexpert,9,Pneumothorax
+MAVL,chexpert,10,Pleural Effusion
+MAVL,chexpert,11,Fracture
+MAVL,covidkaggle,0,Covid
+MAVL,montgomery,0,Tuberculosis
+MAVL,node21,0,Nodule
+MAVL,qatacovid_seg,0,covid
+MAVL,rsna_pneumonia,0,Pneumonia
+MAVL,shenzhenxray,0,Tuberculosis
+MAVL,siim_pneumothorax,0,Pneumothorax
+MAVL,siim_radzero_holdout,0,Pneumothorax
+KAD,chest14,0,Atelectasis
+KAD,chest14,1,Cardiomegaly
+KAD,chest14,2,Effusion
+KAD,chest14,3,Infiltration
+KAD,chest14,4,Mass
+KAD,chest14,5,Nodule
+KAD,chest14,6,Pneumonia
+KAD,chest14,7,Pneumothorax
+KAD,chest14,8,Consolidation
+KAD,chest14,9,Edema
+KAD,chest14,10,Emphysema
+KAD,chest14,11,Fibrosis
+KAD,chest14,12,Pleural Thickening
+KAD,chest14,13,Hernia
+KAD,chestxdet10,0,Atelectasis
+KAD,chestxdet10,1,Calcification
+KAD,chestxdet10,2,Consolidation
+KAD,chestxdet10,3,Effusion
+KAD,chestxdet10,4,Emphysema
+KAD,chestxdet10,5,Fibrosis
+KAD,chestxdet10,6,Fracture
+KAD,chestxdet10,7,Mass
+KAD,chestxdet10,8,Nodule
+KAD,chestxdet10,9,Pneumothorax
+KAD,chestxdet10_gt,0,Atelectasis
+KAD,chestxdet10_gt,1,Calcification
+KAD,chestxdet10_gt,2,Consolidation
+KAD,chestxdet10_gt,3,Effusion
+KAD,chestxdet10_gt,4,Emphysema
+KAD,chestxdet10_gt,5,Fibrosis
+KAD,chestxdet10_gt,6,Fracture
+KAD,chestxdet10_gt,7,Mass
+KAD,chestxdet10_gt,8,Nodule
+KAD,chestxdet10_gt,9,Pneumothorax
+KAD,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+KAD,chexchonet_dlv,0,Dilated Left Ventricle
+KAD,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+KAD,chexpert,0,No Finding
+KAD,chexpert,1,Enlarged Cardiomediastinum
+KAD,chexpert,2,Cardiomegaly
+KAD,chexpert,3,Lung Opacity
+KAD,chexpert,4,Lung Lesion
+KAD,chexpert,5,Edema
+KAD,chexpert,6,Consolidation
+KAD,chexpert,7,Pneumonia
+KAD,chexpert,8,Atelectasis
+KAD,chexpert,9,Pneumothorax
+KAD,chexpert,10,Pleural Effusion
+KAD,chexpert,11,Fracture
+KAD,covidkaggle,0,Covid
+KAD,montgomery,0,Tuberculosis
+KAD,node21,0,Nodule
+KAD,qatacovid_seg,0,covid
+KAD,rsna_pneumonia,0,Pneumonia
+KAD,shenzhenxray,0,Tuberculosis
+KAD,siim_pneumothorax,0,Pneumothorax
+KAD,siim_radzero_holdout,0,Pneumothorax
+MaCo,chest14,0,Atelectasis
+MaCo,chest14,1,Cardiomegaly
+MaCo,chest14,2,Effusion
+MaCo,chest14,3,Infiltration
+MaCo,chest14,4,Mass
+MaCo,chest14,5,Nodule
+MaCo,chest14,6,Pneumonia
+MaCo,chest14,7,Pneumothorax
+MaCo,chest14,8,Consolidation
+MaCo,chest14,9,Edema
+MaCo,chest14,10,Emphysema
+MaCo,chest14,11,Fibrosis
+MaCo,chest14,12,Pleural Thickening
+MaCo,chest14,13,Hernia
+MaCo,chestxdet10,0,Atelectasis
+MaCo,chestxdet10,1,Calcification
+MaCo,chestxdet10,2,Consolidation
+MaCo,chestxdet10,3,Effusion
+MaCo,chestxdet10,4,Emphysema
+MaCo,chestxdet10,5,Fibrosis
+MaCo,chestxdet10,6,Fracture
+MaCo,chestxdet10,7,Mass
+MaCo,chestxdet10,8,Nodule
+MaCo,chestxdet10,9,Pneumothorax
+MaCo,chestxdet10_gt,0,Atelectasis
+MaCo,chestxdet10_gt,1,Calcification
+MaCo,chestxdet10_gt,2,Consolidation
+MaCo,chestxdet10_gt,3,Effusion
+MaCo,chestxdet10_gt,4,Emphysema
+MaCo,chestxdet10_gt,5,Fibrosis
+MaCo,chestxdet10_gt,6,Fracture
+MaCo,chestxdet10_gt,7,Mass
+MaCo,chestxdet10_gt,8,Nodule
+MaCo,chestxdet10_gt,9,Pneumothorax
+MaCo,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+MaCo,chexchonet_dlv,0,Dilated Left Ventricle
+MaCo,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+MaCo,chexpert,0,No Finding
+MaCo,chexpert,1,Enlarged Cardiomediastinum
+MaCo,chexpert,2,Cardiomegaly
+MaCo,chexpert,3,Lung Opacity
+MaCo,chexpert,4,Lung Lesion
+MaCo,chexpert,5,Edema
+MaCo,chexpert,6,Consolidation
+MaCo,chexpert,7,Pneumonia
+MaCo,chexpert,8,Atelectasis
+MaCo,chexpert,9,Pneumothorax
+MaCo,chexpert,10,Pleural Effusion
+MaCo,chexpert,11,Fracture
+MaCo,covidkaggle,0,Covid
+MaCo,montgomery,0,Tuberculosis
+MaCo,node21,0,Nodule
+MaCo,qatacovid_seg,0,covid
+MaCo,rsna_pneumonia,0,Pneumonia
+MaCo,shenzhenxray,0,Tuberculosis
+MaCo,siim_pneumothorax,0,Pneumothorax
+MaCo,siim_radzero_holdout,0,Pneumothorax
+CARZero,chest14,0,Atelectasis
+CARZero,chest14,1,Cardiomegaly
+CARZero,chest14,2,Effusion
+CARZero,chest14,3,Infiltration
+CARZero,chest14,4,Mass
+CARZero,chest14,5,Nodule
+CARZero,chest14,6,Pneumonia
+CARZero,chest14,7,Pneumothorax
+CARZero,chest14,8,Consolidation
+CARZero,chest14,9,Edema
+CARZero,chest14,10,Emphysema
+CARZero,chest14,11,Fibrosis
+CARZero,chest14,12,Pleural Thickening
+CARZero,chest14,13,Hernia
+CARZero,chestxdet10,0,Atelectasis
+CARZero,chestxdet10,1,Calcification
+CARZero,chestxdet10,2,Consolidation
+CARZero,chestxdet10,3,Effusion
+CARZero,chestxdet10,4,Emphysema
+CARZero,chestxdet10,5,Fibrosis
+CARZero,chestxdet10,6,Fracture
+CARZero,chestxdet10,7,Mass
+CARZero,chestxdet10,8,Nodule
+CARZero,chestxdet10,9,Pneumothorax
+CARZero,chexchonet_composite_slvh_dlv,0,Severe Left Ventricular Hypertrophy or Dilated Left Ventricle
+CARZero,chexchonet_dlv,0,Dilated Left Ventricle
+CARZero,chexchonet_slvh,0,Severe Left Ventricular Hypertrophy
+CARZero,chexpert,0,No Finding
+CARZero,chexpert,1,Enlarged Cardiomediastinum
+CARZero,chexpert,2,Cardiomegaly
+CARZero,chexpert,3,Lung Opacity
+CARZero,chexpert,4,Lung Lesion
+CARZero,chexpert,5,Edema
+CARZero,chexpert,6,Consolidation
+CARZero,chexpert,7,Pneumonia
+CARZero,chexpert,8,Atelectasis
+CARZero,chexpert,9,Pneumothorax
+CARZero,chexpert,10,Pleural Effusion
+CARZero,chexpert,11,Fracture
+CARZero,covidkaggle,0,Covid
+CARZero,montgomery,0,Tuberculosis
+CARZero,rsna_pneumonia,0,Pneumonia
+CARZero,shenzhenxray,0,Tuberculosis
+CARZero,siim_pneumothorax,0,Pneumothorax
+CARZero,siim_radzero_holdout,0,Pneumothorax

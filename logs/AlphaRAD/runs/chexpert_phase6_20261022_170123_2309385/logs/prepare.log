@@ -1,0 +1,3 @@
+READY CheXpert: full=668, support=60 images/56 patients, matched_test=596 images/444 patients, excluded=72
+Catalog: /storage/3090group2/zjx/code/medical/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/data/catalog.json
+Full baseline catalog: /storage/3090group2/zjx/code/medical/AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/data/full_catalog.json

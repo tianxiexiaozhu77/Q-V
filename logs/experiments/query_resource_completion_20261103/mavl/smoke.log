@@ -1,0 +1,32 @@
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+Traceback (most recent call last):
+  File "/storage/3090group2/zjx/code/medical/experiments/query_resource_completion_20261103/mavl/evaluate.py", line 299, in <module>
+    main()
+  File "/storage/3090group2/zjx/code/medical/experiments/query_resource_completion_20261103/mavl/evaluate.py", line 293, in main
+    historical=regression(native,check_path,args.batch_size)
+  File "/storage/3090group2/zjx/code/medical/experiments/query_resource_completion_20261103/mavl/evaluate.py", line 122, in regression
+    np.testing.assert_allclose(values,expected,atol=2e-6,rtol=1e-5)
+  File "/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/storage/3090group2/zjx/code/medical/AlphaRAD/local_assets/tools/python/cpython-3.10.22-linux-x86_64-gnu/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-05, atol=2e-06
+
+Mismatched elements: 27799 / 32256 (86.2%)
+Max absolute difference: 0.00016513
+Max relative difference: 2.3510258
+ x: array([[[ 1.532085e-01, -1.888796e-01,  8.710132e-02, ...,
+          3.258609e-01,  1.002625e-01, -4.133800e-01],
+        [-3.570095e-01, -1.464702e-01,  1.670304e-01, ...,...
+ y: array([[[ 1.532040e-01, -1.888757e-01,  8.709814e-02, ...,
+          3.259093e-01,  1.003537e-01, -4.133405e-01],
+        [-3.570125e-01, -1.464678e-01,  1.670282e-01, ...,...

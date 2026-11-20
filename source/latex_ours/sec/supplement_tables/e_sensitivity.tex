@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Post-development sensitivity audit by model and dataset.} Entries are mean Q+V--Original differences in AUROC / AUPRC (percentage points) across the nine fixed parameter slices. CheXchoNet's three tasks are averaged within each slice; they share one patient cohort. All entries are point estimates under the fixed support/test construction.}
+\label{tab:supp-sensitivity-model}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Model & CheXpert & CheXchoNet \\
+\midrule
+AlphaRAD & $+1.35 / +2.43$ & $+1.65 / +1.07$ \\
+BiomedCLIP & $+7.41 / +8.80$ & $+6.33 / +2.37$ \\
+CARZero & $+1.27 / +0.89$ & $+0.64 / +0.21$ \\
+MedKLIP & $-1.03 / +0.57$ & $-0.25 / -0.34$ \\
+RadZero & $+3.55 / +6.11$ & $+1.00 / +0.99$ \\
+\midrule
+All 90 slices & \multicolumn{2}{c}{$+2.19 / +2.31$} \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{\textbf{Sensitivity slices.} Entries are mean Q+V--Original differences in AUROC / AUPRC (percentage points) over the ten model--dataset pairs. The $\eta$ slices fix crop ratio 0.8; the crop-ratio slices fix $\eta=0.3$. The $\eta=0$ row uses unchanged queries with two-view fusion.}
+\label{tab:supp-sensitivity-slices}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccc@{}}
+\toprule
+Slice & 0 & 0.1 & 0.2 & 0.3 & 0.5 & 0.7 \\
+\midrule
+$\eta$ (crop $=0.8$) & $+0.63/+0.44$ & $+2.25/+1.99$ & $+2.63/+2.77$ & $+2.62/+2.83$ & $+2.36/+2.70$ & $+2.00/+2.14$ \\
+\midrule
+Slice & 0.6 & 0.7 & 0.8 & 0.9 & & \\
+\midrule
+Crop ratio ($\eta=0.3$) & $+2.07/+2.55$ & $+2.61/+2.50$ & $+2.62/+2.83$ & $+2.55/+2.86$ & & \\
+\bottomrule
+\end{tabular*}
+\end{table*}

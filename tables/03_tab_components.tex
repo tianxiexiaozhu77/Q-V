@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{\textbf{Component ablation of the full Q+V method.} Each entry is AUROC / AUPRC (\%). $N$ is the number of datasets averaged for that model, with the cardiac tasks grouped and the same 1,704-image SIIM protocol retained for all models. The last row equally weights the ten model means, computed before rounding. Original: baseline; Q: without view fusion; V: without query adaptation; Q+V: full method (Sec.~\ref{sec:views}). The highest value for each metric in each row is bolded. All are fixed-support point estimates. The comparison assesses adaptation within each backbone.}
+\label{tab:components}
+\small
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrcccc}
+\toprule
+Backbone & $N$ & Original & Q & V & \textbf{Q+V} \\
+\midrule
+AlphaRAD & 9 & 87.28 / 62.65 & 88.76 / 65.70 & 87.43 / 62.95 & \textbf{88.98} / \textbf{65.95} \\
+RadZero & 9 & 84.72 / 59.07 & 87.10 / \textbf{62.91} & 84.79 / 59.10 & \textbf{87.20} / 62.90 \\
+BiomedCLIP & 9 & 68.23 / 40.98 & 77.32 / 50.42 & 69.34 / 42.04 & \textbf{77.84} / \textbf{51.16} \\
+BioViL-T & 9 & 76.35 / 47.55 & \textbf{77.98} / \textbf{49.24} & 76.00 / 47.00 & 77.61 / 48.60 \\
+CheXzero & 9 & 77.80 / 51.22 & 80.25 / 54.21 & 78.48 / 51.80 & \textbf{80.90} / \textbf{54.85} \\
+MedKLIP & 9 & 78.03 / 52.99 & \textbf{78.52} / \textbf{53.94} & 77.98 / 52.86 & 78.30 / 53.86 \\
+MAVL & 9 & 80.03 / 55.38 & 81.88 / 56.62 & 81.51 / 56.38 & \textbf{82.74} / \textbf{57.32} \\
+KAD & 9 & 80.92 / 52.74 & 82.97 / 56.05 & 81.65 / 53.80 & \textbf{83.48} / \textbf{57.07} \\
+MaCo & 9 & 77.16 / 49.36 & \textbf{84.06} / \textbf{59.70} & 76.56 / 48.25 & 83.58 / 58.06 \\
+CARZero & 9 & 79.91 / 53.25 & 79.62 / 53.03 & \textbf{81.09} / \textbf{53.91} & 80.81 / 53.70 \\
+\midrule
+Average & --- & 79.04 / 52.52 & 81.85 / 56.18 & 79.48 / 52.81 & \textbf{82.14} / \textbf{56.35} \\
+\bottomrule
+\end{tabular*}
+\end{table*}

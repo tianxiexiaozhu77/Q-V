@@ -1,0 +1,312 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-alpharad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $67.9704\pm0.0000$ & $14.8002\pm0.0000$ \\
+CSLV & R & $69.6141\pm0.6617$ & $15.0698\pm0.4288$ \\
+CSLV & Q & $70.0975\pm0.9992$ & $14.8649\pm0.8494$ \\
+CDLV & Original & $66.2902\pm0.0000$ & $8.0894\pm0.0000$ \\
+CDLV & R & $66.4263\pm0.2959$ & $8.1206\pm0.2556$ \\
+CDLV & Q & $66.0129\pm0.5609$ & $7.8349\pm0.5336$ \\
+CCOM & Original & $68.2393\pm0.0000$ & $23.5747\pm0.0000$ \\
+CCOM & R & $69.6203\pm0.3737$ & $23.9466\pm0.4794$ \\
+CCOM & Q & $70.3173\pm0.6715$ & $23.4905\pm0.9594$ \\
+Task macro & Original & $67.5000\pm0.0000$ & $15.4881\pm0.0000$ \\
+Task macro & R & $68.5536\pm0.3556$ & $15.7124\pm0.2164$ \\
+Task macro & Q & $68.8092\pm0.5582$ & $15.3968\pm0.4264$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-alpharad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ R & $+0.4835\;[-0.1781,+1.1791]$ & $-0.2049\;[-0.5153,+0.0754]$ \\
+CSLV & Q $-$ Original & $+2.1271\;[+0.8907,+3.4142]$ & $+0.0647\;[-0.4213,+0.5836]$ \\
+CSLV & R $-$ Original & $+1.6437\;[+0.9783,+2.3957]$ & $+0.2696\;[-0.0108,+0.6274]$ \\
+CDLV & Q $-$ R & $-0.4135\;[-0.7523,-0.0582]$ & $-0.2857\;[-0.5508,-0.1119]$ \\
+CDLV & Q $-$ Original & $-0.2773\;[-0.8286,+0.3038]$ & $-0.2544\;[-0.6837,+0.0858]$ \\
+CDLV & R $-$ Original & $+0.1361\;[-0.1468,+0.4294]$ & $+0.0312\;[-0.1849,+0.3755]$ \\
+CCOM & Q $-$ R & $+0.6970\;[+0.1882,+1.2209]$ & $-0.4561\;[-0.9486,-0.0005]$ \\
+CCOM & Q $-$ Original & $+2.0780\;[+1.1719,+3.0374]$ & $-0.0842\;[-0.7982,+0.5607]$ \\
+CCOM & R $-$ Original & $+1.3810\;[+0.8838,+1.9061]$ & $+0.3719\;[+0.0376,+0.6865]$ \\
+Task macro & Q $-$ R & $+0.2557\;[-0.1370,+0.6691]$ & $-0.3156\;[-0.5931,-0.0767]$ \\
+Task macro & Q $-$ Original & $+1.3092\;[+0.6088,+2.0954]$ & $-0.0913\;[-0.5003,+0.2802]$ \\
+Task macro & R $-$ Original & $+1.0536\;[+0.6732,+1.4742]$ & $+0.2243\;[+0.0409,+0.4491]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{RadZero / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-radzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $70.4671\pm0.0000$ & $16.3861\pm0.0000$ \\
+CSLV & R & $70.8024\pm1.0894$ & $16.2934\pm0.6654$ \\
+CSLV & Q & $70.3838\pm1.4786$ & $15.6514\pm0.9412$ \\
+CDLV & Original & $65.3603\pm0.0000$ & $7.6667\pm0.0000$ \\
+CDLV & R & $66.0812\pm0.7910$ & $8.4076\pm0.7731$ \\
+CDLV & Q & $65.3907\pm1.4123$ & $7.9397\pm1.3422$ \\
+CCOM & Original & $70.4238\pm0.0000$ & $24.8566\pm0.0000$ \\
+CCOM & R & $70.8547\pm0.5965$ & $24.8567\pm1.0750$ \\
+CCOM & Q & $70.9455\pm0.9555$ & $24.0679\pm1.5656$ \\
+Task macro & Original & $68.7504\pm0.0000$ & $16.3031\pm0.0000$ \\
+Task macro & R & $69.2461\pm0.5526$ & $16.5192\pm0.4356$ \\
+Task macro & Q & $68.9067\pm0.7423$ & $15.8863\pm0.5258$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{RadZero / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-radzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ R & $-0.4186\;[-1.0076,+0.1482]$ & $-0.6420\;[-1.2585,-0.1538]$ \\
+CSLV & Q $-$ Original & $-0.0833\;[-1.2242,+0.9504]$ & $-0.7347\;[-2.1266,+0.5416]$ \\
+CSLV & R $-$ Original & $+0.3352\;[-0.3101,+0.9708]$ & $-0.0927\;[-1.1054,+1.0309]$ \\
+CDLV & Q $-$ R & $-0.6906\;[-1.2655,-0.1525]$ & $-0.4679\;[-0.9987,-0.1120]$ \\
+CDLV & Q $-$ Original & $+0.0304\;[-0.9046,+1.0312]$ & $+0.2730\;[-0.3779,+0.9646]$ \\
+CDLV & R $-$ Original & $+0.7209\;[+0.0248,+1.4835]$ & $+0.7409\;[+0.2188,+1.5107]$ \\
+CCOM & Q $-$ R & $+0.0908\;[-0.2954,+0.4880]$ & $-0.7888\;[-1.5010,-0.2200]$ \\
+CCOM & Q $-$ Original & $+0.5217\;[-0.0955,+1.1836]$ & $-0.7886\;[-2.0018,+0.2658]$ \\
+CCOM & R $-$ Original & $+0.4309\;[+0.0559,+0.8296]$ & $+0.0002\;[-0.6975,+0.6587]$ \\
+Task macro & Q $-$ R & $-0.3394\;[-0.7088,+0.0322]$ & $-0.6329\;[-1.0811,-0.2776]$ \\
+Task macro & Q $-$ Original & $+0.1562\;[-0.4356,+0.7760]$ & $-0.4168\;[-1.1700,+0.2624]$ \\
+Task macro & R $-$ Original & $+0.4957\;[+0.1432,+0.8868]$ & $+0.2161\;[-0.2704,+0.7487]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{CARZero / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-carzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $59.4910\pm0.0000$ & $11.4101\pm0.0000$ \\
+CSLV & F & $59.4160\pm0.0831$ & $11.3737\pm0.0376$ \\
+CSLV & Q & $59.3614\pm0.3939$ & $11.2906\pm0.1877$ \\
+CDLV & Original & $64.3564\pm0.0000$ & $7.2558\pm0.0000$ \\
+CDLV & F & $64.1953\pm0.0985$ & $7.2185\pm0.0303$ \\
+CDLV & Q & $63.9802\pm0.2322$ & $7.1605\pm0.1431$ \\
+CCOM & Original & $62.5608\pm0.0000$ & $18.9353\pm0.0000$ \\
+CCOM & F & $62.5224\pm0.0942$ & $18.9116\pm0.0645$ \\
+CCOM & Q & $62.4369\pm0.1734$ & $18.8746\pm0.1890$ \\
+Task macro & Original & $62.1360\pm0.0000$ & $12.5337\pm0.0000$ \\
+Task macro & F & $62.0446\pm0.0430$ & $12.5012\pm0.0215$ \\
+Task macro & Q & $61.9262\pm0.1744$ & $12.4419\pm0.1156$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{CARZero / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-carzero}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ F & $-0.0546\;[-0.1986,+0.0879]$ & $-0.0830\;[-0.2086,+0.0016]$ \\
+CSLV & Q $-$ Original & $-0.1295\;[-0.3082,+0.0429]$ & $-0.1195\;[-0.2739,-0.0133]$ \\
+CSLV & F $-$ Original & $-0.0750\;[-0.1326,-0.0157]$ & $-0.0364\;[-0.0779,-0.0068]$ \\
+CDLV & Q $-$ F & $-0.2150\;[-0.3467,-0.0796]$ & $-0.0579\;[-0.1797,-0.0004]$ \\
+CDLV & Q $-$ Original & $-0.3761\;[-0.5499,-0.2188]$ & $-0.0953\;[-0.2106,+0.0165]$ \\
+CDLV & F $-$ Original & $-0.1611\;[-0.2744,-0.0525]$ & $-0.0374\;[-0.1015,+0.0769]$ \\
+CCOM & Q $-$ F & $-0.0855\;[-0.2843,+0.1077]$ & $-0.0369\;[-0.2160,+0.1169]$ \\
+CCOM & Q $-$ Original & $-0.1239\;[-0.3420,+0.0872]$ & $-0.0606\;[-0.2657,+0.0932]$ \\
+CCOM & F $-$ Original & $-0.0384\;[-0.0814,+0.0021]$ & $-0.0237\;[-0.0733,+0.0101]$ \\
+Task macro & Q $-$ F & $-0.1184\;[-0.2343,-0.0021]$ & $-0.0593\;[-0.1580,+0.0143]$ \\
+Task macro & Q $-$ Original & $-0.2099\;[-0.3491,-0.0757]$ & $-0.0918\;[-0.2016,-0.0028]$ \\
+Task macro & F $-$ Original & $-0.0915\;[-0.1402,-0.0415]$ & $-0.0325\;[-0.0661,+0.0087]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MedKLIP / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-medklip}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $50.8241\pm0.0000$ & $7.6899\pm0.0000$ \\
+CSLV & F & $50.2231\pm1.0530$ & $7.5244\pm0.2422$ \\
+CSLV & Q & $49.6969\pm1.1289$ & $7.4023\pm0.2296$ \\
+CDLV & Original & $67.3992\pm0.0000$ & $9.1956\pm0.0000$ \\
+CDLV & F & $67.5638\pm0.3776$ & $9.0553\pm0.3520$ \\
+CDLV & Q & $67.9601\pm0.4774$ & $9.3180\pm0.3333$ \\
+CCOM & Original & $55.3247\pm0.0000$ & $14.2528\pm0.0000$ \\
+CCOM & F & $54.7097\pm1.1228$ & $13.6005\pm0.7003$ \\
+CCOM & Q & $55.0515\pm1.9795$ & $13.5729\pm0.9475$ \\
+Task macro & Original & $57.8493\pm0.0000$ & $10.3795\pm0.0000$ \\
+Task macro & F & $57.4988\pm0.4923$ & $10.0600\pm0.3083$ \\
+Task macro & Q & $57.5695\pm0.6269$ & $10.0977\pm0.3850$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MedKLIP / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-medklip}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ F & $-0.5262\;[-0.8633,-0.1820]$ & $-0.1221\;[-0.2278,-0.0363]$ \\
+CSLV & Q $-$ Original & $-1.1272\;[-1.9192,-0.3419]$ & $-0.2876\;[-0.5704,-0.0912]$ \\
+CSLV & F $-$ Original & $-0.6010\;[-1.2170,+0.0274]$ & $-0.1655\;[-0.4065,-0.0037]$ \\
+CDLV & Q $-$ F & $+0.3963\;[-0.0102,+0.8556]$ & $+0.2627\;[+0.0310,+0.6701]$ \\
+CDLV & Q $-$ Original & $+0.5609\;[-0.2989,+1.4656]$ & $+0.1224\;[-0.3319,+0.5879]$ \\
+CDLV & F $-$ Original & $+0.1646\;[-0.5760,+0.9153]$ & $-0.1403\;[-0.6476,+0.1955]$ \\
+CCOM & Q $-$ F & $+0.3418\;[-0.2153,+0.9337]$ & $-0.0276\;[-0.5226,+0.3964]$ \\
+CCOM & Q $-$ Original & $-0.2732\;[-1.0647,+0.6054]$ & $-0.6800\;[-1.6451,-0.0241]$ \\
+CCOM & F $-$ Original & $-0.6150\;[-1.4913,+0.2060]$ & $-0.6524\;[-1.4939,-0.0622]$ \\
+Task macro & Q $-$ F & $+0.0706\;[-0.2329,+0.3715]$ & $+0.0377\;[-0.1562,+0.2544]$ \\
+Task macro & Q $-$ Original & $-0.2798\;[-0.8598,+0.2931]$ & $-0.2817\;[-0.7058,+0.0439]$ \\
+Task macro & F $-$ Original & $-0.3505\;[-0.9076,+0.2033]$ & $-0.3194\;[-0.7242,-0.0368]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MAVL / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-mavl}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $66.9577\pm0.0000$ & $14.8835\pm0.0000$ \\
+CSLV & F & $66.7273\pm0.7776$ & $14.5768\pm0.8851$ \\
+CSLV & Q & $66.5021\pm1.0640$ & $14.3900\pm1.3320$ \\
+CDLV & Original & $55.6993\pm0.0000$ & $5.1496\pm0.0000$ \\
+CDLV & F & $57.7994\pm1.5106$ & $5.6077\pm0.4012$ \\
+CDLV & Q & $57.8242\pm1.7079$ & $5.4383\pm0.4384$ \\
+CCOM & Original & $54.9441\pm0.0000$ & $14.6035\pm0.0000$ \\
+CCOM & F & $59.0588\pm1.5501$ & $16.2177\pm0.9784$ \\
+CCOM & Q & $58.6928\pm2.6309$ & $16.1903\pm1.5460$ \\
+Task macro & Original & $59.2003\pm0.0000$ & $11.5455\pm0.0000$ \\
+Task macro & F & $61.1952\pm0.8796$ & $12.1341\pm0.5328$ \\
+Task macro & Q & $61.0064\pm1.3087$ & $12.0062\pm0.8210$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{MAVL / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-mavl}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ F & $-0.2253\;[-0.4981,+0.0336]$ & $-0.1868\;[-0.5262,+0.0822]$ \\
+CSLV & Q $-$ Original & $-0.4556\;[-0.9257,-0.0207]$ & $-0.4935\;[-1.3251,+0.1176]$ \\
+CSLV & F $-$ Original & $-0.2304\;[-0.5155,+0.0452]$ & $-0.3067\;[-0.8876,+0.1072]$ \\
+CDLV & Q $-$ F & $+0.0248\;[-0.8838,+1.1658]$ & $-0.1694\;[-0.5363,+0.0761]$ \\
+CDLV & Q $-$ Original & $+2.1249\;[+0.2725,+4.4093]$ & $+0.2888\;[-0.0387,+0.6901]$ \\
+CDLV & F $-$ Original & $+2.1002\;[+0.8589,+3.5410]$ & $+0.4581\;[+0.1968,+0.8593]$ \\
+CCOM & Q $-$ F & $-0.3660\;[-0.8107,+0.0423]$ & $-0.0274\;[-0.2972,+0.1988]$ \\
+CCOM & Q $-$ Original & $+3.7487\;[+2.7091,+4.7495]$ & $+1.5869\;[+0.8744,+2.2497]$ \\
+CCOM & F $-$ Original & $+4.1148\;[+3.0806,+5.1472]$ & $+1.6142\;[+0.9057,+2.2411]$ \\
+Task macro & Q $-$ F & $-0.1888\;[-0.5784,+0.2844]$ & $-0.1278\;[-0.3084,+0.0104]$ \\
+Task macro & Q $-$ Original & $+1.8060\;[+1.0051,+2.6947]$ & $+0.4607\;[+0.1019,+0.7706]$ \\
+Task macro & F $-$ Original & $+1.9949\;[+1.3874,+2.6119]$ & $+0.5886\;[+0.2408,+0.9071]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{KAD / CheXchoNet: every path branch.} Mean $\pm$ support-seed SD (\%). Task macro averages the same three tasks and adds no independent cohort.}
+\label{tab:supp-cardiac-path-kad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Branch & AUROC & AUPRC \\
+\midrule
+CSLV & Original & $71.0205\pm0.0000$ & $17.9905\pm0.0000$ \\
+CSLV & F & $71.2551\pm0.2625$ & $18.2009\pm0.1775$ \\
+CSLV & Q & $71.4252\pm0.3323$ & $18.4407\pm0.3295$ \\
+CDLV & Original & $64.4988\pm0.0000$ & $9.8082\pm0.0000$ \\
+CDLV & F & $64.2645\pm0.5152$ & $10.1218\pm0.6415$ \\
+CDLV & Q & $64.1505\pm0.7051$ & $10.2714\pm0.9349$ \\
+CCOM & Original & $70.5214\pm0.0000$ & $27.3128\pm0.0000$ \\
+CCOM & F & $70.7801\pm0.1204$ & $27.7704\pm0.1641$ \\
+CCOM & Q & $70.8212\pm0.2421$ & $27.6842\pm0.2378$ \\
+Task macro & Original & $68.6802\pm0.0000$ & $18.3705\pm0.0000$ \\
+Task macro & F & $68.7665\pm0.1614$ & $18.6977\pm0.2039$ \\
+Task macro & Q & $68.7990\pm0.2400$ & $18.7988\pm0.3196$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+\begin{table*}[tp]
+\centering
+\caption{\textbf{KAD / CheXchoNet: every path contrast.} Mean paired differences [95\% patient-bootstrap intervals] in pp. R and F are different interventions; see Appendix B.}
+\label{tab:supp-cardiac-path-ci-kad}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcc@{}}
+\toprule
+Task & Contrast & $\Delta$AUROC [95\% interval] & $\Delta$AUPRC [95\% interval] \\
+\midrule
+CSLV & Q $-$ F & $+0.1701\;[-0.0854,+0.4540]$ & $+0.2398\;[-0.1203,+0.7059]$ \\
+CSLV & Q $-$ Original & $+0.4047\;[-0.0975,+0.8810]$ & $+0.4502\;[-0.1451,+1.1657]$ \\
+CSLV & F $-$ Original & $+0.2347\;[-0.0727,+0.5222]$ & $+0.2105\;[-0.1490,+0.5464]$ \\
+CDLV & Q $-$ F & $-0.1139\;[-0.3430,+0.0992]$ & $+0.1496\;[-0.2829,+0.8589]$ \\
+CDLV & Q $-$ Original & $-0.3482\;[-0.7108,+0.0010]$ & $+0.4632\;[-0.0823,+1.5217]$ \\
+CDLV & F $-$ Original & $-0.2343\;[-0.5340,+0.0603]$ & $+0.3136\;[-0.0096,+0.7788]$ \\
+CCOM & Q $-$ F & $+0.0412\;[-0.1713,+0.2266]$ & $-0.0862\;[-0.5684,+0.2509]$ \\
+CCOM & Q $-$ Original & $+0.2998\;[-0.1056,+0.6647]$ & $+0.3714\;[-0.2876,+0.9494]$ \\
+CCOM & F $-$ Original & $+0.2587\;[+0.0366,+0.4743]$ & $+0.4575\;[+0.1261,+0.8325]$ \\
+Task macro & Q $-$ F & $+0.0324\;[-0.1260,+0.1831]$ & $+0.1011\;[-0.1404,+0.3982]$ \\
+Task macro & Q $-$ Original & $+0.1188\;[-0.1702,+0.4121]$ & $+0.4283\;[+0.0160,+0.9313]$ \\
+Task macro & F $-$ Original & $+0.0863\;[-0.1049,+0.2713]$ & $+0.3272\;[+0.1079,+0.5983]$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}
+

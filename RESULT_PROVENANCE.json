@@ -1,0 +1,1328 @@
+{
+  "original_verified_results_sha256": "f66266c9f7a28af814e5ef08b46d1014239e8739739ccc024f9d554108096fc5",
+  "records": [
+    {
+      "model": "AlphaRAD",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "4c0491d0f27e1c88facf0f1308b07dc83aa5105e486bcad06563a6a35b60113a",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "503f5c52b8b5b1495105e8db437df853ee338d969f5e93ff74be930d34000a4e",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "40d77f1db6ed26a30f0eef812068780b728061cfebb070c165036dd876fd8ad5",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "c6ca06168c07eaee159a867f9cd4d7986dc8750c91151d4a76f6836b743b8652",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "c6ca06168c07eaee159a867f9cd4d7986dc8750c91151d4a76f6836b743b8652",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "c6ca06168c07eaee159a867f9cd4d7986dc8750c91151d4a76f6836b743b8652",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/alpharad_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "f6f162ae9226731cd4136e1dfe2b2ea574c8b8fc1dcd0c72cb77c2107c9a1e6b",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "AlphaRAD/runs/chexpert_phase6_20261022_170123_2309385/paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "8ab3e2f64e939d7b815e91213a983724c329b3668d0056ab6da03128b8b709ca",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "de8430416d46853feb33310eca771168784397604eeb46c866cd35e51e08fb0f",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "0ab14cc2d68921c90787632873391d3b8056101fd255734e30b81114b56da413",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "5812eefbc1bbda2c8daa85b34c540f252d5036553dcea37365769e05fc037ddc",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "ba92b3fe1cab41098ea06a24526a4f6915ffe3b7774a981644507f9f1aef081b",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/AlphaRAD/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "2469aee85a9936985ddcd1464d6a48e39734daa9f1c43c74e0080a98f3b6f1d7",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "1689e170be7438c73e1f74fa1ef80472b01ae48b6bd19338ffa4192eb513e70d",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/alpharad_siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "AlphaRAD",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "376d5876172d346fce62e34477d4690ad7622ce97ccdfbf711e0c02ce540fddb",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "experiments/table2_completion_20261103/alpharad/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "a3c0b6b7f8ed4a4dbb9cc1e09991d6e39e54c03f277a89f2268ea3c317529713",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/radzero_ChestXray14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "9332fb2f8c0370246ef94eb34e57ff9bb624146fefbbf726aaeca818d960f0c0",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/radzero_ChestXDet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "c00e8bba1d536eb64d9d625cec7dd357f9b82128429c3f965673909b9e81be74",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "c00e8bba1d536eb64d9d625cec7dd357f9b82128429c3f965673909b9e81be74",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "c00e8bba1d536eb64d9d625cec7dd357f9b82128429c3f965673909b9e81be74",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "experiments/chexchonet_comparison_20261023_233926/radzero_paired/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "c2a1061e23924988fe700cb5d4285e027e7d3223719b0efc47fd7aa7e4a7c658",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "experiments/table2_completion_20261103/radzero/full_gpu6/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "5bf77edba414727aa9db2644de3d4dcb95684fec719e98b3917638d2610c98fb",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "experiments/table2_completion_20261103/radzero/full_gpu7/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "20bba87ff35e805bac99132bcff45c3fbd812813b4277d6b5f156be5ad163a8c",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "experiments/table2_completion_20261103/radzero/full_gpu6/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "f8dbbb33d03debec832e7d89e7397e8a6cdc667d879527b69d803b93b92eb319",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/RadZero/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "b27df7f9215f7d4877aa296928c633f747f28370337632d978791d624b34c73b",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "experiments/table2_completion_20261103/radzero/full_gpu6/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "fb407d70bb9a8537fd06de825543618e198e454c9e71adab799487cbafce80e1",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "experiments/table2_completion_20261103/radzero/full_gpu7/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "RadZero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "eb283806512e12f1a465f272b6e9fbb5639fac4a9b9ecef903f1e98868322379",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "experiments/query_search_20261021_152010/runs/phase6/radzero_SIIM/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "696a9f116e6387cefbb8a7f074b250edd7e2ce0adb04e9f059e9ca4b33d163e1",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "ea8d8742a0f1c2a4805431bb25f8c9f0d6f209932d59d1e011d066899e092d28",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "source_sha256": "a459ba9c8328285893acdc024987fbe64575c8890b9522acec80b1514903429c",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "df099230b1c224dbf965c364d9dcfa6f31267abedcf3d819c5163366fa9fabfa",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "0bf251de1c3fd6320745da74de8f24d353647de736144b81eae3806cd2bb7634",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "d0e571309b526c8487f5588be4cbe9dc901fb61babaea5749a15f43ecfb2a696",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BiomedCLIP_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "66384851353509b920a19ae03c1616c2820f2d839dc08faa2b8694440a54173f",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "3ed27679a847c592eb2e2496d76718126809a097d7f72af0cb9fd4cc2b4d86e2",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "00187fe2628a6ad24f1d4b3ce6377cdcd3edbe4cf5e7cfbbcdebb047cdf25f5d",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "node21",
+      "status": "unsupported",
+      "source_sha256": "f560a3ba8b4dd2fb7642917811c0c8645ffdf242bee477937faf68659fc010f3",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "source_sha256": "2c2649f8db27107209534b175d3437ca7e86b05bab9a47bbf3b77e75ed63410e",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "f96fc3a8ddffa597f15cedad9e1a2afe7bef5be7293e6200308171d124da6995",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/BiomedCLIP/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "9c9f24d80fb8bdef8139622d590ecffee62af0cb363acec0acd7e0fae46ac209",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "2ac1e479ed62e2c40dea73553c31f529686292ea4d0f02b768ec15cb01e36bb7",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "BiomedCLIP",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "94a00f5a913b89918af888d1dbcf0fb95ed4b21d014948beb9b20924cc0cc660",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BiomedCLIP_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "a44667a82eea933e07cd9a7ad984664fbb59c9430b64a2f841bcb8cfb8756ce9",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "5296f7fe13f52ad5bf1960889c25dca1a8d6030766371bccfc2d6e7a56113282",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "8a8e1f1864349533925a72f11b2d763cf7573db5919f07a80223084338ecc7e3",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "8726b8e553bc78ca61eaf45d8c3d887f40ccffab2379284f2045afe6ff8834ba",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "abc5112924eaf362a5bf12eeaebf8ce7918492593c860b4cc71c63de070bf92e",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "5a7096fd95e5dfcc96ca1abf1234c75b64f5543d1b80366e1bf0b543060b8c62",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/BioViL-T_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "584cf25c030fe7a3715f121df4190a92469506e744cd46a21b2d7c71b2207117",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "bfc07c2bebad6660c9b5bf1b291bdbcecc6fe5ea942d8300ba8669e84493d9bc",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "9d0f0c8d09d1ba88015db60267c7f435f62db7a57d4860acde2ec40753fa4c4d",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "95388083a90bc6df57920ef061442b68060b19e9e8d217632191afe90be29bd8",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "941e4bd86603866fd22e282181300846d4a30cde11c53ef11ef4ee89d153c5a7",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "b4df8a557df6e529c686de1aef996bbfb2dfd233abdf27a7c72d63d1268f05cf",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/BioViL-T/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "9a1c569e0152e71335f47a8fd9d67a7de69bb83d93364497478d60bd3cc7c5be",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "2fbc9e37ca188f797dc51fac601ea1fb034f3f61e057688460b7dfdf157832c2",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "BioViL-T",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "cca5b0f2efe8334bc36fc0e949f49b9c66860619bbf311b5eae7d5417c007638",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/BioViL-T_full_2/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "4cb6f083817a7da5b94ecd1e4ffcd5e6f70270ee3f3ea161e8bbd93339044009",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "2edb9e1f81478501f8fe4dd6030e9fd257d2b3c3e1a3314aaeffa6f7632dd59d",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "source_sha256": "fc2426c771a1a3e49c1b2c3e738511fbed2c46d722deb7a906e80eb3c4835237",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "2e727e126044a0856f22755fc91d9142fbeadaea6887c2eb007ce89e3554171e",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "8d65af1bb6e419f53815c3f4506e86cd411a80fb0834c4946c4f855c1ec2d9b0",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "f4bf8b0d418a1d252d6d063174c7f6efaa2f61d3410c3e7bf6d900c386269253",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CheXzero_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "5e4805affb24f37903035bdc62b82b024386bacd4c94dcec469f3d51fd6c128c",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "3688708ffea48a1d248d064a0c4d1142c662c862e3ad62bd6a2c5a165bc3420f",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "a559fa3e8a75beb9c6629a7ba727383521fa1122d742c92af1813664a2061b20",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "node21",
+      "status": "unsupported",
+      "source_sha256": "b482201fecf6bc1c1e98e34db361d0e97752b87c1de9ce4b0389e01932b87575",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "source_sha256": "ff06d804974d69b21178937c39b239c1b9880ddac86630b2ec6be9955ce5145f",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "31740577e12f44d270a4d97b3c51f2b572cf5d06efdaddc4e31225462ca932b8",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/CheXzero/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "d2cbf8987dd949dcb3723dff907ed9f17bd55c2d55d5a308a0da6f5364df7f38",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "8f589a7b8ffd3fd5aeb4df6813c0ac1ce68ed2f8657d9229984c809ee9da3f8e",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "CheXzero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "32bf7e17147d7f567144cf2bd927890c161866998f4a69fcc3b53968c135599d",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CheXzero_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "29e08ad01d898af721c6e9e061450b3a327bf7fd75fad27a89300bb2ccbc3381",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "92faa668eedd341dd88a73433ea38d4c699d183138d742d34f11d63cad7045b1",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "00f34320090a4c198ce9eee6341219ecaeac33c5d763d7a38fdb3ff30580010c",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "20f9ae615255429420abe62d51873f6228543d5a8eddf300d73a3c3fd52a5044",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "b87c828e1f11fa76298b0cef25811a13576b7e6849ee6d12cf9314dcbaa512ad",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "3b7ea84daa1d92dece20c0f296ef626f74d765db993e1c25375a2234d674b176",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MedKLIP_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "6b37bf8bb1a8ca28634a7df7891d541c4f6a519bea0a18bd999e742740fe803a",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "283338621fd2a4789f54461f496418341de3f50ae9b2e765c7ca8db819df44e7",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "c43c148a196145a25ddab9983381dc20f5296f564733684ea5483ecf9beb3f51",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "experiments/query_resource_completion_20261103/medklip/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "d26d330da9b2218183044b7c31dd88c3b7defbf39f8c7b4f1a1aa48533baf2b8",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "1299063224a6878562ab5d64bb2846367e1c25b4887312370c60b8868094c569",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "03fef2538e1c275e9358246c5a35e5361994ad3d42086ab74a88bdbd9c8578b2",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MedKLIP/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "086b7aeecbdff5bb246e3ec00abb99de28055809961fb2ebc0945e9a55ba2396",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "experiments/query_resource_completion_20261103/medklip/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "c0bf25d082075b0c75dfa0755c2f153d60b4029c8a0951a67e7847811a6fbea5",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "MedKLIP",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "d9b7c8b715270f591eee936aebeafec2c5f97c23da0c9dbd491f10539241b1f5",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MedKLIP_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "5ec38066a48e668f27717ab7277055cd2c6afc7afd77787bcde588561fbceea1",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "ecac7485dab27bc1c5b39d9327eed69bd42745a898506af5c9f6a0fac99150ac",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "50fe31d7c85cdea6673e1f1589b4b6a7ea91d26494299d511acf2d532b977958",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "88ec1c06fbabe8d98005fb5c6301480d5159dd34970f2943bc8b5100899396d1",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "45ed7eb4c05027480e05e5853a48b23994e5d6b25a8669751a90f3a76dee73c3",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "fe30e53f27fadec16098067eb4e9b17d6e2e84855f445a9d0c90d270ec349b9e",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MAVL_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "3185bfa7a545b69e7b2efa8a8995955fb58ab1a97cebecdd3ff4c9a7cc41de18",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "a0830b7e6547b7896e9900ad13715d52c597eb9ce899f835328f63b2e6d5dbde",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "496014248c003eeb9d086975027770047770099518b38c43052f1d5cf3ed6c15",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "experiments/query_resource_completion_20261103/mavl/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "2c57173a6c125d98619359a4f9a5c5d88ebd35f02d5de7d5abb6999dec04eeab",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "e2cd904ad9063e7bbf0f2c31855ca8066f0a381efd5f5b368f8716d210a58f3f",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "4ca2ebd5bcf7b78d55c559b1038fd84e15d36a5f4340d8d94d7339c0e5d46953",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MAVL/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "4c73eb483cae2548b2116d387334e876a3826a7d0f8c22ae06da5442bebe3998",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "experiments/query_resource_completion_20261103/mavl/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "326326a910a38075f5b883aab8cab2ef67e77a45123ade0fdb7ac891a0d801f1",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "MAVL",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "37c1aa654fe87490ee8b7632a6aa727dd0e8de66720b300ad963b88e82c6e988",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MAVL_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "ff85074313473433d26103c46f7f142c73881a63e6fad785e3e28fee6687cf13",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "ba08d61516d1c1aaa4733e384e752870d509eaea88df247acf639825d1ff4e3a",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "cfcb7f23d72c66321c3d12868e99aae56685c8431845b1818ad7945d58a142f7",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "9ecdaccee95d9e99991f25bf5e08a3077fdeecf010766a8c5a09b4f75b03ef2a",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "56985c580a94706ef09b18d40a1d599ce305f415a014b7d264163a57156f5f7b",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "41053ef2b5ce1a93bc12f10b177bf739e6657d03e5046b156c01128e4b8ea6d2",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/KAD_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "5cc120e15600c5277797395cdfdea557b4f2ef5b7c74801aee5d0def3493bd57",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "620e3269ba09b121081e30fb28287c7a7cc3ab128e1724b8418678018b607d3c",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "62cc09bdb63b93785f081c707f577967c22404755864c7ea9dcf7962cff5997a",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "2459214110acb4730c65fe88bd4de0b4fad8120bdeb60d04da5ac348c251bafe",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "4b9b7f5e268d6481427c416ba52bb54e61d8c519ffd66028df2ccf705a95cc42",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "5a4cc92a5f13fe49293e4a81975cf3b9dee59a0b3a030a05f28893936b79dccd",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/KAD/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "ed9751fdb69d75edc485c6a7b8d980c18c9b44822a54bb46fc42db361b5bc3a8",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "c2bebc29b24a51d12f33fce10392faa653b4e0bae00bf25c272eaa26ce56287f",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "KAD",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "1705f9ebc1ebddde3f2151d27156a46825d20819c0f76e97f7d0b9cbef4ac2b9",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/KAD_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "b9e2263358522a0a4b301a48f648afc17d5b184a56cd4c607061f7bb5505eabf",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "9049a535a45e0eb0f7661435028bbe333a4174595796cb21962bacd0593f98e5",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chestxdet10_gt",
+      "status": "complete",
+      "source_sha256": "07766db704444e08f56744aae2a7fe6d56108d5121443bf122bf6b6a381c217a",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "fd2a2fbdfddd27f1ffa4090cbd1d26582174c6723360bc05e10a80d0c9265ab5",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "4eac2032dd1ab69982633b0d76fb0a8e9bb3aae2ff28c0bef10edb88ce901a2c",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "78eeb0fdd7205743bbd56bb7ebbb70cf719a043159c8a79d017546009bd47a39",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/MaCo_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "ba1cade9108bbec139fd0c865c5a001a54a99b403ce195f3dcf41aefb66621b8",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "6556c96b6c368faeac3375a9ef694a4c5dc3eb3a2a26511b07cc17d17936a578",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "1cae63e0421e12513949c81a84cf5d1f52c11c2b150cc1348e9e59a339795504",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "node21",
+      "status": "complete",
+      "source_sha256": "958de6710c1a2583f48e844c815c2c01681d9466d3d29b7d4bb7bccaaf54f557",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "qatacovid_seg",
+      "status": "complete",
+      "source_sha256": "e0950bcb01eeba5f7b8f8ae752a9dcde08609b3c5dd4aaa4f927722549b5b54c",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "256500622ef01298816e900ab90675d8e5f336b2b553c0dd3817ddf443e2e96c",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/MaCo/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "077fe12c89010e7fbc056959ce1b2d5c0ffe2ef418c17221a84b5a2facb2941f",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "1e6a3ff19d1bf4098f67ac78b918615eae61ddbbad458286d29565bc75812d97",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "MaCo",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "d1fb3caf14fd70596553e9e29b97b4797dc91e54ce839342f9afbf6b4b16098b",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/MaCo_full_2/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chest14",
+      "status": "complete",
+      "source_sha256": "ff574f5fe4cff82024c54ab6fcc25b79f7b8daf4b2727e1b4f0764affaffdd0d",
+      "evaluation_manifest_sha256": "6858504b7a80ae64670d07e53b59ffea115bf68396658082d553a99364c6e9d0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chest14/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chest14.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chestxdet10",
+      "status": "complete",
+      "source_sha256": "f6c7708a41fba61a3f80f4e6a238f1cbf58bba31de8f10c0fafce230503292d8",
+      "evaluation_manifest_sha256": "ccd4e3eccc642987839ffb3debf012c8745b0897ff1aa1af9247ebe7f93a99d1",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chestxdet10/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chestxdet10_gt",
+      "status": "unsupported",
+      "source_sha256": "6bb840ecfcbd519839a40f1a945e9bb954b60c93cd8bf195c522d03026d5d0dd",
+      "evaluation_manifest_sha256": "d7cbdba55ff1d09893f4cc64c9802b603c3fb9f72a05a79001f17b558573b6f0",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chestxdet10_gt/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chestxdet10_gt.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_composite_slvh_dlv",
+      "status": "complete",
+      "source_sha256": "faeb957791566b3af0a3bc87f76ab7d2ee182048034665116332582b90de8453",
+      "evaluation_manifest_sha256": "0563e226ef45be7fa5d25536eefc0f9629d6f51c71428255de7c593c3c456ffc",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_composite_slvh_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_composite_slvh_dlv.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_dlv",
+      "status": "complete",
+      "source_sha256": "068324c355646dfe4c024c2bca771a5a5ace44b8e33f3f9ee972aea5313133fa",
+      "evaluation_manifest_sha256": "77e59ade51bedc2a23acc871dfd1c52807d2dce11c8bd53059613a9a00cea262",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_dlv/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_dlv.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexchonet_slvh",
+      "status": "complete",
+      "source_sha256": "10b6c963d5e9255a1518c349bfcd9dcdb273e43454c34a8d995263b12f2f69a1",
+      "evaluation_manifest_sha256": "99778957e768e51315eb0e86f59761c5d44b8b69b0fe2d9a604d4e320265cc70",
+      "source_path": "baselines/runs/chexchonet_20261024_000447/CARZero_full/chexchonet_slvh/result.json",
+      "evaluation_manifest": "baselines/evaluation/chexchonet_20261023/chexchonet_slvh.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "chexpert",
+      "status": "complete",
+      "source_sha256": "032c5e57c7b14080198018d56c052b515b8f9406ecf05dbd9612d32d906b10bd",
+      "evaluation_manifest_sha256": "d5a8ac114536babcbe97e5a02cc6514f75b8300df7351fad399cab0fc1b08205",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/chexpert/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/chexpert.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "covidkaggle",
+      "status": "complete",
+      "source_sha256": "0c3766b2c45030abf7b922a84bac807a0ef506f2c75e3df1600a8e9f23d0a1f6",
+      "evaluation_manifest_sha256": "20f736ada4ac0769f383e405127cc4852d7e5b9b2acee71155dfa1fd751de528",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/covidkaggle/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/covidkaggle.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "montgomery",
+      "status": "complete",
+      "source_sha256": "bf3fd5d2d58710e5731227cf7a21629828b901ae324d1bc3112efdcaef063ced",
+      "evaluation_manifest_sha256": "4cd7d1294379ff68b5029322919651cd416d01ec175c6e8c04fa81a5792c0dbd",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/montgomery/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/montgomery.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "node21",
+      "status": "unsupported",
+      "source_sha256": "cd80023f1d19bb5ddbd99660349f0a5921d8511a6d280cb0528dab171dafa9e9",
+      "evaluation_manifest_sha256": "2147475b0f3e450a1784dd39d32f751ffd67243095df4c2c34b56cb243f522d6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/node21/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/node21.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "qatacovid_seg",
+      "status": "unsupported",
+      "source_sha256": "98b2dce04943fbe44576548cff756b07a39f11a823afc2bdf95d9ebd84a47cbe",
+      "evaluation_manifest_sha256": "0d6d4f14f2ae39425f4925c31c44bd02093a6031633bb399c2cd5dc12bcdd135",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/qatacovid_seg/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/qatacovid_seg.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "rsna_pneumonia",
+      "status": "complete",
+      "source_sha256": "52186694f4921a475e9f0bb790ff65b5d6c91e210240aea920cd0c4f5b5368a5",
+      "evaluation_manifest_sha256": "4b3136c7e81194bdc4073742f5a4c9d63c6440b59222f36dbfc91c55df4053c6",
+      "source_path": "experiments/rsna_fixed_patient_cleanup_20261110/models/CARZero/result.json",
+      "evaluation_manifest": "experiments/rsna_fixed_patient_cleanup_20261110/corrected_test_manifest.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "shenzhenxray",
+      "status": "complete",
+      "source_sha256": "379481452053cf6bcfe6459cba6ce4630f746891e682f61d6ef1a0c626953c20",
+      "evaluation_manifest_sha256": "8ba4b1c9281134609c70af1dc2382107f724ca4ba9843c5b7621f8e2a5ba6459",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/shenzhenxray/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/shenzhenxray.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "siim_pneumothorax",
+      "status": "complete",
+      "source_sha256": "46124321f232de0c530f65c9acf205ec7fd0d5a94ad586f508df4d7943d9e7ea",
+      "evaluation_manifest_sha256": "2732b333505c4676e662ea0cd80f54636fa7de701ae2b7e88e1f69090807b5b6",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/siim_pneumothorax/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_pneumothorax.json"
+    },
+    {
+      "model": "CARZero",
+      "dataset": "siim_radzero_holdout",
+      "status": "complete",
+      "source_sha256": "d0175e18184dff293a6193f5ac4c74777b4c9b69bb279831729ae6f7b89711e8",
+      "evaluation_manifest_sha256": "5267d2707421f9d72bab0618ef786e6fdf23133a56e76cf923c4dbfa98dbc562",
+      "source_path": "baselines/runs/query_transfer_20261022_224826/CARZero_full_1/siim_radzero_holdout/result.json",
+      "evaluation_manifest": "baselines/evaluation/matched_phase6_20261022/siim_radzero_holdout.json"
+    }
+  ]
+}

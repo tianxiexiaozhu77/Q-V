@@ -1,0 +1,7 @@
+EVALUATE rsna_pneumonia support seed 42
+EVALUATE rsna_pneumonia support seed 43
+EVALUATE rsna_pneumonia support seed 44
+EVALUATE rsna_pneumonia support seed 45
+EVALUATE rsna_pneumonia support seed 46
+REUSE verified completed evaluation: chestxdet10
+{"status": "complete", "output": "experiments/query_path_intervention_20261024/runs/diagnostic_20261024_v1/evaluation", "coverage": {"classification_seed_rows": 50, "classification_means": 10, "spatial_seed_rows": 25, "spatial_means": 5}}

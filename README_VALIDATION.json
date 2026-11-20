@@ -1,0 +1,10 @@
+{
+  "readme_bash_blocks_syntax_checked": 28,
+  "relative_links_checked": true,
+  "environment_command_plans_checked": 11,
+  "workspace_command_plan_checked": true,
+  "sensitivity_jobs_compared_to_corrected_reference": 90,
+  "sensitivity_tolerance_pp": 1e-09,
+  "environment_installation_executed": false,
+  "gpu_inference_executed": false
+}

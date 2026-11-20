@@ -1,0 +1,22 @@
+Verifying MedKLIP/shenzhenxray
+PASS MedKLIP/shenzhenxray: four complete branches and unchanged frozen identities
+Verifying MedKLIP/montgomery
+PASS MedKLIP/montgomery: four complete branches and unchanged frozen identities
+Verifying MAVL/shenzhenxray
+PASS MAVL/shenzhenxray: four complete branches and unchanged frozen identities
+Verifying MAVL/montgomery
+PASS MAVL/montgomery: four complete branches and unchanged frozen identities
+Four TB pairs independently PASS; waiting for both full OpenI results.
+Verifying MedKLIP/openi
+PASS MedKLIP/openi: four complete branches and unchanged frozen identities
+Verifying MedKLIP/shenzhenxray
+PASS MedKLIP/shenzhenxray: four complete branches and unchanged frozen identities
+Verifying MedKLIP/montgomery
+PASS MedKLIP/montgomery: four complete branches and unchanged frozen identities
+Verifying MAVL/openi
+PASS MAVL/openi: four complete branches and unchanged frozen identities
+Verifying MAVL/shenzhenxray
+PASS MAVL/shenzhenxray: four complete branches and unchanged frozen identities
+Verifying MAVL/montgomery
+PASS MAVL/montgomery: four complete branches and unchanged frozen identities
+Verified all six pairs, 24 branches and 8447 hashed files: /storage/3090group2/zjx/code/medical/experiments/query_resource_completion_20261103/VERIFIED_COMPLETION.json

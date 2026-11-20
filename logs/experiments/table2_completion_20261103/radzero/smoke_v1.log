@@ -1,0 +1,6 @@
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: The use of `x.T` on tensors of dimension other than 2 to reverse their shape is deprecated and it will throw an error in a future release. Consider `x.mT` to transpose batches of matrices or `x.permute(*torch.arange(x.ndim - 1, -1, -1))` to reverse the dimensions of a tensor. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3637.)
+  logits = logits.T
+/storage/3090group2/zjx/code/medical/RadZero_i2cl/local_assets/.cache/huggingface/modules/transformers_modules/model/losses.py:210: UserWarning: Tensor.T is deprecated on 0-D tensors. This function is the identity in these cases. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3645.)
+  logits = logits.T
+montgomery: 16/16
+{"dataset": "montgomery", "status": "complete", "branches": {"original": {"macro_auroc": null, "macro_auprc": null}, "query_refined": {"macro_auroc": null, "macro_auprc": null}, "tta_center_original": {"macro_auroc": null, "macro_auprc": null}, "tta_center_refined": {"macro_auroc": null, "macro_auprc": null}}}

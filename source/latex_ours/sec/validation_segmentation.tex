@@ -1,0 +1,17 @@
+% Validation-selected test result table relocated from main-paper Table 5.
+\begin{table}[t]
+\centering
+\caption{\textbf{Validation-threshold segmentation on AlphaRAD.} QaTaCOV19 positive-image Dice (\%) and changes from Original (pp; paired patient-bootstrap 95\% intervals). Selecting $\tau$ uses 473 additional validation masks.}
+\label{tab:supp-validation-segmentation}
+\small
+\begin{tabular}{@{}lrrc@{}}
+\toprule
+Branch & $\tau$ & Dice & $\Delta$Dice [95\% interval] \\
+\midrule
+Original & 0.64 & 52.34 & --- \\
+Q & 0.63 & 53.81 & $+1.46\ [1.01,1.89]$ \\
+V & 0.64 & 52.59 & $+0.25\ [0.09,0.41]$ \\
+Q+V & 0.64 & 54.51 & $+2.17\ [1.94,2.41]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

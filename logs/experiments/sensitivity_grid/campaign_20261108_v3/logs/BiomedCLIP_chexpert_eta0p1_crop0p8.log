@@ -1,0 +1,14 @@
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/storage/3090group2/zjx/code/medical/baselines/BiomedCLIP/.venv/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+BiomedCLIP/chexpert 8/596
+BiomedCLIP/chexpert 112/596
+BiomedCLIP/chexpert 232/596
+BiomedCLIP/chexpert 336/596
+BiomedCLIP/chexpert 408/596
+BiomedCLIP/chexpert 504/596
+BiomedCLIP/chexpert 596/596
+COMPLETE BiomedCLIP chexpert {"macro_auroc": 7.843037564912169, "macro_auprc": 8.045185961699225}

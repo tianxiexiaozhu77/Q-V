@@ -1,0 +1,16 @@
+{"status": "loading_model", "model": "MAVL", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 2.7835702896118164, "smoke": 16}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+{"status": "fitting_all_support_queries", "model": "MAVL", "contrast": "Q-F", "done": 0, "total": 0, "elapsed_seconds": 14.066272497177124, "smoke": 16}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+{"status": "inference", "model": "MAVL", "contrast": "Q-F", "done": 0, "total": 16, "elapsed_seconds": 21.865309953689575, "smoke": 16}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+{"status": "inference", "model": "MAVL", "contrast": "Q-F", "done": 8, "total": 16, "elapsed_seconds": 23.7836332321167, "smoke": 16}
+{"status": "inference", "model": "MAVL", "contrast": "Q-F", "done": 16, "total": 16, "elapsed_seconds": 24.77892541885376, "smoke": 16}
+{"status": "smoke_complete", "model": "MAVL", "contrast": "Q-F", "done": 16, "total": 16, "elapsed_seconds": 25.49647808074951, "smoke": 16}

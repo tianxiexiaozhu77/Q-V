@@ -1,0 +1,312 @@
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+UNSUPPORTED montgomery MAVL official book/concepts missing tuberculosis
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/chestxdet10_gt 8/409
+MAVL/chestxdet10_gt 32/409
+MAVL/chestxdet10_gt 48/409
+MAVL/chestxdet10_gt 64/409
+MAVL/chestxdet10_gt 80/409
+MAVL/chestxdet10_gt 96/409
+MAVL/chestxdet10_gt 120/409
+MAVL/chestxdet10_gt 144/409
+MAVL/chestxdet10_gt 168/409
+MAVL/chestxdet10_gt 192/409
+MAVL/chestxdet10_gt 216/409
+MAVL/chestxdet10_gt 232/409
+MAVL/chestxdet10_gt 248/409
+MAVL/chestxdet10_gt 264/409
+MAVL/chestxdet10_gt 280/409
+MAVL/chestxdet10_gt 296/409
+MAVL/chestxdet10_gt 320/409
+MAVL/chestxdet10_gt 344/409
+MAVL/chestxdet10_gt 360/409
+MAVL/chestxdet10_gt 384/409
+MAVL/chestxdet10_gt 408/409
+MAVL/chestxdet10_gt 409/409
+COMPLETE MAVL chestxdet10_gt {"pointing_game": 0.8291718506181212}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+MAVL/chestxdet10 8/492
+MAVL/chestxdet10 176/492
+MAVL/chestxdet10 368/492
+MAVL/chestxdet10 492/492
+COMPLETE MAVL chestxdet10 {"macro_auroc": -0.4663803305463232, "macro_auprc": -0.9720828065238107}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/chexpert 8/596
+MAVL/chexpert 80/596
+MAVL/chexpert 144/596
+MAVL/chexpert 224/596
+MAVL/chexpert 296/596
+MAVL/chexpert 376/596
+MAVL/chexpert 440/596
+MAVL/chexpert 504/596
+MAVL/chexpert 568/596
+MAVL/chexpert 596/596
+COMPLETE MAVL chexpert {"macro_auroc": 0.7927332037767632, "macro_auprc": -1.972795805955141}
+UNSUPPORTED shenzhenxray MAVL official book/concepts missing tuberculosis
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/node21 8/1129
+MAVL/node21 176/1129
+MAVL/node21 432/1129
+MAVL/node21 784/1129
+MAVL/node21 1129/1129
+COMPLETE MAVL node21 {"pointing_game": 3.3658104517271914}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+76 608
+Image feature extractor: resnet50
+MAVL/covidkaggle 8/1381
+MAVL/covidkaggle 632/1381
+MAVL/covidkaggle 1344/1381
+MAVL/covidkaggle 1381/1381
+COMPLETE MAVL covidkaggle {"macro_auroc": -3.65052944333899, "macro_auprc": -8.336663662659639}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/siim_radzero_holdout 8/1694
+MAVL/siim_radzero_holdout 544/1694
+MAVL/siim_radzero_holdout 1080/1694
+MAVL/siim_radzero_holdout 1544/1694
+MAVL/siim_radzero_holdout 1694/1694
+COMPLETE MAVL siim_radzero_holdout {"macro_auroc": 0.31342664980351653, "macro_auprc": 0.48350703720978494}
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/siim_pneumothorax 8/1704
+MAVL/siim_pneumothorax 536/1704
+MAVL/siim_pneumothorax 1072/1704
+MAVL/siim_pneumothorax 1528/1704
+MAVL/siim_pneumothorax 1704/1704
+COMPLETE MAVL siim_pneumothorax {"macro_auroc": 0.26617928462783214, "macro_auprc": 0.46759389522921246}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/qatacovid_seg 8/2113
+MAVL/qatacovid_seg 424/2113
+MAVL/qatacovid_seg 832/2113
+MAVL/qatacovid_seg 1216/2113
+MAVL/qatacovid_seg 1496/2113
+MAVL/qatacovid_seg 1888/2113
+MAVL/qatacovid_seg 2113/2113
+COMPLETE MAVL qatacovid_seg {"dice": 0.42412478169779333}
+text feature extractor: /storage/3090group2/zjx/code/medical/baselines/MAVL/local_assets/Bio_ClinicalBERT
+75 600
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/rsna_pneumonia 8/5327
+MAVL/rsna_pneumonia 88/5327
+MAVL/rsna_pneumonia 168/5327
+MAVL/rsna_pneumonia 240/5327
+MAVL/rsna_pneumonia 320/5327
+MAVL/rsna_pneumonia 400/5327
+MAVL/rsna_pneumonia 480/5327
+MAVL/rsna_pneumonia 552/5327
+MAVL/rsna_pneumonia 632/5327
+MAVL/rsna_pneumonia 712/5327
+MAVL/rsna_pneumonia 792/5327
+MAVL/rsna_pneumonia 864/5327
+MAVL/rsna_pneumonia 944/5327
+MAVL/rsna_pneumonia 1024/5327
+MAVL/rsna_pneumonia 1104/5327
+MAVL/rsna_pneumonia 1176/5327
+MAVL/rsna_pneumonia 1256/5327
+MAVL/rsna_pneumonia 1336/5327
+MAVL/rsna_pneumonia 1416/5327
+MAVL/rsna_pneumonia 1488/5327
+MAVL/rsna_pneumonia 1560/5327
+MAVL/rsna_pneumonia 1640/5327
+MAVL/rsna_pneumonia 1712/5327
+MAVL/rsna_pneumonia 1776/5327
+MAVL/rsna_pneumonia 1848/5327
+MAVL/rsna_pneumonia 1928/5327
+MAVL/rsna_pneumonia 2008/5327
+MAVL/rsna_pneumonia 2080/5327
+MAVL/rsna_pneumonia 2160/5327
+MAVL/rsna_pneumonia 2240/5327
+MAVL/rsna_pneumonia 2320/5327
+MAVL/rsna_pneumonia 2400/5327
+MAVL/rsna_pneumonia 2472/5327
+MAVL/rsna_pneumonia 2552/5327
+MAVL/rsna_pneumonia 2624/5327
+MAVL/rsna_pneumonia 2696/5327
+MAVL/rsna_pneumonia 2776/5327
+MAVL/rsna_pneumonia 2856/5327
+MAVL/rsna_pneumonia 2920/5327
+MAVL/rsna_pneumonia 3000/5327
+MAVL/rsna_pneumonia 3080/5327
+MAVL/rsna_pneumonia 3160/5327
+MAVL/rsna_pneumonia 3224/5327
+MAVL/rsna_pneumonia 3296/5327
+MAVL/rsna_pneumonia 3336/5327
+MAVL/rsna_pneumonia 3376/5327
+MAVL/rsna_pneumonia 3408/5327
+MAVL/rsna_pneumonia 3464/5327
+MAVL/rsna_pneumonia 3536/5327
+MAVL/rsna_pneumonia 3608/5327
+MAVL/rsna_pneumonia 3672/5327
+MAVL/rsna_pneumonia 3752/5327
+MAVL/rsna_pneumonia 3832/5327
+MAVL/rsna_pneumonia 3912/5327
+MAVL/rsna_pneumonia 3976/5327
+MAVL/rsna_pneumonia 4048/5327
+MAVL/rsna_pneumonia 4120/5327
+MAVL/rsna_pneumonia 4192/5327
+MAVL/rsna_pneumonia 4256/5327
+MAVL/rsna_pneumonia 4328/5327
+MAVL/rsna_pneumonia 4400/5327
+MAVL/rsna_pneumonia 4480/5327
+MAVL/rsna_pneumonia 4552/5327
+MAVL/rsna_pneumonia 4632/5327
+MAVL/rsna_pneumonia 4712/5327
+MAVL/rsna_pneumonia 4784/5327
+MAVL/rsna_pneumonia 4832/5327
+MAVL/rsna_pneumonia 4872/5327
+MAVL/rsna_pneumonia 4936/5327
+MAVL/rsna_pneumonia 5000/5327
+MAVL/rsna_pneumonia 5080/5327
+MAVL/rsna_pneumonia 5160/5327
+MAVL/rsna_pneumonia 5240/5327
+MAVL/rsna_pneumonia 5312/5327
+MAVL/rsna_pneumonia 5327/5327
+COMPLETE MAVL rsna_pneumonia {"macro_auroc": 0.7263116593410834, "macro_auprc": 1.5419721144594112}
+UNSUPPORTED openi MAVL official book/concepts missing calcified granuloma, granuloma
+/storage/3090group2/zjx/code/medical/baselines/MAVL/.venv/lib/python3.10/site-packages/torch/nn/functional.py:1354: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+MAVL/chest14 8/21101
+MAVL/chest14 208/21101
+MAVL/chest14 408/21101
+MAVL/chest14 608/21101
+MAVL/chest14 784/21101
+MAVL/chest14 984/21101
+MAVL/chest14 1184/21101
+MAVL/chest14 1384/21101
+MAVL/chest14 1560/21101
+MAVL/chest14 1760/21101
+MAVL/chest14 1960/21101
+MAVL/chest14 2160/21101
+MAVL/chest14 2328/21101
+MAVL/chest14 2520/21101
+MAVL/chest14 2720/21101
+MAVL/chest14 2912/21101
+MAVL/chest14 3088/21101
+MAVL/chest14 3280/21101
+MAVL/chest14 3480/21101
+MAVL/chest14 3680/21101
+MAVL/chest14 3848/21101
+MAVL/chest14 4048/21101
+MAVL/chest14 4256/21101
+MAVL/chest14 4456/21101
+MAVL/chest14 4624/21101
+MAVL/chest14 4824/21101
+MAVL/chest14 5024/21101
+MAVL/chest14 5224/21101
+MAVL/chest14 5400/21101
+MAVL/chest14 5600/21101
+MAVL/chest14 5792/21101
+MAVL/chest14 5992/21101
+MAVL/chest14 6168/21101
+MAVL/chest14 6368/21101
+MAVL/chest14 6568/21101
+MAVL/chest14 6768/21101
+MAVL/chest14 6944/21101
+MAVL/chest14 7144/21101
+MAVL/chest14 7344/21101
+MAVL/chest14 7536/21101
+MAVL/chest14 7720/21101
+MAVL/chest14 7920/21101
+MAVL/chest14 8120/21101
+MAVL/chest14 8320/21101
+MAVL/chest14 8512/21101
+MAVL/chest14 8704/21101
+MAVL/chest14 8904/21101
+MAVL/chest14 9088/21101
+MAVL/chest14 9272/21101
+MAVL/chest14 9360/21101
+MAVL/chest14 9440/21101
+MAVL/chest14 9512/21101
+MAVL/chest14 9656/21101
+MAVL/chest14 9840/21101
+MAVL/chest14 10024/21101
+MAVL/chest14 10208/21101
+MAVL/chest14 10360/21101
+MAVL/chest14 10536/21101
+MAVL/chest14 10704/21101
+MAVL/chest14 10888/21101
+MAVL/chest14 11040/21101
+MAVL/chest14 11216/21101
+MAVL/chest14 11400/21101
+MAVL/chest14 11568/21101
+MAVL/chest14 11728/21101
+MAVL/chest14 11896/21101
+MAVL/chest14 12048/21101
+MAVL/chest14 12208/21101
+MAVL/chest14 12272/21101
+MAVL/chest14 12344/21101
+MAVL/chest14 12416/21101
+MAVL/chest14 12488/21101
+MAVL/chest14 12592/21101
+MAVL/chest14 12776/21101
+MAVL/chest14 12952/21101
+MAVL/chest14 13144/21101
+MAVL/chest14 13304/21101
+MAVL/chest14 13480/21101
+MAVL/chest14 13648/21101
+MAVL/chest14 13816/21101
+MAVL/chest14 13960/21101
+MAVL/chest14 14136/21101
+MAVL/chest14 14312/21101
+MAVL/chest14 14480/21101
+MAVL/chest14 14632/21101
+MAVL/chest14 14808/21101
+MAVL/chest14 14984/21101
+MAVL/chest14 15160/21101
+MAVL/chest14 15320/21101
+MAVL/chest14 15496/21101
+MAVL/chest14 15672/21101
+MAVL/chest14 15840/21101
+MAVL/chest14 15984/21101
+MAVL/chest14 16168/21101
+MAVL/chest14 16352/21101
+MAVL/chest14 16520/21101
+MAVL/chest14 16672/21101
+MAVL/chest14 16840/21101
+MAVL/chest14 17000/21101
+MAVL/chest14 17144/21101
+MAVL/chest14 17280/21101
+MAVL/chest14 17456/21101
+MAVL/chest14 17632/21101
+MAVL/chest14 17808/21101
+MAVL/chest14 17928/21101
+MAVL/chest14 18104/21101
+MAVL/chest14 18280/21101
+MAVL/chest14 18464/21101
+MAVL/chest14 18608/21101
+MAVL/chest14 18768/21101
+MAVL/chest14 18944/21101
+MAVL/chest14 19112/21101
+MAVL/chest14 19264/21101
+MAVL/chest14 19432/21101
+MAVL/chest14 19616/21101
+MAVL/chest14 19784/21101
+MAVL/chest14 19936/21101
+MAVL/chest14 20112/21101
+MAVL/chest14 20296/21101
+MAVL/chest14 20472/21101
+MAVL/chest14 20624/21101
+MAVL/chest14 20792/21101
+MAVL/chest14 20944/21101
+MAVL/chest14 21101/21101
+COMPLETE MAVL chest14 {"macro_auroc": 0.03660693394170744, "macro_auprc": -0.022109047865043197}

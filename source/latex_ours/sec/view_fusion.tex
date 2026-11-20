@@ -1,0 +1,23 @@
+% Exact view construction and spatial fusion relocated from main-paper Sec. 3.4.
+\paragraph{Two-view construction and native fusion.}
+\label{supp:view_fusion}
+At inference time, we obtain predictions from the original image and a fixed center crop, then fuse the results from both views. Let $x$ denote the test image tensor after the model's existing preprocessing, with spatial height $H$ and width $W$. The original view $T_0x=x$ uses this tensor without additional cropping. The cropped view $T_1x$ is obtained by extracting the central $\lfloor0.8H\rfloor\times\lfloor0.8W\rfloor$ region of $x$ and bilinearly resizing it to the required input size. This region covers approximately 64\% of the image area.
+
+To assess query vector adaptation and two-view fusion separately, we define four branches. Original uses the task's unadapted query vectors $q_c$ and predicts from the original view only. Q uses the adapted query vectors $q'_c$ and predicts from the original view only. V uses the same unadapted query vectors $q_c$ and fuses predictions from the original and center-cropped views. Q+V uses the adapted query vectors $q'_c$ and fuses predictions from both views. Here Q denotes query vector adaptation and V denotes two-view fusion; all four branches keep model weights frozen.
+
+Let $s_c(x;q'_c)$ denote Q's classification score in the model's native fusion domain, before any remaining probability conversion. For Q+V, the same adapted query vector $q'_c$ is used to compute the scores for disease class $c$ in the original and cropped views, and the two scores are combined by taking their arithmetic mean:
+\begin{equation}
+\widetilde s_c(x)=\tfrac12\big[s_c(T_0x;q'_c)+s_c(T_1x;q'_c)\big].
+\label{eq:supp-view-score}
+\end{equation}
+Here $\widetilde s_c$ denotes the fused score before any remaining probability conversion. Our two-view score fusion follows each model's existing scoring procedure: AlphaRAD and RadZero average the logits from the two views, then convert the result to probabilities using the model's original procedure; CARZero directly averages the logits from the two views and uses the result as the final classification score; the other seven models average the predicted probabilities from the two views.
+
+For spatial prediction, we first map the cropped-view response map back to its corresponding region in the original image, then fuse it with the original-view response map at each location in a common reference coordinate system. Let $H_{c,0}$ denote the original-view response in this reference system and $H_{c,1}$ the cropped-view response. The transformation $W_1$ maps the cropped response to the reference system. The indicators $m_0(p),m_1(p)\in\{0,1\}$ mark whether each view provides a valid response at location $p$ after alignment, with $m_1(p)=0$ outside the region covered by the cropped view. Wherever $m_0(p)+m_1(p)>0$, the fused response is
+\begin{equation}
+\widetilde H_c(p)=
+\frac{m_0(p)H_{c,0}(p)+m_1(p)W_1(H_{c,1})(p)}{m_0(p)+m_1(p)}.
+\label{eq:supp-spatial-fusion}
+\end{equation}
+Where both views provide valid responses, we take their mean; where only the original view provides a valid response, we retain that response. Thus, responses outside the cropped region are not reduced by the absence of a cropped-view response. Locations with no valid response from either view are excluded from peak search and treated as background for segmentation. AlphaRAD and RadZero use the original-view patch grid as the reference coordinate system; the other models use original-image coordinates.
+
+The adapted query vectors are reused across all test images. Q and Q+V use one and two test views, respectively. The fusion domain and cost per pass depend on the backbone; equal view counts alone do not establish equal representations or end-to-end runtime.

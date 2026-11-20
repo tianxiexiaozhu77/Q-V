@@ -1,0 +1,24 @@
+\begin{table*}[tp]
+\centering
+\caption{\textbf{AlphaRAD / ChestXDet10 (classification): original 11-method/branch comparison.} Mean $\pm$ sample SD over support seeds 42--46. Scores are percentages. V and Q+V use two views; other rows use one.}
+\label{tab:supp-oldmeans-alpharad-chestxdet10}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc@{}}
+\toprule
+Method & AUROC & AUPRC \\
+\midrule
+Original & $81.64\pm0.00$ & $45.72\pm0.00$ \\
+Prototype & $73.33\pm1.02$ & $35.93\pm0.84$ \\
+Prototype mix & $81.87\pm0.11$ & $46.74\pm0.37$ \\
+Tip-Adapter & $81.42\pm0.36$ & $45.66\pm0.16$ \\
+GDA & $81.75\pm1.02$ & $47.87\pm1.38$ \\
+SimNL & $74.95\pm0.34$ & $37.42\pm0.67$ \\
+Positive-support-only adaptation & $82.38\pm0.20$ & $47.93\pm0.46$ \\
+Score S & $82.65\pm0.37$ & $50.07\pm1.54$ \\
+Q & $83.36\pm0.61$ & $50.57\pm0.85$ \\
+V & $82.05\pm0.00$ & $46.96\pm0.00$ \\
+Q+V & $83.77\pm0.64$ & $51.15\pm0.94$ \\
+\bottomrule
+\end{tabular*}
+\end{table*}

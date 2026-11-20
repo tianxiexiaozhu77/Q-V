@@ -1,0 +1,14 @@
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Image feature extractor: resnet50
+/storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+/storage/3090group2/zjx/code/medical/baselines/KAD/.venv/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Text feature extractor: /storage/3090group2/zjx/code/medical/baselines/KAD/local_assets/Med-KEBERT
+bert encoder layers: 12
+{"status": "running", "model": "KAD", "datasets": ["chexchonet_slvh"], "done": 8, "total": 8, "elapsed_seconds": 0.6633033752441406, "updated_at": "2026-10-23T16:08:27.385498+00:00"}
+COMPLETE KAD chexchonet_slvh {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+{"status": "running", "model": "KAD", "datasets": ["chexchonet_dlv"], "done": 8, "total": 8, "elapsed_seconds": 0.16864824295043945, "updated_at": "2026-10-23T16:08:51.597983+00:00"}
+COMPLETE KAD chexchonet_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
+{"status": "running", "model": "KAD", "datasets": ["chexchonet_composite_slvh_dlv"], "done": 8, "total": 8, "elapsed_seconds": 0.13039040565490723, "updated_at": "2026-10-23T16:08:51.974769+00:00"}
+COMPLETE KAD chexchonet_composite_slvh_dlv {"macro_auroc": null, "macro_auprc": null, "macro_average_precision": null}
